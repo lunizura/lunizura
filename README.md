@@ -2,14 +2,19 @@
 
 # Izu (lunizura)
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=61AFEF&center=true&vCenter=true&width=650&height=50&lines=Informatics+Student+%40+Universitas+Sebelas+Maret;Cybersecurity+%26+Reverse+Engineering+Enthusiast;Game+Memory+Modding+%26+Low-Level+Internals;Applied+Mathematics+%7C+Gamer+%7C+Anime+Lover" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=61AFEF&center=true&vCenter=true&width=650&height=50&lines=Informatics+Student+%40+Universitas+Sebelas+Maret;Cybersecurity+%26+Reverse+Engineering+Enthusiast;Game+Memory+Modding+%26+Low-Level+Internals;3D+Art+%26+Asset+Creation+with+Blender;Applied+Mathematics+%7C+Gamer+%7C+Anime+Lover" alt="Typing SVG" />
 
 <br/>
 
 [![UNS Informatics](https://img.shields.io/badge/UNS-Informatics-003366?style=for-the-badge&logo=googlescholar&logoColor=white)](https://uns.ac.id/)
 [![Cybersecurity](https://img.shields.io/badge/Security-Binary%20%26%20Memory-8B0000?style=for-the-badge&logo=kalilinux&logoColor=white)](https://github.com/lunizura)
+[![3D Modeling](https://img.shields.io/badge/3D%20Design-Blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white)](https://github.com/lunizura)
 [![Mathematics](https://img.shields.io/badge/Math-Discrete%20%26%20Algorithms-4B0082?style=for-the-badge)](https://github.com/lunizura)
 [![Gaming](https://img.shields.io/badge/Interests-Gaming%20%26%20Anime-1B2838?style=for-the-badge&logo=steam&logoColor=white)](https://github.com/lunizura)
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=lunizura&label=PROFILE+VIEWS&style=flat-square&color=blue" alt="Profile Views" />
 
 </div>
 
@@ -20,6 +25,7 @@
 - **Education:** Computer Science / Informatics undergraduate at **Universitas Sebelas Maret (UNS)**.
 - **Low-Level & Security:** Passionate about binary reverse engineering, process memory architectures, and executable analysis.
 - **Game Modding:** Developing memory modifiers, pointer path resolvers, and real-time process patches.
+- **3D Modeling & Art:** Designing stylized 3D assets, low-poly models, and game props using Blender.
 - **Mathematics:** Deeply interested in discrete mathematics, number theory, graph theory, and algorithmic complexity.
 - **Gaming & Media:** Tactical and strategy RPG enthusiast, simulation lover, and avid anime fan.
 
@@ -43,6 +49,9 @@
 ![Ghidra](https://img.shields.io/badge/Ghidra-Binary%20Analysis-990000?style=for-the-badge)
 ![x64dbg](https://img.shields.io/badge/x64dbg-Debugging-1E90FF?style=for-the-badge)
 ![Cheat Engine](https://img.shields.io/badge/Cheat%20Engine-Memory%20Scanning-2E8B57?style=for-the-badge)
+
+#### 3D Modeling & Creative
+![Blender](https://img.shields.io/badge/Blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white)
 
 #### Development & Infrastructure
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -83,5 +92,5 @@
 ---
 
 <div align="center">
-  <sub>Open-source enthusiast, reverse engineer, and continuous learner.</sub>
+  <sub>Open-source enthusiast, reverse engineer, 3D artist, and continuous learner.</sub>
 </div>
