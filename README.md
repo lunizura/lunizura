@@ -78,20 +78,6 @@
 | [uns-prodi-directory](https://github.com/lunizura/uns-prodi-directory) | Academic program directory for Universitas Sebelas Maret featuring quota breakdowns and curriculum pathways. | JavaScript, JSON Dataset, HTML5 |
 | [ui-prodi-directory](https://github.com/lunizura/ui-prodi-directory) | Universitas Indonesia undergraduate program directory with admission metrics and bilingual academic guides. | JavaScript, Python Test Suite |
 
----
-
-### GitHub Activity & Statistics
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=lunizura&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="lunizura GitHub Stats" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lunizura&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="49%" />
-
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=lunizura&theme=tokyonight&hide_border=true" alt="lunizura GitHub Streak" width="98%" />
-
-</div>
 
 ---
 
