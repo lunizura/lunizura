@@ -20,6 +20,10 @@
 
 ---
 
+> [!NOTE]
+> **Active Learner & Open to Guidance**
+> I am currently an undergraduate student actively learning and expanding my skills across these domains. Always humble, eager to improve, and open to constructive feedback, guidance, code reviews, and mentorship. If you have advice or spot areas for improvement in any of my projects, feel free to reach out or open an issue!
+
 ### About Me
 
 - **Education:** Computer Science / Informatics undergraduate at **Universitas Sebelas Maret (UNS)**.
