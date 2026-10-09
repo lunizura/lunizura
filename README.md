@@ -26,14 +26,6 @@
 [![Mathematics](https://img.shields.io/badge/Math-Discrete%20%26%20Algorithms-4B0082?style=for-the-badge)](https://github.com/lunizura)
 [![Gaming](https://img.shields.io/badge/Interests-Gaming%20%26%20Anime-1B2838?style=for-the-badge&logo=steam&logoColor=white)](https://github.com/lunizura)
 
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=lunizura&label=PROFILE+VIEWS&style=flat-square&color=blue" alt="Profile Views" />
-
-<br/><br/>
-
-<img src="assets/cyber_hud.svg" width="100%" alt="Cyber HUD Monitor" />
-
 </div>
 
 ---
