@@ -26,6 +26,10 @@
 [![Mathematics](https://img.shields.io/badge/Math-Discrete%20%26%20Algorithms-4B0082?style=for-the-badge)](https://github.com/lunizura)
 [![Gaming](https://img.shields.io/badge/Interests-Gaming%20%26%20Anime-1B2838?style=for-the-badge&logo=steam&logoColor=white)](https://github.com/lunizura)
 
+<br/><br/>
+
+<img src="assets/arlecchino_flight.svg" width="100%" alt="Arlecchino Wing of Balemoon Flight" />
+
 </div>
 
 ---
