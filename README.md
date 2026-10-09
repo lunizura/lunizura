@@ -30,6 +30,10 @@
 
 <img src="https://komarev.com/ghpvc/?username=lunizura&label=PROFILE+VIEWS&style=flat-square&color=blue" alt="Profile Views" />
 
+<br/><br/>
+
+<img src="assets/cyber_hud.svg" width="100%" alt="Cyber HUD Monitor" />
+
 </div>
 
 ---
