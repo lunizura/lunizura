@@ -1,6 +1,20 @@
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:312e81&height=200&section=header&text=lunizura&fontSize=52&fontAlignY=38&animation=twinkling&desc=Informatics%20%7C%20Cybersecurity%20%7C%20Game%20Modding%20%7C%203D%20Blender&descSize=16&descAlignY=62" width="100%" alt="Header Banner" />
+</div>
 
-# Izu (lunizura)
+```text
++-------------------------------------------------------------+
+|    __              _                                        |
+|   / /_  ______  (_)___  __  ___________ _                   |
+|  / / / / / __ \/ /_  / / / / / ___/ __ `/                   |
+| / / /_/ / / / / / / /_/ /_/ / /  / /_/ /                    |
+|/_/\__,_/_/ /_/_/ /___/\__,_/_/   \__,_/                     |
+|                                                             |
+|  Informatics Undergraduate @ Universitas Sebelas Maret      |
++-------------------------------------------------------------+
+```
+
+<div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=61AFEF&center=true&vCenter=true&width=650&height=50&lines=Informatics+Student+%40+Universitas+Sebelas+Maret;Cybersecurity+%26+Reverse+Engineering+Enthusiast;Game+Memory+Modding+%26+Low-Level+Internals;3D+Art+%26+Asset+Creation+with+Blender;Applied+Mathematics+%7C+Gamer+%7C+Anime+Lover" alt="Typing SVG" />
 
@@ -48,8 +62,8 @@
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
 #### Systems, Security & Reverse Engineering
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
 ![Ghidra](https://img.shields.io/badge/Ghidra-Binary%20Analysis-990000?style=for-the-badge)
 ![x64dbg](https://img.shields.io/badge/x64dbg-Debugging-1E90FF?style=for-the-badge)
 ![Cheat Engine](https://img.shields.io/badge/Cheat%20Engine-Memory%20Scanning-2E8B57?style=for-the-badge)
@@ -78,9 +92,10 @@
 | [uns-prodi-directory](https://github.com/lunizura/uns-prodi-directory) | Academic program directory for Universitas Sebelas Maret featuring quota breakdowns and curriculum pathways. | JavaScript, JSON Dataset, HTML5 |
 | [ui-prodi-directory](https://github.com/lunizura/ui-prodi-directory) | Universitas Indonesia undergraduate program directory with admission metrics and bilingual academic guides. | JavaScript, Python Test Suite |
 
-
 ---
 
 <div align="center">
   <sub>Open-source enthusiast, reverse engineer, 3D artist, and continuous learner.</sub>
+  <br/><br/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:312e81&height=100&section=footer" width="100%" alt="Footer Wave" />
 </div>
