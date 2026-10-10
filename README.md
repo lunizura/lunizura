@@ -2,18 +2,6 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:312e81&height=200&section=header&text=lunizura&fontSize=52&fontAlignY=38&animation=twinkling&desc=Informatics%20%7C%20Cybersecurity%20%7C%20Game%20Modding%20%7C%203D%20Blender&descSize=16&descAlignY=62" width="100%" alt="Header Banner" />
 </div>
 
-```text
-+-------------------------------------------------------------+
-|    __              _                                        |
-|   / /_  ______  (_)___  __  ___________ _                   |
-|  / / / / / __ \/ /_  / / / / / ___/ __ `/                   |
-| / / /_/ / / / / / / /_/ /_/ / /  / /_/ /                    |
-|/_/\__,_/_/ /_/_/ /___/\__,_/_/   \__,_/                     |
-|                                                             |
-|  Informatics Undergraduate @ Universitas Sebelas Maret      |
-+-------------------------------------------------------------+
-```
-
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=61AFEF&center=true&vCenter=true&width=650&height=50&lines=Informatics+Student+%40+Universitas+Sebelas+Maret;Cybersecurity+%26+Reverse+Engineering+Enthusiast;Game+Memory+Modding+%26+Low-Level+Internals;3D+Art+%26+Asset+Creation+with+Blender;Applied+Mathematics+%7C+Gamer+%7C+Anime+Lover" alt="Typing SVG" />
@@ -28,7 +16,7 @@
 
 <br/><br/>
 
-<img src="assets/arlecchino_flight.svg" width="100%" alt="Arlecchino Wing of Balemoon Flight" />
+<img src="assets/arlecchino_flight.svg" width="100%" alt="Arlecchino • The Knave // Fatui Harbinger IV" />
 
 </div>
 

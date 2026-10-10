@@ -1,215 +1,289 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 220" width="100%" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="180">
   <defs>
-    <!-- Gradients -->
-    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff1a40" stop-opacity="0.9"/>
-      <stop offset="40%" stop-color="#b3001e" stop-opacity="0.6"/>
-      <stop offset="80%" stop-color="#4d000b" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#0a0305" stop-opacity="0"/>
+    <!-- Background & Motif Gradients -->
+    <radialGradient id="ambientGlow" cx="16%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#40030c" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#1c0206" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#080204" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="wingGrad1" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#400006"/>
-      <stop offset="40%" stop-color="#b3001b"/>
-      <stop offset="80%" stop-color="#ff1a38"/>
-      <stop offset="100%" stop-color="#ff667a"/>
-    </linearGradient>
-    <linearGradient id="wingGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1a0003"/>
-      <stop offset="50%" stop-color="#990014"/>
-      <stop offset="100%" stop-color="#ff334b"/>
-    </linearGradient>
-    <linearGradient id="scytheGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff4d63"/>
-      <stop offset="50%" stop-color="#b3001e"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-    <linearGradient id="bgBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff1a38" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#4d000d" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff1a38" stop-opacity="0.8"/>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#b8001f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#080204" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="frameBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1e42" stop-opacity="0.85"/>
+      <stop offset="20%" stop-color="#660515" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#660515" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff1e42" stop-opacity="0.85"/>
     </linearGradient>
 
-    <!-- Filters & Glow -->
-    <filter id="crimsonGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <linearGradient id="balemoonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3355"/>
+      <stop offset="50%" stop-color="#c40024"/>
+      <stop offset="100%" stop-color="#54000e"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#ffccd4"/>
+    </linearGradient>
+
+    <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1e42"/>
+      <stop offset="60%" stop-color="#b3001e"/>
+      <stop offset="100%" stop-color="#3b0811" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="scytheGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3355"/>
+      <stop offset="45%" stop-color="#b3001e"/>
+      <stop offset="100%" stop-color="#1f0207"/>
+    </linearGradient>
+
+    <!-- Harlequin Diamond Lattice Pattern -->
+    <pattern id="harlequin" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 16,0 L 32,16 L 16,32 L 0,16 Z" fill="none" stroke="#ff1a38" stroke-width="0.7" stroke-opacity="0.035"/>
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="crimsonBloom" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
     <style>
-      @keyframes glideHover {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-8px) rotate(-1.5deg); }
+      @keyframes spinCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
       }
-      @keyframes wingBeat {
-        0%, 100% { transform: rotate(0deg) scale(1); }
-        50% { transform: rotate(-6deg) scale(1.04, 0.96); }
+      @keyframes spinCCW {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
       }
-      @keyframes wingSecondary {
-        0%, 100% { transform: rotate(0deg); }
-        50% { transform: rotate(-9deg); }
+      @keyframes coreBreathe {
+        0%, 100% {
+          transform: scale(1);
+          filter: drop-shadow(0 0 5px #ff1e42);
+        }
+        50% {
+          transform: scale(1.08);
+          filter: drop-shadow(0 0 12px #ff3355);
+        }
       }
-      @keyframes coatWave {
-        0%, 100% { transform: skewX(0deg) rotate(0deg); }
-        50% { transform: skewX(-4deg) rotate(2deg); }
+      @keyframes starPulse {
+        0%, 100% { transform: scale(1); opacity: 0.7; }
+        50% { transform: scale(1.25); opacity: 1; }
       }
-      @keyframes moonPulse {
-        0%, 100% { r: 52px; opacity: 0.85; }
-        50% { r: 56px; opacity: 1; }
+      @keyframes emberDrift {
+        0% { transform: translate(0, 0); opacity: 0; }
+        30% { opacity: 0.85; }
+        80% { opacity: 0.4; }
+        100% { transform: translate(-22px, -32px); opacity: 0; }
       }
-      @keyframes crossDrift {
-        0% { transform: translate(0, 0) rotate(0deg); opacity: 0.8; }
-        100% { transform: translate(-120px, 35px) rotate(180deg); opacity: 0; }
+      @keyframes shimmerPass {
+        0% { stroke-dashoffset: 495; }
+        50%, 100% { stroke-dashoffset: -495; }
       }
-      @keyframes emberFloat {
-        0% { transform: translate(0, 0); opacity: 0.9; }
-        100% { transform: translate(-150px, -20px); opacity: 0; }
+
+      .ring-cw {
+        transform-origin: 125px 90px;
+        animation: spinCW 38s linear infinite;
       }
-      .flier { animation: glideHover 3.6s ease-in-out infinite; }
-      .wing-main { transform-origin: 390px 105px; animation: wingBeat 2.4s ease-in-out infinite; }
-      .wing-sub { transform-origin: 390px 110px; animation: wingSecondary 2.4s ease-in-out infinite; }
-      .coat-tail { transform-origin: 430px 125px; animation: coatWave 1.8s ease-in-out infinite; }
-      .moon-anim { animation: moonPulse 4s ease-in-out infinite; }
-      .ember1 { animation: emberFloat 2.2s linear infinite; }
-      .ember2 { animation: emberFloat 1.8s linear infinite 0.5s; }
-      .ember3 { animation: emberFloat 2.6s linear infinite 1.1s; }
-      .cross1 { animation: crossDrift 3s linear infinite; }
-      .cross2 { animation: crossDrift 2.5s linear infinite 1.2s; }
-      .mono { font-family: 'Consolas', 'Courier New', 'JetBrains Mono', monospace; }
+      .ring-ccw {
+        transform-origin: 125px 90px;
+        animation: spinCCW 24s linear infinite;
+      }
+      .pulse-core {
+        transform-origin: 125px 90px;
+        animation: coreBreathe 3.4s ease-in-out infinite;
+      }
+      .star-1 { transform-origin: 770px 48px; animation: starPulse 2.8s ease-in-out infinite; }
+      .star-2 { transform-origin: 806px 92px; animation: starPulse 3.5s ease-in-out infinite 0.9s; }
+      .star-3 { transform-origin: 765px 138px; animation: starPulse 3.1s ease-in-out infinite 1.7s; }
+
+      .ember-1 { animation: emberDrift 3.6s ease-out infinite; }
+      .ember-2 { animation: emberDrift 4.2s ease-out infinite 1.1s; }
+      .ember-3 { animation: emberDrift 3.2s ease-out infinite 2.0s; }
+      .ember-4 { animation: emberDrift 4.8s ease-out infinite 0.6s; }
+
+      .shimmer-runner {
+        stroke-dasharray: 70 425;
+        animation: shimmerPass 4.2s ease-in-out infinite;
+      }
+
+      .font-serif {
+        font-family: 'Cinzel', 'Playfair Display', 'Trajan Pro', 'Georgia', 'Times New Roman', serif;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Courier New', monospace;
+      }
     </style>
   </defs>
 
   <!-- Frame Background -->
-  <rect x="2" y="2" width="846" height="216" rx="12" fill="#070204" stroke="url(#bgBorder)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="846" height="176" rx="10" fill="#070204" stroke="url(#frameBorder)" stroke-width="1.2"/>
 
-  <!-- Subtle Crimson Nebula Backdrop -->
-  <rect x="3" y="3" width="844" height="214" rx="11" fill="url(#moonGlow)" opacity="0.65"/>
-  
-  <!-- Silhouette Architecture Backdrop (Fontaine Gothic Spires) -->
-  <g opacity="0.22" fill="#1a0005">
-    <polygon points="40,214 70,120 75,120 105,214"/>
-    <polygon points="120,214 135,90 140,90 155,214"/>
-    <polygon points="180,214 210,140 240,214"/>
-    <polygon points="680,214 705,110 710,110 735,214"/>
-    <polygon points="760,214 785,80 790,80 815,214"/>
+  <!-- Harlequin Lattice Pattern Overlay -->
+  <rect x="3" y="3" width="844" height="174" rx="9" fill="url(#harlequin)"/>
+
+  <!-- Left Ambient Glow -->
+  <rect x="3" y="3" width="844" height="174" rx="9" fill="url(#ambientGlow)"/>
+
+  <!-- Ornate Gothic Corner Brackets -->
+  <g stroke="#ff1e42" stroke-width="1" stroke-opacity="0.65" fill="none">
+    <path d="M 10,24 L 10,10 L 24,10"/>
+    <path d="M 826,10 L 840,10 L 840,24"/>
+    <path d="M 10,156 L 10,170 L 24,170"/>
+    <path d="M 826,170 L 840,170 L 840,156"/>
+  </g>
+  <g fill="#ff1e42" opacity="0.8">
+    <polygon points="10,8 12,10 10,12 8,10"/>
+    <polygon points="840,8 842,10 840,12 838,10"/>
+    <polygon points="10,168 12,170 10,172 8,170"/>
+    <polygon points="840,168 842,170 840,172 838,170"/>
   </g>
 
-  <!-- The Balemoon (Blood Moon) -->
-  <g transform="translate(190, 95)">
-    <circle cx="0" cy="0" r="80" fill="url(#moonGlow)" opacity="0.5"/>
-    <circle cx="0" cy="0" r="52" fill="#1a0206" stroke="#ff1a38" stroke-width="2.5" filter="url(#crimsonGlow)" class="moon-anim"/>
-    <!-- Eclipse Inner Crescent -->
-    <path d="M -30,-40 A 50 50 0 0 1 30,40 A 46 46 0 0 0 -30,-40 Z" fill="#ff2642" opacity="0.75"/>
-    <!-- Gothic Moon Ring -->
-    <circle cx="0" cy="0" r="62" fill="none" stroke="#ff1a38" stroke-width="0.75" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+  <!-- Ambient Floating Embers & Cross Particles -->
+  <g fill="#ff3355">
+    <circle cx="340" cy="115" r="1.8" class="ember-1"/>
+    <circle cx="515" cy="55" r="1.4" class="ember-2"/>
+    <circle cx="665" cy="140" r="2.2" class="ember-3"/>
+    <circle cx="445" cy="160" r="1.6" class="ember-4"/>
+    <!-- Micro Cross Glints -->
+    <g class="ember-2" transform="translate(385, 65)">
+      <polygon points="0,-3.5 1,-1 3.5,0 1,1 0,3.5 -1,1 -3.5,0 -1,-1" fill="#ff4d66" opacity="0.75"/>
+    </g>
+    <g class="ember-4" transform="translate(615, 110)">
+      <polygon points="0,-3 0.8,-0.8 3,0 0.8,0.8 0,3 -0.8,0.8 -3,0 -0.8,-0.8" fill="#ff4d66" opacity="0.6"/>
+    </g>
   </g>
 
-  <!-- Animated Flying Particles (Embers and Fatui Crosses) -->
-  <g>
-    <!-- Cross 1 -->
-    <g class="cross1" transform="translate(510, 85)">
-      <path d="M -6,-2 L -2,-2 L -2,-6 L 2,-6 L 2,-2 L 6,-2 L 6,2 L 2,2 L 2,6 L -2,6 L -2,2 L -6,2 Z" fill="#ff334b"/>
-    </g>
-    <!-- Cross 2 -->
-    <g class="cross2" transform="translate(560, 130)">
-      <path d="M -4,-1.5 L -1.5,-1.5 L -1.5,-4 L 1.5,-4 L 1.5,-1.5 L 4,-1.5 L 4,1.5 L 1.5,1.5 L 1.5,4 L -1.5,4 L -1.5,1.5 L -4,1.5 Z" fill="#ff4d63" opacity="0.8"/>
-    </g>
-    <!-- Embers -->
-    <circle cx="480" cy="110" r="2.5" fill="#ff4d63" class="ember1"/>
-    <circle cx="520" cy="70" r="2" fill="#ff1a38" class="ember2"/>
-    <circle cx="450" cy="145" r="3" fill="#ff8093" class="ember3"/>
-    <circle cx="590" cy="105" r="1.8" fill="#ff1a38" class="ember1"/>
-  </g>
+  <!-- ==================== LEFT BALEMOON CREST ==================== -->
+  <g id="balemoon-crest">
+    <!-- Crimson Aura -->
+    <circle cx="125" cy="90" r="70" fill="url(#coreGlow)" opacity="0.65"/>
 
-  <!-- ARLECCHINO CHARGED FLIGHT AVATAR -->
-  <g class="flier">
-
-    <!-- 1. The Wing of Balemoon (Primary Giant Crimson Wing) -->
-    <!-- Wing Sub-feathers (Back layer) -->
-    <g class="wing-sub" filter="url(#crimsonGlow)">
-      <!-- Feather blade 4 (lower) -->
-      <path d="M 390,110 Q 320,135 240,115 Q 310,95 390,105 Z" fill="url(#wingGrad2)" opacity="0.85"/>
-      <!-- Feather blade 5 (lowest) -->
-      <path d="M 390,115 Q 300,165 210,140 Q 285,120 390,110 Z" fill="url(#wingGrad2)" opacity="0.75"/>
+    <!-- Outer Celestial Ring (Slow Spin CW) -->
+    <circle cx="125" cy="90" r="63" fill="none" stroke="#ff1e42" stroke-width="1" stroke-opacity="0.32" stroke-dasharray="3 8" class="ring-cw"/>
+    <!-- Cardinal Diamond Studs on Ring -->
+    <g class="ring-cw" fill="#ff1e42" opacity="0.75">
+      <polygon points="125,25 127.5,27 125,29 122.5,27"/>
+      <polygon points="189,88 191,90 189,92 187,90"/>
+      <polygon points="125,151 127.5,153 125,155 122.5,153"/>
+      <polygon points="61,88 63,90 61,92 59,90"/>
     </g>
 
-    <!-- Main Wing Blades (Front Layer) -->
-    <g class="wing-main" filter="url(#crimsonGlow)">
-      <!-- High Blade 1 (Apex arch) -->
-      <path d="M 390,105 Q 360,40 260,15 Q 320,55 390,105 Z" fill="url(#wingGrad1)"/>
-      <!-- Mid Blade 2 (Longest primary feather) -->
-      <path d="M 390,105 Q 330,60 210,40 Q 290,75 390,105 Z" fill="url(#wingGrad1)"/>
-      <!-- Mid Blade 3 -->
-      <path d="M 390,108 Q 310,90 190,80 Q 275,100 390,108 Z" fill="url(#wingGrad1)"/>
-      <!-- Glowing Wing Spine Line -->
-      <path d="M 390,106 Q 310,65 200,45" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
-      <!-- Wing Energy Crystals -->
-      <polygon points="260,15 264,22 258,25 254,18" fill="#ffffff"/>
-      <polygon points="210,40 215,48 208,50 204,43" fill="#ffffff"/>
-      <polygon points="190,80 196,87 189,90 185,83" fill="#ffffff"/>
-    </g>
+    <!-- Inner Segmented Dial Ring (Counter Spin CCW) -->
+    <circle cx="125" cy="90" r="51" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-opacity="0.55" stroke-dasharray="18 9 3 9" class="ring-ccw"/>
 
-    <!-- 2. Arlecchino Body & Scythe -->
-    <g transform="translate(390, 80)">
-      <!-- Flowing Coat Tails (Behind body) -->
-      <g class="coat-tail">
-        <path d="M 20,45 Q 60,65 95,75 Q 55,50 25,35 Z" fill="#111827"/>
-        <path d="M 22,48 Q 62,68 93,73" fill="none" stroke="#b3001e" stroke-width="2"/>
-        <!-- Crimson Inner Coat Lining -->
-        <path d="M 18,40 Q 50,55 75,60 Q 45,45 20,32 Z" fill="#990014" opacity="0.9"/>
+    <!-- Vision Brass Trim Accent Arc -->
+    <path d="M 94,54 A 46 46 0 0 1 164,116" fill="none" stroke="#d49a55" stroke-width="1.2" stroke-opacity="0.7" stroke-dasharray="28 8 6 8"/>
+
+    <!-- Dark Balemoon Eclipse Disc -->
+    <circle cx="125" cy="90" r="37" fill="#120205" stroke="#4a040d" stroke-width="1.2"/>
+
+    <!-- Glowing Balemoon Crescent Horn -->
+    <path d="M 125,54 A 36 36 0 0 1 157,112 A 33 33 0 0 0 109,64 A 36 36 0 0 1 125,54 Z" fill="url(#balemoonGrad)" filter="url(#subtleGlow)"/>
+
+    <!-- Central Arlecchino Cross-Eye Emblem (Rotated 45°, Pulsing Core) -->
+    <g class="pulse-core">
+      <!-- 45-degree tilted Harbinger Cross with Flared Tips -->
+      <g transform="translate(125, 90) rotate(45)">
+        <!-- Vertical Blade Bar -->
+        <polygon points="-3,-17 0,-20 3,-17 2,-4 4,-2 17,-3 20,0 17,3 4,2 2,4 3,17 0,20 -3,17 -2,4 -4,2 -17,3 -20,0 -17,-3 -4,-2 -2,-4" fill="url(#balemoonGrad)" filter="url(#subtleGlow)"/>
+        <!-- Pure Crimson Inner Cross -->
+        <polygon points="-1.5,-14 0,-16 1.5,-14 1,-2 2,-1 14,-1.5 16,0 14,1.5 2,1 1,2 1.5,14 0,16 -1.5,14 -1,2 -2,1 -14,1.5 -16,0 -14,-1.5 -2,-1 -1,-2" fill="#ff3355"/>
+        <!-- Central Brilliant Core Diamond -->
+        <polygon points="0,-4 4,0 0,4 -4,0" fill="#ffffff" filter="url(#subtleGlow)"/>
       </g>
-
-      <!-- Crimson Scythe (Crimson Moon Semblance) -->
-      <g transform="rotate(-20, 20, 30)">
-        <!-- Scythe Shaft -->
-        <line x1="-30" y1="75" x2="55" y2="-15" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
-        <line x1="-30" y1="75" x2="55" y2="-15" stroke="#dc2626" stroke-width="1" stroke-opacity="0.8"/>
-        <!-- Giant Crescent Scythe Blade -->
-        <path d="M 55,-15 Q 105,-45 130,-15 Q 95,-10 65,-5 Z" fill="url(#scytheGrad)" filter="url(#crimsonGlow)"/>
-        <!-- Scythe Inner Glow Curve -->
-        <path d="M 58,-14 Q 100,-40 126,-15" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
-        <!-- Scythe Ornate Ring -->
-        <circle cx="55" cy="-15" r="5" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
-      </g>
-
-      <!-- Main Body Silhouette (Harbinger Uniform) -->
-      <!-- Legs & Boots (Hovering pose angled backward) -->
-      <path d="M 15,45 L 35,70 L 45,68 L 22,42 Z" fill="#0f172a"/>
-      <path d="M 8,45 L 25,75 L 35,73 L 15,40 Z" fill="#1e293b"/>
-      <!-- Torso / Waistcoat (White & Black) -->
-      <path d="M 5,20 L 22,20 L 20,45 L 5,45 Z" fill="#f8fafc"/>
-      <path d="M 8,20 L 15,45 L 5,45 Z" fill="#0f172a"/>
-      <circle cx="12" cy="30" r="2" fill="#dc2626"/>
-      <!-- Neck / Collar -->
-      <polygon points="7,16 16,16 14,22 9,22" fill="#0f172a" stroke="#dc2626" stroke-width="0.5"/>
-
-      <!-- Head & Hair (Arlecchino Distinctive Black & White Style) -->
-      <!-- Head Base -->
-      <circle cx="14" cy="10" r="8" fill="#fed7aa"/>
-      <!-- Hair (Platinum White with Black Under-streaks) -->
-      <path d="M 7,8 Q 5,-4 18,-3 Q 26,-2 25,12 Q 21,8 18,12 Q 13,4 7,8 Z" fill="#ffffff"/>
-      <!-- Black Hair Streak (Signature) -->
-      <path d="M 10,2 Q 16,-1 20,6 Q 16,4 12,5 Z" fill="#0f172a"/>
-      <path d="M 22,5 Q 26,10 24,18 Q 20,12 21,6 Z" fill="#0f172a"/>
-      <!-- Hair Ponytail / Ribbon streaming back -->
-      <path d="M 22,6 Q 42,4 58,0 Q 40,10 22,12 Z" fill="#ffffff"/>
-      <path d="M 22,8 Q 38,8 52,4" fill="none" stroke="#0f172a" stroke-width="1.5"/>
-      <!-- Crimson Eye Glint -->
-      <polygon points="10,10 12,8 14,10 12,12" fill="#dc2626" filter="url(#crimsonGlow)"/>
     </g>
   </g>
 
-  <!-- Overlay UI Header & Labels -->
-  <g transform="translate(30, 32)">
-    <rect x="0" y="0" width="135" height="20" rx="4" fill="#1a0005" stroke="#ff1a38" stroke-width="1"/>
-    <text x="8" y="14" fill="#ff4d63" class="mono" font-size="10" font-weight="bold" letter-spacing="1.5">THE KNAVE // IV</text>
+  <!-- ==================== CENTER & RIGHT CONTENT ==================== -->
+
+  <!-- Top Badges Row -->
+  <g transform="translate(225, 27)">
+    <!-- Pill Badge -->
+    <rect x="0" y="0" width="168" height="20" rx="3.5" fill="#180205" stroke="#ff1e42" stroke-width="1" stroke-opacity="0.8"/>
+    <polygon points="10,10 12.5,7 15,10 12.5,13" fill="#ff1e42"/>
+    <text x="21" y="14" fill="#ff4d66" class="font-mono" font-size="9.5" font-weight="700" letter-spacing="2">FATUI HARBINGER // IV</text>
+
+    <!-- Constellation Tag -->
+    <text x="184" y="14" fill="#94a3b8" class="font-mono" font-size="9" letter-spacing="1.5">IGNIS PURGATORIUS</text>
   </g>
 
-  <g transform="translate(30, 195)">
-    <text x="0" y="0" fill="#cbd5e1" class="mono" font-size="11" font-weight="bold" letter-spacing="1">ARLECCHINO</text>
-    <text x="95" y="0" fill="#ff4d63" class="mono" font-size="10"> // WING OF BALEMOON &amp; CRIMSON FLIGHT</text>
+  <!-- Main Title: ARLECCHINO -->
+  <text x="225" y="80" fill="url(#titleGrad)" class="font-serif" font-size="36" font-weight="700" letter-spacing="6.5">ARLECCHINO</text>
+
+  <!-- Subtitle Row -->
+  <text x="227" y="105" fill="#e2e8f0" class="font-serif" font-size="11.5" font-weight="600" letter-spacing="2.6">
+    <tspan fill="#ffffff">THE KNAVE</tspan>
+    <tspan fill="#ff2244" font-weight="bold">  ◆  </tspan>
+    <tspan fill="#e2e8f0">"FATHER"</tspan>
+    <tspan fill="#ff2244" font-weight="bold">  ◆  </tspan>
+    <tspan fill="#94a3b8">HOUSE OF THE HEARTH</tspan>
+  </text>
+
+  <!-- Laser Divider Line & Animated Shimmer -->
+  <g transform="translate(225, 120)">
+    <!-- Track -->
+    <line x1="0" y1="0" x2="495" y2="0" stroke="#380710" stroke-width="1"/>
+    <!-- Crimson Gradient Beam -->
+    <line x1="0" y1="0" x2="380" y2="0" stroke="url(#dividerGrad)" stroke-width="1.4"/>
+    <!-- Diamond Nodes -->
+    <polygon points="0,0 3,-3 6,0 3,3" fill="#ff1e42"/>
+    <polygon points="190,0 193,-2.5 196,0 193,2.5" fill="#ff1e42" opacity="0.8"/>
+    <!-- Shimmer Runner -->
+    <line x1="0" y1="0" x2="495" y2="0" stroke="#ffffff" stroke-width="1.6" stroke-opacity="0.85" class="shimmer-runner"/>
   </g>
 
-  <g transform="translate(640, 195)">
-    <text x="0" y="0" fill="#64748b" class="mono" font-size="9" letter-spacing="1">FATUI HARBINGER #4</text>
+  <!-- Bottom Lore / Stat Row -->
+  <g transform="translate(227, 144)">
+    <text x="0" y="0" class="font-mono" font-size="9.5" letter-spacing="1">
+      <tspan fill="#ff3355" font-weight="700">BOND OF LIFE: 100%</tspan>
+      <tspan fill="#475569">   //   </tspan>
+      <tspan fill="#cbd5e1">BALEMOON BLOODLINE</tspan>
+      <tspan fill="#475569">   //   </tspan>
+      <tspan fill="#d49a55" font-weight="600">CRIMSON MOON'S SEMBLANCE</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== RIGHT HERALDIC SCYTHE MOTIF ==================== -->
+  <g id="right-motif">
+    <!-- Crimson Moon's Semblance Crescent Blade Silhouette -->
+    <path d="M 742,30 Q 816,58 824,124 Q 808,80 748,50 Z" fill="url(#scytheGrad)" opacity="0.88" filter="url(#subtleGlow)"/>
+    <path d="M 746,33 Q 810,60 818,118" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.6"/>
+
+    <!-- Constellation Dotted Lines -->
+    <path d="M 770,48 L 806,92 L 765,138" fill="none" stroke="#ff1e42" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="3 4"/>
+
+    <!-- Pulsing Harlequin Diamond Stars -->
+    <g class="star-1">
+      <polygon points="770,42 774,48 770,54 766,48" fill="#ff3355" filter="url(#subtleGlow)"/>
+      <polygon points="770,45 772,48 770,51 768,48" fill="#ffffff"/>
+    </g>
+    <g class="star-2">
+      <polygon points="806,84 812,92 806,100 800,92" fill="#ff1e42" filter="url(#subtleGlow)"/>
+      <polygon points="806,88 809,92 806,96 803,92" fill="#ffffff"/>
+    </g>
+    <g class="star-3">
+      <polygon points="765,132 769,138 765,144 761,138" fill="#ff3355" filter="url(#subtleGlow)"/>
+      <polygon points="765,135 767,138 765,141 763,138" fill="#ffffff"/>
+    </g>
   </g>
 </svg>
