@@ -16,7 +16,7 @@
 
 <br/><br/>
 
-<img src="assets/arlecchino.svg" width="100%" alt="Arlecchino • The Knave // Fatui Harbinger IV" />
+<img src="assets/arlecchino.svg" width="100%" alt="Arlecchino Balemoon Emblem" />
 
 </div>
 
