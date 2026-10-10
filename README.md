@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:060103,20:1e0208,45:660014,75:ba0022,100:ff1e42&height=215&section=header&text=lunizura&fontSize=54&fontAlignY=38&fontColor=ffffff&desc=Informatics%20%7C%20Cybersecurity%20%7C%20Game%20Modding%20%7C%203D%20Blender&descSize=16&descAlignY=62&descColor=ff94a4&animation=twinkling&stroke=ff1e42&strokeWidth=1" width="100%" alt="Header Banner" />
+  <img src="assets/header.svg" width="100%" alt="lunizura • Shade of Death Header" />
 </div>
 
 <div align="center">
