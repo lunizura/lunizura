@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 355" width="100%" height="100%">
+  <defs>
+    <!-- Rich Crimson & Velvet Blood-Red Canvas Background -->
+    <linearGradient id="techCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e0105" />
+      <stop offset="45%" stop-color="#36030a" />
+      <stop offset="100%" stop-color="#210206" />
+    </linearGradient>
+
+    <radialGradient id="techCenterBloom" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0.26" />
+      <stop offset="55%" stop-color="#7a0014" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#1e0105" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Bento Module Surface -->
+    <linearGradient id="moduleSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40050f" stop-opacity="0.92" />
+      <stop offset="55%" stop-color="#290208" stop-opacity="0.94" />
+      <stop offset="100%" stop-color="#170104" stop-opacity="0.96" />
+    </linearGradient>
+
+    <!-- Tech Badge Pill Gradients -->
+    <linearGradient id="techPillBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5c0010" />
+      <stop offset="100%" stop-color="#2b0007" />
+    </linearGradient>
+
+    <linearGradient id="techPillTag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1e42" />
+      <stop offset="100%" stop-color="#a8001c" />
+    </linearGradient>
+
+    <pattern id="crimsonGridTech" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ff1e42" stroke-width="0.6" stroke-opacity="0.09" />
+      <circle cx="36" cy="36" r="0.8" fill="#ff2e52" fill-opacity="0.18" />
+    </pattern>
+
+    <filter id="crimsonGlowTech" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. Rich Blood-Crimson Background & Grid -->
+  <rect width="900" height="355" fill="url(#techCanvas)" />
+  <rect width="900" height="355" fill="url(#crimsonGridTech)" />
+  <rect width="900" height="355" fill="url(#techCenterBloom)" />
+
+  <!-- ============================================================ -->
+  <!-- 2. SECTION HEADER: TECH STACK & TOOLCHAIN                    -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 22)">
+    <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#crimsonGlowTech)" />
+    <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="17" font-weight="900" letter-spacing="4" fill="#ffffff">
+      TECH STACK &amp; TOOLCHAIN <tspan fill="#ff2e52" font-family="'Segoe UI', sans-serif" font-size="12" letter-spacing="2">// ARSENAL</tspan>
+    </text>
+    <line x1="425" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
+    <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 3. MODULE 1: LANGUAGES (FULL WIDTH ROW)                      -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 52)">
+    <rect width="840" height="78" rx="6" fill="url(#moduleSurface)" stroke="#c40021" stroke-width="1.3" />
+    <rect x="0" y="0" width="5" height="78" rx="2.5" fill="#ff1e42" />
+    <text x="20" y="23" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+      &#9670; LANGUAGES &amp; CORE SYNTAX
+    </text>
+
+    <g transform="translate(20, 35)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800">
+      <!-- Python -->
+      <g transform="translate(0, 0)">
+        <rect width="146" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="38" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="19" y="19" text-anchor="middle" fill="#ffffff">PY</text>
+        <text x="92" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">PYTHON</text>
+      </g>
+      <!-- C++ -->
+      <g transform="translate(160, 0)">
+        <rect width="146" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="42" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="21" y="19" text-anchor="middle" fill="#ffffff">CPP</text>
+        <text x="94" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">C++ 20</text>
+      </g>
+      <!-- C -->
+      <g transform="translate(320, 0)">
+        <rect width="146" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="36" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="18" y="19" text-anchor="middle" fill="#ffffff">C</text>
+        <text x="91" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">SYSTEMS C</text>
+      </g>
+      <!-- JavaScript -->
+      <g transform="translate(480, 0)">
+        <rect width="164" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="38" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="19" y="19" text-anchor="middle" fill="#ffffff">JS</text>
+        <text x="101" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">JAVASCRIPT</text>
+      </g>
+      <!-- SQL -->
+      <g transform="translate(658, 0)">
+        <rect width="142" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="42" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="21" y="19" text-anchor="middle" fill="#ffffff">DB</text>
+        <text x="92" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">SQL</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 4. MODULE 2: SYSTEMS, SECURITY & REVERSE ENGINEERING         -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 144)">
+    <rect width="840" height="78" rx="6" fill="url(#moduleSurface)" stroke="#c40021" stroke-width="1.3" />
+    <rect x="0" y="0" width="5" height="78" rx="2.5" fill="#ff1e42" />
+    <text x="20" y="23" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+      &#9670; SYSTEMS, SECURITY &amp; REVERSE ENGINEERING
+    </text>
+
+    <g transform="translate(20, 35)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11" font-weight="800">
+      <!-- Windows -->
+      <g transform="translate(0, 0)">
+        <rect width="136" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="38" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="19" y="19" text-anchor="middle" fill="#ffffff">OS</text>
+        <text x="87" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">WINDOWS</text>
+      </g>
+      <!-- PowerShell -->
+      <g transform="translate(148, 0)">
+        <rect width="154" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="38" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="19" y="19" text-anchor="middle" fill="#ffffff">PS</text>
+        <text x="96" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">POWERSHELL</text>
+      </g>
+      <!-- Ghidra -->
+      <g transform="translate(314, 0)">
+        <rect width="166" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="46" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="23" y="19" text-anchor="middle" fill="#ffffff">ASM</text>
+        <text x="106" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">GHIDRA SRE</text>
+      </g>
+      <!-- x64dbg -->
+      <g transform="translate(492, 0)">
+        <rect width="146" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="44" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="22" y="19" text-anchor="middle" fill="#ffffff">DBG</text>
+        <text x="95" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">X64DBG</text>
+      </g>
+      <!-- Cheat Engine -->
+      <g transform="translate(650, 0)">
+        <rect width="150" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="38" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="19" y="19" text-anchor="middle" fill="#ffffff">CE</text>
+        <text x="94" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="0.8">CHEAT ENGINE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 5. MODULE 3 (3D CREATIVE) & MODULE 4 (DEV & INFRASTRUCTURE)  -->
+  <!-- ============================================================ -->
+  <!-- Bottom Left: 3D Modeling & Creative -->
+  <g transform="translate(30, 236)">
+    <rect width="265" height="96" rx="6" fill="url(#moduleSurface)" stroke="#c40021" stroke-width="1.3" />
+    <rect x="0" y="0" width="5" height="96" rx="2.5" fill="#ff1e42" />
+    <text x="20" y="23" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+      &#9670; 3D &amp; CREATIVE
+    </text>
+
+    <g transform="translate(20, 36)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11" font-weight="800">
+      <rect width="225" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+      <rect width="54" height="30" rx="4" fill="url(#techPillTag)" />
+      <text x="27" y="19" text-anchor="middle" fill="#ffffff">3D</text>
+      <text x="140" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">BLENDER STUDIO</text>
+      <text x="112" y="48" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#ffccd5">
+        Low-Poly Assets &#9670; Topology &#9670; Shaders
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Right: Development & Infrastructure -->
+  <g transform="translate(310, 236)">
+    <rect width="560" height="96" rx="6" fill="url(#moduleSurface)" stroke="#c40021" stroke-width="1.3" />
+    <rect x="0" y="0" width="5" height="96" rx="2.5" fill="#ff1e42" />
+    <text x="20" y="23" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+      &#9670; DEVELOPMENT &amp; INFRASTRUCTURE
+    </text>
+
+    <g transform="translate(20, 36)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="10.5" font-weight="800">
+      <!-- Git -->
+      <g transform="translate(0, 0)">
+        <rect width="92" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="34" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="17" y="19" text-anchor="middle" fill="#ffffff">VCS</text>
+        <text x="63" y="19" text-anchor="middle" fill="#ffffff">GIT</text>
+      </g>
+      <!-- GitHub Actions -->
+      <g transform="translate(102, 0)">
+        <rect width="124" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="34" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="17" y="19" text-anchor="middle" fill="#ffffff">CI</text>
+        <text x="79" y="19" text-anchor="middle" fill="#ffffff">ACTIONS</text>
+      </g>
+      <!-- HTML5 -->
+      <g transform="translate(236, 0)">
+        <rect width="92" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="32" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="16" y="19" text-anchor="middle" fill="#ffffff">W3</text>
+        <text x="62" y="19" text-anchor="middle" fill="#ffffff">HTML5</text>
+      </g>
+      <!-- CSS3 -->
+      <g transform="translate(338, 0)">
+        <rect width="84" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="30" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="15" y="19" text-anchor="middle" fill="#ffffff">UI</text>
+        <text x="57" y="19" text-anchor="middle" fill="#ffffff">CSS3</text>
+      </g>
+      <!-- Node.js -->
+      <g transform="translate(432, 0)">
+        <rect width="92" height="30" rx="4" fill="url(#techPillBody)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="30" height="30" rx="4" fill="url(#techPillTag)" />
+        <text x="15" y="19" text-anchor="middle" fill="#ffffff">RT</text>
+        <text x="61" y="19" text-anchor="middle" fill="#ffffff">NODE.JS</text>
+      </g>
+
+      <text x="260" y="48" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#ffccd5">
+        Automated Workflows &#9670; Modern Web Architecture &#9670; Full-Stack Tooling
+      </text>
+    </g>
+  </g>
+
+  <!-- Outer Crimson Vignette Frame -->
+  <rect width="900" height="355" fill="none" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+</svg>

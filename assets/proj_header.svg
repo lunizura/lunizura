@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 54" width="100%" height="100%">
+  <defs>
+    <linearGradient id="projHdrBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e0105" />
+      <stop offset="50%" stop-color="#38040c" />
+      <stop offset="100%" stop-color="#1e0105" />
+    </linearGradient>
+    <filter id="hdrGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="54" fill="url(#projHdrBg)" />
+  <g transform="translate(30, 18)">
+    <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#hdrGlow)" />
+    <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="17" font-weight="900" letter-spacing="4" fill="#ffffff">
+      FEATURED PROJECTS <tspan fill="#ff2e52" font-family="'Segoe UI', sans-serif" font-size="11.5" letter-spacing="2">// CLICK ANY CARD TO OPEN REPO</tspan>
+    </text>
+    <line x1="540" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
+    <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
+  </g>
+  <rect width="900" height="54" fill="none" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+</svg>

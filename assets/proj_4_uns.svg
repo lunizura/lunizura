@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 84" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#210206" />
+      <stop offset="50%" stop-color="#33030a" />
+      <stop offset="100%" stop-color="#210206" />
+    </linearGradient>
+    <linearGradient id="p4Card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#450510" />
+      <stop offset="60%" stop-color="#290208" />
+      <stop offset="100%" stop-color="#1a0104" />
+    </linearGradient>
+    <filter id="p4Glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="84" fill="url(#p4Bg)" />
+  <g transform="translate(30, 6)">
+    <rect width="840" height="72" rx="6" fill="url(#p4Card)" stroke="#d60024" stroke-width="1.4" />
+    <rect x="0" y="0" width="6" height="72" rx="3" fill="#ff1e42" filter="url(#p4Glow)" />
+
+    <polygon points="24,18 31,24 24,30 17,24" fill="#ff2e52" filter="url(#p4Glow)" />
+    <text x="40" y="28" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#ffffff" letter-spacing="0.8">
+      lunizura / <tspan fill="#ff4d6d">uns-prodi-directory</tspan>
+    </text>
+
+    <text x="40" y="51" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">
+      Academic program directory for Universitas Sebelas Maret featuring quota breakdowns and curriculum pathways.
+    </text>
+
+    <g transform="translate(565, 12)" font-family="'JetBrains Mono', 'Segoe UI', sans-serif" font-size="10" font-weight="700">
+      <rect x="0" y="0" width="172" height="22" rx="4" fill="#590010" stroke="#ff2e52" stroke-width="1" />
+      <text x="86" y="15" text-anchor="middle" fill="#ffe6eb">JS &#8226; JSON DATA &#8226; HTML5</text>
+
+      <rect x="182" y="0" width="80" height="22" rx="4" fill="#ff1e42" />
+      <text x="222" y="15" text-anchor="middle" fill="#ffffff" font-weight="800">OPEN &#10140;</text>
+    </g>
+  </g>
+  <rect width="900" height="84" fill="none" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+</svg>

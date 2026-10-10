@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 475" width="100%" height="100%">
+  <defs>
+    <!-- Rich Crimson & Velvet Blood-Red Canvas Background (Not Basic GitHub Dark!) -->
+    <linearGradient id="crimsonCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#210206" />
+      <stop offset="35%" stop-color="#36040b" />
+      <stop offset="68%" stop-color="#290208" />
+      <stop offset="100%" stop-color="#1c0105" />
+    </linearGradient>
+
+    <!-- Atmospheric Radial Crimson Glows -->
+    <radialGradient id="topCenterGlow" cx="50%" cy="12%" r="55%">
+      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0.35" />
+      <stop offset="45%" stop-color="#9e001a" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#210206" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="bentoGlow" cx="50%" cy="65%" r="50%">
+      <stop offset="0%" stop-color="#d60024" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#660010" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#1c0105" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Crimson Bento Card Surface Gradient -->
+    <linearGradient id="cardSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d050e" stop-opacity="0.92" />
+      <stop offset="50%" stop-color="#290208" stop-opacity="0.94" />
+      <stop offset="100%" stop-color="#1a0104" stop-opacity="0.96" />
+    </linearGradient>
+
+    <!-- Active Learner Callout Surface -->
+    <linearGradient id="calloutSurface" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#520512" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#38030b" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#47040f" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Crimson Pill Badge Gradient -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a0016" />
+      <stop offset="50%" stop-color="#4d000d" />
+      <stop offset="100%" stop-color="#2e0007" />
+    </linearGradient>
+
+    <linearGradient id="pillAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1e42" />
+      <stop offset="100%" stop-color="#b3001e" />
+    </linearGradient>
+
+    <!-- Subtle Crimson Grid Pattern -->
+    <pattern id="crimsonGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ff1e42" stroke-width="0.6" stroke-opacity="0.09" />
+      <circle cx="36" cy="36" r="0.8" fill="#ff2e52" fill-opacity="0.18" />
+    </pattern>
+
+    <!-- Neon Glow Filter -->
+    <filter id="crimsonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. Base Rich Blood-Crimson Background & Grid -->
+  <rect width="900" height="475" fill="url(#crimsonCanvas)" />
+  <rect width="900" height="475" fill="url(#crimsonGrid)" />
+  <rect width="900" height="475" fill="url(#topCenterGlow)" />
+  <rect width="900" height="475" fill="url(#bentoGlow)" />
+
+  <!-- Decorative Diagonal Crimson Cyber-Occult Background Lines -->
+  <g stroke="#ff1e42" stroke-width="1" opacity="0.14">
+    <line x1="0" y1="80" x2="180" y2="0" />
+    <line x1="720" y1="0" x2="900" y2="80" />
+    <line x1="0" y1="395" x2="180" y2="475" />
+    <line x1="720" y1="475" x2="900" y2="395" />
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 2. ANIMATED ROLE TICKER & DOMAIN HUD BAR                     -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 16)">
+    <rect width="840" height="38" rx="6" fill="#2b0208" stroke="#ff1e42" stroke-width="1.3" opacity="0.95" />
+    <!-- Sweeping Crimson Laser Highlight -->
+    <rect x="0" y="0" width="140" height="2" fill="#ffffff" filter="url(#crimsonGlow)" opacity="0.85">
+      <animate attributeName="x" values="0;700;0" dur="7s" repeatCount="indefinite" />
+    </rect>
+    <!-- Left & Right Terminal Accents -->
+    <polygon points="0,0 14,0 0,14" fill="#ff1e42" />
+    <polygon points="840,0 826,0 840,14" fill="#ff1e42" />
+    <polygon points="0,38 14,38 0,24" fill="#ff1e42" />
+    <polygon points="840,38 826,38 840,24" fill="#ff1e42" />
+
+    <text x="420" y="24" text-anchor="middle"
+      font-family="'JetBrains Mono', 'Consolas', 'Courier New', monospace"
+      font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#ffe6eb">
+      <tspan fill="#ff2e52">&#9670;</tspan> Informatics @ UNS
+      <tspan fill="#ff2e52"> // </tspan> Cybersecurity &amp; Reverse Engineering
+      <tspan fill="#ff2e52"> // </tspan> Game Memory Modding
+      <tspan fill="#ff2e52"> // </tspan> 3D Blender &amp; Math <tspan fill="#ff2e52">&#9670;</tspan>
+    </text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 3. 5 UNIFIED CRIMSON-OBSIDIAN DOMAIN BADGES                  -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 66)" font-family="'Segoe UI', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="0.9">
+    <!-- Badge 1: UNS Informatics -->
+    <g transform="translate(0, 0)">
+      <rect width="154" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+      <rect width="38" height="28" rx="4" fill="url(#pillAccent)" />
+      <text x="19" y="18" text-anchor="middle" fill="#ffffff">UNS</text>
+      <text x="96" y="18" text-anchor="middle" fill="#ffe6eb">INFORMATICS</text>
+    </g>
+
+    <!-- Badge 2: Binary & Memory -->
+    <g transform="translate(164, 0)">
+      <rect width="174" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+      <rect width="42" height="28" rx="4" fill="url(#pillAccent)" />
+      <text x="21" y="18" text-anchor="middle" fill="#ffffff">SEC</text>
+      <text x="108" y="18" text-anchor="middle" fill="#ffe6eb">BINARY &amp; MEMORY</text>
+    </g>
+
+    <!-- Badge 3: 3D Design Blender -->
+    <g transform="translate(348, 0)">
+      <rect width="152" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+      <rect width="36" height="28" rx="4" fill="url(#pillAccent)" />
+      <text x="18" y="18" text-anchor="middle" fill="#ffffff">3D</text>
+      <text x="94" y="18" text-anchor="middle" fill="#ffe6eb">BLENDER ART</text>
+    </g>
+
+    <!-- Badge 4: Discrete Math & Algos -->
+    <g transform="translate(510, 0)">
+      <rect width="164" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+      <rect width="46" height="28" rx="4" fill="url(#pillAccent)" />
+      <text x="23" y="18" text-anchor="middle" fill="#ffffff">MATH</text>
+      <text x="105" y="18" text-anchor="middle" fill="#ffe6eb">DISCRETE &amp; ALGO</text>
+    </g>
+
+    <!-- Badge 5: Gaming & Anime -->
+    <g transform="translate(684, 0)">
+      <rect width="156" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+      <rect width="40" height="28" rx="4" fill="url(#pillAccent)" />
+      <text x="20" y="18" text-anchor="middle" fill="#ffffff">RPG</text>
+      <text x="98" y="18" text-anchor="middle" fill="#ffe6eb">GAMING &amp; ANIME</text>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 4. CRIMSON CALLOUT BANNER (REPLACES DEFAULT BLUE [!NOTE])    -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 108)">
+    <rect width="840" height="76" rx="7" fill="url(#calloutSurface)" stroke="#ff1e42" stroke-width="1.4" />
+    <!-- Glowing Left Crimson Accent Pillar -->
+    <rect x="0" y="0" width="6" height="76" rx="3" fill="#ff1e42" filter="url(#crimsonGlow)" />
+
+    <!-- Callout Header -->
+    <circle cx="26" cy="24" r="7" fill="#ff1e42" opacity="0.25" />
+    <polygon points="26,18 31,24 26,30 21,24" fill="#ff2e52" filter="url(#crimsonGlow)" />
+    <text x="42" y="28" font-family="'Segoe UI', 'Inter', sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffffff">
+      ACTIVE LEARNER &amp; OPEN TO GUIDANCE
+    </text>
+
+    <!-- Callout Body Text -->
+    <text x="22" y="48" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de" opacity="0.95">
+      Currently an undergraduate student actively learning and expanding my skills across these domains. Always humble, eager to
+    </text>
+    <text x="22" y="65" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de" opacity="0.95">
+      improve, and open to constructive feedback, code reviews, and mentorship. Feel free to reach out or open an issue!
+    </text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 5. "ABOUT ME" SECTION HEADER                                 -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 204)">
+    <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#crimsonGlow)" />
+    <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="17" font-weight="900" letter-spacing="4" fill="#ffffff">
+      ABOUT ME <tspan fill="#ff2e52" font-family="'Segoe UI', sans-serif" font-size="12" letter-spacing="2">// SYSTEM DOSSIER</tspan>
+    </text>
+    <line x1="295" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
+    <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 6. 6-CARD CRIMSON BENTO GRID (2 COLUMNS x 3 ROWS)            -->
+  <!-- ============================================================ -->
+  <!-- Row 1, Col 1: Education -->
+  <g transform="translate(30, 230)">
+    <rect width="412" height="68" rx="6" fill="url(#cardSurface)" stroke="#b8001f" stroke-width="1.3" />
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+    <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+    <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">
+      01 // EDUCATION
+    </text>
+    <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">
+      Computer Science / Informatics undergraduate at
+    </text>
+    <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff">
+      Universitas Sebelas Maret (UNS).
+    </text>
+  </g>
+
+  <!-- Row 1, Col 2: Low-Level & Security -->
+  <g transform="translate(458, 230)">
+    <rect width="412" height="68" rx="6" fill="url(#cardSurface)" stroke="#b8001f" stroke-width="1.3" />
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+    <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+    <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">
+      02 // LOW-LEVEL &amp; SECURITY
+    </text>
+    <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">
+      Passionate about binary reverse engineering, process
+    </text>
+    <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">
+      memory architectures, and executable analysis.
+    </text>
+  </g>
+
+  <!-- Row 2, Col 1: Game Modding -->
+  <g transform="translate(30, 310)">
+    <rect width="412" height="68" rx="6" fill="url(#cardSurface)" stroke="#b8001f" stroke-width="1.3" />
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+    <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+    <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">
+      03 // GAME MODDING
+    </text>
+    <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">
+      Developing memory modifiers, multi-level pointer path
+    </text>
+    <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">
+      resolvers, and real-time process patches.
+    </text>
+  </g>
+
+  <!-- Row 2, Col 2: 3D Modeling & Art -->
+  <g transform="translate(458, 310)">
+    <rect width="412" height="68" rx="6" fill="url(#cardSurface)" stroke="#b8001f" stroke-width="1.3" />
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+    <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+    <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">
+      04 // 3D MODELING &amp; ART
+    </text>
+    <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">
+      Designing stylized 3D assets, low-poly models, custom
+    </text>
+    <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">
+      topologies, and game props using Blender.
+    </text>
+  </g>
+
+  <!-- Row 3, Col 1: Mathematics -->
+  <g transform="translate(30, 390)">
+    <rect width="412" height="68" rx="6" fill="url(#cardSurface)" stroke="#b8001f" stroke-width="1.3" />
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+    <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+    <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">
+      05 // MATHEMATICS
+    </text>
+    <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">
+      Deeply interested in discrete mathematics, number
+    </text>
+    <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">
+      theory, graph theory, and algorithmic complexity.
+    </text>
+  </g>
+
+  <!-- Row 3, Col 2: Gaming & Media -->
+  <g transform="translate(458, 390)">
+    <rect width="412" height="68" rx="6" fill="url(#cardSurface)" stroke="#b8001f" stroke-width="1.3" />
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+    <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+    <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">
+      06 // GAMING &amp; MEDIA
+    </text>
+    <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">
+      Tactical and strategy RPG enthusiast, simulation lover,
+    </text>
+    <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">
+      and avid anime &amp; dark-fantasy lore fan.
+    </text>
+  </g>
+
+  <!-- Floating Crimson Sparks -->
+  <g fill="#ff2e52" filter="url(#crimsonGlow)">
+    <circle cx="15" cy="140" r="1.8">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="885" cy="280" r="2">
+      <animate attributeName="opacity" values="0.2;0.95;0.2" dur="4.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="450" cy="345" r="2.2" fill="#ffffff">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Outer Crimson Vignette Frame -->
+  <rect width="900" height="475" fill="none" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+</svg>

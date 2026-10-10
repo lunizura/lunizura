@@ -1,16 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 160" width="100%" height="160" style="overflow: hidden; border-radius: 10px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 160" width="100%" height="100%">
   <defs>
+    <!-- Rich Crimson Backdrop Gradient -->
+    <linearGradient id="arleBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e0105"/>
+      <stop offset="50%" stop-color="#36030a"/>
+      <stop offset="100%" stop-color="#1e0105"/>
+    </linearGradient>
+
     <!-- Card Clip Path -->
     <clipPath id="cardClip">
-      <rect x="2" y="2" width="846" height="156" rx="10"/>
+      <rect x="0" y="0" width="850" height="160"/>
     </clipPath>
 
     <!-- Radiance & Iris Gradients -->
-    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="55%">
       <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0.95"/>
-      <stop offset="30%" stop-color="#a3001a" stop-opacity="0.6"/>
-      <stop offset="65%" stop-color="#3b020a" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#070204" stop-opacity="0"/>
+      <stop offset="32%" stop-color="#a3001a" stop-opacity="0.65"/>
+      <stop offset="68%" stop-color="#4d030d" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#1e0105" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="irisDark" cx="50%" cy="50%" r="50%">
@@ -77,7 +84,7 @@
 
     <!-- Harlequin Diamond Lattice Pattern -->
     <pattern id="harlequin" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 15,0 L 30,15 L 15,30 L 0,15 Z" fill="none" stroke="#ff1a38" stroke-width="0.65" stroke-opacity="0.04"/>
+      <path d="M 15,0 L 30,15 L 15,30 L 0,15 Z" fill="none" stroke="#ff1a38" stroke-width="0.7" stroke-opacity="0.1"/>
     </pattern>
 
     <!-- Filters -->
@@ -100,11 +107,11 @@
 
   <!-- ==================== BACKGROUND & FRAME ==================== -->
   <g clip-path="url(#cardClip)">
-    <rect x="2" y="2" width="846" height="156" fill="#070204"/>
-    <rect x="2" y="2" width="846" height="156" fill="url(#harlequin)"/>
+    <rect x="0" y="0" width="850" height="160" fill="url(#arleBg)"/>
+    <rect x="0" y="0" width="850" height="160" fill="url(#harlequin)"/>
 
     <!-- Center Ambient Crimson Radiance -->
-    <circle cx="425" cy="80" r="150" fill="url(#centerGlow)"/>
+    <ellipse cx="425" cy="80" rx="280" ry="110" fill="url(#centerGlow)"/>
 
     <!-- Ambient Drifting Particles -->
     <g fill="#ff3355">
@@ -297,17 +304,18 @@
   </g>
 
   <!-- Ornate Outer Frame Border & Corner Accents -->
-  <rect x="2" y="2" width="846" height="156" rx="10" fill="none" stroke="url(#frameBorder)" stroke-width="1.2"/>
-  <g stroke="#ff1e42" stroke-width="1" stroke-opacity="0.65" fill="none">
-    <path d="M 10,22 L 10,10 L 22,10"/>
-    <path d="M 828,10 L 840,10 L 840,22"/>
-    <path d="M 10,138 L 10,150 L 22,150"/>
-    <path d="M 828,150 L 840,150 L 840,138"/>
+  <rect x="6" y="6" width="838" height="148" rx="6" fill="none" stroke="url(#frameBorder)" stroke-width="1.2"/>
+  <rect width="850" height="160" fill="none" stroke="#ff1a3c" stroke-width="2" opacity="0.4"/>
+  <g stroke="#ff1e42" stroke-width="1.2" stroke-opacity="0.75" fill="none">
+    <path d="M 14,26 L 14,14 L 26,14"/>
+    <path d="M 824,14 L 836,14 L 836,26"/>
+    <path d="M 14,134 L 14,146 L 26,146"/>
+    <path d="M 824,146 L 836,146 L 836,134"/>
   </g>
-  <g fill="#ff1e42" opacity="0.8">
-    <polygon points="10,8 12,10 10,12 8,10"/>
-    <polygon points="840,8 842,10 840,12 838,10"/>
-    <polygon points="10,148 12,150 10,152 8,150"/>
-    <polygon points="840,148 842,150 840,152 838,150"/>
+  <g fill="#ff1e42" opacity="0.85">
+    <polygon points="14,12 16,14 14,16 12,14"/>
+    <polygon points="836,12 838,14 836,16 834,14"/>
+    <polygon points="14,144 16,146 14,148 12,146"/>
+    <polygon points="836,144 838,146 836,148 834,146"/>
   </g>
 </svg>
