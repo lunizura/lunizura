@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:312e81&height=200&section=header&text=lunizura&fontSize=52&fontAlignY=38&animation=twinkling&desc=Informatics%20%7C%20Cybersecurity%20%7C%20Game%20Modding%20%7C%203D%20Blender&descSize=16&descAlignY=62" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:060103,20:1e0208,45:660014,75:ba0022,100:ff1e42&height=215&section=header&text=lunizura&fontSize=54&fontAlignY=38&fontColor=ffffff&desc=Informatics%20%7C%20Cybersecurity%20%7C%20Game%20Modding%20%7C%203D%20Blender&descSize=16&descAlignY=62&descColor=ff94a4&animation=twinkling&stroke=ff1e42&strokeWidth=1" width="100%" alt="Header Banner" />
 </div>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=61AFEF&center=true&vCenter=true&width=650&height=50&lines=Informatics+Student+%40+Universitas+Sebelas+Maret;Cybersecurity+%26+Reverse+Engineering+Enthusiast;Game+Memory+Modding+%26+Low-Level+Internals;3D+Art+%26+Asset+Creation+with+Blender;Applied+Mathematics+%7C+Gamer+%7C+Anime+Lover" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=FF2E51&center=true&vCenter=true&width=650&height=50&lines=Informatics+Student+%40+Universitas+Sebelas+Maret;Cybersecurity+%26+Reverse+Engineering+Enthusiast;Game+Memory+Modding+%26+Low-Level+Internals;3D+Art+%26+Asset+Creation+with+Blender;Applied+Mathematics+%7C+Gamer+%7C+Anime+Lover" alt="Typing SVG" />
 
 <br/>
 
@@ -84,5 +84,5 @@
 <div align="center">
   <sub>Open-source enthusiast, reverse engineer, 3D artist, and continuous learner.</sub>
   <br/><br/>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:312e81&height=100&section=footer" width="100%" alt="Footer Wave" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:060103,20:1e0208,45:660014,75:ba0022,100:ff1e42&height=100&section=footer&animation=twinkling" width="100%" alt="Footer Wave" />
 </div>
