@@ -448,15 +448,15 @@
       </feMerge>
     </filter>
 
-    <filter id="verticalSpikeBlur" x="-30%" y="-40%" width="160%" height="180%">
-      <feGaussianBlur stdDeviation="1.8 7" in="SourceGraphic" result="vertBlur" />
-      <feGaussianBlur stdDeviation="5 12" in="SourceGraphic" result="wideRed" />
+    <filter id="verticalSpikeBlur" x="-35%" y="-45%" width="170%" height="190%">
+      <feGaussianBlur stdDeviation="2.4 8.5" in="SourceGraphic" result="vertBlur" />
+      <feGaussianBlur stdDeviation="6 14" in="SourceGraphic" result="wideRed" />
       <feColorMatrix type="matrix" values="
         1 0 0 0 1
         0 0.05 0 0 0
         0 0 0.15 0 0
         0 0 0 1.25 0" in="wideRed" result="crimsonHalo" />
-      <feGaussianBlur stdDeviation="1.0 4.2" in="SourceGraphic" result="coreBlur" />
+      <feGaussianBlur stdDeviation="1.4 5.5" in="SourceGraphic" result="coreBlur" />
       <feMerge>
         <feMergeNode in="crimsonHalo" />
         <feMergeNode in="vertBlur" />
@@ -482,8 +482,20 @@
       <feGaussianBlur stdDeviation="1.5" />
     </filter>
 
+    <filter id="irisNebulaBlur" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="1.8" />
+    </filter>
+
+    <filter id="wingFoldBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="1.6" />
+    </filter>
+
+    <filter id="eyeSoftBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.6" />
+    </filter>
+
     <filter id="smallEyeGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.2" result="blur" />
+      <feGaussianBlur stdDeviation="2.0" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -734,8 +746,8 @@
 
   <!-- Continuous Top-to-Bottom Falling Crimson Rain & Abyssal Orbs (GPU-Accelerated — Zero Filter Lag!) -->
   <g>
-    <use href="#fastRainDrop" x="88" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="4.6s" repeatCount="indefinite" />
+    <use href="#fastRainDrop" x="48" y="-120">
+      <animate attributeName="y" values="-120;1420" dur="4.6s" begin="0.8s" repeatCount="indefinite" />
     </use>
     <use href="#fastRainDrop" x="172" y="-120">
       <animate attributeName="y" values="-120;1420" dur="5.8s" begin="1.2s" repeatCount="indefinite" />
@@ -821,51 +833,104 @@
     <!-- 1. Wide Outer Crimson Atmospheric Bloom of the Tear -->
     <path d="
       M 12,56
-      C 54,74 102,82 152,78
-      C 196,74 240,75 284,69
-      L 348,62 L 395,64 L 424,20 L 456,68 L 505,78 L 552,86 L 588,80 L 630,102
-      C 706,98 788,94 876,98
-      C 812,124 748,154 686,180
-      L 626,188 L 576,178 L 548,186 L 516,246 L 502,188 L 486,184 L 466,242 L 456,186 L 428,244 L 412,186
-      L 372,178 L 312,158 L 246,146
+      C 56,74 108,82 162,77
+      C 218,72 284,65 348,62
+      C 382,61 408,42 424,18
+      C 442,45 468,68 508,77
+      C 554,87 596,95 636,101
+      C 712,98 792,94 876,98
+      C 812,124 748,154 682,178
+      C 642,190 604,178 564,182
+      C 542,198 528,228 516,250
+      C 506,216 498,186 482,185
+      C 472,188 468,224 464,244
+      C 460,218 456,188 446,192
+      C 438,218 430,244 422,250
+      C 414,220 408,186 392,180
+      C 346,168 296,154 246,144
       C 182,128 132,100 88,82
       C 56,74 32,66 12,56 Z"
       fill="#ff0026" opacity="0.72" filter="url(#heavyCrimsonBloom)" />
 
-    <!-- 2. Blinding White-Hot Jagged Rift Rim Along Wings -->
+    <!-- 2. Smooth Painterly White-Hot Rift Rim Along Wings -->
     <path d="
       M 12,56
-      C 54,73 102,80 152,77
-      C 196,73 240,75 284,69
-      L 318,66 L 348,62 L 385,65 L 424,66
-      L 456,71 L 505,79 L 548,86 L 570,79 L 586,90 L 602,84 L 628,103
-      C 704,99 788,95 876,98
-      C 812,121 748,150 686,176
-      L 626,186 L 576,176 L 548,184 C 534,190 524,192 512,190 C 500,185 486,182 472,186 L 464,190 L 454,185 C 440,187 426,191 414,191
-      L 406,182 L 372,175 L 312,158 L 246,144
+      C 54,73 104,80 156,77
+      C 208,73 258,71 312,65
+      C 348,61 386,63 424,66
+      C 464,70 506,78 548,86
+      C 578,91 604,97 632,102
+      C 706,98 788,95 876,98
+      C 812,121 748,150 684,175
+      C 652,186 626,186 598,176
+      C 578,170 562,178 544,184
+      C 530,189 520,191 510,188
+      C 498,183 484,181 472,185
+      C 466,188 460,188 454,184
+      C 440,186 426,190 414,190
+      C 402,184 388,178 368,173
+      C 326,162 284,152 246,143
       C 188,127 140,101 94,82
       C 58,74 34,66 12,56 Z"
       fill="#ffffff" filter="url(#riftEdgeGlow)" />
 
-    <!-- 2.5. Fused Vertical Aurora Peak & Bottom Stalactite Curtains (Placed Above Outer Rim Halo & Soft-Masked Inside by Feathered Cavity!) -->
+    <!-- 2.5. Fused Smooth Vertical Aurora Plumes & Bottom Stalactite Curtains (Painterly Bezier Light Curtains — Zero Blocky Corners!) -->
     <g filter="url(#verticalSpikeBlur)">
-      <!-- Top-Center Tall Vertical Aurora Peak (Aligned to Reference x=388..480, Tallest Spire at x=424, y=6) -->
-      <polygon points="384,68 396,52 405,60 415,32 424,6 433,40 442,22 452,58 464,46 476,74 445,74 405,68" fill="url(#topSpikeGrad)">
+      <!-- Top-Center Tall Vertical Aurora Plume (Smooth Bezier Spire Peaking at x=424, y=6) -->
+      <path d="
+        M 378,66
+        C 390,62 396,46 404,52
+        C 412,38 418,18 424,6
+        C 430,22 434,38 438,24
+        C 444,36 448,54 456,48
+        C 464,58 472,68 482,74
+        C 450,72 414,68 378,66 Z"
+        fill="url(#topSpikeGrad)">
         <animate attributeName="opacity" values="0.92;1;0.92" dur="3.2s" repeatCount="indefinite" />
-      </polygon>
-      <polygon points="392,68 406,46 416,36 424,14 432,44 441,28 452,62 468,72" fill="url(#topSpikeGrad)" />
-      <!-- Top-Left & Top-Right Stepped Aurora Spikes -->
-      <polygon points="336,66 348,50 358,63 374,52 388,67" fill="url(#topSpikeGrad)" opacity="0.86" />
-      <polygon points="482,76 502,64 518,78 538,68 556,84 574,70 592,88 610,78 628,98" fill="url(#topSpikeGrad)" opacity="0.88" />
+      </path>
+      <path d="
+        M 390,66
+        C 402,54 414,32 424,12
+        C 432,34 442,46 456,68
+        Z"
+        fill="url(#topSpikeGrad)" />
 
-      <!-- Bottom-Center Left Stalactite Curtain (x=412..456, Deepest Tip at x=428, y=256) -->
-      <polygon points="412,178 416,232 426,258 435,236 444,248 454,226 456,176" fill="url(#botSpikeGrad)" />
-      <polygon points="415,180 419,224 426,246 435,226 444,236 452,216 454,178" fill="url(#botSpikeGrad)" />
-      <!-- Bottom-Center Middle Vertical Needle (x=461..470, Separated by Narrow Cleft at x=456..461!) -->
-      <polygon points="461,180 465,260 470,180" fill="url(#botSpikeGrad)" />
-      <!-- Bottom-Center Right Stalactite Fang (x=504..556, Deepest Tip at x=516, y=262) -->
-      <polygon points="504,178 516,262 527,220 536,228 548,186 562,176" fill="url(#botSpikeGrad)" />
-      <polygon points="507,180 516,246 526,210 535,218 546,184 556,178" fill="url(#botSpikeGrad)" />
+      <!-- Top-Left & Top-Right Soft Stepped Aurora Wisps (Smooth Curves Instead of Sawteeth!) -->
+      <path d="M 326,64 C 338,54 348,52 358,60 C 368,54 378,56 390,66 Z" fill="url(#topSpikeGrad)" opacity="0.82" />
+      <path d="M 476,73 C 492,64 506,68 520,76 C 534,68 548,72 562,82 C 578,72 594,76 618,94 Z" fill="url(#topSpikeGrad)" opacity="0.85" />
+
+      <!-- Bottom-Center Left Stalactite Curtain (Smooth Curved Outer Drop + Soft Vertical Light Plumes) -->
+      <path d="
+        M 408,176
+        C 413,204 418,242 425,258
+        C 431,244 434,234 439,244
+        C 445,236 450,222 455,212
+        L 456,175 Z"
+        fill="url(#botSpikeGrad)" />
+      <path d="
+        M 413,178
+        C 417,202 421,234 426,246
+        C 432,232 438,228 444,234
+        C 449,220 452,204 454,178 Z"
+        fill="url(#botSpikeGrad)" />
+
+      <!-- Bottom-Center Middle Vertical Needle (Separated by Narrow Cleft at x=456..462) -->
+      <path d="M 461,178 C 463,212 464,244 465.5,260 C 467,244 468,212 470,178 Z" fill="url(#botSpikeGrad)" />
+
+      <!-- Bottom-Center Right Stalactite Fan (Crisp Diagonal Left Spine at x=502..516 + Wide Sweeping Fan to x=572) -->
+      <path d="
+        M 501,177
+        C 507,206 512,240 516,262
+        C 523,238 528,222 536,226
+        C 548,206 560,188 576,174
+        L 546,178 Z"
+        fill="url(#botSpikeGrad)" />
+      <path d="
+        M 504,179
+        C 509,204 513,232 516,248
+        C 523,226 530,214 538,216
+        C 548,200 558,186 568,176 Z"
+        fill="url(#botSpikeGrad)" />
     </g>
 
     <!-- 3. Soft Inner Crimson-Rose Bleeding Rim Between White Border and Dark Void -->
