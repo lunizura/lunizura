@@ -104,30 +104,30 @@
     </linearGradient>
 
     <!-- Central Eye Iris Base (Deep Blood-Obsidian Bowl with Velvety Rim) -->
-    <radialGradient id="mainIrisGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="44%">
-      <stop offset="0%" stop-color="#ff2448" />
-      <stop offset="18%" stop-color="#b8001f" />
-      <stop offset="42%" stop-color="#4d000b" />
-      <stop offset="68%" stop-color="#210004" />
-      <stop offset="88%" stop-color="#120002" />
-      <stop offset="96%" stop-color="#290006" />
-      <stop offset="100%" stop-color="#661422" />
+    <radialGradient id="mainIrisGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="46%">
+      <stop offset="0%" stop-color="#ff294d" />
+      <stop offset="16%" stop-color="#c20020" />
+      <stop offset="38%" stop-color="#59000d" />
+      <stop offset="62%" stop-color="#240005" />
+      <stop offset="84%" stop-color="#110002" />
+      <stop offset="95%" stop-color="#210004" />
+      <stop offset="100%" stop-color="#520e1b" />
     </radialGradient>
 
     <!-- Iris Upper Shadow Vignette -->
     <linearGradient id="irisTopShadow" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#080001" stop-opacity="0.82" />
-      <stop offset="35%" stop-color="#1c0004" stop-opacity="0.42" />
-      <stop offset="70%" stop-color="#2b0006" stop-opacity="0" />
-      <stop offset="100%" stop-color="#ff8da1" stop-opacity="0.28" />
+      <stop offset="0%" stop-color="#0a0002" stop-opacity="0.62" />
+      <stop offset="30%" stop-color="#1a0004" stop-opacity="0.28" />
+      <stop offset="72%" stop-color="#2b0006" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ff9eb0" stop-opacity="0.24" />
     </linearGradient>
 
     <!-- Central Pupil Blinding White-Hot Starburst Core -->
     <radialGradient id="pupilCoreGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="22%" stop-color="#ffeef2" stop-opacity="0.98" />
-      <stop offset="48%" stop-color="#ff1e46" stop-opacity="0.88" />
-      <stop offset="76%" stop-color="#9e001a" stop-opacity="0.46" />
+      <stop offset="25%" stop-color="#fff0f3" stop-opacity="0.98" />
+      <stop offset="52%" stop-color="#ff1e46" stop-opacity="0.88" />
+      <stop offset="78%" stop-color="#a6001b" stop-opacity="0.48" />
       <stop offset="100%" stop-color="#3d0008" stop-opacity="0" />
     </radialGradient>
 
@@ -1106,82 +1106,117 @@
               keyTimes="0; 0.28; 0.58; 0.82; 1"
               dur="9s" repeatCount="indefinite" />
 
-            <!-- Soft Luminous Rose-White Outer Limbal Ring -->
-            <circle cx="0" cy="0" r="48.8" fill="#ffd6de" opacity="0.55" />
+            <!-- Soft Luminous Rose-White Outer Limbal Cushion -->
+            <circle cx="0" cy="0" r="49.2" fill="#ffe0e6" filter="url(#wingFoldBlur)" opacity="0.55" />
             <!-- Deep Velvety Oxblood-Obsidian Iris Bowl (Reaches Both Eyelids Like Cutscene Reference!) -->
-            <circle cx="0" cy="0" r="48.0" fill="url(#mainIrisGrad)" stroke="#1f0004" stroke-width="1.2" />
-            <circle cx="0" cy="0" r="45.2" fill="#170003" opacity="0.88" />
-            <circle cx="0" cy="0" r="36.5" fill="#290006" opacity="0.78" />
+            <circle cx="0" cy="0" r="47.8" fill="url(#mainIrisGrad)" stroke="#2b0006" stroke-width="1.2" />
+            <circle cx="0" cy="0" r="44.8" fill="#140002" opacity="0.90" />
+            <circle cx="0" cy="0" r="36.0" fill="#260005" opacity="0.80" />
 
-            <!-- Cloudy Painterly Crimson-Magenta Nebula Inside Iris (Zero Spiky Compass Wheel!) -->
-            <g transform="translate(-1, -1.5)" filter="url(#softBlur)">
-              <animateTransform attributeName="transform" type="scale"
-                values="1; 1.04; 1" dur="3.4s" repeatCount="indefinite" />
-              <!-- Warm Oxblood-Crimson Inner Nebula Cloud -->
-              <ellipse cx="2" cy="3" rx="25" ry="23" transform="rotate(32)" fill="#7a0014" opacity="0.9" />
-              <ellipse cx="-2" cy="-1" rx="21" ry="19" transform="rotate(-25)" fill="#b3001e" opacity="0.85" />
-              <!-- Lower-Right Crimson-Rose Slash Glow Cloud -->
-              <ellipse cx="9" cy="13" rx="9" ry="18" transform="rotate(-34 9 13)" fill="#ff1a40" opacity="0.88" />
-              <circle cx="0" cy="0" r="16" fill="#ff294b" opacity="0.9" />
+            <!-- Airbrushed Painterly Crimson-Magenta Flame Nebula Inside Iris -->
+            <g transform="translate(-1, -1.5)">
+              <g filter="url(#softBlur)">
+                <animateTransform attributeName="transform" type="scale"
+                  values="1; 1.04; 1" dur="3.4s" repeatCount="indefinite" />
+                <!-- Warm Oxblood-Crimson Inner Nebula Cloud -->
+                <ellipse cx="1" cy="2" rx="25" ry="23" transform="rotate(28)" fill="#800014" opacity="0.92" />
+                <ellipse cx="-2" cy="-1" rx="21" ry="19" transform="rotate(-24)" fill="#bd0020" opacity="0.86" />
+                <!-- Lower-Right Crimson-Rose Slash Glow Plume -->
+                <ellipse cx="10" cy="14" rx="8.5" ry="19" transform="rotate(-33 10 14)" fill="#ff1a40" opacity="0.90" />
+                <circle cx="0" cy="0" r="15.5" fill="#ff294b" opacity="0.92" />
+              </g>
+
+              <!-- Painterly Crimson-Rose Flame Tongues (Matching 10:30, 1:30, 5:00, and 7:30 Wisps in Reference) -->
+              <g filter="url(#irisNebulaBlur)" opacity="0.92">
+                <!-- 10:30 Upper-Left Forked Flame Brushstroke -->
+                <path d="M -3,-4 C -9,-10 -15,-16 -21,-19 C -14,-13 -9,-8 -5,-2 Z" fill="#ff2e52" />
+                <path d="M -2,-5 C -6,-12 -10,-18 -13,-24 C -8,-16 -4,-10 -1,-4 Z" fill="#ff4d6d" />
+                <!-- 12:00 Upper Vertical Flame Brushstroke -->
+                <path d="M -2,-5 C -1.5,-14 -0.5,-21 0,-26 C 1,-20 1.8,-13 2,-5 Z" fill="#ff385c" />
+                <!-- 1:30 Upper-Right Sweeping Flame Brushstroke -->
+                <path d="M 3,-4 C 9,-10 15,-15 21,-19 C 16,-12 10,-7 4,-2 Z" fill="#ff2e52" />
+                <path d="M 4,-2 C 11,-6 18,-9 24,-10 C 17,-6 11,-3 4,0 Z" fill="#e6193c" />
+                <!-- 3:00 Right Horizontal Flame Tongue -->
+                <path d="M 5,-2 C 13,-1.8 20,-1.2 26,-0.8 C 19,0.8 12,1.6 5,2 Z" fill="#ff385c" />
+                <!-- 5:00 Signature Long Lower-Right Slash & Companion Plume -->
+                <path d="M 2,2 C 10,13 18,26 25,39 C 15,27 8,15 0,4 Z" fill="#ff1e46" />
+                <path d="M 3,1 C 11,12 18,24 23,35 C 14,24 7,13 1,3 Z" fill="#ff758f" opacity="0.88" />
+                <path d="M 1,4 C 4,13 8,23 11,32 C 6,23 2,14 -1,5 Z" fill="#ff385c" />
+                <!-- 6:00 & 7:30 Lower & Lower-Left Flame Brushstrokes -->
+                <path d="M -2,4 C -2,12 -1.8,18 -1.5,24 C 0.5,18 1.2,11 1.5,4 Z" fill="#ff2e52" />
+                <path d="M -3,2 C -9,7 -15,12 -20,17 C -13,13 -7,8 -1,4 Z" fill="#ff385c" />
+                <!-- 9:00 Left Horizontal Flame Tongue -->
+                <path d="M -5,-2 C -13,-1.6 -20,-1.0 -26,-0.5 C -19,1.0 -12,1.6 -5,2 Z" fill="#ff385c" />
+              </g>
             </g>
 
             <!-- Iris Upper Shadow Vignette (Deepens the Top Half of the Iris Under Upper Lid) -->
-            <circle cx="0" cy="0" r="48.0" fill="url(#irisTopShadow)" />
+            <circle cx="0" cy="0" r="47.8" fill="url(#irisTopShadow)" />
 
-            <!-- ASYMMETRIC DIAMOND-SLASH PUPIL STARBURST (Positioned at (-1, -1.5) to Match Cutscene Gaze) -->
+            <!-- ASYMMETRIC SILK-TAPERED STARBURST PUPIL (Positioned at (-1, -1.5) to Match Cutscene Gaze) -->
             <g transform="translate(-1, -1.5)">
               <!-- Central Pupil Diffuse Rose-Crimson Bloom -->
-              <circle cx="0" cy="0" r="26" fill="url(#pupilCoreGlow)" filter="url(#pupilBloom)">
-                <animate attributeName="r" values="24;28;24" dur="2.6s" repeatCount="indefinite" />
+              <circle cx="0" cy="0" r="25" fill="url(#pupilCoreGlow)" filter="url(#pupilBloom)">
+                <animate attributeName="r" values="23.5;27;23.5" dur="2.6s" repeatCount="indefinite" />
               </circle>
 
-              <!-- Hair-Thin Painterly Radial Light Filaments Shooting Across the Iris -->
-              <g stroke="#ff8da1" stroke-width="0.7" stroke-linecap="round" opacity="0.68">
-                <line x1="0" y1="0" x2="20" y2="-18" />
-                <line x1="0" y1="0" x2="-19" y2="-19" />
-                <line x1="0" y1="0" x2="-20" y2="17" />
-                <line x1="0" y1="0" x2="24" y2="38" stroke="#ff294b" stroke-width="1.8" />
-                <line x1="0" y1="0" x2="11" y2="30" stroke="#ff4d6d" stroke-width="1.2" />
-                <line x1="0" y1="0" x2="24" y2="12" />
-                <line x1="0" y1="0" x2="7" y2="-21" />
-                <line x1="0" y1="0" x2="-8" y2="-20" />
-                <line x1="0" y1="0" x2="-22" y2="-6" />
-                <line x1="0" y1="0" x2="-10" y2="21" />
-              </g>
-
-              <!-- Layer A: Soft Magenta-Crimson Outer Starburst Flares & Signature Long Lower-Right Slash -->
+              <!-- Layer A: Soft Magenta-Rose Silk-Tapered Starburst Halo & Signature 5-o'clock Slash -->
               <g filter="url(#irisFlowerBlur)" opacity="0.96">
-                <polygon points="
-                  0,-23 2.0,-6.5 18,-17 5.2,-2.0 23,-1 5.5,2.0
-                  24,38 3.2,8.5 10,29 1.2,8.0 -2,21 -2.2,7.0
-                  -17,15 -5.2,2.0 -23,-1 -5.2,-2.0 -16,-17 -2.0,-6.5"
-                  fill="#ff1e46" />
-                <polygon points="
-                  0,-19 1.5,-5.0 14,-13 4.0,-1.5 19,-0.8 4.4,1.6
-                  21,34 2.4,7.0 8,24 0.6,6.0 -1.5,17 -1.8,5.2
-                  -14,12 -4.0,1.5 -19,-0.8 -4.0,-1.5 -13,-13 -1.5,-5.0"
-                  fill="#ff8098" />
+                <path d="M 0,-23
+                  C 0.8,-9 2.2,-5 17,-16
+                  C 6,-4 5.5,-1.8 23,-0.8
+                  C 6,0.5 6.5,3.5 24,38
+                  C 5.5,11 3.8,8.5 10,29
+                  C 2.0,9 0.5,7.5 -1.5,21
+                  C -1.8,7.5 -3.8,5.5 -16,15
+                  C -5.5,3 -6,-0.5 -23,-0.8
+                  C -6,-1.8 -5.5,-4 -15,-16
+                  C -2.2,-5 -0.8,-9 0,-23 Z"
+                  fill="#ff244c" />
+                <path d="M 0,-19
+                  C 0.6,-7 1.8,-4 13.5,-12.5
+                  C 4.5,-3 4.2,-1.2 19,-0.6
+                  C 4.8,0.4 5.2,2.8 21,33
+                  C 4.2,9 2.8,6.8 8,23
+                  C 1.4,7 0.3,5.8 -1.2,17
+                  C -1.4,5.8 -3.0,4.2 -13,12
+                  C -4.2,2.2 -4.6,-0.4 -19,-0.6
+                  C -4.6,-1.2 -4.2,-3 -12.5,-12.5
+                  C -1.8,-4 -0.6,-7 0,-19 Z"
+                  fill="#ff94a8" />
               </g>
 
-              <!-- Layer B: Blinding Pure-White Core & Asymmetric Diamond-Slash Needles -->
+              <!-- Layer B: Blinding Pure-White Core & Silk-Tapered Concave Bezier Needles -->
               <g filter="url(#pupilBloom)">
-                <polygon points="
-                  0,-18 1.3,-4.2 12,-11 3.5,-1.1 18,-0.5 3.8,1.4
-                  18,29 1.8,5.5 6.5,19 0.4,4.8 -1.2,15 -1.5,4.2
-                  -12,10 -3.5,1.1 -18,-0.5 -3.5,-1.1 -11,-11 -1.3,-4.2"
+                <path d="M 0,-17.5
+                  C 0.5,-6 1.4,-3.2 11.5,-10.5
+                  C 3.6,-2.4 3.4,-0.9 17.5,-0.5
+                  C 3.8,0.3 4.2,2.2 18.5,29
+                  C 3.2,7.5 2.0,5.2 6.5,19
+                  C 1.0,5.5 0.2,4.4 -1.0,14.5
+                  C -1.1,4.4 -2.4,3.2 -11,9.8
+                  C -3.4,1.6 -3.6,-0.3 -17.5,-0.5
+                  C -3.6,-0.9 -3.4,-2.4 -10.5,-10.5
+                  C -1.4,-3.2 -0.5,-6 0,-17.5 Z"
                   fill="#ffffff" />
                 <!-- Pulsing White-Hot Singularity Core of the Pupil -->
-                <ellipse cx="0" cy="0" rx="7.4" ry="6.8" fill="#ffffff">
-                  <animate attributeName="rx" values="6.8;8.4;6.8" dur="2.2s" repeatCount="indefinite" />
-                  <animate attributeName="ry" values="6.3;7.8;6.3" dur="2.2s" repeatCount="indefinite" />
+                <ellipse cx="0" cy="0" rx="7.2" ry="6.6" fill="#ffffff">
+                  <animate attributeName="rx" values="6.7;8.1;6.7" dur="2.2s" repeatCount="indefinite" />
+                  <animate attributeName="ry" values="6.2;7.5;6.2" dur="2.2s" repeatCount="indefinite" />
                 </ellipse>
               </g>
 
-              <!-- Crisp Innermost White Needle Overlay -->
-              <polygon points="
-                0,-15 1,-3.0 9.5,-9 2.6,-0.8 14,-0.4 2.8,1.0
-                15,24 1.2,4.0 5,14 0.2,3.4 -1,12 -1.1,3.0
-                -9.5,8 -2.6,0.8 -14,-0.4 -2.6,-0.8 -9,-9 -1,-3.0"
+              <!-- Crisp Innermost Silk-Tapered White Needle Overlay -->
+              <path d="M 0,-14.5
+                C 0.4,-4.5 1.1,-2.4 9,-8.5
+                C 2.8,-1.8 2.6,-0.7 14,-0.4
+                C 2.8,0.2 3.2,1.6 15,23.5
+                C 2.4,5.8 1.5,4.0 5,14
+                C 0.7,4.2 0.1,3.3 -0.8,11.5
+                C -0.9,3.3 -1.8,2.4 -8.8,7.8
+                C -2.6,1.2 -2.8,-0.2 -14,-0.4
+                C -2.8,-0.7 -2.6,-1.8 -8.5,-8.5
+                C -1.1,-2.4 -0.4,-4.5 0,-14.5 Z"
                 fill="#ffffff" opacity="0.98" />
             </g>
           </g>
