@@ -404,10 +404,39 @@
       </g>
     </g>
 
+    <!-- GPU-Accelerated Soft Radial Pillar Gradients (Replaces Expensive 1230px feGaussianBlur!) -->
+    <radialGradient id="centerPillarRadial" cx="50%" cy="42%" r="50%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#ff2e52" stop-opacity="0.48" />
+      <stop offset="35%" stop-color="#d60024" stop-opacity="0.30" />
+      <stop offset="70%" stop-color="#800016" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#240206" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="sidePillarRadial" cx="50%" cy="48%" r="50%">
+      <stop offset="0%" stop-color="#ff1e42" stop-opacity="0.30" />
+      <stop offset="45%" stop-color="#9e001a" stop-opacity="0.16" />
+      <stop offset="80%" stop-color="#59000e" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#240206" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- GPU-Accelerated Glowing Orb Gradient -->
+    <radialGradient id="orbGlowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="32%" stop-color="#ff4d6d" stop-opacity="0.85" />
+      <stop offset="68%" stop-color="#ff1a3c" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ff1a3c" stop-opacity="0" />
+    </radialGradient>
+
     <g id="satEyeSocket">
       <path d="M -38,0 C -22,-18 22,-18 38,0 C 22,18 -22,18 -38,0 Z" fill="#160003" stroke="#750012" stroke-width="1.6" />
       <path d="M -42,-1 C -22,-22 22,-22 42,-1" fill="none" stroke="#b3001e" stroke-width="1.4" opacity="0.85" />
       <path d="M -39,2 C -19,20 19,20 39,2" fill="none" stroke="#850016" stroke-width="1.2" opacity="0.75" />
+    </g>
+
+    <!-- Reusable GPU-Accelerated Glowing Rain Streak (Outer Halo + Crisp Core, Zero Filter Overhead!) -->
+    <g id="fastRainDrop">
+      <rect x="-2" y="0" width="5.6" height="105" fill="url(#rainStreak)" opacity="0.32" />
+      <rect x="0" y="0" width="1.6" height="105" fill="url(#rainStreak)" />
     </g>
   </defs>
 
@@ -417,31 +446,35 @@
   <rect width="900" height="1340" fill="url(#skyBg)" />
   <rect width="900" height="1340" fill="url(#crimsonGrid)" />
 
-  <!-- Continuous Vertical Crimson Light Pillars Streaming From Ronova's Rift All the Way to Bottom -->
-  <g filter="url(#pillarBlur)">
+  <!-- Continuous Vertical Crimson Light Pillars (GPU-Accelerated Radial Gradients — Zero Blur Lag!) -->
+  <g>
     <!-- Central Main Blood-Light Pillar (x=450) -->
-    <rect x="415" y="110" width="70" height="1230" fill="url(#centerPillarGrad)">
-      <animate attributeName="opacity" values="0.75;1;0.75" dur="4.2s" repeatCount="indefinite" />
-    </rect>
-    <!-- Inner Left & Right Rift Pillars (x=280, x=620) -->
-    <rect x="255" y="130" width="48" height="1210" fill="url(#sidePillarGrad)">
-      <animate attributeName="opacity" values="0.6;0.95;0.6" dur="5.1s" repeatCount="indefinite" />
-    </rect>
-    <rect x="597" y="130" width="48" height="1210" fill="url(#sidePillarGrad)">
-      <animate attributeName="opacity" values="0.65;0.95;0.65" dur="4.7s" repeatCount="indefinite" />
-    </rect>
-    <!-- Outer Left & Right Wing Pillars (x=120, x=780) -->
-    <rect x="102" y="115" width="34" height="1225" fill="url(#sidePillarGrad)" opacity="0.75" />
-    <rect x="764" y="115" width="34" height="1225" fill="url(#sidePillarGrad)" opacity="0.75" />
+    <ellipse cx="450" cy="720" rx="68" ry="640" fill="url(#centerPillarRadial)">
+      <animate attributeName="opacity" values="0.78;1;0.78" dur="4.2s" repeatCount="indefinite" />
+    </ellipse>
+    <!-- Inner Left & Right Rift Pillars (x=279, x=621) -->
+    <ellipse cx="279" cy="735" rx="48" ry="620" fill="url(#sidePillarRadial)">
+      <animate attributeName="opacity" values="0.65;0.95;0.65" dur="5.1s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="621" cy="735" rx="48" ry="620" fill="url(#sidePillarRadial)">
+      <animate attributeName="opacity" values="0.68;0.95;0.68" dur="4.7s" repeatCount="indefinite" />
+    </ellipse>
+    <!-- Outer Left & Right Wing Pillars (x=119, x=781) -->
+    <ellipse cx="119" cy="730" rx="36" ry="620" fill="url(#sidePillarRadial)" opacity="0.8" />
+    <ellipse cx="781" cy="730" rx="36" ry="620" fill="url(#sidePillarRadial)" opacity="0.8" />
   </g>
 
-  <!-- Continuous Sinuous Abyssal Veins & Flowing Energy Tendrils From Top to Bottom (Visible Behind Glass Cards!) -->
+  <!-- Continuous Sinuous Abyssal Veins & Flowing Energy Tendrils (Dual-Stroke Neon Halo — Zero Filter Lag!) -->
   <g fill="none" stroke-linecap="round">
     <!-- Center-Left Sinuous Vein (Starts at Rift y=155, weaves down to y=1340 at x=260) -->
     <path d="M 370,155 C 310,320 220,460 275,650 C 330,840 210,1050 260,1340"
       stroke="#800016" stroke-width="3" opacity="0.55" />
     <path d="M 370,155 C 310,320 220,460 275,650 C 330,840 210,1050 260,1340"
-      stroke="#ff2e52" stroke-width="1.6" stroke-dasharray="90 220" filter="url(#smallEyeGlow)" opacity="0.85">
+      stroke="#ff1a3c" stroke-width="6" stroke-dasharray="90 220" opacity="0.28">
+      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M 370,155 C 310,320 220,460 275,650 C 330,840 210,1050 260,1340"
+      stroke="#ff4d6d" stroke-width="1.6" stroke-dasharray="90 220" opacity="0.9">
       <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" repeatCount="indefinite" />
     </path>
 
@@ -449,7 +482,11 @@
     <path d="M 530,155 C 590,320 680,460 625,650 C 570,840 690,1050 640,1340"
       stroke="#800016" stroke-width="3" opacity="0.55" />
     <path d="M 530,155 C 590,320 680,460 625,650 C 570,840 690,1050 640,1340"
-      stroke="#ff2e52" stroke-width="1.6" stroke-dasharray="90 220" filter="url(#smallEyeGlow)" opacity="0.85">
+      stroke="#ff1a3c" stroke-width="6" stroke-dasharray="90 220" opacity="0.28">
+      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" begin="1.8s" repeatCount="indefinite" />
+    </path>
+    <path d="M 530,155 C 590,320 680,460 625,650 C 570,840 690,1050 640,1340"
+      stroke="#ff4d6d" stroke-width="1.6" stroke-dasharray="90 220" opacity="0.9">
       <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" begin="1.8s" repeatCount="indefinite" />
     </path>
 
@@ -457,7 +494,11 @@
     <path d="M 450,170 C 435,380 465,620 450,865 C 438,1040 462,1190 450,1340"
       stroke="#9e001a" stroke-width="2.2" opacity="0.5" />
     <path d="M 450,170 C 435,380 465,620 450,865 C 438,1040 462,1190 450,1340"
-      stroke="#ffffff" stroke-width="1.4" stroke-dasharray="70 260" filter="url(#smallEyeGlow)" opacity="0.8">
+      stroke="#ff2e52" stroke-width="5.5" stroke-dasharray="70 260" opacity="0.32">
+      <animate attributeName="stroke-dashoffset" from="1650" to="0" dur="5.2s" repeatCount="indefinite" />
+    </path>
+    <path d="M 450,170 C 435,380 465,620 450,865 C 438,1040 462,1190 450,1340"
+      stroke="#ffffff" stroke-width="1.4" stroke-dasharray="70 260" opacity="0.88">
       <animate attributeName="stroke-dashoffset" from="1650" to="0" dur="5.2s" repeatCount="indefinite" />
     </path>
 
@@ -478,59 +519,59 @@
     </path>
   </g>
 
-  <!-- Continuous Top-to-Bottom Falling Crimson Rain & Abyssal Energy Streaks (Passing Behind All Glass Boxes!) -->
-  <g filter="url(#smallEyeGlow)">
-    <rect x="88" y="-120" width="1.6" height="95" fill="url(#rainStreak)">
+  <!-- Continuous Top-to-Bottom Falling Crimson Rain & Abyssal Orbs (GPU-Accelerated — Zero Filter Lag!) -->
+  <g>
+    <use href="#fastRainDrop" x="88" y="-120">
       <animate attributeName="y" values="-120;1360" dur="4.6s" repeatCount="indefinite" />
-    </rect>
-    <rect x="172" y="-120" width="1.8" height="115" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="172" y="-120">
       <animate attributeName="y" values="-120;1360" dur="5.8s" begin="1.2s" repeatCount="indefinite" />
-    </rect>
-    <rect x="248" y="-120" width="1.5" height="85" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="248" y="-120">
       <animate attributeName="y" values="-120;1360" dur="4.1s" begin="2.7s" repeatCount="indefinite" />
-    </rect>
-    <rect x="335" y="-120" width="2" height="125" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="335" y="-120">
       <animate attributeName="y" values="-120;1360" dur="5.2s" begin="0.6s" repeatCount="indefinite" />
-    </rect>
-    <rect x="418" y="-120" width="1.6" height="100" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="418" y="-120">
       <animate attributeName="y" values="-120;1360" dur="3.9s" begin="1.9s" repeatCount="indefinite" />
-    </rect>
-    <rect x="482" y="-120" width="1.8" height="110" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="482" y="-120">
       <animate attributeName="y" values="-120;1360" dur="4.4s" begin="3.1s" repeatCount="indefinite" />
-    </rect>
-    <rect x="565" y="-120" width="2" height="120" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="565" y="-120">
       <animate attributeName="y" values="-120;1360" dur="5.0s" begin="0.3s" repeatCount="indefinite" />
-    </rect>
-    <rect x="652" y="-120" width="1.5" height="90" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="652" y="-120">
       <animate attributeName="y" values="-120;1360" dur="4.3s" begin="2.2s" repeatCount="indefinite" />
-    </rect>
-    <rect x="728" y="-120" width="1.8" height="105" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="728" y="-120">
       <animate attributeName="y" values="-120;1360" dur="5.5s" begin="1.5s" repeatCount="indefinite" />
-    </rect>
-    <rect x="812" y="-120" width="1.6" height="95" fill="url(#rainStreak)">
+    </use>
+    <use href="#fastRainDrop" x="812" y="-120">
       <animate attributeName="y" values="-120;1360" dur="4.8s" begin="3.6s" repeatCount="indefinite" />
-    </rect>
+    </use>
 
     <!-- Drifting Glowing Crimson Orbs Descending Top-to-Bottom -->
-    <circle cx="135" cy="0" r="2.4" fill="#ff2e52">
+    <circle cx="135" cy="0" r="5.5" fill="url(#orbGlowGrad)">
       <animate attributeName="cy" values="100;1340" dur="9.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="9.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="9.5s" repeatCount="indefinite" />
     </circle>
-    <circle cx="310" cy="0" r="2" fill="#ffffff">
+    <circle cx="310" cy="0" r="5" fill="url(#orbGlowGrad)">
       <animate attributeName="cy" values="140;1340" dur="8.2s" begin="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="8.2s" begin="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="8.2s" begin="2s" repeatCount="indefinite" />
     </circle>
-    <circle cx="450" cy="0" r="2.6" fill="#ffccd5">
+    <circle cx="450" cy="0" r="6" fill="url(#orbGlowGrad)">
       <animate attributeName="cy" values="160;1340" dur="7.6s" begin="1s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="7.6s" begin="1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;1;0" dur="7.6s" begin="1s" repeatCount="indefinite" />
     </circle>
-    <circle cx="590" cy="0" r="2.1" fill="#ffffff">
+    <circle cx="590" cy="0" r="5" fill="url(#orbGlowGrad)">
       <animate attributeName="cy" values="140;1340" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
     </circle>
-    <circle cx="765" cy="0" r="2.4" fill="#ff2e52">
+    <circle cx="765" cy="0" r="5.5" fill="url(#orbGlowGrad)">
       <animate attributeName="cy" values="100;1340" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
     </circle>
   </g>
 

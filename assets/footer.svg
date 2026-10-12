@@ -6,6 +6,12 @@
       <stop offset="100%" stop-color="#120103" />
     </linearGradient>
 
+    <linearGradient id="pillarH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cc0022" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ff1e42" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#cc0022" stop-opacity="0" />
+    </linearGradient>
+
     <linearGradient id="ftrWave1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#4a000b" stop-opacity="0.55" />
       <stop offset="50%" stop-color="#d60024" stop-opacity="0.72" />
@@ -22,28 +28,17 @@
       <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#ff1e42" stroke-width="0.6" stroke-opacity="0.08" />
       <circle cx="45" cy="45" r="0.9" fill="#ff2e52" fill-opacity="0.16" />
     </pattern>
-
-    <filter id="pillarBlur" x="-40%" y="-20%" width="180%" height="140%">
-      <feGaussianBlur stdDeviation="14 10" />
-    </filter>
-
-    <filter id="ftrGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.2" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
   </defs>
 
   <rect width="900" height="115" fill="url(#ftrBg)" />
   <rect width="900" height="115" fill="url(#crimsonGrid)" />
 
-  <!-- Continuous Vertical Light Pillars Terminating into Footer Waves -->
-  <g filter="url(#pillarBlur)">
-    <rect x="415" y="-10" width="70" height="125" fill="#cc0022" opacity="0.32" />
-    <rect x="255" y="-10" width="48" height="125" fill="#b8001f" opacity="0.25" />
-    <rect x="597" y="-10" width="48" height="125" fill="#b8001f" opacity="0.25" />
-    <rect x="102" y="-10" width="34" height="125" fill="#b8001f" opacity="0.19" />
-    <rect x="764" y="-10" width="34" height="125" fill="#b8001f" opacity="0.19" />
-  </g>
+  <!-- GPU-Accelerated Vertical Light Pillars -->
+  <rect x="385" y="0" width="130" height="115" fill="url(#pillarH)" />
+  <rect x="231" y="0" width="96" height="115" fill="url(#pillarH)" opacity="0.75" />
+  <rect x="573" y="0" width="96" height="115" fill="url(#pillarH)" opacity="0.75" />
+  <rect x="83" y="0" width="72" height="115" fill="url(#pillarH)" opacity="0.55" />
+  <rect x="745" y="0" width="72" height="115" fill="url(#pillarH)" opacity="0.55" />
 
   <!-- Continuous Vertical Blood Veins Converging Into Footer -->
   <g fill="none" stroke-linecap="round">
@@ -68,7 +63,8 @@
   <!-- Crimson Filigree Divider & Tagline -->
   <g transform="translate(0, 8)">
     <line x1="160" y1="22" x2="415" y2="22" stroke="#ff1e42" stroke-width="1" opacity="0.6" />
-    <polygon points="450,15 457,22 450,29 443,22" fill="#ff2e52" filter="url(#ftrGlow)" />
+    <polygon points="450,13 459,22 450,31 441,22" fill="#ff1e42" opacity="0.3" />
+    <polygon points="450,15 457,22 450,29 443,22" fill="#ff2e52" />
     <circle cx="430" cy="22" r="2" fill="#ffffff" />
     <circle cx="470" cy="22" r="2" fill="#ffffff" />
     <line x1="485" y1="22" x2="740" y2="22" stroke="#ff1e42" stroke-width="1" opacity="0.6" />
@@ -79,7 +75,6 @@
     </text>
   </g>
 
-  <!-- Left, Right, and Bottom Frame Borders Only -->
   <line x1="1" y1="0" x2="1" y2="115" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
   <line x1="899" y1="0" x2="899" y2="115" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
   <line x1="0" y1="114" x2="900" y2="114" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
