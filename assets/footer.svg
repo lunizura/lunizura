@@ -1,41 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 115" width="100%" height="100%">
   <defs>
     <linearGradient id="ftrBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#210206" />
-      <stop offset="55%" stop-color="#38040c" />
+      <stop offset="0%" stop-color="#240206" />
+      <stop offset="55%" stop-color="#36030a" />
       <stop offset="100%" stop-color="#120103" />
     </linearGradient>
 
     <linearGradient id="ftrWave1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4a000b" stop-opacity="0.7" />
-      <stop offset="50%" stop-color="#d60024" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#4a000b" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#4a000b" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#d60024" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#4a000b" stop-opacity="0.55" />
     </linearGradient>
 
     <linearGradient id="ftrWave2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1a0004" stop-opacity="0.92" />
-      <stop offset="50%" stop-color="#800016" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#1a0004" stop-opacity="0.92" />
+      <stop offset="0%" stop-color="#1a0004" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#800016" stop-opacity="0.82" />
+      <stop offset="100%" stop-color="#1a0004" stop-opacity="0.75" />
     </linearGradient>
+
+    <pattern id="crimsonGrid" width="45" height="45" patternUnits="userSpaceOnUse">
+      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#ff1e42" stroke-width="0.6" stroke-opacity="0.08" />
+      <circle cx="45" cy="45" r="0.9" fill="#ff2e52" fill-opacity="0.16" />
+    </pattern>
+
+    <filter id="pillarBlur" x="-40%" y="-20%" width="180%" height="140%">
+      <feGaussianBlur stdDeviation="14 10" />
+    </filter>
 
     <filter id="ftrGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="2.2" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
   </defs>
 
   <rect width="900" height="115" fill="url(#ftrBg)" />
+  <rect width="900" height="115" fill="url(#crimsonGrid)" />
 
-  <!-- Flowing Crimson Waves at Bottom -->
-  <path d="M -900,62 Q -675,38 -450,62 T 0,62 T 450,62 T 900,62 T 1350,62 T 1800,62 L 1800,115 L -900,115 Z"
+  <!-- Continuous Vertical Light Pillars Terminating into Footer Waves -->
+  <g filter="url(#pillarBlur)">
+    <rect x="415" y="-10" width="70" height="125" fill="#cc0022" opacity="0.32" />
+    <rect x="255" y="-10" width="48" height="125" fill="#b8001f" opacity="0.25" />
+    <rect x="597" y="-10" width="48" height="125" fill="#b8001f" opacity="0.25" />
+    <rect x="102" y="-10" width="34" height="125" fill="#b8001f" opacity="0.19" />
+    <rect x="764" y="-10" width="34" height="125" fill="#b8001f" opacity="0.19" />
+  </g>
+
+  <!-- Continuous Vertical Blood Veins Converging Into Footer -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 115,0 Q 125,55 140,115" stroke="#660010" stroke-width="2" opacity="0.5" />
+    <path d="M 260,0 Q 280,55 310,115" stroke="#800016" stroke-width="3" opacity="0.55" />
+    <path d="M 450,0 L 450,115" stroke="#9e001a" stroke-width="2.2" opacity="0.5" />
+    <path d="M 640,0 Q 620,55 590,115" stroke="#800016" stroke-width="3" opacity="0.55" />
+    <path d="M 785,0 Q 775,55 760,115" stroke="#660010" stroke-width="2" opacity="0.5" />
+  </g>
+
+  <!-- Translucent Flowing Crimson Waves at Bottom -->
+  <path d="M -900,58 Q -675,34 -450,58 T 0,58 T 450,58 T 900,58 T 1350,58 T 1800,58 L 1800,115 L -900,115 Z"
     fill="url(#ftrWave1)" stroke="#ff2e52" stroke-width="1.2">
     <animateTransform attributeName="transform" type="translate" from="0,0" to="-900,0" dur="10s" repeatCount="indefinite" />
   </path>
 
-  <path d="M -900,76 Q -675,98 -450,76 T 0,76 T 450,76 T 900,76 T 1350,76 T 1800,76 L 1800,115 L -900,115 Z"
+  <path d="M -900,74 Q -675,96 -450,74 T 0,74 T 450,74 T 900,74 T 1350,74 T 1800,74 L 1800,115 L -900,115 Z"
     fill="url(#ftrWave2)" stroke="#ff1a3c" stroke-width="1.4">
     <animateTransform attributeName="transform" type="translate" from="-900,0" to="0,0" dur="7.5s" repeatCount="indefinite" />
   </path>
@@ -54,5 +79,8 @@
     </text>
   </g>
 
-  <rect width="900" height="115" fill="none" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <!-- Left, Right, and Bottom Frame Borders Only -->
+  <line x1="1" y1="0" x2="1" y2="115" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <line x1="899" y1="0" x2="899" y2="115" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <line x1="0" y1="114" x2="900" y2="114" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
 </svg>

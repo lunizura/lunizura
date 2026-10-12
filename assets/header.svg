@@ -1,12 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1340" width="100%" height="100%">
   <defs>
-    <!-- Deep Ochkanatlan Blood Sky Background -->
+    <!-- Continuous Top-to-Bottom Deep Ochkanatlan Blood Sky & Abyssal Canvas -->
     <linearGradient id="skyBg" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#140103" />
-      <stop offset="28%" stop-color="#300308" />
-      <stop offset="54%" stop-color="#4d040d" />
-      <stop offset="82%" stop-color="#240105" />
-      <stop offset="100%" stop-color="#070002" />
+      <stop offset="9%" stop-color="#360309" />
+      <stop offset="18%" stop-color="#4d040d" />
+      <stop offset="30%" stop-color="#2b0207" />
+      <stop offset="55%" stop-color="#330309" />
+      <stop offset="80%" stop-color="#290207" />
+      <stop offset="100%" stop-color="#240206" />
+    </linearGradient>
+
+    <!-- Continuous Vertical Crimson Light Pillar Gradients (Top to Bottom) -->
+    <linearGradient id="centerPillarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0" />
+      <stop offset="9%" stop-color="#ffffff" stop-opacity="0.65" />
+      <stop offset="16%" stop-color="#ff1a3c" stop-opacity="0.55" />
+      <stop offset="40%" stop-color="#d60024" stop-opacity="0.32" />
+      <stop offset="63%" stop-color="#ff1e42" stop-opacity="0.45" />
+      <stop offset="85%" stop-color="#b8001f" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#cc0022" stop-opacity="0.32" />
+    </linearGradient>
+
+    <linearGradient id="sidePillarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0" />
+      <stop offset="12%" stop-color="#ff1e42" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#9e001a" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#b8001f" stop-opacity="0.25" />
+    </linearGradient>
+
+    <!-- Falling Crimson Laser Rain Streak Gradient -->
+    <linearGradient id="rainStreak" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff1e42" stop-opacity="0" />
+      <stop offset="70%" stop-color="#ff2e52" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.95" />
     </linearGradient>
 
     <!-- Intense Crimson Atmospheric Bloom Around Rift -->
@@ -40,7 +67,7 @@
       <stop offset="100%" stop-color="#020001" />
     </radialGradient>
 
-    <!-- Central Eye Sclera (Realistic Luminous White with Warm Crimson-Grey Corner Shading) -->
+    <!-- Central Eye Sclera -->
     <linearGradient id="mainScleraHoriz" x1="0%" y1="50%" x2="100%" y2="50%">
       <stop offset="0%" stop-color="#9e3e4f" />
       <stop offset="11%" stop-color="#dfa6b0" />
@@ -51,7 +78,7 @@
       <stop offset="100%" stop-color="#9e3e4f" />
     </linearGradient>
 
-    <!-- Central Eye Iris Base (Deep Velvety Blood-Maroon with Pale Rim, Exact Reference Match) -->
+    <!-- Central Eye Iris Base -->
     <radialGradient id="mainIrisGrad" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ff2448" />
       <stop offset="22%" stop-color="#bd0020" />
@@ -71,7 +98,7 @@
       <stop offset="100%" stop-color="#3d0008" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Small Eye Sclera Gradient (Deep Rich Crimson Sclera so White Ring Pops) -->
+    <!-- Small Eye Sclera Gradient -->
     <radialGradient id="smallScleraGrad" cx="50%" cy="50%" r="55%">
       <stop offset="0%" stop-color="#ff1e3c" />
       <stop offset="55%" stop-color="#b00019" />
@@ -100,33 +127,49 @@
       <stop offset="100%" stop-color="#080102" />
     </linearGradient>
 
-    <!-- Waving Banner Gradients -->
+    <!-- Translucent Waving Silk Ribbons (Allowing Vertical Effects to Pass Through!) -->
     <linearGradient id="waveGlowBack" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4a000b" stop-opacity="0.35" />
-      <stop offset="50%" stop-color="#ff1a3c" stop-opacity="0.55" />
-      <stop offset="100%" stop-color="#4a000b" stop-opacity="0.35" />
+      <stop offset="0%" stop-color="#4a000b" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#ff1a3c" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#4a000b" stop-opacity="0.22" />
     </linearGradient>
 
     <linearGradient id="waveBack" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2b0006" stop-opacity="0.78" />
-      <stop offset="25%" stop-color="#7a0014" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#db0026" stop-opacity="0.88" />
-      <stop offset="75%" stop-color="#7a0014" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#2b0006" stop-opacity="0.78" />
+      <stop offset="0%" stop-color="#2b0006" stop-opacity="0.35" />
+      <stop offset="25%" stop-color="#7a0014" stop-opacity="0.48" />
+      <stop offset="50%" stop-color="#db0026" stop-opacity="0.45" />
+      <stop offset="75%" stop-color="#7a0014" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#2b0006" stop-opacity="0.35" />
     </linearGradient>
 
     <linearGradient id="waveMid" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#140003" stop-opacity="0.92" />
-      <stop offset="30%" stop-color="#52000d" stop-opacity="0.95" />
-      <stop offset="50%" stop-color="#99001b" stop-opacity="0.95" />
-      <stop offset="70%" stop-color="#52000d" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#140003" stop-opacity="0.92" />
+      <stop offset="0%" stop-color="#140003" stop-opacity="0.42" />
+      <stop offset="50%" stop-color="#800016" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#140003" stop-opacity="0.42" />
     </linearGradient>
 
-    <linearGradient id="waveFront" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1c0005" />
-      <stop offset="45%" stop-color="#0d0002" />
-      <stop offset="100%" stop-color="#040001" />
+    <!-- Semi-Transparent Frosted Crimson Glass Card Gradients -->
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d040d" stop-opacity="0.46" />
+      <stop offset="50%" stop-color="#210106" stop-opacity="0.42" />
+      <stop offset="100%" stop-color="#120003" stop-opacity="0.50" />
+    </linearGradient>
+
+    <linearGradient id="glassCallout" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#590513" stop-opacity="0.52" />
+      <stop offset="50%" stop-color="#2e0209" stop-opacity="0.44" />
+      <stop offset="100%" stop-color="#4a040f" stop-opacity="0.52" />
+    </linearGradient>
+
+    <!-- Semi-Transparent Crimson Pill Gradients -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a0016" stop-opacity="0.58" />
+      <stop offset="100%" stop-color="#240006" stop-opacity="0.62" />
+    </linearGradient>
+
+    <linearGradient id="pillAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1e42" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#9e001a" stop-opacity="0.88" />
     </linearGradient>
 
     <linearGradient id="textMetallic" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -136,7 +179,52 @@
       <stop offset="100%" stop-color="#d40026" />
     </linearGradient>
 
-    <!-- Glow & Blur Filters -->
+    <!-- Arlecchino Section Gradients -->
+    <radialGradient id="arleCenterGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0.75" />
+      <stop offset="35%" stop-color="#a3001a" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#4d030d" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#1e0105" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="irisDark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#040102" />
+      <stop offset="65%" stop-color="#120205" />
+      <stop offset="100%" stop-color="#42030d" />
+    </radialGradient>
+
+    <linearGradient id="wingGradLeft" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff2642" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#b3001c" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#1a0003" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="wingGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2642" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#b3001c" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#1a0003" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="bladeLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#ff99aa" />
+      <stop offset="70%" stop-color="#ff1a38" />
+      <stop offset="100%" stop-color="#800012" />
+    </linearGradient>
+
+    <linearGradient id="bladeDark" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3352" />
+      <stop offset="50%" stop-color="#990016" />
+      <stop offset="100%" stop-color="#2b0005" />
+    </linearGradient>
+
+    <!-- Continuous Background Grid Pattern -->
+    <pattern id="crimsonGrid" width="45" height="45" patternUnits="userSpaceOnUse">
+      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#ff1e42" stroke-width="0.6" stroke-opacity="0.08" />
+      <circle cx="45" cy="45" r="0.9" fill="#ff2e52" fill-opacity="0.16" />
+    </pattern>
+
+    <!-- Filters -->
     <filter id="heavyCrimsonBloom" x="-30%" y="-50%" width="160%" height="200%">
       <feGaussianBlur stdDeviation="14" result="blur1" />
       <feGaussianBlur stdDeviation="5" in="SourceGraphic" result="blur2" />
@@ -162,7 +250,6 @@
       </feMerge>
     </filter>
 
-    <!-- Vertical Motion Blur for the Top & Bottom Rift Light Spikes (Exact In-Game Shader Look) -->
     <filter id="verticalSpikeBlur" x="-30%" y="-40%" width="160%" height="180%">
       <feGaussianBlur stdDeviation="1.8 7" in="SourceGraphic" result="vertBlur" />
       <feGaussianBlur stdDeviation="5 12" in="SourceGraphic" result="wideRed" />
@@ -176,6 +263,10 @@
         <feMergeNode in="vertBlur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
+    </filter>
+
+    <filter id="pillarBlur" x="-40%" y="-5%" width="180%" height="110%">
+      <feGaussianBlur stdDeviation="14 25" />
     </filter>
 
     <filter id="pupilBloom" x="-80%" y="-80%" width="260%" height="260%">
@@ -207,7 +298,6 @@
     <!-- ============================================================ -->
     <!-- CLIP PATHS FOR SMOOTH CURVED EYELID BLINKING                 -->
     <!-- ============================================================ -->
-    <!-- Central Giant Eye Smooth Eyelid ClipPath (Center: 450, 122) -->
     <clipPath id="mainEyeBlinkClip">
       <path d="M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z">
         <animate attributeName="d"
@@ -243,7 +333,6 @@
       </path>
     </clipPath>
 
-    <!-- Smooth Curved Eyelid ClipPaths for the Smaller Satellite Eyes (3 Staggered Cadences) -->
     <clipPath id="satClipA">
       <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z">
         <animate attributeName="d" dur="6.8s" repeatCount="indefinite" calcMode="spline"
@@ -300,12 +389,9 @@
       </path>
     </clipPath>
 
-    <!-- Satellite Eye Interior (Red Sclera + Glowing White Ring Iris + Red Dot Pupil with Subtle Gaze Drift) -->
     <g id="satEyeInterior">
       <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z" fill="url(#smallScleraGrad)" />
-      <!-- Subtle Corner Shadow Inside Small Eye -->
       <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-9 -16,-9 -30,0 Z" fill="#290005" opacity="0.5" />
-      <!-- Living Gaze Drift of the White Ring Iris & Red Pupil -->
       <g>
         <animateTransform attributeName="transform" type="translate"
           values="0,0; -1.2,-0.4; 1.1,0.3; -0.5,0.5; 0,0"
@@ -318,7 +404,6 @@
       </g>
     </g>
 
-    <!-- Satellite Eye Socket Folds (Remain Anchored in Void While Eyelid Smoothly Blinks!) -->
     <g id="satEyeSocket">
       <path d="M -38,0 C -22,-18 22,-18 38,0 C 22,18 -22,18 -38,0 Z" fill="#160003" stroke="#750012" stroke-width="1.6" />
       <path d="M -42,-1 C -22,-22 22,-22 42,-1" fill="none" stroke="#b3001e" stroke-width="1.4" opacity="0.85" />
@@ -326,15 +411,135 @@
     </g>
   </defs>
 
-  <!-- ============================================================ -->
-  <!-- 1. CRIMSON OCHKANATLAN SKY & VOLUMETRIC CLOUDS               -->
-  <!-- ============================================================ -->
-  <rect width="900" height="320" fill="url(#skyBg)" />
+  <!-- ====================================================================== -->
+  <!-- 0. CONTINUOUS TOP-TO-BOTTOM BACKGROUND & VERTICAL ENERGY ARCHITECTURE  -->
+  <!-- ====================================================================== -->
+  <rect width="900" height="1340" fill="url(#skyBg)" />
+  <rect width="900" height="1340" fill="url(#crimsonGrid)" />
 
+  <!-- Continuous Vertical Crimson Light Pillars Streaming From Ronova's Rift All the Way to Bottom -->
+  <g filter="url(#pillarBlur)">
+    <!-- Central Main Blood-Light Pillar (x=450) -->
+    <rect x="415" y="110" width="70" height="1230" fill="url(#centerPillarGrad)">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="4.2s" repeatCount="indefinite" />
+    </rect>
+    <!-- Inner Left & Right Rift Pillars (x=280, x=620) -->
+    <rect x="255" y="130" width="48" height="1210" fill="url(#sidePillarGrad)">
+      <animate attributeName="opacity" values="0.6;0.95;0.6" dur="5.1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="597" y="130" width="48" height="1210" fill="url(#sidePillarGrad)">
+      <animate attributeName="opacity" values="0.65;0.95;0.65" dur="4.7s" repeatCount="indefinite" />
+    </rect>
+    <!-- Outer Left & Right Wing Pillars (x=120, x=780) -->
+    <rect x="102" y="115" width="34" height="1225" fill="url(#sidePillarGrad)" opacity="0.75" />
+    <rect x="764" y="115" width="34" height="1225" fill="url(#sidePillarGrad)" opacity="0.75" />
+  </g>
+
+  <!-- Continuous Sinuous Abyssal Veins & Flowing Energy Tendrils From Top to Bottom (Visible Behind Glass Cards!) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Center-Left Sinuous Vein (Starts at Rift y=155, weaves down to y=1340 at x=260) -->
+    <path d="M 370,155 C 310,320 220,460 275,650 C 330,840 210,1050 260,1340"
+      stroke="#800016" stroke-width="3" opacity="0.55" />
+    <path d="M 370,155 C 310,320 220,460 275,650 C 330,840 210,1050 260,1340"
+      stroke="#ff2e52" stroke-width="1.6" stroke-dasharray="90 220" filter="url(#smallEyeGlow)" opacity="0.85">
+      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Center-Right Sinuous Vein (Starts at Rift y=155, weaves down to y=1340 at x=640) -->
+    <path d="M 530,155 C 590,320 680,460 625,650 C 570,840 690,1050 640,1340"
+      stroke="#800016" stroke-width="3" opacity="0.55" />
+    <path d="M 530,155 C 590,320 680,460 625,650 C 570,840 690,1050 640,1340"
+      stroke="#ff2e52" stroke-width="1.6" stroke-dasharray="90 220" filter="url(#smallEyeGlow)" opacity="0.85">
+      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" begin="1.8s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Central Spine Energy Conduit (From Ronova's Eye y=170 through Arlecchino X at y=865 to y=1340 at x=450) -->
+    <path d="M 450,170 C 435,380 465,620 450,865 C 438,1040 462,1190 450,1340"
+      stroke="#9e001a" stroke-width="2.2" opacity="0.5" />
+    <path d="M 450,170 C 435,380 465,620 450,865 C 438,1040 462,1190 450,1340"
+      stroke="#ffffff" stroke-width="1.4" stroke-dasharray="70 260" filter="url(#smallEyeGlow)" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" from="1650" to="0" dur="5.2s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Outer Left Wing Tendril (Starts at Left Rift Tip, weaves to y=1340 at x=115) -->
+    <path d="M 160,115 C 95,340 165,580 105,840 C 65,1020 145,1180 115,1340"
+      stroke="#660010" stroke-width="2" opacity="0.5" />
+    <path d="M 160,115 C 95,340 165,580 105,840 C 65,1020 145,1180 115,1340"
+      stroke="#ff1e42" stroke-width="1.2" stroke-dasharray="60 240" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="7.4s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Outer Right Wing Tendril (Starts at Right Rift Tip, weaves to y=1340 at x=785) -->
+    <path d="M 740,125 C 805,340 735,580 795,840 C 835,1020 755,1180 785,1340"
+      stroke="#660010" stroke-width="2" opacity="0.5" />
+    <path d="M 740,125 C 805,340 735,580 795,840 C 835,1020 755,1180 785,1340"
+      stroke="#ff1e42" stroke-width="1.2" stroke-dasharray="60 240" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="7.4s" begin="2.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Continuous Top-to-Bottom Falling Crimson Rain & Abyssal Energy Streaks (Passing Behind All Glass Boxes!) -->
+  <g filter="url(#smallEyeGlow)">
+    <rect x="88" y="-120" width="1.6" height="95" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="4.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="172" y="-120" width="1.8" height="115" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="5.8s" begin="1.2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="248" y="-120" width="1.5" height="85" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="4.1s" begin="2.7s" repeatCount="indefinite" />
+    </rect>
+    <rect x="335" y="-120" width="2" height="125" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="5.2s" begin="0.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="418" y="-120" width="1.6" height="100" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="3.9s" begin="1.9s" repeatCount="indefinite" />
+    </rect>
+    <rect x="482" y="-120" width="1.8" height="110" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="4.4s" begin="3.1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="565" y="-120" width="2" height="120" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="5.0s" begin="0.3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="652" y="-120" width="1.5" height="90" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="4.3s" begin="2.2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="728" y="-120" width="1.8" height="105" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="5.5s" begin="1.5s" repeatCount="indefinite" />
+    </rect>
+    <rect x="812" y="-120" width="1.6" height="95" fill="url(#rainStreak)">
+      <animate attributeName="y" values="-120;1360" dur="4.8s" begin="3.6s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Drifting Glowing Crimson Orbs Descending Top-to-Bottom -->
+    <circle cx="135" cy="0" r="2.4" fill="#ff2e52">
+      <animate attributeName="cy" values="100;1340" dur="9.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="9.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="310" cy="0" r="2" fill="#ffffff">
+      <animate attributeName="cy" values="140;1340" dur="8.2s" begin="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="8.2s" begin="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="450" cy="0" r="2.6" fill="#ffccd5">
+      <animate attributeName="cy" values="160;1340" dur="7.6s" begin="1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="7.6s" begin="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="590" cy="0" r="2.1" fill="#ffffff">
+      <animate attributeName="cy" values="140;1340" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="765" cy="0" r="2.4" fill="#ff2e52">
+      <animate attributeName="cy" values="100;1340" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- 1. RONOVA'S EYE SKY RIFT (TOP HERO: y=0 to 310)                        -->
+  <!-- ====================================================================== -->
   <!-- Dark Blood-Red Cloud Layers in Sky -->
-  <g opacity="0.58" filter="url(#softBlur)">
+  <g opacity="0.55" filter="url(#softBlur)">
     <path d="M -40,42 Q 140,12 310,56 T 650,36 T 940,66 L 940,0 L -40,0 Z" fill="#0d0002" />
-    <path d="M -40,188 Q 180,152 390,192 T 760,168 T 940,198 L 940,320 L -40,320 Z" fill="#170003" />
   </g>
 
   <!-- Massive Pulsing Crimson Aura Behind the Sky Rift -->
@@ -357,28 +562,20 @@
     </ellipse>
   </g>
 
-  <!-- ============================================================ -->
-  <!-- 2. FEATHERED VERTICAL LIGHT SPIKES ABOVE & BELOW THE RIFT    -->
-  <!-- ============================================================ -->
+  <!-- Feathered Vertical Light Spikes Above & Below the Rift -->
   <g filter="url(#verticalSpikeBlur)">
-    <!-- Top Center Erupting Vertical Light Spikes -->
     <polygon points="408,82 418,48 427,72 436,36 446,14 455,54 463,30 472,78" fill="url(#topSpikeGrad)">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="3.2s" repeatCount="indefinite" />
     </polygon>
     <polygon points="348,76 355,62 364,74 388,66 396,78" fill="url(#topSpikeGrad)" opacity="0.8" />
     <polygon points="552,96 566,76 576,94 596,80 612,102" fill="url(#topSpikeGrad)" opacity="0.85" />
-
-    <!-- Bottom Center Dripping Vertical Light Spikes / Curtains -->
-    <polygon points="412,188 418,242 428,236 436,246 446,196 456,238 464,196 482,198 492,248 510,202 522,190" fill="url(#botSpikeGrad)">
+    <polygon points="412,188 418,248 428,240 436,254 446,196 456,246 464,196 482,198 492,256 510,202 522,190" fill="url(#botSpikeGrad)">
       <animate attributeName="opacity" values="0.82;1;0.82" dur="3.6s" repeatCount="indefinite" />
     </polygon>
   </g>
 
-  <!-- ============================================================ -->
-  <!-- 3. THE JAGGED SKY RIFT OF RONOVA (WINGED DIAMOND SILHOUETTE) -->
-  <!-- ============================================================ -->
+  <!-- The Jagged Sky Rift of Ronova -->
   <g id="ronovaSkyRift">
-    <!-- Outer Heavy Crimson Rift Halo -->
     <path d="
       M 38,78
       C 95,92 152,90 212,82
@@ -389,7 +586,6 @@
       C 175,133 108,103 38,78 Z"
       fill="#ff0026" opacity="0.6" filter="url(#heavyCrimsonBloom)" />
 
-    <!-- Razor-Sharp Glowing White & Crimson Rift Border -->
     <path d="
       M 38,78
       C 95,92 152,90 212,82
@@ -400,7 +596,6 @@
       C 175,133 108,103 38,78 Z"
       fill="#ffffff" stroke="#ff1a3c" stroke-width="3.2" filter="url(#riftEdgeGlow)" />
 
-    <!-- Pitch-Black Void Interior of the Rift -->
     <path id="riftInteriorPath" d="
       M 98,91
       C 155,95 215,87 278,79
@@ -411,17 +606,13 @@
       C 192,130 142,109 98,91 Z"
       fill="url(#voidInterior)" />
 
-    <!-- Deep Blood-Red Void Glow Inside the Bottom Cavity of the Rift -->
     <path d="
       M 285,148 C 362,174 422,190 485,192 C 535,188 585,174 628,162
       C 565,150 515,146 450,146 C 385,146 335,144 285,148 Z"
       fill="#800014" opacity="0.62" filter="url(#softBlur)" />
 
-    <!-- ============================================================ -->
-    <!-- 4. CRIMSON VOID VEINS & MUSCLE FOLDS                         -->
-    <!-- ============================================================ -->
+    <!-- Crimson Void Veins & Muscle Folds -->
     <g opacity="0.92">
-      <!-- Left Wing Flowing Crimson Folds -->
       <path d="M 118,95 C 188,103 258,90 328,93 C 358,95 385,104 410,114" fill="none" stroke="#6e0010" stroke-width="2.8" />
       <path d="M 148,104 C 212,116 268,110 318,106 C 348,104 375,112 400,120" fill="none" stroke="#9e001a" stroke-width="1.6" />
       <path d="M 178,120 C 238,132 292,126 342,130 C 372,133 395,140 418,142" fill="none" stroke="#780012" stroke-width="2.2" />
@@ -429,7 +620,6 @@
       <path d="M 205,94 Q 268,106 315,92" fill="none" stroke="#cc0022" stroke-width="1" opacity="0.65" />
       <path d="M 242,124 Q 295,116 338,126" fill="none" stroke="#cc0022" stroke-width="1.1" opacity="0.65" />
 
-      <!-- Right Wing Flowing Crimson Folds -->
       <path d="M 810,105 C 745,112 688,116 628,120 C 595,122 570,114 540,116" fill="none" stroke="#6e0010" stroke-width="2.8" />
       <path d="M 780,116 C 722,126 668,136 615,133 C 588,131 565,124 535,126" fill="none" stroke="#a8001c" stroke-width="1.6" />
       <path d="M 745,134 C 695,150 648,154 598,150 C 575,148 555,144 528,140" fill="none" stroke="#780012" stroke-width="2.2" />
@@ -437,13 +627,9 @@
       <path d="M 740,122 Q 672,144 612,130" fill="none" stroke="#d40024" stroke-width="1.1" opacity="0.7" />
       <path d="M 690,150 Q 638,164 592,152" fill="none" stroke="#d40024" stroke-width="1" opacity="0.65" />
 
-      <!-- Synchronized Upper & Lower Eyelid Crease Folds Around Central Eye (Follow the Blink!) -->
       <path d="M 355,108 C 385,84 416,71 450,71 C 484,71 515,84 545,108"
         fill="none" stroke="#b3001e" stroke-width="2.2" opacity="0.88">
-        <animate attributeName="d"
-          dur="7.5s"
-          repeatCount="indefinite"
-          calcMode="spline"
+        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
           keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
           values="
@@ -462,10 +648,7 @@
       </path>
       <path d="M 362,138 C 390,160 418,173 450,173 C 482,173 510,160 538,138"
         fill="none" stroke="#850016" stroke-width="1.8" opacity="0.82">
-        <animate attributeName="d"
-          dur="7.5s"
-          repeatCount="indefinite"
-          calcMode="spline"
+        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
           keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
           values="
@@ -484,59 +667,39 @@
       </path>
     </g>
 
-    <!-- ============================================================ -->
-    <!-- 5. THE CENTRAL GIANT EYE OF RONOVA (CENTER: 450, 122)        -->
-    <!-- ============================================================ -->
+    <!-- Central Giant Eye of Ronova -->
     <g id="centralRonovaEye">
-      <!-- Clipped Interior of the Central Eye (Blinks Smoothly via Curved Eyelid Spline) -->
       <g clip-path="url(#mainEyeBlinkClip)">
-        <!-- Bright White/Pale-Pink Almond Sclera with Sharp Horizontal Tips -->
         <path d="M 340,122 C 372,98 408,75 450,75 C 492,75 528,98 560,122 C 528,146 492,169 450,169 C 408,169 372,146 340,122 Z"
           fill="url(#mainScleraHoriz)" />
-
-        <!-- Subtle Inner Canthus Shading at Left & Right Corners of Sclera -->
         <path d="M 340,122 C 362,113 382,109 398,112 C 382,118 365,122 340,122 Z" fill="#b85668" opacity="0.45" />
         <path d="M 560,122 C 538,113 518,109 502,112 C 518,118 535,122 560,122 Z" fill="#b85668" opacity="0.45" />
 
-        <!-- Central Iris & Starburst Pupil Assembly Centered at (450, 122) -->
         <g transform="translate(450, 122)">
-          <!-- Inner Group for Subtle Living Gaze Micro-Drift & Dilation Around (0,0) -->
           <g>
             <animateTransform attributeName="transform" type="translate"
               values="0,0; -1.6,-0.6; 1.4,0.5; -0.6,0.9; 0,0"
               keyTimes="0; 0.28; 0.58; 0.82; 1"
               dur="9s" repeatCount="indefinite" />
 
-            <!-- Outer Pale-White/Pink Iris Rim (Exact Reference Detail) -->
             <circle cx="0" cy="0" r="44.5" fill="#ffe3e8" opacity="0.92" />
-
-            <!-- Main Deep Velvety Blood-Maroon Iris Disc -->
             <circle cx="0" cy="0" r="43.2" fill="url(#mainIrisGrad)" stroke="#290005" stroke-width="1.2" />
-
-            <!-- Dark Abyssal Outer Iris Ring with Subtle Fibrous Texture -->
             <circle cx="0" cy="0" r="39" fill="none" stroke="#210004" stroke-width="5" opacity="0.88" />
             <circle cx="0" cy="0" r="34.5" fill="none" stroke="#59000e" stroke-width="2" stroke-dasharray="3.5 2.5" opacity="0.7" />
 
-            <!-- Softly Blurred 16-Pointed Crimson Flower Starburst Inside Iris (100% Centered at 0,0) -->
             <g filter="url(#irisFlowerBlur)">
               <animateTransform attributeName="transform" type="scale"
                 values="1; 1.05; 1" dur="3.4s" repeatCount="indefinite" />
-
-              <!-- Outer Crimson-Red Starburst Petals -->
               <polygon points="
                 0,-36 5,-18 18,-31 13,-14 31,-21 18,-6 36,0 18,6
                 31,21 13,14 18,31 5,18 0,36 -5,18 -18,31 -13,14
                 -31,21 -18,6 -36,0 -18,-6 -31,-21 -13,-14 -18,-31 -5,-18"
                 fill="#b8001f" opacity="0.88" />
-
-              <!-- Mid Hot-Crimson/Pink Flower Petals -->
               <polygon points="
                 0,-31 4,-15 15,-26 10,-11 26,-16 14,-4 31,0 14,4
                 26,16 10,11 15,26 4,15 0,31 -4,15 -15,26 -10,11
                 -26,16 -14,4 -31,0 -14,-4 -26,-16 -10,-11 -15,-26 -4,-15"
                 fill="#ff1a42" opacity="0.92" />
-
-              <!-- Inner Bright Magenta-Pink Starburst -->
               <polygon points="
                 0,-24 3,-11 12,-19 8,-8 20,-12 11,-3 24,0 11,3
                 20,12 8,8 12,19 3,11 0,24 -3,11 -12,19 -8,8
@@ -544,35 +707,22 @@
                 fill="#ff6682" opacity="0.95" />
             </g>
 
-            <!-- Soft Radial Hot-Pink/White Bloom Behind the Star Flare -->
             <circle cx="0" cy="0" r="26" fill="url(#pupilCoreGlow)" filter="url(#pupilBloom)">
               <animate attributeName="r" values="24;28;24" dur="2.6s" repeatCount="indefinite" />
             </circle>
 
-            <!-- Fine Glowing Starburst Rays & Signature Down-Right Crimson-White Ray from Reference -->
             <g stroke-linecap="round">
               <line x1="-24" y1="-24" x2="24" y2="24" stroke="#ff99ad" stroke-width="1.4" opacity="0.8" />
               <line x1="24" y1="-24" x2="-24" y2="24" stroke="#ff99ad" stroke-width="1.4" opacity="0.8" />
               <line x1="-30" y1="0" x2="30" y2="0" stroke="#ffb3c1" stroke-width="1.6" opacity="0.85" />
               <line x1="0" y1="-30" x2="0" y2="30" stroke="#ffb3c1" stroke-width="1.6" opacity="0.85" />
-              <!-- Signature bright ray shooting down-right at ~63deg in ronova_eye_ref.png -->
               <line x1="0" y1="0" x2="17" y2="34" stroke="#ff1a40" stroke-width="3" opacity="0.95" />
               <line x1="0" y1="0" x2="15" y2="31" stroke="#ffffff" stroke-width="1.3" opacity="0.95" />
             </g>
 
-            <!-- BLINDING PURE-WHITE 8-POINTED STAR FLARE PUPIL CORE -->
             <g filter="url(#pupilBloom)">
-              <!-- Primary 4 Long White Star Rays -->
-              <polygon points="
-                0,-30 3.2,-4.2 30,0 3.2,4.2
-                0,30 -3.2,4.2 -30,0 -3.2,-4.2"
-                fill="#ffffff" />
-              <!-- Secondary 4 Diagonal White Star Rays -->
-              <polygon points="
-                -19,-19 -2.2,-4.5 19,-19 4.5,-2.2
-                19,19 2.2,4.5 -19,19 -4.5,2.2"
-                fill="#ffffff" opacity="0.92" />
-              <!-- Intense Pure White Center Core -->
+              <polygon points="0,-30 3.2,-4.2 30,0 3.2,4.2 0,30 -3.2,4.2 -30,0 -3.2,-4.2" fill="#ffffff" />
+              <polygon points="-19,-19 -2.2,-4.5 19,-19 4.5,-2.2 19,19 2.2,4.5 -19,19 -4.5,2.2" fill="#ffffff" opacity="0.92" />
               <circle cx="0" cy="0" r="8" fill="#ffffff">
                 <animate attributeName="r" values="7.2;9;7.2" dur="2.2s" repeatCount="indefinite" />
               </circle>
@@ -580,31 +730,15 @@
           </g>
         </g>
 
-        <!-- Upper Eyelid Cast Shadow Inside Sclera -->
         <path d="M 338,122 C 372,96 408,74 450,74 C 492,74 528,96 562,122 C 528,103 492,85 450,85 C 408,85 372,103 338,122 Z"
           fill="#240005" opacity="0.55" />
       </g>
 
-      <!-- Animated Upper & Lower Eyelid Rim Lines (Follow the Exact Same Smooth Blink Spline!) -->
       <path d="M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z"
         fill="none" stroke="#ff1e42" stroke-width="2.4" filter="url(#smallEyeGlow)">
-        <animate attributeName="d"
-          dur="7.5s"
-          repeatCount="indefinite"
-          calcMode="spline"
+        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-          keySplines="
-            0.4 0 0.2 1;
-            0.45 0 0.85 0.35;
-            0.2 0 0.2 1;
-            0.16 1 0.3 1;
-            0.4 0 0.2 1;
-            0.45 0 0.85 0.35;
-            0.16 1 0.3 1;
-            0.45 0 0.85 0.35;
-            0.2 0 0.2 1;
-            0.16 1 0.3 1;
-            0.4 0 0.2 1"
+          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
           values="
             M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
             M 340,122 C 372,100 408,75 450,75 C 492,75 528,100 560,122 C 528,144 492,169 450,169 C 408,169 372,144 340,122 Z;
@@ -621,90 +755,53 @@
       </path>
     </g>
 
-    <!-- ============================================================ -->
-    <!-- 6. SMALLER SATELLITE EYES (TRUE SOCKET EYELID SPLINE BLINK!) -->
-    <!-- ============================================================ -->
-    <!-- 1. Upper-Left Satellite Eye (Large & Prominent as in ronova_eye_ref.png) -->
+    <!-- 6 Smaller Satellite Eyes -->
     <g transform="translate(334, 103) rotate(15) scale(0.95)">
       <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipA)">
-        <use href="#satEyeInterior" />
-      </g>
+      <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
-
-    <!-- 2. Lower-Left Satellite Eye (Nested below-left of central eye) -->
     <g transform="translate(372, 148) rotate(8) scale(0.84)">
       <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipB)">
-        <use href="#satEyeInterior" />
-      </g>
+      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
     </g>
-
-    <!-- 3. Far-Left Outer Fold Eye (3rd Left Eye) -->
     <g transform="translate(262, 114) rotate(11) scale(0.65)" opacity="0.9">
       <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipC)">
-        <use href="#satEyeInterior" />
-      </g>
+      <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
     </g>
-
-    <!-- 4. Upper-Right Satellite Eye (Prominent in ronova_eye_ref.png) -->
     <g transform="translate(566, 116) rotate(-7) scale(0.82)">
       <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipB)">
-        <use href="#satEyeInterior" />
-      </g>
+      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
     </g>
-
-    <!-- 5. Mid-Right Satellite Eye (Prominent in ronova_eye_ref.png) -->
     <g transform="translate(578, 142) rotate(-11) scale(0.80)">
       <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipC)">
-        <use href="#satEyeInterior" />
-      </g>
+      <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
     </g>
-
-    <!-- 6. Lower-Right Satellite Eye (Nested below-right of central eye) -->
     <g transform="translate(534, 158) rotate(-4) scale(0.70)">
       <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipA)">
-        <use href="#satEyeInterior" />
-      </g>
+      <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
 
-    <!-- ============================================================ -->
-    <!-- 7. PEELING CRIMSON-WHITE ENERGY RIBBONS (WITH WIND FLUTTER)  -->
-    <!-- ============================================================ -->
-    <!-- Upper-Left Peeling Ribbon & Wispy Crimson Tendril Trail -->
-    <path d="M 135,14 C 195,44 258,72 325,96 C 288,78 242,58 135,14 Z"
-      fill="url(#ribbonCrimsonL)" opacity="0.88">
+    <!-- Peeling Crimson-White Energy Ribbons -->
+    <path d="M 135,14 C 195,44 258,72 325,96 C 288,78 242,58 135,14 Z" fill="url(#ribbonCrimsonL)" opacity="0.88">
       <animate attributeName="d" dur="5.2s" repeatCount="indefinite"
         values="
           M 135,14 C 195,44 258,72 325,96 C 288,78 242,58 135,14 Z;
           M 132,10 C 198,48 256,70 325,96 C 286,75 244,54 132,10 Z;
           M 135,14 C 195,44 258,72 325,96 C 288,78 242,58 135,14 Z" />
     </path>
-    <path d="M 272,62 C 296,76 314,88 332,98 C 308,88 288,76 266,64 Z"
-      fill="#ffffff" filter="url(#smallEyeGlow)" />
-    <!-- Sharp Diagonal Tear Above Left Side of Main Eye -->
-    <path d="M 382,46 C 396,64 408,78 420,90 C 404,78 390,64 376,50 Z"
-      fill="#ffffff" stroke="#ff1a3c" stroke-width="0.8" filter="url(#smallEyeGlow)" />
+    <path d="M 272,62 C 296,76 314,88 332,98 C 308,88 288,76 266,64 Z" fill="#ffffff" filter="url(#smallEyeGlow)" />
+    <path d="M 382,46 C 396,64 408,78 420,90 C 404,78 390,64 376,50 Z" fill="#ffffff" stroke="#ff1a3c" stroke-width="0.8" filter="url(#smallEyeGlow)" />
 
-    <!-- Lower-Left Curved Peeling Crimson-White Ribbon (Signature Detail in ronova_eye_ref.png) -->
-    <path d="M 175,182 C 232,175 268,142 352,144 C 305,130 258,158 175,182 Z"
-      fill="url(#ribbonCrimsonL)" filter="url(#smallEyeGlow)">
+    <path d="M 175,182 C 232,175 268,142 352,144 C 305,130 258,158 175,182 Z" fill="url(#ribbonCrimsonL)" filter="url(#smallEyeGlow)">
       <animate attributeName="d" dur="4.8s" repeatCount="indefinite"
         values="
           M 175,182 C 232,175 268,142 352,144 C 305,130 258,158 175,182 Z;
           M 170,186 C 230,170 270,145 352,144 C 305,128 256,162 170,186 Z;
           M 175,182 C 232,175 268,142 352,144 C 305,130 258,158 175,182 Z" />
     </path>
-    <path d="M 275,148 C 302,138 328,139 354,144 C 328,142 302,144 275,148 Z"
-      fill="#ffffff" />
+    <path d="M 275,148 C 302,138 328,139 354,144 C 328,142 302,144 275,148 Z" fill="#ffffff" />
 
-    <!-- Upper-Right Curved Peeling Ribbon -->
-    <path d="M 582,110 C 618,96 655,68 702,42 C 662,74 628,100 594,114 Z"
-      fill="url(#ribbonCrimsonR)" filter="url(#smallEyeGlow)">
+    <path d="M 582,110 C 618,96 655,68 702,42 C 662,74 628,100 594,114 Z" fill="url(#ribbonCrimsonR)" filter="url(#smallEyeGlow)">
       <animate attributeName="d" dur="5.5s" repeatCount="indefinite"
         values="
           M 582,110 C 618,96 655,68 702,42 C 662,74 628,100 594,114 Z;
@@ -712,9 +809,7 @@
           M 582,110 C 618,96 655,68 702,42 C 662,74 628,100 594,114 Z" />
     </path>
 
-    <!-- Lower-Right Curved Peeling Ribbon -->
-    <path d="M 552,162 C 602,168 645,190 708,198 C 655,194 608,178 564,168 Z"
-      fill="url(#ribbonCrimsonR)" filter="url(#smallEyeGlow)">
+    <path d="M 552,162 C 602,168 645,190 708,198 C 655,194 608,178 564,168 Z" fill="url(#ribbonCrimsonR)" filter="url(#smallEyeGlow)">
       <animate attributeName="d" dur="4.6s" repeatCount="indefinite"
         values="
           M 552,162 C 602,168 645,190 708,198 C 655,194 608,178 564,168 Z;
@@ -723,10 +818,7 @@
     </path>
   </g>
 
-  <!-- ============================================================ -->
-  <!-- 8. FLOATING ABYSSAL ROCKS & CRIMSON-RIMMED DEBRIS (REF)      -->
-  <!-- ============================================================ -->
-  <!-- Tiny Glowing-Rimmed Void Shards Near Rift Border (Exact Reference Detail!) -->
+  <!-- Floating Abyssal Rocks & Crimson-Rimmed Debris -->
   <g stroke="#ff1e40" stroke-width="1.5" fill="#0d0002" filter="url(#smallEyeGlow)">
     <polygon points="315,62 326,53 330,61 320,69">
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.8s" repeatCount="indefinite" />
@@ -737,112 +829,38 @@
     <polygon points="712,158 724,153 726,160 715,164">
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="3.5s" repeatCount="indefinite" />
     </polygon>
-    <circle cx="368" cy="158" r="2.2" fill="#ff2e4c" />
-    <circle cx="572" cy="102" r="2" fill="#ff2e4c" />
-    <circle cx="496" cy="68" r="1.8" fill="#ffffff" />
-    <circle cx="428" cy="184" r="1.8" fill="#ff2e4c" />
   </g>
 
-  <!-- Large Floating Ochkanatlan Monolith Rocks Drifting in the Crimson Sky -->
-  <g opacity="0.92">
-    <!-- Far Left Floating Boulder Cluster -->
+  <g opacity="0.88">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="6.5s" repeatCount="indefinite" />
       <polygon points="18,168 48,154 82,162 94,186 76,210 35,214 12,194" fill="url(#rockGrad)" stroke="#4a0712" stroke-width="1.2" />
       <polygon points="84,152 102,146 108,162 94,168 82,160" fill="url(#rockGrad)" stroke="#5c0a17" stroke-width="1" />
     </g>
-
-    <!-- Bottom-Center-Left Triangular Monolith Shard -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,5; 0,0" dur="5.8s" repeatCount="indefinite" />
       <polygon points="362,208 378,200 400,222 384,248 364,240" fill="url(#rockGrad)" stroke="#660918" stroke-width="1.2" />
-      <polygon points="332,232 344,227 348,239 336,243" fill="#140205" stroke="#4a0712" stroke-width="0.9" />
       <polygon points="434,220 452,214 458,228 442,236 430,228" fill="url(#rockGrad)" stroke="#700b1b" stroke-width="1.1" />
     </g>
-
-    <!-- Right-Side Large Floating Boulders -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="7.2s" repeatCount="indefinite" />
       <polygon points="622,190 658,172 696,186 708,216 682,238 636,234 616,212" fill="url(#rockGrad)" stroke="#610917" stroke-width="1.3" />
       <polygon points="545,202 568,193 582,210 568,226 548,220" fill="url(#rockGrad)" stroke="#6e0a1a" stroke-width="1.1" />
-      <polygon points="694,166 714,160 722,176 706,184 692,176" fill="url(#rockGrad)" stroke="#520814" stroke-width="1" />
     </g>
   </g>
 
-  <!-- ============================================================ -->
-  <!-- 9. RISING CRIMSON EMBERS & ABYSSAL ASH PARTICLES             -->
-  <!-- ============================================================ -->
-  <g fill="#ff2e52" filter="url(#smallEyeGlow)">
-    <circle cx="95" cy="265" r="1.8">
-      <animate attributeName="cy" values="285;45" dur="5.8s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.85;0" dur="5.8s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="165" cy="260" r="2.3">
-      <animate attributeName="cy" values="280;40" dur="6.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0" dur="6.2s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="265" cy="240" r="1.9" fill="#ffffff">
-      <animate attributeName="cy" values="270;55" dur="5.4s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.85;0" dur="5.4s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="345" cy="255" r="1.6" fill="#ffccd5">
-      <animate attributeName="cy" values="275;35" dur="4.4s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0" dur="4.4s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="395" cy="270" r="2.4">
-      <animate attributeName="cy" values="285;30" dur="4.8s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.95;0" dur="4.8s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="515" cy="250" r="2" fill="#ffccd5">
-      <animate attributeName="cy" values="280;35" dur="5.1s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0" dur="5.1s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="585" cy="268" r="1.7" fill="#ffffff">
-      <animate attributeName="cy" values="282;42" dur="4.9s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.85;0" dur="4.9s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="640" cy="265" r="2.3">
-      <animate attributeName="cy" values="285;45" dur="6.6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.85;0" dur="6.6s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="775" cy="255" r="1.9" fill="#ffffff">
-      <animate attributeName="cy" values="275;60" dur="5.9s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.8;0" dur="5.9s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="835" cy="262" r="2.1">
-      <animate attributeName="cy" values="280;50" dur="6.3s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.85;0" dur="6.3s" repeatCount="indefinite" />
-    </circle>
-  </g>
-
-  <!-- ============================================================ -->
-  <!-- 10. MULTI-LAYERED FLOWING CRIMSON WAVES & LUNIZURA TITLE     -->
-  <!-- ============================================================ -->
-  <!-- Wave Layer 0 (Deep Translucent Crimson Silk Mist Wave) -->
-  <path d="M -900,242 Q -675,264 -450,242 T 0,242 T 450,242 T 900,242 T 1350,242 T 1800,242 L 1800,320 L -900,320 Z"
-    fill="url(#waveGlowBack)">
-    <animateTransform attributeName="transform" type="translate" from="-900,0" to="0,0" dur="14s" repeatCount="indefinite" />
-  </path>
-
-  <!-- Wave Layer 1 (Back Crimson Glow Wave) -->
-  <path d="M -900,250 Q -675,224 -450,250 T 0,250 T 450,250 T 900,250 T 1350,250 T 1800,250 L 1800,320 L -900,320 Z"
-    fill="url(#waveBack)" stroke="#ff2e52" stroke-width="1.2">
+  <!-- Translucent Flowing Crimson Silk Ribbon Waves (Allowing Vertical Effects to Flow Downward!) -->
+  <path d="M -900,248 Q -675,222 -450,248 T 0,248 T 450,248 T 900,248 T 1350,248 T 1800,248 Q 1575,274 1350,290 T 900,290 T 450,290 T 0,290 T -450,290 T -900,290 Z"
+    fill="url(#waveBack)" stroke="#ff2e52" stroke-width="1" stroke-opacity="0.65">
     <animateTransform attributeName="transform" type="translate" from="0,0" to="-900,0" dur="11s" repeatCount="indefinite" />
   </path>
 
-  <!-- Wave Layer 2 (Mid Deep Blood Wave) -->
-  <path d="M -900,260 Q -675,282 -450,260 T 0,260 T 450,260 T 900,260 T 1350,260 T 1800,260 L 1800,320 L -900,320 Z"
-    fill="url(#waveMid)" stroke="#b8001f" stroke-width="1">
+  <path d="M -900,262 Q -675,286 -450,262 T 0,262 T 450,262 T 900,262 T 1350,262 T 1800,262 Q 1575,295 1350,308 T 900,308 T 450,308 T 0,308 T -450,308 T -900,308 Z"
+    fill="url(#waveMid)" stroke="#ff1a3c" stroke-width="1.2" stroke-opacity="0.75">
     <animateTransform attributeName="transform" type="translate" from="-900,0" to="0,0" dur="8.5s" repeatCount="indefinite" />
   </path>
 
-  <!-- Wave Layer 3 (Front Dark Obsidian-Crimson Wave) -->
-  <path d="M -900,272 Q -675,252 -450,272 T 0,272 T 450,272 T 900,272 T 1350,272 T 1800,272 L 1800,320 L -900,320 Z"
-    fill="url(#waveFront)" stroke="#ff1a3c" stroke-width="1.5">
-    <animateTransform attributeName="transform" type="translate" from="0,0" to="-900,0" dur="6.5s" repeatCount="indefinite" />
-  </path>
-
-  <!-- Decorative Crimson Rule & Diamond Accents Flanking Title -->
+  <!-- LUNIZURA Main Title & Subtitle -->
   <g opacity="0.9">
     <line x1="120" y1="264" x2="295" y2="264" stroke="#ff1e42" stroke-width="1.2" opacity="0.65" />
     <polygon points="295,264 303,260 311,264 303,268" fill="#ff2e52" />
@@ -850,33 +868,401 @@
     <polygon points="589,264 597,260 605,264 597,268" fill="#ff2e52" />
   </g>
 
-  <!-- LUNIZURA Main Title -->
   <g filter="url(#smallEyeGlow)">
-    <text x="450" y="274"
-      text-anchor="middle"
+    <text x="450" y="274" text-anchor="middle"
       font-family="'Cinzel', 'Trajan Pro', 'Palatino Linotype', 'Georgia', serif"
-      font-size="38"
-      font-weight="900"
-      letter-spacing="14"
-      fill="url(#textMetallic)"
-      stroke="#4a000b"
-      stroke-width="0.8">
+      font-size="38" font-weight="900" letter-spacing="14"
+      fill="url(#textMetallic)" stroke="#4a000b" stroke-width="0.8">
       LUNIZURA
     </text>
   </g>
 
-  <!-- Subtitle -->
-  <text x="450" y="303"
-    text-anchor="middle"
+  <text x="450" y="302" text-anchor="middle"
     font-family="'Segoe UI', 'Inter', 'Helvetica Neue', sans-serif"
-    font-size="10.5"
-    font-weight="700"
-    letter-spacing="5.5"
-    fill="#ffccd5"
-    opacity="0.92">
+    font-size="10.5" font-weight="700" letter-spacing="5.5"
+    fill="#ffccd5" opacity="0.95">
     INFORMATICS &#9670; CYBERSECURITY &#9670; GAME MODDING &#9670; 3D BLENDER
   </text>
 
-  <!-- Subtle Outer Vignette Frame -->
-  <rect width="900" height="320" fill="none" stroke="#ff1a3c" stroke-width="2" opacity="0.35" />
+  <!-- ====================================================================== -->
+  <!-- 2. SEMI-TRANSPARENT GLASS DOSSIER & ABOUT ME (y=325 to 780)            -->
+  <!-- ====================================================================== -->
+  <g transform="translate(0, 315)">
+    <!-- Role Ticker HUD Bar (Frosted Crimson Glass) -->
+    <g transform="translate(30, 12)">
+      <rect width="840" height="38" rx="6" fill="url(#glassCard)" stroke="#ff1e42" stroke-width="1.3" stroke-opacity="0.8" />
+      <rect x="0" y="0" width="140" height="2" fill="#ffffff" filter="url(#smallEyeGlow)" opacity="0.85">
+        <animate attributeName="x" values="0;700;0" dur="7s" repeatCount="indefinite" />
+      </rect>
+      <polygon points="0,0 12,0 0,12" fill="#ff1e42" />
+      <polygon points="840,0 828,0 840,12" fill="#ff1e42" />
+      <polygon points="0,38 12,38 0,26" fill="#ff1e42" />
+      <polygon points="840,38 828,38 840,26" fill="#ff1e42" />
+
+      <text x="420" y="24" text-anchor="middle"
+        font-family="'JetBrains Mono', 'Consolas', 'Courier New', monospace"
+        font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#ffe6eb">
+        <tspan fill="#ff2e52">&#9670;</tspan> Informatics @ UNS
+        <tspan fill="#ff2e52"> // </tspan> Cybersecurity &amp; Reverse Engineering
+        <tspan fill="#ff2e52"> // </tspan> Game Memory Modding
+        <tspan fill="#ff2e52"> // </tspan> 3D Blender &amp; Math <tspan fill="#ff2e52">&#9670;</tspan>
+      </text>
+    </g>
+
+    <!-- 5 Semi-Transparent Crimson-Obsidian Domain Badges -->
+    <g transform="translate(30, 62)" font-family="'Segoe UI', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="0.9">
+      <g transform="translate(0, 0)">
+        <rect width="154" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.85" />
+        <rect width="38" height="28" rx="4" fill="url(#pillAccent)" />
+        <text x="19" y="18" text-anchor="middle" fill="#ffffff">UNS</text>
+        <text x="96" y="18" text-anchor="middle" fill="#ffe6eb">INFORMATICS</text>
+      </g>
+      <g transform="translate(164, 0)">
+        <rect width="174" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.85" />
+        <rect width="42" height="28" rx="4" fill="url(#pillAccent)" />
+        <text x="21" y="18" text-anchor="middle" fill="#ffffff">SEC</text>
+        <text x="108" y="18" text-anchor="middle" fill="#ffe6eb">BINARY &amp; MEMORY</text>
+      </g>
+      <g transform="translate(348, 0)">
+        <rect width="152" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.85" />
+        <rect width="36" height="28" rx="4" fill="url(#pillAccent)" />
+        <text x="18" y="18" text-anchor="middle" fill="#ffffff">3D</text>
+        <text x="94" y="18" text-anchor="middle" fill="#ffe6eb">BLENDER ART</text>
+      </g>
+      <g transform="translate(510, 0)">
+        <rect width="164" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.85" />
+        <rect width="46" height="28" rx="4" fill="url(#pillAccent)" />
+        <text x="23" y="18" text-anchor="middle" fill="#ffffff">MATH</text>
+        <text x="105" y="18" text-anchor="middle" fill="#ffe6eb">DISCRETE &amp; ALGO</text>
+      </g>
+      <g transform="translate(684, 0)">
+        <rect width="156" height="28" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.85" />
+        <rect width="40" height="28" rx="4" fill="url(#pillAccent)" />
+        <text x="20" y="18" text-anchor="middle" fill="#ffffff">RPG</text>
+        <text x="98" y="18" text-anchor="middle" fill="#ffe6eb">GAMING &amp; ANIME</text>
+      </g>
+    </g>
+
+    <!-- Semi-Transparent Glass Callout Banner -->
+    <g transform="translate(30, 102)">
+      <rect width="840" height="74" rx="7" fill="url(#glassCallout)" stroke="#ff1e42" stroke-width="1.3" stroke-opacity="0.8" />
+      <rect x="0" y="0" width="6" height="74" rx="3" fill="#ff1e42" filter="url(#smallEyeGlow)" />
+      <circle cx="26" cy="23" r="7" fill="#ff1e42" opacity="0.25" />
+      <polygon points="26,17 31,23 26,29 21,23" fill="#ff2e52" filter="url(#smallEyeGlow)" />
+      <text x="42" y="27" font-family="'Segoe UI', 'Inter', sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffffff">
+        ACTIVE LEARNER &amp; OPEN TO GUIDANCE
+      </text>
+      <text x="22" y="47" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffe0e6">
+        Currently an undergraduate student actively learning and expanding my skills across these domains. Always humble, eager to
+      </text>
+      <text x="22" y="63" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffe0e6">
+        improve, and open to constructive feedback, code reviews, and mentorship. Feel free to reach out or open an issue!
+      </text>
+    </g>
+
+    <!-- ABOUT ME Header -->
+    <g transform="translate(30, 194)">
+      <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#smallEyeGlow)" />
+      <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="17" font-weight="900" letter-spacing="4" fill="#ffffff">
+        ABOUT ME <tspan fill="#ff4d6d" font-family="'Segoe UI', sans-serif" font-size="12" letter-spacing="2">// SYSTEM DOSSIER</tspan>
+      </text>
+      <line x1="295" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
+      <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
+    </g>
+
+    <!-- 6 Semi-Transparent Frosted Glass Bento Cards -->
+    <g transform="translate(30, 220)">
+      <rect width="412" height="68" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
+      <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+      <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+      <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">01 // EDUCATION</text>
+      <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">Computer Science / Informatics undergraduate at</text>
+      <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff">Universitas Sebelas Maret (UNS).</text>
+    </g>
+
+    <g transform="translate(458, 220)">
+      <rect width="412" height="68" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
+      <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+      <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+      <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">02 // LOW-LEVEL &amp; SECURITY</text>
+      <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">Passionate about binary reverse engineering, process</text>
+      <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">memory architectures, and executable analysis.</text>
+    </g>
+
+    <g transform="translate(30, 298)">
+      <rect width="412" height="68" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
+      <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+      <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+      <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">03 // GAME MODDING</text>
+      <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">Developing memory modifiers, multi-level pointer path</text>
+      <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">resolvers, and real-time process patches.</text>
+    </g>
+
+    <g transform="translate(458, 298)">
+      <rect width="412" height="68" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
+      <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+      <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+      <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">04 // 3D MODELING &amp; ART</text>
+      <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">Designing stylized 3D assets, low-poly models, custom</text>
+      <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">topologies, and game props using Blender.</text>
+    </g>
+
+    <g transform="translate(30, 376)">
+      <rect width="412" height="68" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
+      <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+      <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+      <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">05 // MATHEMATICS</text>
+      <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">Deeply interested in discrete mathematics, number</text>
+      <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">theory, graph theory, and algorithmic complexity.</text>
+    </g>
+
+    <g transform="translate(458, 376)">
+      <rect width="412" height="68" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
+      <rect x="0" y="0" width="4" height="68" rx="2" fill="#ff1e42" />
+      <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
+      <text x="32" y="26" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ff8da1">06 // GAMING &amp; MEDIA</text>
+      <text x="16" y="46" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#fff0f3">Tactical and strategy RPG enthusiast, simulation lover,</text>
+      <text x="16" y="61" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" fill="#ffd6de">and avid anime &amp; dark-fantasy lore fan.</text>
+    </g>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- 3. ARLECCHINO BALEMOON EMBLEM (FLOATING DIRECTLY ON CONTINUOUS CANVAS) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(25, 780)">
+    <!-- Semi-Transparent Glass Frame So Vertical Streams Flow Right Through It! -->
+    <rect x="5" y="4" width="840" height="152" rx="8" fill="url(#glassCard)" stroke="#ff1e42" stroke-width="1.2" stroke-opacity="0.65" />
+    <ellipse cx="425" cy="80" rx="260" ry="95" fill="url(#arleCenterGlow)" />
+
+    <!-- Corner Brackets -->
+    <g stroke="#ff2e52" stroke-width="1.3" stroke-opacity="0.8" fill="none">
+      <path d="M 16,26 L 16,14 L 28,14" />
+      <path d="M 822,14 L 834,14 L 834,26" />
+      <path d="M 16,134 L 16,146 L 28,146" />
+      <path d="M 822,146 L 834,146 L 834,134" />
+    </g>
+
+    <!-- Left & Right Crimson Scythe Wings -->
+    <g transform="translate(425, 80)">
+      <g>
+        <path d="M -52,0 C -130,-28 -230,-22 -325,0 C -230,8 -130,12 -52,0 Z" fill="url(#wingGradLeft)" />
+        <path d="M -45,4 C -115,24 -200,20 -275,6 C -195,4 -115,-2 -45,4 Z" fill="url(#wingGradLeft)" opacity="0.7" />
+        <line x1="-55" y1="0" x2="-335" y2="0" stroke="#ffccd5" stroke-width="1.2" opacity="0.8" />
+      </g>
+      <g>
+        <path d="M 52,0 C 130,-28 230,-22 325,0 C 230,8 130,12 52,0 Z" fill="url(#wingGradRight)" />
+        <path d="M 45,4 C 115,24 200,20 275,6 C 195,4 115,-2 45,4 Z" fill="url(#wingGradRight)" opacity="0.7" />
+        <line x1="55" y1="0" x2="335" y2="0" stroke="#ffccd5" stroke-width="1.2" opacity="0.8" />
+      </g>
+
+      <!-- Counter-Rotating Occult Rings -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="56" fill="none" stroke="#ff1e42" stroke-width="1" stroke-dasharray="6 8 2 8" opacity="0.7" />
+        <polygon points="0,-60 3,-53 -3,-53" fill="#ff2e52" />
+        <polygon points="0,60 3,53 -3,53" fill="#ff2e52" />
+        <polygon points="-60,0 -53,3 -53,-3" fill="#ff2e52" />
+        <polygon points="60,0 53,3 53,-3" fill="#ff2e52" />
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="46" fill="none" stroke="#ff6680" stroke-width="1.2" stroke-dasharray="18 10 4 10" opacity="0.75" />
+      </g>
+
+      <!-- Dark Obsidian Eye Sphere & 3D Chiseled Arlecchino X Pupil -->
+      <circle cx="0" cy="0" r="37" fill="url(#irisDark)" stroke="#ff1e42" stroke-width="1.6" />
+      <path d="M -26,-22 A 34,34 0 1,0 26,22 A 31,31 0 1,1 -26,-22 Z" fill="#ff1a3c" opacity="0.45" />
+
+      <!-- 3D Chiseled Razor X -->
+      <g filter="url(#smallEyeGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.06;1" dur="3.2s" repeatCount="indefinite" />
+        <polygon points="-28,-28 0,-4 4,0 -28,-28" fill="url(#bladeLight)" />
+        <polygon points="-28,-28 -4,0 0,4 -28,-28" fill="url(#bladeDark)" />
+        <polygon points="28,28 0,4 -4,0 28,28" fill="url(#bladeLight)" />
+        <polygon points="28,28 4,0 0,-4 28,28" fill="url(#bladeDark)" />
+        <polygon points="28,-28 4,0 0,4 28,-28" fill="url(#bladeLight)" />
+        <polygon points="28,-28 0,-4 -4,0 28,-28" fill="url(#bladeDark)" />
+        <polygon points="-28,28 -4,0 0,-4 -28,28" fill="url(#bladeLight)" />
+        <polygon points="-28,28 0,4 4,0 -28,28" fill="url(#bladeDark)" />
+        <line x1="-27" y1="-27" x2="27" y2="27" stroke="#ffffff" stroke-width="1.3" />
+        <line x1="27" y1="-27" x2="-27" y2="27" stroke="#ffffff" stroke-width="1.3" />
+        <polygon points="0,-6 6,0 0,6 -6,0" fill="#ffffff" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- 4. SEMI-TRANSPARENT TECH STACK & TOOLCHAIN ARSENAL (y=948 to 1280)     -->
+  <!-- ====================================================================== -->
+  <g transform="translate(0, 948)">
+    <!-- Section Header -->
+    <g transform="translate(30, 14)">
+      <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#smallEyeGlow)" />
+      <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="17" font-weight="900" letter-spacing="4" fill="#ffffff">
+        TECH STACK &amp; TOOLCHAIN <tspan fill="#ff4d6d" font-family="'Segoe UI', sans-serif" font-size="12" letter-spacing="2">// ARSENAL</tspan>
+      </text>
+      <line x1="425" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
+      <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
+    </g>
+
+    <!-- Module 1: Languages (Semi-Transparent Frosted Glass) -->
+    <g transform="translate(30, 42)">
+      <rect width="840" height="76" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
+      <rect x="0" y="0" width="5" height="76" rx="2.5" fill="#ff1e42" />
+      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+        &#9670; LANGUAGES &amp; CORE SYNTAX
+      </text>
+      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800">
+        <g transform="translate(0, 0)">
+          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="19" y="19" text-anchor="middle" fill="#ffffff">PY</text>
+          <text x="92" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">PYTHON</text>
+        </g>
+        <g transform="translate(160, 0)">
+          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="42" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="21" y="19" text-anchor="middle" fill="#ffffff">CPP</text>
+          <text x="94" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">C++ 20</text>
+        </g>
+        <g transform="translate(320, 0)">
+          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="36" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="18" y="19" text-anchor="middle" fill="#ffffff">C</text>
+          <text x="91" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">SYSTEMS C</text>
+        </g>
+        <g transform="translate(480, 0)">
+          <rect width="164" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="19" y="19" text-anchor="middle" fill="#ffffff">JS</text>
+          <text x="101" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">JAVASCRIPT</text>
+        </g>
+        <g transform="translate(658, 0)">
+          <rect width="142" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="42" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="21" y="19" text-anchor="middle" fill="#ffffff">DB</text>
+          <text x="92" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">SQL</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 2: Systems, Security & Reverse Engineering -->
+    <g transform="translate(30, 130)">
+      <rect width="840" height="76" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
+      <rect x="0" y="0" width="5" height="76" rx="2.5" fill="#ff1e42" />
+      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+        &#9670; SYSTEMS, SECURITY &amp; REVERSE ENGINEERING
+      </text>
+      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11" font-weight="800">
+        <g transform="translate(0, 0)">
+          <rect width="136" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="19" y="19" text-anchor="middle" fill="#ffffff">OS</text>
+          <text x="87" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">WINDOWS</text>
+        </g>
+        <g transform="translate(148, 0)">
+          <rect width="154" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="19" y="19" text-anchor="middle" fill="#ffffff">PS</text>
+          <text x="96" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">POWERSHELL</text>
+        </g>
+        <g transform="translate(314, 0)">
+          <rect width="166" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="46" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="23" y="19" text-anchor="middle" fill="#ffffff">ASM</text>
+          <text x="106" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">GHIDRA SRE</text>
+        </g>
+        <g transform="translate(492, 0)">
+          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="44" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="22" y="19" text-anchor="middle" fill="#ffffff">DBG</text>
+          <text x="95" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">X64DBG</text>
+        </g>
+        <g transform="translate(650, 0)">
+          <rect width="150" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="19" y="19" text-anchor="middle" fill="#ffffff">CE</text>
+          <text x="94" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="0.8">CHEAT ENGINE</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 3 (3D) & Module 4 (Dev Infrastructure) -->
+    <g transform="translate(30, 218)">
+      <rect width="265" height="92" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
+      <rect x="0" y="0" width="5" height="92" rx="2.5" fill="#ff1e42" />
+      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+        &#9670; 3D &amp; CREATIVE
+      </text>
+      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11" font-weight="800">
+        <rect width="225" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+        <rect width="54" height="30" rx="4" fill="url(#pillAccent)" />
+        <text x="27" y="19" text-anchor="middle" fill="#ffffff">3D</text>
+        <text x="140" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">BLENDER STUDIO</text>
+        <text x="112" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#ffccd5">
+          Low-Poly Assets &#9670; Topology &#9670; Shaders
+        </text>
+      </g>
+    </g>
+
+    <g transform="translate(310, 218)">
+      <rect width="560" height="92" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
+      <rect x="0" y="0" width="5" height="92" rx="2.5" fill="#ff1e42" />
+      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
+        &#9670; DEVELOPMENT &amp; INFRASTRUCTURE
+      </text>
+      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="10.5" font-weight="800">
+        <g transform="translate(0, 0)">
+          <rect width="92" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="34" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="17" y="19" text-anchor="middle" fill="#ffffff">VCS</text>
+          <text x="63" y="19" text-anchor="middle" fill="#ffffff">GIT</text>
+        </g>
+        <g transform="translate(102, 0)">
+          <rect width="124" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="34" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="17" y="19" text-anchor="middle" fill="#ffffff">CI</text>
+          <text x="79" y="19" text-anchor="middle" fill="#ffffff">ACTIONS</text>
+        </g>
+        <g transform="translate(236, 0)">
+          <rect width="92" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="32" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="16" y="19" text-anchor="middle" fill="#ffffff">W3</text>
+          <text x="62" y="19" text-anchor="middle" fill="#ffffff">HTML5</text>
+        </g>
+        <g transform="translate(338, 0)">
+          <rect width="84" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="30" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="15" y="19" text-anchor="middle" fill="#ffffff">UI</text>
+          <text x="57" y="19" text-anchor="middle" fill="#ffffff">CSS3</text>
+        </g>
+        <g transform="translate(432, 0)">
+          <rect width="92" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
+          <rect width="30" height="30" rx="4" fill="url(#pillAccent)" />
+          <text x="15" y="19" text-anchor="middle" fill="#ffffff">RT</text>
+          <text x="61" y="19" text-anchor="middle" fill="#ffffff">NODE.JS</text>
+        </g>
+        <text x="260" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#ffccd5">
+          Automated Workflows &#9670; Modern Web Architecture &#9670; Full-Stack Tooling
+        </text>
+      </g>
+    </g>
+
+    <!-- ====================================================================== -->
+    <!-- 5. FEATURED PROJECTS HEADER AT BOTTOM OF CONTINUOUS MASTER CANVAS      -->
+    <!-- ====================================================================== -->
+    <g transform="translate(30, 336)">
+      <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#smallEyeGlow)" />
+      <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="17" font-weight="900" letter-spacing="4" fill="#ffffff">
+        FEATURED PROJECTS <tspan fill="#ff4d6d" font-family="'Segoe UI', sans-serif" font-size="11.5" letter-spacing="2">// CLICK ANY CARD TO OPEN REPO</tspan>
+      </text>
+      <line x1="540" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
+      <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
+    </g>
+  </g>
+
+  <!-- Continuous Left & Right Vertical Frame Borders Only (Open Bottom Seam into Project Cards!) -->
+  <line x1="1" y1="0" x2="1" y2="1340" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <line x1="899" y1="0" x2="899" y2="1340" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <line x1="0" y1="1" x2="900" y2="1" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
 </svg>
