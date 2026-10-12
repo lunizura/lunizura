@@ -78,29 +78,29 @@
       <stop offset="100%" stop-color="#ff294b" stop-opacity="1" />
     </linearGradient>
 
-    <!-- Central Eye Sclera (3D Spherical Shading with Dusky Mauve Tear-Duct Corners) -->
+    <!-- Central Eye Sclera (3D Spherical Shading with Smooth Dusky Rose-Taupe Tear-Duct Corners) -->
     <linearGradient id="mainScleraHoriz" x1="0%" y1="50%" x2="100%" y2="50%">
-      <stop offset="0%" stop-color="#6e303c" />
-      <stop offset="7%" stop-color="#9e5866" />
-      <stop offset="16%" stop-color="#d4a6b0" />
-      <stop offset="27%" stop-color="#f7e6ea" />
-      <stop offset="38%" stop-color="#fff9fa" />
+      <stop offset="0%" stop-color="#7a3e48" />
+      <stop offset="8%" stop-color="#a86d76" />
+      <stop offset="18%" stop-color="#d6b2b8" />
+      <stop offset="30%" stop-color="#f5e6e8" />
+      <stop offset="40%" stop-color="#fffafa" />
       <stop offset="50%" stop-color="#ffffff" />
-      <stop offset="62%" stop-color="#fff9fa" />
-      <stop offset="73%" stop-color="#f7e6ea" />
-      <stop offset="84%" stop-color="#d4a6b0" />
-      <stop offset="93%" stop-color="#9e5866" />
-      <stop offset="100%" stop-color="#6e303c" />
+      <stop offset="60%" stop-color="#fffafa" />
+      <stop offset="70%" stop-color="#f5e6e8" />
+      <stop offset="82%" stop-color="#d6b2b8" />
+      <stop offset="92%" stop-color="#a86d76" />
+      <stop offset="100%" stop-color="#7a3e48" />
     </linearGradient>
 
-    <!-- Upper Eyelid Cast Shadow Over Sclera & Iris -->
+    <!-- Soft Vertical Sclera Shading (Subtle Top Shadow & Warm Rose Rim Glow) -->
     <linearGradient id="scleraTopShadow" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1a0004" stop-opacity="0.88" />
-      <stop offset="22%" stop-color="#470a14" stop-opacity="0.58" />
-      <stop offset="48%" stop-color="#7a3340" stop-opacity="0.18" />
-      <stop offset="75%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="92%" stop-color="#ffd1d9" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#ff8da1" stop-opacity="0.45" />
+      <stop offset="0%" stop-color="#3d0812" stop-opacity="0.52" />
+      <stop offset="18%" stop-color="#7a3340" stop-opacity="0.22" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="82%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="94%" stop-color="#ffd9e0" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ff9eb0" stop-opacity="0.42" />
     </linearGradient>
 
     <!-- Central Eye Iris Base (Deep Blood-Obsidian Bowl with Velvety Rim) -->
@@ -1031,63 +1031,69 @@
     <!-- 7. CENTRAL GIANT EYE OF RONOVA (3D Sclera, Fleshy Lids, Cloudy Blood-Obsidian Iris & Diamond-Slash Starburst) -->
     <!-- ================================================================== -->
     <g id="centralRonovaEye">
-      <!-- Fleshy Crimson Eyelid Socket Cushion Surrounding Central Eye -->
-      <path d="M 336,122 C 368,95 406,71 450,71 C 494,71 532,95 564,122 C 532,148 494,170 450,170 C 406,170 368,148 336,122 Z"
-        fill="#47000b" stroke="#9e001a" stroke-width="1.4" opacity="0.72" />
+      <!-- Soft Airbrushed Crimson Eyelid Socket Cushion Surrounding Central Eye -->
+      <path d="M 334,122 C 368,94 406,72 450,72 C 494,72 532,94 566,122 C 532,149 494,171 450,171 C 406,171 368,149 334,122 Z"
+        fill="#3d0009" stroke="#850016" stroke-width="2.2" opacity="0.78" filter="url(#wingFoldBlur)" />
 
-      <!-- Upper & Lower Sculpted Crimson Eyelid Folds (Synchronized With Blink) -->
-      <path d="M 340,113 C 375,84 412,66 450,66 C 488,66 525,84 560,113"
-        fill="none" stroke="#db0026" stroke-width="2.2" stroke-linecap="round" opacity="0.92">
-        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
-          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
-          values="
-            M 340,113 C 375,84 412,66 450,66 C 488,66 525,84 560,113;
-            M 340,113 C 375,82 412,64 450,64 C 488,64 525,82 560,113;
-            M 340,120 C 375,116 412,114 450,114 C 488,114 525,116 560,120;
-            M 340,120 C 375,116 412,114 450,114 C 488,114 525,116 560,120;
-            M 340,113 C 375,84 412,66 450,66 C 488,66 525,84 560,113;
-            M 340,113 C 375,84 412,66 450,66 C 488,66 525,84 560,113;
-            M 340,120 C 375,116 412,114 450,114 C 488,114 525,116 560,120;
-            M 340,115 C 375,89 412,71 450,71 C 488,71 525,89 560,115;
-            M 340,120 C 375,116 412,114 450,114 C 488,114 525,116 560,120;
-            M 340,113 C 375,83 412,65 450,65 C 488,65 525,83 560,113;
-            M 340,113 C 375,84 412,66 450,66 C 488,66 525,84 560,113;
-            M 340,113 C 375,84 412,66 450,66 C 488,66 525,84 560,113" />
-      </path>
-      <path d="M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133"
-        fill="none" stroke="#c40021" stroke-width="1.8" stroke-linecap="round" opacity="0.88">
-        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
-          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
-          values="
-            M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
-            M 352,133 C 384,159 416,172 450,172 C 484,172 516,159 548,133;
-            M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
-            M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
-            M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
-            M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
-            M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
-            M 352,131 C 384,153 416,166 450,166 C 484,166 516,153 548,131;
-            M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
-            M 352,133 C 384,158 416,171 450,171 C 484,171 516,158 548,133;
-            M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
-            M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133" />
-      </path>
+      <!-- Softly Shaded Upper & Lower Crimson Eyelid Creases (Synchronized With Blink — Zero Hard Wire Lines!) -->
+      <g filter="url(#wingFoldBlur)">
+        <path d="M 342,114 C 375,88 412,71 450,71 C 488,71 525,88 558,114"
+          fill="none" stroke="#c40824" stroke-width="2.0" stroke-linecap="round" opacity="0.82">
+          <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
+            keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
+            keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
+            values="
+              M 342,114 C 375,88 412,71 450,71 C 488,71 525,88 558,114;
+              M 342,114 C 375,86 412,69 450,69 C 488,69 525,86 558,114;
+              M 342,120 C 375,116 412,114 450,114 C 488,114 525,116 558,120;
+              M 342,120 C 375,116 412,114 450,114 C 488,114 525,116 558,120;
+              M 342,114 C 375,88 412,71 450,71 C 488,71 525,88 558,114;
+              M 342,114 C 375,88 412,71 450,71 C 488,71 525,88 558,114;
+              M 342,120 C 375,116 412,114 450,114 C 488,114 525,116 558,120;
+              M 342,116 C 375,92 412,75 450,75 C 488,75 525,92 558,116;
+              M 342,120 C 375,116 412,114 450,114 C 488,114 525,116 558,120;
+              M 342,114 C 375,87 412,70 450,70 C 488,70 525,87 558,114;
+              M 342,114 C 375,88 412,71 450,71 C 488,71 525,88 558,114;
+              M 342,114 C 375,88 412,71 450,71 C 488,71 525,88 558,114" />
+        </path>
+        <path d="M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133"
+          fill="none" stroke="#b30620" stroke-width="1.8" stroke-linecap="round" opacity="0.82">
+          <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
+            keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
+            keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
+            values="
+              M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
+              M 352,133 C 384,159 416,172 450,172 C 484,172 516,159 548,133;
+              M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
+              M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
+              M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
+              M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
+              M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
+              M 352,131 C 384,153 416,166 450,166 C 484,166 516,153 548,131;
+              M 352,125 C 384,128 416,129 450,129 C 484,129 516,128 548,125;
+              M 352,133 C 384,158 416,171 450,171 C 484,171 516,158 548,133;
+              M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133;
+              M 352,133 C 384,157 416,170 450,170 C 484,170 516,157 548,133" />
+        </path>
+      </g>
 
-      <!-- Clipped Eyeball Interior (Sclera, Tear Ducts, Iris, Cloudy Nebula & Starburst Pupil) -->
+      <!-- Clipped Eyeball Interior (Sclera, Airbrushed Tear Ducts, Iris, Cloudy Nebula & Starburst Pupil) -->
       <g clip-path="url(#mainEyeBlinkClip)">
         <!-- 3D Shaded Almond Sclera -->
         <path d="M 340,122 C 372,98 408,75 450,75 C 492,75 528,98 560,122 C 528,146 492,169 450,169 C 408,169 372,146 340,122 Z"
           fill="url(#mainScleraHoriz)" />
 
-        <!-- Left & Right Tear-Duct Caruncles & Mauve Corner Creases -->
-        <path d="M 340,122 C 358,113 378,108 396,111 C 380,117 362,122 340,122 Z" fill="#8f4654" opacity="0.58" />
-        <path d="M 340,122 C 350,118 358,117 364,120 C 358,124 350,125 340,122 Z" fill="#4f121d" opacity="0.82" />
-        <path d="M 560,122 C 542,113 522,108 504,111 C 520,117 538,122 560,122 Z" fill="#8f4654" opacity="0.58" />
-        <path d="M 560,122 C 550,118 542,117 536,120 C 542,124 550,125 560,122 Z" fill="#4f121d" opacity="0.82" />
+        <!-- Airbrushed Tear-Duct Caruncles & Mauve-Rose Corner Creases (Softly Feathered — Zero Hard Triangles!) -->
+        <g filter="url(#eyeSoftBlur)">
+          <path d="M 338,122 C 358,111 380,106 402,110 C 384,117 364,123 338,122 Z" fill="#995864" opacity="0.52" />
+          <path d="M 338,122 C 354,126 372,132 392,131 C 374,126 356,123 338,122 Z" fill="#a86b77" opacity="0.42" />
+          <path d="M 338,122 C 348,118 356,117 363,121 C 356,125 348,126 338,122 Z" fill="#591824" opacity="0.72" />
+          <path d="M 562,122 C 542,111 520,106 498,110 C 516,117 536,123 562,122 Z" fill="#995864" opacity="0.52" />
+          <path d="M 562,122 C 546,126 528,132 508,131 C 526,126 544,123 562,122 Z" fill="#a86b77" opacity="0.42" />
+          <path d="M 562,122 C 552,118 544,117 537,121 C 544,125 552,126 562,122 Z" fill="#591824" opacity="0.72" />
+        </g>
 
-        <!-- Subtle Vertical Sclera Spherical Shading (Top Cast Shadow + Bottom Wet Meniscus Glow) -->
+        <!-- Subtle Vertical Sclera Spherical Shading -->
         <path d="M 340,122 C 372,98 408,75 450,75 C 492,75 528,98 560,122 C 528,146 492,169 450,169 C 408,169 372,146 340,122 Z"
           fill="url(#scleraTopShadow)" />
 
@@ -1181,13 +1187,22 @@
           </g>
         </g>
 
-        <!-- Heavy Upper Eyelid Cast Shadow Band Across Sclera & Top of Iris -->
-        <path d="M 336,122 C 370,96 408,73 450,73 C 492,73 530,96 564,122 C 528,101 492,84 450,84 C 408,84 372,101 336,122 Z"
-          fill="#1a0004" opacity="0.8" />
+        <!-- Airbrushed Upper-Corner Eyelid Shadows (Preserving Luminous Iris Top) -->
+        <g filter="url(#eyeSoftBlur)" opacity="0.82">
+          <path d="M 336,122 C 358,103 386,84 418,76 C 392,88 366,105 336,122 Z" fill="#210004" />
+          <path d="M 564,122 C 542,103 514,84 482,76 C 508,88 534,105 564,122 Z" fill="#210004" />
+          <path d="M 336,122 C 370,96 408,73.5 450,73.5 C 492,73.5 530,96 564,122 C 530,99 492,79 450,79 C 408,79 370,99 336,122 Z" fill="#420009" opacity="0.65" />
+        </g>
 
-        <!-- Wet Pale-Rose Lower Eyelid Meniscus Highlight -->
+        <!-- Luminous Warm-Rose Upper & Lower Eyelid Meniscus Rims -->
+        <path d="M 382,91 C 404,79 426,74 450,74 C 474,74 496,79 518,91"
+          fill="none" stroke="#ffccd5" stroke-width="2.2" stroke-linecap="round" filter="url(#wingFoldBlur)" opacity="0.78" />
+        <path d="M 396,84 C 414,76.5 432,74 450,74 C 468,74 486,76.5 504,84"
+          fill="none" stroke="#fff5f7" stroke-width="1.1" stroke-linecap="round" opacity="0.85" />
         <path d="M 358,133 C 388,155 418,166.5 450,166.5 C 482,166.5 512,155 542,133"
-          fill="none" stroke="#ffccd5" stroke-width="1.4" stroke-linecap="round" opacity="0.72" />
+          fill="none" stroke="#ffccd5" stroke-width="2.0" stroke-linecap="round" filter="url(#wingFoldBlur)" opacity="0.82" />
+        <path d="M 384,148 C 406,160 428,166.2 450,166.2 C 472,166.2 494,160 516,148"
+          fill="none" stroke="#fff5f7" stroke-width="1.1" stroke-linecap="round" opacity="0.88" />
       </g>
     </g>
 
