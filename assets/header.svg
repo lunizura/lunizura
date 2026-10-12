@@ -131,12 +131,13 @@
       <stop offset="100%" stop-color="#3d0008" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Small Satellite Eye Sclera Gradient -->
-    <radialGradient id="smallScleraGrad" cx="50%" cy="52%" r="55%">
-      <stop offset="0%" stop-color="#ff2947" />
-      <stop offset="48%" stop-color="#cc0020" />
-      <stop offset="82%" stop-color="#7a0012" />
-      <stop offset="100%" stop-color="#330006" />
+    <!-- Small Satellite Eye Sclera Gradient (Smooth Vivid Crimson to Deep Oxblood Tips) -->
+    <radialGradient id="smallScleraGrad" cx="50%" cy="52%" r="54%">
+      <stop offset="0%" stop-color="#ff3d5a" />
+      <stop offset="28%" stop-color="#e6102c" />
+      <stop offset="60%" stop-color="#b3041b" />
+      <stop offset="86%" stop-color="#6b000e" />
+      <stop offset="100%" stop-color="#2e0005" />
     </radialGradient>
 
     <!-- Peeling Ribbon Gradients (White-Hot Root to Deep Crimson Tip) -->
@@ -603,23 +604,25 @@
     <g id="satEyeInterior">
       <!-- Vivid Glowing Crimson Almond Sclera -->
       <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z" fill="url(#smallScleraGrad)" />
-      <!-- Dark Corner Caruncle Shading -->
-      <path d="M -30,0 C -22,-5 -16,-6 -12,-4 C -18,-1 -23,1 -30,0 Z" fill="#2e0005" opacity="0.65" />
-      <path d="M 30,0 C 22,-5 16,-6 12,-4 C 18,-1 23,1 30,0 Z" fill="#2e0005" opacity="0.65" />
-      <!-- Upper Eyelid Cast Shadow Across Sclera -->
-      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-8.2 -16,-8.2 -30,0 Z" fill="#1f0004" opacity="0.62" />
-      <!-- Subtle Lower Rim Wet Highlight -->
-      <path d="M -22,4 C -10,11.5 10,11.5 22,4" fill="none" stroke="#ff6680" stroke-width="0.8" opacity="0.55" />
-      <!-- Piercing White Iris Disc & Crimson Bullseye Pupil -->
+      <!-- Soft Airbrushed Corner & Upper Eyelid Shading (No Hard Dark Triangles!) -->
+      <g filter="url(#wingFoldBlur)" opacity="0.72">
+        <path d="M -30,0 C -22,-6 -15,-7.5 -9,-5 C -16,-1.5 -23,1 -30,0 Z" fill="#290005" />
+        <path d="M 30,0 C 22,-6 15,-7.5 9,-5 C 16,-1.5 23,1 30,0 Z" fill="#290005" />
+        <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-9.2 -16,-9.2 -30,0 Z" fill="#240004" />
+      </g>
+      <!-- Subtle Warm-Rose Lower Meniscus Highlight -->
+      <path d="M -18,5.5 C -8,11.2 8,11.2 18,5.5" fill="none" stroke="#ff8da1" stroke-width="0.9" stroke-linecap="round" opacity="0.62" />
+      <!-- Creamy White Iris Disc & Vivid Crimson Bullseye Pupil with Pale-Pink Pinpoint -->
       <g>
         <animateTransform attributeName="transform" type="translate"
-          values="0,0; -1.1,-0.35; 1.0,0.3; -0.4,0.45; 0,0"
+          values="0,0; -1.0,-0.32; 0.9,0.28; -0.35,0.4; 0,0"
           dur="6.5s" repeatCount="indefinite" />
-        <circle cx="0" cy="0" r="8.2" fill="#ff1a3c" opacity="0.45" filter="url(#smallEyeGlow)" />
-        <circle cx="0" cy="0" r="7.3" fill="#ffffff" stroke="#ffd1d9" stroke-width="0.5" filter="url(#smallEyeGlow)" />
-        <circle cx="0" cy="0" r="2.7" fill="#59000d" />
-        <circle cx="0" cy="0" r="1.6" fill="#ff1e40">
-          <animate attributeName="r" values="1.4;2.0;1.4" dur="2.4s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="8.2" fill="#ff294b" opacity="0.45" filter="url(#smallEyeGlow)" />
+        <circle cx="0" cy="0" r="7.0" fill="#fff7f8" stroke="#ffd6de" stroke-width="0.55" filter="url(#smallEyeGlow)" />
+        <circle cx="0" cy="0" r="2.9" fill="#d91128" />
+        <circle cx="0" cy="0" r="2.0" fill="#a80519" />
+        <circle cx="0" cy="0" r="1.05" fill="#ffe3e8">
+          <animate attributeName="r" values="0.95;1.25;0.95" dur="2.4s" repeatCount="indefinite" />
         </circle>
       </g>
     </g>
@@ -648,14 +651,16 @@
     </radialGradient>
 
     <g id="satEyeSocket">
-      <!-- Outer Fleshy Crimson Muscle Ridge -->
-      <path d="M -46,-1 C -26,-23 26,-23 46,-1 C 26,21 -26,21 -46,-1 Z" fill="#2b0006" opacity="0.7" />
-      <!-- Deep Eyelid Socket Trench -->
-      <path d="M -39,0 C -21,-17.5 21,-17.5 39,0 C 21,17.5 -21,17.5 -39,0 Z" fill="#120002" stroke="#850014" stroke-width="1.8" />
-      <!-- Upper & Lower Glossy Crimson Eyelid Creases -->
-      <path d="M -44,-2 C -23,-22 23,-22 44,-2" fill="none" stroke="#cc0022" stroke-width="1.6" stroke-linecap="round" opacity="0.9" />
-      <path d="M -36,-2 C -18,-15.5 18,-15.5 36,-2" fill="none" stroke="#ff1e3c" stroke-width="0.9" stroke-linecap="round" opacity="0.75" />
-      <path d="M -41,3 C -20,20 20,20 41,3" fill="none" stroke="#990018" stroke-width="1.4" stroke-linecap="round" opacity="0.82" />
+      <!-- Softly Airbrushed Outer Fleshy Crimson Socket Cushion (No Wireframe Loops!) -->
+      <g filter="url(#wingFoldBlur)">
+        <path d="M -45,-0.5 C -25,-21 25,-21 45,-0.5 C 25,19.5 -25,19.5 -45,-0.5 Z" fill="#2e0006" opacity="0.78" />
+        <!-- Tapered Upper & Lower Painterly Crimson Eyelid Folds -->
+        <path d="M -42,-1 C -22,-19.5 22,-19.5 42,-1 C 22,-14.5 -22,-14.5 -42,-1 Z" fill="#b8041f" opacity="0.88" />
+        <path d="M -36,-2 C -18,-16.5 18,-16.5 36,-2 C 18,-13.2 -18,-13.2 -36,-2 Z" fill="#e61230" opacity="0.78" />
+        <path d="M -39,1.5 C -20,18 20,18 39,1.5 C 20,13.5 -20,13.5 -39,1.5 Z" fill="#910017" opacity="0.82" />
+      </g>
+      <!-- Deep Velvety Eyelid Socket Trench -->
+      <path d="M -36,0 C -19,-15.2 19,-15.2 36,0 C 19,15.2 -19,15.2 -36,0 Z" fill="#120002" opacity="0.95" />
     </g>
 
     <!-- Reusable GPU-Accelerated Glowing Rain Streak (Outer Halo + Crisp Core, Zero Filter Overhead!) -->
@@ -1244,13 +1249,13 @@
     <!-- ================================================================== -->
     <!-- 9. THE EXACT 5 SATELLITE EYES OF RONOVA (2 Left, 3 Right)          -->
     <!-- ================================================================== -->
-    <!-- 1. Upper-Left Satellite Eye (Largest, tilted +17 deg) -->
-    <g transform="translate(328, 98) rotate(17) scale(0.98)">
+    <!-- 1. Upper-Left Satellite Eye (Largest, tilted +16 deg) -->
+    <g transform="translate(328, 98) rotate(16) scale(0.96)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
     <!-- 2. Lower-Left Satellite Eye (Below & slightly right of Upper-Left, tilted +8 deg) -->
-    <g transform="translate(366, 145) rotate(8) scale(0.85)">
+    <g transform="translate(366, 145) rotate(8) scale(0.84)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
     </g>
@@ -1265,7 +1270,7 @@
       <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
     </g>
     <!-- 5. Lower-Inner-Right Satellite Eye (Smaller eye tucked beside right tear duct, tilted -4 deg) -->
-    <g transform="translate(538, 154) rotate(-4) scale(0.68)">
+    <g transform="translate(536, 154) rotate(-4) scale(0.68)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
