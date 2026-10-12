@@ -935,62 +935,96 @@
 
     <!-- 3. Soft Inner Crimson-Rose Bleeding Rim Between White Border and Dark Void -->
     <path d="
-      M 96,82
-      C 154,88 214,82 280,74
-      L 348,66 L 405,68 L 450,74 L 505,82 L 566,94 L 625,107
-      C 694,103 768,99 846,99
-      C 788,122 730,149 678,172
-      L 620,182 L 574,173 L 548,181 C 534,187 522,189 510,186 C 498,181 486,179 472,183 L 464,187 L 454,181 C 440,183 426,188 415,188
-      L 406,179 L 372,172 L 312,154 L 248,141
-      C 192,124 142,102 96,82 Z"
-      fill="#b8001f" stroke="#ff294b" stroke-width="2.5" opacity="0.94" filter="url(#softBlur)" />
+      M 86,80
+      C 150,87 214,81 282,73
+      C 344,65 398,66 450,73
+      C 506,80 566,93 628,106
+      C 698,102 772,98 852,99
+      C 792,122 732,149 678,172
+      C 644,183 614,182 582,174
+      C 564,170 552,178 538,183
+      C 526,187 516,188 506,185
+      C 494,180 482,179 472,183
+      C 466,186 460,186 454,181
+      C 440,183 426,187 414,187
+      C 402,181 388,175 368,170
+      C 326,159 286,149 246,140
+      C 188,123 136,100 86,80 Z"
+      fill="#b8001f" stroke="#ff294b" stroke-width="2.4" opacity="0.94" filter="url(#softBlur)" />
 
-    <!-- 4. Pitch-Black Abyssal Void Interior (Soft-Blurred Painterly Edge!) -->
+    <!-- 4. Pitch-Black Abyssal Void Interior (Smooth Cubic-Bezier Silhouette) -->
     <path id="riftInteriorPath" d="
-      M 104,84
-      C 160,89 218,83 282,76
-      L 348,68 L 405,70 L 450,76 L 505,84 L 566,96 L 624,109
-      C 692,105 762,101 836,100
-      C 780,123 724,149 674,171
-      L 618,180 L 574,171 L 546,178 L 512,183 L 488,177 L 464,182 L 452,178 L 416,184 L 406,176 L 372,170 L 312,153 L 248,140
-      C 194,123 144,102 104,84 Z"
-      fill="url(#voidInterior)" filter="url(#softBlur)" />
+      M 96,82
+      C 156,88 218,82 284,75
+      C 346,67 400,68 450,75
+      C 506,82 566,95 626,108
+      C 694,104 766,100 842,100
+      C 784,122 726,148 674,170
+      C 642,181 612,180 582,172
+      C 564,168 550,176 536,180
+      C 524,184 514,185 504,182
+      C 492,178 480,177 470,180
+      C 464,182 458,182 452,178
+      C 438,180 426,184 414,184
+      C 402,178 388,173 368,168
+      C 326,157 286,148 248,139
+      C 192,122 140,100 96,82 Z"
+      fill="url(#voidInterior)" filter="url(#wingFoldBlur)" />
+
+    <!-- 4.5. Soft Upper-Brow Crimson Atmospheric Cushion (Matching Cutscene Red Glow Above Central & Left Eyes) -->
+    <path d="
+      M 280,76
+      C 345,68 400,69 450,76
+      C 505,83 560,94 615,106
+      C 565,112 510,98 450,94
+      C 390,90 335,96 280,76 Z"
+      fill="#9e081c" opacity="0.72" filter="url(#softBlur)" />
 
     <!-- 5. Deep Blood-Lit Lower Basin Cavity (Soft-Blurred Painterly Floor Matching Reference!) -->
     <path d="
-      M 268,136
-      C 325,130 385,134 450,136
-      C 515,134 575,132 638,150
-      L 618,181 L 574,172 L 548,180 C 534,186 522,188 510,185 C 498,180 486,178 472,182 L 464,186 L 454,180 C 440,182 426,187 415,187
-      L 406,178 L 372,171 L 312,153 Z"
+      M 258,136
+      C 320,130 385,134 450,136
+      C 515,134 575,134 646,152
+      C 624,176 598,178 576,172
+      C 560,168 548,177 536,181
+      C 524,185 514,186 504,183
+      C 492,179 480,178 470,181
+      C 464,184 458,184 452,179
+      C 438,181 426,185 414,185
+      C 402,179 388,174 368,169
+      C 326,158 290,148 258,136 Z"
       fill="url(#lowerBasinGlow)" filter="url(#softBlur)" />
 
-    <!-- Crimson Rim-Lit Crease Accents Along the Lower Basin Floor -->
-    <path d="M 412,175 Q 436,171 456,176" fill="none" stroke="#ff3355" stroke-width="1.3" stroke-linecap="round" opacity="0.82" />
-    <path d="M 498,174 Q 520,169 540,176" fill="none" stroke="#ff3355" stroke-width="1.4" stroke-linecap="round" opacity="0.85" />
-    <circle cx="468" cy="176" r="1.4" fill="#ff6680" opacity="0.88" />
+    <!-- Soft Painterly Crimson Rim-Lit Crease Ripples Along the Lower Basin Floor -->
+    <g filter="url(#wingFoldBlur)">
+      <path d="M 408,175 Q 434,170 456,176" fill="none" stroke="#ff3856" stroke-width="1.6" stroke-linecap="round" opacity="0.78" />
+      <path d="M 498,174 Q 522,168 544,176" fill="none" stroke="#ff3856" stroke-width="1.7" stroke-linecap="round" opacity="0.82" />
+    </g>
+    <circle cx="468" cy="176" r="1.3" fill="#ff6680" opacity="0.85" filter="url(#smallEyeGlow)" />
+    <circle cx="516" cy="166" r="1.2" fill="#ff3352" opacity="0.8" />
 
-    <!-- 6. Sculpted Abyssal Sinews, Muscle Folds & Glossy Veins Inside the Wings -->
-    <g opacity="0.95" stroke-linecap="round">
-      <!-- Left Wing Muscle Ridges Wrapping Into the Upper-Left & Lower-Left Eye Sockets -->
-      <path d="M 118,88 C 176,102 234,91 288,87 C 318,85 346,84 374,98" fill="none" stroke="#59000d" stroke-width="3.2" />
-      <path d="M 146,96 C 198,110 248,101 292,93 C 320,88 348,88 370,102" fill="none" stroke="#a8001c" stroke-width="1.4" />
-      <path d="M 170,108 C 220,126 264,125 306,120 C 335,116 362,118 392,124" fill="none" stroke="#700011" stroke-width="2.4" />
-      <path d="M 192,116 C 236,130 276,127 314,123 C 340,120 364,122 388,126" fill="none" stroke="#d40024" stroke-width="1.1" opacity="0.8" />
-      <path d="M 216,132 C 266,145 312,153 358,161 C 388,166 416,167 446,165" fill="none" stroke="#660010" stroke-width="2.4" />
-      <path d="M 248,139 C 292,151 332,159 372,163" fill="none" stroke="#b8001f" stroke-width="1.2" opacity="0.75" />
+    <!-- 6. Airbrushed Organic Abyssal Sinews & Muscle Folds Inside the Wings (Zero Hard Wireframe Lines!) -->
+    <g opacity="0.88" stroke-linecap="round" filter="url(#wingFoldBlur)">
+      <!-- Left Wing Soft Sculpted Muscle Folds -->
+      <path d="M 118,88 C 176,102 232,92 284,88 C 314,86 344,86 372,98" fill="none" stroke="#4f000b" stroke-width="4.2" />
+      <path d="M 142,95 C 194,108 242,100 286,93 C 314,89 342,90 368,102" fill="none" stroke="#8f0618" stroke-width="2.0" opacity="0.85" />
+      <path d="M 168,108 C 218,125 262,124 304,119 C 334,115 362,117 390,123" fill="none" stroke="#5e000e" stroke-width="3.4" />
+      <path d="M 188,115 C 232,128 272,126 310,122 C 336,119 360,121 386,125" fill="none" stroke="#ad091f" stroke-width="1.6" opacity="0.75" />
+      <path d="M 216,131 C 266,144 312,152 358,160 C 388,165 416,166 446,164" fill="none" stroke="#54000c" stroke-width="3.2" />
 
-      <!-- Right Wing Muscle Ridges Wrapping Into the 3 Right Satellite Eye Sockets -->
-      <path d="M 812,102 C 750,107 692,115 638,115 C 605,115 576,102 546,106" fill="none" stroke="#59000d" stroke-width="3.2" />
-      <path d="M 784,110 C 726,119 676,127 624,123 C 596,121 572,108 544,110" fill="none" stroke="#b3001e" stroke-width="1.4" />
-      <path d="M 754,125 C 702,145 654,151 608,142 C 584,137 562,132 536,132" fill="none" stroke="#700011" stroke-width="2.4" />
-      <path d="M 738,129 C 688,147 646,151 604,142" fill="none" stroke="#e60026" stroke-width="1.1" opacity="0.8" />
-      <path d="M 704,155 C 656,171 612,171 568,167 C 536,164 505,167 468,165" fill="none" stroke="#660010" stroke-width="2.4" />
+      <!-- Right Wing Soft Sculpted Muscle Folds -->
+      <path d="M 806,103 C 746,108 690,115 638,115 C 605,115 576,103 546,106" fill="none" stroke="#4f000b" stroke-width="4.2" />
+      <path d="M 778,110 C 722,119 674,126 624,122 C 596,120 572,108 544,110" fill="none" stroke="#99081b" stroke-width="2.0" opacity="0.85" />
+      <path d="M 748,125 C 698,144 652,150 608,141 C 584,136 562,131 536,131" fill="none" stroke="#5e000e" stroke-width="3.4" />
+      <path d="M 732,129 C 684,146 644,150 604,141" fill="none" stroke="#ba0b22" stroke-width="1.6" opacity="0.75" />
+      <path d="M 698,154 C 652,169 610,169 568,166 C 536,163 505,166 468,164" fill="none" stroke="#54000c" stroke-width="3.2" />
+    </g>
 
-      <!-- Tiny Glowing Crimson Tear-Sparks Inside Cavity (Matching Cutscene Details) -->
-      <polygon points="330,148 334,145 336,151 331,154" fill="#ff1e40" filter="url(#smallEyeGlow)" />
-      <circle cx="587" cy="98" r="1.8" fill="#ff2947" filter="url(#smallEyeGlow)" />
-      <circle cx="456" cy="90" r="1.2" fill="#ff1e40" opacity="0.8" />
+    <!-- Tiny Glowing Crimson Tear-Sparks Inside Cavity (Matching Cutscene Details) -->
+    <g filter="url(#smallEyeGlow)">
+      <path d="M 329,147 C 331,144 334,145 335,149 C 335,153 332,155 330,152 Z" fill="#ff2442" />
+      <circle cx="587" cy="98" r="1.7" fill="#ff2947" />
+      <circle cx="456" cy="90" r="1.1" fill="#ff2442" opacity="0.85" />
     </g>
 
     <!-- ================================================================== -->
