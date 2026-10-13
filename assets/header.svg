@@ -1,5 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400" width="100%" height="100%">
   <defs>
+
+    <!-- ============================================================ -->
+    <!-- UNCOMPROMISED HDR OPTICAL BLOOM & SHARP NEON FILTERS         -->
+    <!-- ============================================================ -->
+    <!-- 1. Tight Laser Neon Bloom: Razor-sharp core + intense electric halo -->
+    <filter id="laserBloomTight" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.4" result="blur1" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6.5" result="blur2" />
+      <feColorMatrix in="blur2" type="matrix" values="
+        1.8 0 0 0 0
+        0 1.2 0 0 0
+        0 0 1.2 0 0
+        0 0 0 2.2 0" result="boost" />
+      <feMerge>
+        <feMergeNode in="boost" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- 2. Wide Volumetric God-Aura: Massive crimson emission for god-eye and sockets -->
+    <filter id="volumetricAuraWide" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blurMid" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blurWide" />
+      <feColorMatrix in="blurWide" type="matrix" values="
+        1.2 0 0 0 0.15
+        0 0.1 0 0 0
+        0 0 0.1 0 0
+        0 0 0 1.5 0" result="shift" />
+      <feMerge>
+        <feMergeNode in="shift" />
+        <feMergeNode in="blurMid" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- 3. Singularity Starburst Incandescent Glow: Blinding white-hot diamond core bloom -->
+    <filter id="singularityStarburstGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.8" result="coreTight" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7.5" result="coreMed" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="22.0" result="coreWide" />
+      <feColorMatrix in="coreWide" type="matrix" values="
+        1.8 0 0 0 0.2
+        0 0.4 0 0 0
+        0 0 0.4 0 0
+        0 0 0 2.4 0" result="coreAura" />
+      <feMerge>
+        <feMergeNode in="coreAura" />
+        <feMergeNode in="coreMed" />
+        <feMergeNode in="coreTight" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- 4. Relativistic Black Hole Photon Ring & Lensing Bloom -->
+    <filter id="blackHolePhotonGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="ringTight" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9.0" result="ringWide" />
+      <feColorMatrix in="ringWide" type="matrix" values="
+        1.5 0 0 0 0
+        0 1.0 0 0 0
+        0 0 1.0 0 0
+        0 0 0 1.8 0" result="ringBoost" />
+      <feMerge>
+        <feMergeNode in="ringBoost" />
+        <feMergeNode in="ringTight" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Volumetric Crepuscular God-Ray Gradients -->
+    <linearGradient id="godRayGradL" x1="50%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff2647" stop-opacity="0.55" />
+      <stop offset="35%" stop-color="#db1230" stop-opacity="0.32" />
+      <stop offset="75%" stop-color="#7a0312" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#140103" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="godRayGradR" x1="50%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2647" stop-opacity="0.55" />
+      <stop offset="35%" stop-color="#db1230" stop-opacity="0.32" />
+      <stop offset="75%" stop-color="#7a0312" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#140103" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="godRayCenter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="25%" stop-color="#ff3356" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#8a0515" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#140103" stop-opacity="0" />
+    </linearGradient>
+
         <!-- Continuous Top-to-Bottom Deep Ochkanatlan Blood Sky & Abyssal Canvas -->
     <linearGradient id="skyBg" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#3d050a" />
@@ -530,21 +620,26 @@
       <path d="M -30,0 C -25,-4.5 -20,-5.5 -16,-3.5 C -21,-1 -25,1 -30,0 Z" fill="#4d000a" opacity="0.75" />
       <path d="M 30,0 C 25,-4.5 20,-5.5 16,-3.5 C 21,-1 25,1 30,0 Z" fill="#4d000a" opacity="0.75" />
       <!-- Luminous Warm Salmon Meniscus Highlight -->
-      <path d="M -18,6 C -8,11.5 8,11.5 18,6" fill="none" stroke="#ffa3b5" stroke-width="1.2" stroke-linecap="round" opacity="0.75" />
+      <path d="M -18,6 C -8,11.5 8,11.5 18,6" fill="none" stroke="#ffa3b5" stroke-width="1.2" stroke-linecap="round" opacity="0.85" />
 
-      <!-- Fiery Saturated Scarlet-Ruby Iris Orb (Direct Reference Match: #cf2825) -->
+      <!-- Fiery Saturated Scarlet-Ruby Iris Orb with Solar Corona -->
+      <ellipse cx="0" cy="-0.5" rx="12" ry="11" fill="#ff2647" opacity="0.35" filter="url(#laserBloomTight)" />
       <ellipse cx="0" cy="-0.5" rx="10.2" ry="9.2" fill="url(#satIrisGrad)" />
       <!-- Dark Velvet Pupil Core -->
-      <circle cx="0" cy="-0.5" r="4.2" fill="#1f0004" />
-      <!-- Incandescent Center Pinpoint Gleam -->
-      <circle cx="0" cy="-0.5" r="2.2" fill="#ff6b82" />
+      <circle cx="0" cy="-0.5" r="4.2" fill="#0d0002" />
+      <!-- Incandescent Center Pinpoint Gleam with Singularity Glow -->
+      <circle cx="0" cy="-0.5" r="2.2" fill="#ff6b82" filter="url(#singularityStarburstGlow)" />
       <circle cx="0" cy="-0.5" r="1.3" fill="#ffffff" />
 
-      <!-- Blinding White-Hot Eyelid Rims (Signature Cutscene Feature: Crisp Glowing Slashes in the Sky!) -->
-      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0" fill="none" stroke="#ff2647" stroke-width="3.2" stroke-linecap="round" opacity="0.45" />
-      <path d="M -28,-0.5 C -15,-12.8 15,-12.8 28,-0.5" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" opacity="0.95" />
-      <path d="M -30,0 C -16,13.5 16,13.5 30,0" fill="none" stroke="#ff2647" stroke-width="3.2" stroke-linecap="round" opacity="0.45" />
-      <path d="M -28,0.5 C -15,12.8 15,12.8 28,0.5" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" opacity="0.95" />
+      <!-- Triple-Stroke Sharp Neon Eyelid Rims (Electric Laser Slashes in the Sky!) -->
+      <g fill="none" stroke-linecap="round">
+        <!-- Upper Eyelid Laser Rim -->
+        <path d="M -30,0 C -16,-13.5 16,-13.5 30,0" stroke="#ff0033" stroke-width="4.2" opacity="0.55" filter="url(#laserBloomTight)" />
+        <path d="M -28,-0.5 C -15,-12.8 15,-12.8 28,-0.5" stroke="#ffffff" stroke-width="1.6" opacity="1.0" />
+        <!-- Lower Eyelid Laser Rim -->
+        <path d="M -30,0 C -16,13.5 16,13.5 30,0" stroke="#ff0033" stroke-width="4.2" opacity="0.55" filter="url(#laserBloomTight)" />
+        <path d="M -28,0.5 C -15,12.8 15,12.8 28,0.5" stroke="#ffffff" stroke-width="1.6" opacity="1.0" />
+      </g>
     </g>
 
     <!-- GPU-Accelerated Soft Radial Pillar Gradients (Replaces Expensive 1230px feGaussianBlur!) -->
@@ -571,9 +666,11 @@
     </radialGradient>
 
         <g id="satEyeSocket">
-      <!-- Deep Abyssal Crimson Socket Bed with Sculpted Eyelid Folds -->
+      <!-- Deep Abyssal Crimson Socket Bed with Sculpted Eyelid Folds & Volumetric Aura -->
+      <ellipse cx="0" cy="0" rx="60" ry="28" fill="#ff1a3c" opacity="0.4" filter="url(#volumetricAuraWide)" />
       <g>
-        <path d="M -54,0 C -29,-25 29,-25 54,0 C 29,23 -29,23 -54,0 Z" fill="#470009" opacity="0.82" />
+        <path d="M -58,0 C -32,-28 32,-28 58,0 C 32,26 -32,26 -58,0 Z" fill="#2d0006" opacity="0.92" />
+        <path d="M -54,0 C -29,-25 29,-25 54,0 C 29,23 -29,23 -54,0 Z" fill="#54000b" opacity="0.95" />
         <path d="M -50,-1 C -26,-23 26,-23 50,-1 C 25,-14 -25,-14 -50,-1 Z" fill="#8f0616" opacity="0.92" />
         <path d="M -42,-2 C -21,-19 21,-19 42,-2 C 21,-13 -21,-13 -42,-2 Z" fill="#d6112d" opacity="0.88" />
         <path d="M -46,1.5 C -24,21 24,21 46,1.5 C 23,13 -23,13 -46,1.5 Z" fill="#780211" opacity="0.9" />
@@ -649,95 +746,138 @@
   </g>
 
     <!-- ====================================================================== -->
-  <!-- 1. RONOVA'S CELESTIAL EYE SKY RIFT (100% REFERENCE ACCURATE CUTSCENE)    -->
+  <!-- 1. RONOVA'S CELESTIAL EYE SKY RIFT (MENACING HDR SHARP NEON & VOLUMETRIC AURA) -->
   <!-- ====================================================================== -->
 
-  <!-- A. Volumetric Crimson Sky Atmosphere & Celestial God-Aura -->
+  <!-- A. Volumetric Crimson Sky Atmosphere & Crepuscular God-Rays -->
   <g>
-    <!-- Volumetric Radiant Crimson Celestial Sky Canopy (Immersing Entire Natlan Sky in Blood Crimson!) -->
-    <rect x="0" y="0" width="900" height="320" fill="url(#ronovaAtmosphereCorona)" />
-    <ellipse cx="450" cy="118" rx="440" ry="180" fill="url(#ronovaAtmosphereCorona)" opacity="0.92" />
-    <ellipse cx="450" cy="118" rx="360" ry="135" fill="url(#ronovaAtmosphereCorona)" opacity="0.85" />
-    <ellipse cx="450" cy="120" rx="240" ry="88" fill="#ff2647" opacity="0.45" />
+    <!-- Deep Volumetric Celestial Blood-Sky Canopy -->
+    <ellipse cx="450" cy="118" rx="450" ry="240" fill="url(#ronovaAtmosphereCorona)" />
+    <ellipse cx="450" cy="118" rx="440" ry="190" fill="url(#ronovaAtmosphereCorona)" opacity="0.95" />
+    <ellipse cx="450" cy="118" rx="360" ry="145" fill="url(#ronovaAtmosphereCorona)" opacity="0.9" />
+    <ellipse cx="450" cy="120" rx="260" ry="95" fill="#ff1a3c" opacity="0.55" filter="url(#volumetricAuraWide)" />
 
-    <!-- Ambient Drifting Volcanic Clouds/Smoke Streaks Across Upper Heavens -->
-    <path d="M 0,40 C 200,20 350,60 550,30 C 720,10 820,45 900,25 L 900,80 C 780,100 620,70 420,95 C 220,115 100,75 0,90 Z" fill="#4d050e" opacity="0.4" />
-    <path d="M 0,90 C 240,65 400,110 640,80 C 780,60 850,90 900,70 L 900,130 C 760,150 580,120 380,140 C 180,155 80,125 0,140 Z" fill="#7a0a18" opacity="0.25" />
-  </g>
+    <!-- Crepuscular God-Rays Radiating Downward Across the Crimson Heavens -->
+    <g opacity="0.75">
+      <!-- Left Outer Ray -->
+      <polygon points="450,118 0,180 0,260 450,118" fill="url(#godRayGradL)" opacity="0.45" />
+      <!-- Left Mid Ray -->
+      <polygon points="450,118 80,310 180,330 450,118" fill="url(#godRayGradL)" opacity="0.55" />
+      <!-- Left Inner Ray -->
+      <polygon points="450,118 240,335 320,340 450,118" fill="url(#godRayGradL)" opacity="0.65" />
 
-  <!-- B. The Sweeping Eldritch Crown Plumes / Wing Sinews Above the Central Eye -->
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- Deep Oxblood Base Muscular Canopy -->
-    <path d="M 450,12 C 430,35 410,65 370,72 C 340,68 310,55 280,38 C 320,62 355,80 395,84 C 420,86 440,78 450,60 C 460,78 480,86 505,84 C 545,80 580,62 620,38 C 590,55 560,68 530,72 C 490,65 470,35 450,12 Z"
-      fill="#47030a" />
+      <!-- Center Divine Light Shaft -->
+      <polygon points="435,118 410,340 490,340 465,118" fill="url(#godRayCenter)" opacity="0.6" filter="url(#volumetricAuraWide)" />
 
-    <!-- Center Tall Spire Plume (Peaking at x=450, y=10) -->
-    <path d="M 436,68 C 442,42 446,24 450,10 C 454,24 458,42 464,68 C 458,62 442,62 436,68 Z" fill="#b80820" />
-    <path d="M 444,66 C 447,40 448,22 450,12 C 452,22 453,40 456,66 Z" fill="#ffffff" opacity="0.9" />
-
-    <!-- Left Crown Wing Plumes (Curving Sweeping Feathers Arching Backward to Left) -->
-    <path d="M 432,68 C 418,44 398,28 368,18 C 392,34 410,54 424,72 Z" fill="#9e0416" />
-    <path d="M 422,70 C 405,48 384,32 352,24 C 378,40 398,58 412,74 Z" fill="#d9112d" />
-    <path d="M 408,74 C 388,52 360,38 325,32 C 352,48 376,64 396,78 Z" fill="#ff2647" opacity="0.85" />
-    <path d="M 402,74 C 382,54 356,42 328,36" fill="none" stroke="#ffd1d9" stroke-width="1.8" opacity="0.92" />
-
-    <path d="M 390,78 C 362,58 328,48 288,44 C 320,60 348,74 374,84 Z" fill="#9e0416" />
-    <path d="M 378,80 C 348,62 312,52 270,50 C 304,64 334,78 360,86 Z" fill="#d9112d" />
-    <path d="M 368,82 C 336,66 298,58 258,58" fill="none" stroke="#ff8da1" stroke-width="1.8" opacity="0.88" />
-
-    <path d="M 352,86 C 316,72 272,66 224,68 C 262,80 298,92 332,96 Z" fill="#b80820" />
-    <path d="M 338,88 C 298,78 254,74 208,78" fill="none" stroke="#ffa3b5" stroke-width="1.6" opacity="0.82" />
-
-    <!-- Right Crown Wing Plumes (Symmetrical Arching Sweeping Feathers to Right) -->
-    <path d="M 468,68 C 482,44 502,28 532,18 C 508,34 490,54 476,72 Z" fill="#9e0416" />
-    <path d="M 478,70 C 495,48 516,32 548,24 C 522,40 502,58 488,74 Z" fill="#d9112d" />
-    <path d="M 492,74 C 512,52 540,38 575,32 C 548,48 524,64 504,78 Z" fill="#ff2647" opacity="0.85" />
-    <path d="M 498,74 C 518,54 544,42 572,36" fill="none" stroke="#ffd1d9" stroke-width="1.8" opacity="0.92" />
-
-    <path d="M 510,78 C 538,58 572,48 612,44 C 580,60 552,74 526,84 Z" fill="#9e0416" />
-    <path d="M 522,80 C 552,62 588,52 630,50 C 596,64 566,78 540,86 Z" fill="#d9112d" />
-    <path d="M 532,82 C 564,66 602,58 642,58" fill="none" stroke="#ff8da1" stroke-width="1.8" opacity="0.88" />
-
-    <path d="M 548,86 C 584,72 628,66 676,68 C 638,80 602,92 568,96 Z" fill="#b80820" />
-    <path d="M 562,88 C 602,78 646,74 692,78" fill="none" stroke="#ffa3b5" stroke-width="1.6" opacity="0.82" />
-  </g>
-
-  <!-- C. The Fleshy Eye Socket Cradle & Lower Weeping Roots -->
-  <g>
-    <!-- Deep Fleshy Eyeball Basin Cradle -->
-    <path d="M 270,118 C 310,88 380,68 450,68 C 520,68 590,88 630,118 C 590,165 520,182 450,182 C 380,182 310,165 270,118 Z"
-      fill="#54000b" opacity="0.95" />
-    <path d="M 292,118 C 330,94 390,74 450,74 C 510,74 570,94 608,118 C 570,160 510,175 450,175 C 390,175 330,160 292,118 Z"
-      fill="#8f071a" opacity="0.9" />
-
-    <!-- Weeping Blood Roots Flowing Downward from Center Eye Basin into Red Mist -->
-    <g fill="none" stroke-linecap="round">
-      <path d="M 436,178 C 430,210 422,246 418,272" stroke="#6e0210" stroke-width="3.5" />
-      <path d="M 436,178 C 430,210 422,246 418,272" stroke="#c9102c" stroke-width="1.6" opacity="0.8" />
-
-      <path d="M 450,180 C 450,218 448,258 446,285" stroke="#850314" stroke-width="4.2" />
-      <path d="M 450,180 C 450,218 448,258 446,285" stroke="#ff2647" stroke-width="1.8" opacity="0.85" />
-      <path d="M 450,180 C 450,218 448,258 446,285" stroke="#ffffff" stroke-width="0.8" opacity="0.9" />
-
-      <path d="M 464,178 C 470,210 478,246 482,272" stroke="#6e0210" stroke-width="3.5" />
-      <path d="M 464,178 C 470,210 478,246 482,272" stroke="#c9102c" stroke-width="1.6" opacity="0.8" />
-
-      <path d="M 415,172 C 395,205 375,238 355,260" stroke="#54000c" stroke-width="2.8" />
-      <path d="M 485,172 C 505,205 525,238 545,260" stroke="#54000c" stroke-width="2.8" />
+      <!-- Right Inner Ray -->
+      <polygon points="450,118 580,340 660,335 450,118" fill="url(#godRayGradR)" opacity="0.65" />
+      <!-- Right Mid Ray -->
+      <polygon points="450,118 720,330 820,310 450,118" fill="url(#godRayGradR)" opacity="0.55" />
+      <!-- Right Outer Ray -->
+      <polygon points="450,118 900,260 900,180 450,118" fill="url(#godRayGradR)" opacity="0.45" />
     </g>
 
-    <!-- Warm Atmospheric Crimson Fog Horizon (Matching Lower Mist in Cutscene: #802524) -->
-    <ellipse cx="450" cy="270" rx="420" ry="65" fill="#5c0a17" opacity="0.45" />
-    <ellipse cx="450" cy="285" rx="360" ry="45" fill="#802524" opacity="0.32" />
+    <!-- Ambient Drifting Volcanic Clouds & Heavy Ash Smoke Across Upper Heavens -->
+    <path d="M 0,40 C 200,20 350,60 550,30 C 720,10 820,45 900,25 L 900,85 C 780,105 620,75 420,100 C 220,120 100,80 0,95 Z" fill="#38040a" opacity="0.55" />
+    <path d="M 0,90 C 240,65 400,110 640,80 C 780,60 850,90 900,70 L 900,135 C 760,155 580,125 380,145 C 180,160 80,130 0,145 Z" fill="#660814" opacity="0.4" />
   </g>
 
-  <!-- D. THE COLOSSAL CENTRAL EYE OF RONOVA -->
+  <!-- B. The Sweeping Eldritch Crown Plumes / Archangel Wings of Flame Above God-Eye -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Deep Muscular Archangel Wing Base (Spanning x=180 to 720) -->
+    <path d="M 450,8 C 420,32 390,62 340,68 C 290,62 250,45 200,22 C 250,55 300,78 350,84 C 400,88 435,78 450,55 C 465,78 500,88 550,84 C 600,78 650,55 700,22 C 650,45 610,62 560,68 C 510,62 480,32 450,8 Z"
+      fill="#2e0106" />
+    <path d="M 450,12 C 430,35 410,65 370,72 C 340,68 310,55 280,38 C 320,62 355,80 395,84 C 420,86 440,78 450,60 C 460,78 480,86 505,84 C 545,80 580,62 620,38 C 590,55 560,68 530,72 C 490,65 470,35 450,12 Z"
+      fill="#52020b" />
+
+    <!-- Center Spire Plume with Blinding Laser Core Spine -->
+    <path d="M 434,68 C 442,40 446,20 450,6 C 454,20 458,40 466,68 C 458,62 442,62 434,68 Z" fill="#ba0c1e" />
+    <path d="M 444,66 C 447,38 448,18 450,8 C 452,18 453,38 456,66 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+
+    <!-- Left Crown Wing Plumes (Sweeping Feathers Curling Back to Left Heavens) -->
+    <path d="M 432,68 C 418,44 398,28 368,18 C 392,34 410,54 424,72 Z" fill="#8f0514" />
+    <path d="M 422,70 C 405,48 384,32 352,24 C 378,40 398,58 412,74 Z" fill="#c41228" />
+    <path d="M 408,74 C 388,52 360,38 325,32 C 352,48 376,64 396,78 Z" fill="#ff1e3c" opacity="0.9" />
+    <!-- Sharp Laser Neon Spines -->
+    <path d="M 402,74 C 382,54 356,42 328,36" fill="none" stroke="#ff2647" stroke-width="3.2" opacity="0.6" filter="url(#laserBloomTight)" />
+    <path d="M 402,74 C 382,54 356,42 328,36" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="1.0" />
+
+    <path d="M 390,78 C 362,58 328,48 288,44 C 320,60 348,74 374,84 Z" fill="#8f0514" />
+    <path d="M 378,80 C 348,62 312,52 270,50 C 304,64 334,78 360,86 Z" fill="#c41228" />
+    <path d="M 368,82 C 336,66 298,58 258,58" fill="none" stroke="#ff2647" stroke-width="3.0" opacity="0.6" filter="url(#laserBloomTight)" />
+    <path d="M 368,82 C 336,66 298,58 258,58" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="1.0" />
+
+    <path d="M 352,86 C 316,72 272,66 224,68 C 262,80 298,92 332,96 Z" fill="#b80820" />
+    <path d="M 338,88 C 298,78 254,74 208,78" fill="none" stroke="#ffa3b5" stroke-width="2.6" filter="url(#laserBloomTight)" />
+
+    <!-- Far Outer Left Wing Plumes (Reaching into Sky) -->
+    <path d="M 320,92 C 275,82 225,82 175,90 C 220,102 265,108 305,104 Z" fill="#6e0410" />
+    <path d="M 305,94 C 260,86 215,88 170,96" fill="none" stroke="#ff3356" stroke-width="1.8" filter="url(#laserBloomTight)" />
+
+    <!-- Right Crown Wing Plumes (Symmetrical Archangel Feathers to Right Heavens) -->
+    <path d="M 468,68 C 482,44 502,28 532,18 C 508,34 490,54 476,72 Z" fill="#8f0514" />
+    <path d="M 478,70 C 495,48 516,32 548,24 C 522,40 502,58 488,74 Z" fill="#c41228" />
+    <path d="M 492,74 C 512,52 540,38 575,32 C 548,48 524,64 504,78 Z" fill="#ff1e3c" opacity="0.9" />
+    <!-- Sharp Laser Neon Spines -->
+    <path d="M 498,74 C 518,54 544,42 572,36" fill="none" stroke="#ff2647" stroke-width="3.2" opacity="0.6" filter="url(#laserBloomTight)" />
+    <path d="M 498,74 C 518,54 544,42 572,36" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="1.0" />
+
+    <path d="M 510,78 C 538,58 572,48 612,44 C 580,60 552,74 526,84 Z" fill="#8f0514" />
+    <path d="M 522,80 C 552,62 588,52 630,50 C 596,64 566,78 540,86 Z" fill="#c41228" />
+    <path d="M 532,82 C 564,66 602,58 642,58" fill="none" stroke="#ff2647" stroke-width="3.0" opacity="0.6" filter="url(#laserBloomTight)" />
+    <path d="M 532,82 C 564,66 602,58 642,58" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="1.0" />
+
+    <path d="M 548,86 C 584,72 628,66 676,68 C 638,80 602,92 568,96 Z" fill="#b80820" />
+    <path d="M 562,88 C 602,78 646,74 692,78" fill="none" stroke="#ffa3b5" stroke-width="2.6" filter="url(#laserBloomTight)" />
+
+    <!-- Far Outer Right Wing Plumes -->
+    <path d="M 580,92 C 625,82 675,82 725,90 C 680,102 635,108 595,104 Z" fill="#6e0410" />
+    <path d="M 595,94 C 640,86 685,88 730,96" fill="none" stroke="#ff3356" stroke-width="1.8" filter="url(#laserBloomTight)" />
+  </g>
+
+  <!-- C. The Fleshy Eye Socket Cradle & Weeping Vascular Blood-Roots -->
+  <g>
+    <!-- Deep Fleshy Eyeball Basin Cradle with Volumetric Crimson Aura -->
+    <ellipse cx="450" cy="120" rx="195" ry="60" fill="#ff1a3c" opacity="0.45" filter="url(#volumetricAuraWide)" />
+    <path d="M 270,118 C 310,88 380,68 450,68 C 520,68 590,88 630,118 C 590,165 520,182 450,182 C 380,182 310,165 270,118 Z"
+      fill="#3d0007" opacity="0.96" />
+    <path d="M 292,118 C 330,94 390,74 450,74 C 510,74 570,94 608,118 C 570,160 510,175 450,175 C 390,175 330,160 292,118 Z"
+      fill="#7a0515" opacity="0.92" />
+
+    <!-- Weeping Blood Roots & Vascular Tendrils Hanging Downward from Center Eye Basin -->
+    <g fill="none" stroke-linecap="round">
+      <!-- Main Central Weeping Blood Column -->
+      <path d="M 450,180 C 450,222 448,268 446,298" stroke="#ff0033" stroke-width="6.0" opacity="0.5" filter="url(#laserBloomTight)" />
+      <path d="M 450,180 C 450,222 448,268 446,298" stroke="#ff2647" stroke-width="3.2" opacity="0.9" />
+      <path d="M 450,180 C 450,222 448,268 446,298" stroke="#ffffff" stroke-width="1.2" opacity="1.0" />
+
+      <!-- Left Tendril Cluster -->
+      <path d="M 436,178 C 428,214 418,252 414,285" stroke="#7a0312" stroke-width="4.5" />
+      <path d="M 436,178 C 428,214 418,252 414,285" stroke="#ff2647" stroke-width="2.2" opacity="0.85" filter="url(#laserBloomTight)" />
+      <path d="M 422,175 C 410,208 395,242 382,274" stroke="#ff1e42" stroke-width="2.5" opacity="0.8" />
+      <path d="M 405,172 C 385,210 365,248 342,278" stroke="#ba0c1e" stroke-width="3.0" opacity="0.85" />
+      <path d="M 405,172 C 385,210 365,248 342,278" stroke="#ffa3b5" stroke-width="1.2" opacity="0.75" />
+
+      <!-- Right Tendril Cluster -->
+      <path d="M 464,178 C 472,214 482,252 486,285" stroke="#7a0312" stroke-width="4.5" />
+      <path d="M 464,178 C 472,214 482,252 486,285" stroke="#ff2647" stroke-width="2.2" opacity="0.85" filter="url(#laserBloomTight)" />
+      <path d="M 478,175 C 490,208 505,242 518,274" stroke="#ff1e42" stroke-width="2.5" opacity="0.8" />
+      <path d="M 495,172 C 515,210 535,248 558,278" stroke="#ba0c1e" stroke-width="3.0" opacity="0.85" />
+      <path d="M 495,172 C 515,210 535,248 558,278" stroke="#ffa3b5" stroke-width="1.2" opacity="0.75" />
+    </g>
+
+    <!-- Warm Atmospheric Crimson Fog Horizon -->
+    <ellipse cx="450" cy="275" rx="430" ry="70" fill="#520712" opacity="0.55" />
+    <ellipse cx="450" cy="290" rx="370" ry="50" fill="#801522" opacity="0.4" />
+  </g>
+
+  <!-- D. THE COLOSSAL CENTRAL EYE OF RONOVA (SHARP NEON LASER EDGES & SOLAR FURNACE) -->
   <g id="centralRonovaEye">
     <!-- Synchronized Eyelid Creases Outside Clip Path -->
     <g>
       <!-- Upper Eyelid Crease with Blink Morph -->
       <path d="M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121"
-        fill="none" stroke="#ff2647" stroke-width="3.8" stroke-linecap="round" opacity="0.5">
+        fill="none" stroke="#ff0033" stroke-width="5.5" stroke-linecap="round" opacity="0.55" filter="url(#volumetricAuraWide)">
         <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
           keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
@@ -756,7 +896,7 @@
             M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121" />
       </path>
       <path d="M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121"
-        fill="none" stroke="#ffd1d9" stroke-width="1.8" stroke-linecap="round" opacity="0.92">
+        fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" opacity="0.96" filter="url(#laserBloomTight)">
         <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
           keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
@@ -777,7 +917,7 @@
 
       <!-- Lower Eyelid Crease with Blink Morph -->
       <path d="M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124"
-        fill="none" stroke="#ff2647" stroke-width="3.8" stroke-linecap="round" opacity="0.5">
+        fill="none" stroke="#ff0033" stroke-width="5.5" stroke-linecap="round" opacity="0.55" filter="url(#volumetricAuraWide)">
         <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
           keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
@@ -796,7 +936,7 @@
             M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124" />
       </path>
       <path d="M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124"
-        fill="none" stroke="#ffffff" stroke-width="2.0" stroke-linecap="round" opacity="0.96">
+        fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" opacity="0.96" filter="url(#laserBloomTight)">
         <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
           keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
@@ -816,113 +956,136 @@
       </path>
     </g>
 
-    <!-- Clipped Eyeball Interior: Sclera, Fiery Solar Iris, Prominence Flares & Starburst Pupil -->
+    <!-- Clipped Eyeball Interior: Luminous Sclera, Solar Furnace Iris & Singularity Starburst -->
     <g clip-path="url(#mainEyeBlinkClip)">
-      <!-- Saturated Glowing Peach/Salmon-Rose Sclera (Direct Reference Match: #f89a87, #fff2f4) -->
+      <!-- Saturated Glowing Peach/Salmon-Rose Sclera -->
       <rect x="318" y="70" width="264" height="105" fill="url(#mainScleraHoriz)" />
       <rect x="318" y="70" width="264" height="105" fill="url(#scleraTopShadow)" />
 
-      <!-- Warm Crimson Tear Duct Accents -->
-      <path d="M 324,120 C 342,116 358,112 374,116" fill="none" stroke="#d61e38" stroke-width="2.2" opacity="0.65" />
-      <path d="M 576,120 C 558,116 542,112 526,116" fill="none" stroke="#d61e38" stroke-width="2.2" opacity="0.65" />
+      <!-- Sinuous Glowing Crimson Tear Ducts -->
+      <path d="M 324,120 C 342,116 358,112 374,116" fill="none" stroke="#ff1e42" stroke-width="2.5" opacity="0.85" filter="url(#laserBloomTight)" />
+      <path d="M 576,120 C 558,116 542,112 526,116" fill="none" stroke="#ff1e42" stroke-width="2.5" opacity="0.85" filter="url(#laserBloomTight)" />
 
-      <!-- THE FIERY SOLAR IRIS & SINGULARITY STARBURST (Centered at (450, 122)) -->
+      <!-- THE SOLAR FURNACE IRIS & SINGULARITY STARBURST (Centered at (450, 122)) -->
       <g transform="translate(450, 122)">
-        <!-- Outer Fiery Solar Corona Halo (Radiating into Sclera) -->
-        <circle cx="0" cy="0" r="52" fill="#ff2647" opacity="0.45" />
+        <!-- Massive Incandescent Solar Corona (Bleeding Warm Light into Sclera) -->
+        <circle cx="0" cy="0" r="56" fill="#ff1a3c" opacity="0.5" filter="url(#volumetricAuraWide)" />
+        <circle cx="0" cy="0" r="50" fill="#ff3356" opacity="0.4" filter="url(#laserBloomTight)" />
 
-        <!-- 24 Feathered Solar Prominence Flames Flaring Around Iris Perimeter (Matching Cutscene Prominences!) -->
+        <!-- 36 Feathered Solar Prominence Flares Flaring Outward Around the Iris Perimeter -->
         <g fill="#e55749">
-          <!-- 12:00 Top Flame Group -->
-          <path d="M -4,-46 C -2,-56 2,-56 4,-46 Z" fill="#ffffff" opacity="0.9" />
-          <path d="M -10,-44 C -6,-54 0,-54 2,-44 Z" fill="#ff4d6d" />
-          <path d="M 2,-44 C 6,-54 12,-52 8,-44 Z" fill="#ff3356" />
+          <!-- 12:00 Top Flare Cluster -->
+          <path d="M -4,-46 C -2,-58 2,-58 4,-46 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M -10,-44 C -6,-56 0,-56 2,-44 Z" fill="#ff4d6d" />
+          <path d="M 2,-44 C 6,-56 12,-54 8,-44 Z" fill="#ff3356" />
+          <path d="M -7,-45 C -4,-52 -1,-52 1,-45 Z" fill="#ffffff" opacity="0.9" />
 
-          <!-- 1:30 Upper-Right Flames -->
-          <path d="M 28,-36 C 36,-44 42,-40 36,-32 Z" fill="#ffffff" opacity="0.85" />
-          <path d="M 20,-40 C 30,-48 36,-46 28,-36 Z" fill="#ff4d6d" />
-          <path d="M 34,-26 C 44,-34 46,-28 38,-20 Z" fill="#ff3356" />
+          <!-- 1:30 Upper-Right Flare Cluster -->
+          <path d="M 28,-36 C 38,-48 44,-44 36,-32 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M 20,-40 C 32,-52 38,-50 28,-36 Z" fill="#ff4d6d" />
+          <path d="M 34,-26 C 46,-38 48,-32 38,-20 Z" fill="#ff3356" />
+          <path d="M 26,-32 C 34,-42 40,-38 32,-28 Z" fill="#ffffff" opacity="0.85" />
 
-          <!-- 3:00 Right Flames -->
-          <path d="M 44,-6 C 54,-4 54,4 44,6 Z" fill="#ffffff" opacity="0.85" />
-          <path d="M 42,-14 C 52,-10 52,-2 44,-4 Z" fill="#ff4d6d" />
-          <path d="M 42,4 C 52,2 52,10 44,14 Z" fill="#ff3356" />
+          <!-- 3:00 Right Flare Cluster -->
+          <path d="M 44,-6 C 58,-4 58,4 44,6 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M 42,-14 C 54,-10 54,-2 44,-4 Z" fill="#ff4d6d" />
+          <path d="M 42,4 C 54,2 54,10 44,14 Z" fill="#ff3356" />
+          <path d="M 44,-2 C 54,-1 54,2 44,3 Z" fill="#ffffff" opacity="0.9" />
 
-          <!-- 4:30 Lower-Right Signature Slash -->
-          <path d="M 32,30 C 44,42 42,46 28,38 Z" fill="#ffffff" opacity="0.92" />
-          <path d="M 24,36 C 36,48 32,52 20,42 Z" fill="#ff2647" />
-          <path d="M 36,20 C 48,28 46,36 32,30 Z" fill="#ff5c77" />
+          <!-- 4:30 Lower-Right Signature Slash Flare -->
+          <path d="M 32,30 C 46,46 44,50 28,38 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M 24,36 C 38,52 34,56 20,42 Z" fill="#ff2647" />
+          <path d="M 36,20 C 50,30 48,38 32,30 Z" fill="#ff5c77" />
+          <path d="M 28,34 C 40,46 38,48 24,38 Z" fill="#ffffff" opacity="0.85" />
 
-          <!-- 6:00 Bottom Flames -->
-          <path d="M -4,44 C -2,54 2,54 4,44 Z" fill="#ffffff" opacity="0.85" />
-          <path d="M -12,42 C -8,52 -2,52 0,42 Z" fill="#ff4d6d" />
-          <path d="M 0,42 C 6,52 12,50 8,42 Z" fill="#ff3356" />
+          <!-- 6:00 Bottom Flare Cluster -->
+          <path d="M -4,44 C -2,58 2,58 4,44 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M -12,42 C -8,56 -2,56 0,42 Z" fill="#ff4d6d" />
+          <path d="M 0,42 C 6,56 12,54 8,42 Z" fill="#ff3356" />
+          <path d="M -3,43 C 0,52 3,52 5,43 Z" fill="#ffffff" opacity="0.9" />
 
-          <!-- 7:30 Lower-Left Flames -->
-          <path d="M -30,32 C -42,42 -40,46 -26,38 Z" fill="#ffffff" opacity="0.85" />
-          <path d="M -22,36 C -34,48 -30,52 -18,42 Z" fill="#ff2647" />
-          <path d="M -34,22 C -46,30 -44,38 -30,32 Z" fill="#ff5c77" />
+          <!-- 7:30 Lower-Left Flare Cluster -->
+          <path d="M -30,32 C -44,46 -42,50 -26,38 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M -22,36 C -36,52 -32,56 -18,42 Z" fill="#ff2647" />
+          <path d="M -34,22 C -48,32 -46,40 -30,32 Z" fill="#ff5c77" />
+          <path d="M -26,34 C -38,46 -36,48 -22,38 Z" fill="#ffffff" opacity="0.85" />
 
-          <!-- 9:00 Left Flames -->
-          <path d="M -44,-6 C -54,-4 -54,4 -44,6 Z" fill="#ffffff" opacity="0.85" />
-          <path d="M -42,-14 C -52,-10 -52,-2 -44,-4 Z" fill="#ff4d6d" />
-          <path d="M -42,4 C -52,2 -52,10 -44,14 Z" fill="#ff3356" />
+          <!-- 9:00 Left Flare Cluster -->
+          <path d="M -44,-6 C -58,-4 -58,4 -44,6 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M -42,-14 C -54,-10 -54,-2 -44,-4 Z" fill="#ff4d6d" />
+          <path d="M -42,4 C -54,2 -52,10 -44,14 Z" fill="#ff3356" />
+          <path d="M -44,-2 C -54,-1 -54,2 -44,3 Z" fill="#ffffff" opacity="0.9" />
 
-          <!-- 10:30 Upper-Left Flames -->
-          <path d="M -28,-36 C -38,-46 -42,-40 -34,-30 Z" fill="#ffffff" opacity="0.92" />
-          <path d="M -20,-40 C -32,-50 -36,-46 -26,-34 Z" fill="#ff2647" />
-          <path d="M -34,-24 C -46,-32 -44,-24 -36,-18 Z" fill="#ff5c77" />
+          <!-- 10:30 Upper-Left Flare Cluster -->
+          <path d="M -28,-36 C -40,-50 -44,-44 -34,-30 Z" fill="#ffffff" filter="url(#laserBloomTight)" />
+          <path d="M -20,-40 C -34,-54 -38,-50 -26,-34 Z" fill="#ff2647" />
+          <path d="M -34,-24 C -48,-34 -46,-26 -36,-18 Z" fill="#ff5c77" />
+          <path d="M -26,-34 C -36,-44 -40,-40 -30,-28 Z" fill="#ffffff" opacity="0.85" />
         </g>
 
-        <!-- Incandescent Fiery Scarlet Solar Orb (Direct Reference Match: #cf2825) -->
+        <!-- Incandescent Fiery Scarlet Solar Orb -->
         <circle cx="0" cy="0" r="47" fill="url(#fieryIrisBase)" />
-        <circle cx="0" cy="0" r="47" fill="none" stroke="#ffa3b5" stroke-width="1.2" opacity="0.65" />
+        <circle cx="0" cy="0" r="47" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.75" filter="url(#laserBloomTight)" />
 
-        <!-- Deep Dark Obsidian-Velvet Pupil Bowl (High Contrast Core) -->
-        <circle cx="0" cy="0" r="23" fill="#140103" />
-        <circle cx="0" cy="0" r="19" fill="#0d0002" />
+        <!-- Deep Obsidian-Velvet Pupil Bowl (Infinite Contrast Core) -->
+        <circle cx="0" cy="0" r="23" fill="#000000" />
+        <circle cx="0" cy="0" r="19" fill="#050002" />
 
         <!-- Pulsing Radiant Singularity Bloom Corona -->
-        <circle cx="0" cy="0" r="18" fill="url(#pupilBloomRadial)">
-          <animate attributeName="r" values="16.5;20;16.5" dur="2.6s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="18" fill="url(#pupilBloomRadial)" filter="url(#singularityStarburstGlow)">
+          <animate attributeName="r" values="16;21;16" dur="2.4s" repeatCount="indefinite" />
         </circle>
 
-        <!-- The Iconic Blinding 4-Point Diamond Singularity Starburst (Direct Reference Match: #ffffff / #f8a39d) -->
-        <g>
+        <!-- THE ICONIC BLINDING 4-POINT DIAMOND SINGULARITY STARBURST WITH ANAMORPHIC LASER FLARE -->
+        <!-- Anamorphic Horizontal Laser Glint -->
+        <g filter="url(#laserBloomTight)">
+          <line x1="-42" y1="0" x2="42" y2="0" stroke="#ff2647" stroke-width="3.2" opacity="0.6" />
+          <line x1="-38" y1="0" x2="38" y2="0" stroke="#ffffff" stroke-width="1.5" opacity="0.95" />
+          <ellipse cx="0" cy="0" rx="34" ry="1.8" fill="#ffffff" opacity="0.9" />
+        </g>
+        <g filter="url(#singularityStarburstGlow)">
           <!-- Rose-Coral Diffuse Star Rays -->
-          <path d="M 0,-18 C 0.8,-6 2,-2 18,-0.5 C 2,1 0.8,5 0,18 C -0.8,5 -2,1 -18,-0.5 C -2,-2 -0.8,-6 0,-18 Z"
-            fill="#ff6b82" opacity="0.9" />
+          <path d="M 0,-22 C 1,-8 3,-3 22,-0.5 C 3,2 1,7 0,22 C -1,7 -3,2 -22,-0.5 C -3,-3 -1,-8 0,-22 Z"
+            fill="#ff6b82" opacity="0.95" />
           <!-- Blinding Pure-White Starburst Needles -->
-          <path d="M 0,-15 C 0.5,-4 1.5,-1 15,-0.3 C 1.5,0.8 0.5,3.5 0,15 C -0.5,3.5 -1.5,0.8 -15,-0.3 C -1.5,-1 -0.5,-4 0,-15 Z"
+          <path d="M 0,-18 C 0.6,-5 1.8,-1 18,-0.3 C 1.8,1 0.6,4.5 0,18 C -0.6,4.5 -1.8,1 -18,-0.3 C -1.8,-1 -0.6,-5 0,-18 Z"
             fill="#ffffff" />
           <!-- Central Singularity Core -->
-          <ellipse cx="0" cy="0" rx="4.8" ry="4.5" fill="#ffffff">
-            <animate attributeName="rx" values="4.5;5.8;4.5" dur="2.2s" repeatCount="indefinite" />
-            <animate attributeName="ry" values="4.2;5.4;4.2" dur="2.2s" repeatCount="indefinite" />
+          <ellipse cx="0" cy="0" rx="5.2" ry="5.0" fill="#ffffff">
+            <animate attributeName="rx" values="4.8;6.2;4.8" dur="2.0s" repeatCount="indefinite" />
+            <animate attributeName="ry" values="4.5;5.8;4.5" dur="2.0s" repeatCount="indefinite" />
           </ellipse>
         </g>
       </g>
     </g>
 
-    <!-- Blinding White-Hot Eyelid Meniscus Rims (Dual-Stroke Laser Bloom) -->
+    <!-- TRIPLE-STROKE SHARP NEON EYELID MENISCUS RIMS (BLINDING WHITE-HOT CUTSCENE EDGES) -->
     <g fill="none" stroke-linecap="round">
-      <!-- Upper Eyelid Blinding White-Hot Edge -->
+      <!-- Upper Eyelid Volumetric Halo Stroke -->
       <path d="M 324,120 C 354,112 396,76 450,76 C 504,76 546,112 574,122"
-        stroke="#ff2647" stroke-width="4.8" opacity="0.5" />
+        stroke="#ff0033" stroke-width="8.0" opacity="0.45" filter="url(#volumetricAuraWide)" />
+      <!-- Upper Eyelid Saturated Neon Stroke -->
       <path d="M 324,120 C 354,112 396,76 450,76 C 504,76 546,112 574,122"
-        stroke="#ffffff" stroke-width="1.8" opacity="0.98" />
+        stroke="#ff1e42" stroke-width="4.2" opacity="0.85" filter="url(#laserBloomTight)" />
+      <!-- Upper Eyelid Razor-Sharp Pure White-Hot Core -->
+      <path d="M 324,120 C 354,112 396,76 450,76 C 504,76 546,112 574,122"
+        stroke="#ffffff" stroke-width="2.0" opacity="1.0" />
 
-      <!-- Lower Eyelid Blinding White-Hot Edge (Signature Sharp Crescent from Screenshot) -->
+      <!-- Lower Eyelid Volumetric Halo Stroke -->
       <path d="M 324,120 C 354,134 402,168 450,168 C 498,168 546,134 574,122"
-        stroke="#ff2647" stroke-width="5.2" opacity="0.5" />
+        stroke="#ff0033" stroke-width="8.5" opacity="0.45" filter="url(#volumetricAuraWide)" />
+      <!-- Lower Eyelid Saturated Neon Stroke -->
+      <path d="M 324,120 C 354,134 402,168 450,168 C 498,168 546,134 574,122"
+        stroke="#ff1e42" stroke-width="4.6" opacity="0.85" filter="url(#laserBloomTight)" />
+      <!-- Lower Eyelid Razor-Sharp Pure White-Hot Core (Signature Cutscene Crescent) -->
       <path d="M 324,120 C 354,134 402,168 450,168 C 498,168 546,134 574,122"
         stroke="#ffffff" stroke-width="2.2" opacity="1.0" />
     </g>
   </g>
 
-  <!-- E. THE CONSTELLATION OF SATELLITE EYES (MATCHING CUTSCENE POSITIONS!) -->
-  <!-- Left Wing Eyes (4 Staring Down-Left) -->
+  <!-- E. THE CONSTELLATION OF SATELLITE EYES (MATCHING CUTSCENE POSITIONS WITH NEON GLOW!) -->
   <g id="satelliteEyesCluster">
+    <!-- Left Wing Eyes (5 Staring Down-Left) -->
     <!-- 1. Far-Upper-Left High Sky Eye (x=210, y=55, tilted +22 deg) -->
     <g transform="translate(210, 55) rotate(22) scale(0.92)">
       <use href="#satEyeSocket" />
@@ -985,19 +1148,34 @@
     </g>
   </g>
 
-  <!-- F. Ambient Floating Crimson Embers & Sparkles Drifting Through the Abyss -->
+  <!-- F. Ambient Floating Crimson Embers & Cinder Storm Drifting Through the Abyss -->
   <g fill="#ffffff">
-    <circle cx="180" cy="115" r="1.4" opacity="0.8" />
-    <circle cx="280" cy="165" r="1.8" fill="#ff8da1" opacity="0.9" />
-    <circle cx="390" cy="45" r="1.5" opacity="0.85" />
-    <circle cx="425" cy="225" r="2.0" fill="#ff4d6d" opacity="0.9" />
-    <circle cx="475" cy="235" r="1.8" fill="#ffa3b5" opacity="0.85" />
-    <circle cx="515" cy="45" r="1.5" opacity="0.85" />
-    <circle cx="620" cy="165" r="1.8" fill="#ff8da1" opacity="0.9" />
-    <circle cx="720" cy="115" r="1.4" opacity="0.8" />
-  </g>
+    <!-- Large Glowing Embers with Bloom -->
+    <circle cx="160" cy="115" r="2.2" fill="#ffffff" filter="url(#laserBloomTight)" />
+    <circle cx="270" cy="165" r="2.6" fill="#ffa3b5" filter="url(#laserBloomTight)" />
+    <circle cx="390" cy="45" r="2.0" fill="#ffffff" filter="url(#laserBloomTight)" />
+    <circle cx="425" cy="225" r="2.8" fill="#ff4d6d" filter="url(#laserBloomTight)" />
+    <circle cx="475" cy="235" r="2.4" fill="#ffffff" filter="url(#laserBloomTight)" />
+    <circle cx="515" cy="45" r="2.0" fill="#ffffff" filter="url(#laserBloomTight)" />
+    <circle cx="630" cy="165" r="2.6" fill="#ffa3b5" filter="url(#laserBloomTight)" />
+    <circle cx="740" cy="115" r="2.2" fill="#ffffff" filter="url(#laserBloomTight)" />
 
-  <!-- ====================================================================== -->
+    <!-- Delicate Twinkling Motes -->
+    <circle cx="80" cy="95" r="1.5" opacity="0.85" />
+    <circle cx="130" cy="210" r="1.8" opacity="0.9" fill="#ffd1d9" />
+    <circle cx="210" cy="180" r="1.4" opacity="0.8" />
+    <circle cx="300" cy="120" r="1.6" opacity="0.9" fill="#ff8da1" />
+    <circle cx="360" cy="240" r="1.5" opacity="0.85" />
+    <circle cx="440" cy="270" r="1.8" opacity="0.95" fill="#ffffff" />
+    <circle cx="460" cy="285" r="1.5" opacity="0.85" />
+    <circle cx="540" cy="240" r="1.5" opacity="0.85" />
+    <circle cx="600" cy="120" r="1.6" opacity="0.9" fill="#ff8da1" />
+    <circle cx="690" cy="180" r="1.4" opacity="0.8" />
+    <circle cx="770" cy="210" r="1.8" opacity="0.9" fill="#ffd1d9" />
+    <circle cx="820" cy="95" r="1.5" opacity="0.85" />
+    <circle cx="450" cy="28" r="1.8" fill="#ffffff" filter="url(#laserBloomTight)" />
+  </g>
+<!-- ====================================================================== -->
   <!-- 2. SEMI-TRANSPARENT GLASS DOSSIER & ABOUT ME (y=325 to 780)            -->
   <!-- ====================================================================== -->
   <g transform="translate(0, 315)">
@@ -1237,8 +1415,9 @@
         <path d="M -37,-35 A 51,51 0 1,0 -37,35 A 48.5,48.5 0 1,1 -37,-35 Z" fill="#ffffff" opacity="0.96" />
         <path d="M 37,-35 A 51,51 0 1,1 37,35 A 49.5,49.5 0 1,0 37,-35 Z" fill="#ff1e42" opacity="0.85" />
 
-        <!-- Primary Razor-Sharp 360-Degree Relativistic Photon Ring (r=52) -->
-        <circle cx="0" cy="0" r="52" fill="none" stroke="url(#bhPhotonRingGrad)" stroke-width="2.4" />
+        <!-- Primary Razor-Sharp 360-Degree Relativistic Photon Ring with Optical Bloom (r=52) -->
+        <circle cx="0" cy="0" r="52" fill="none" stroke="#ff2647" stroke-width="5.0" opacity="0.5" filter="url(#blackHolePhotonGlow)" />
+        <circle cx="0" cy="0" r="52" fill="none" stroke="url(#bhPhotonRingGrad)" stroke-width="2.6" filter="url(#laserBloomTight)" />
 
         <!-- High-Velocity Orbiting Photon Ring Caustic Glints -->
         <g>
@@ -1275,7 +1454,7 @@
         <path d="M -305,2 C -168,14.5 -68,10.5 0,9 C 68,7.5 168,12.5 305,2"
           fill="none" stroke="url(#bhFrontBridgeCore)" stroke-width="2.8" stroke-linecap="round" />
         <path d="M -235,3.5 C -125,12 -52,8.5 0,7.8 C 52,7 125,10.5 235,3.5"
-          fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.98" />
+          fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" opacity="1.0" filter="url(#laserBloomTight)" />
 
         <!-- High-Speed Relativistic Plasma Knots Whipping Left-to-Right Across the Front of the Shadow -->
         <path d="M -275,3 C -148,14 -58,10 0,9 C 58,8 148,12 275,3" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-dasharray="34 55 18 70 45 60" stroke-linecap="round" opacity="0.95" />
