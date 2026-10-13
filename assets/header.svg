@@ -131,6 +131,15 @@
       <stop offset="100%" stop-color="#3d0008" stop-opacity="0" />
     </radialGradient>
 
+    
+    <!-- GPU-Accelerated Outer Pupil Bloom Radial (Replaces CPU feGaussianBlur on Animating Pupil!) -->
+    <radialGradient id="pupilBloomRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#ff3356" stop-opacity="0.8" />
+      <stop offset="65%" stop-color="#cc0022" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#660010" stop-opacity="0" />
+    </radialGradient>
+
     <!-- Small Satellite Eye Sclera Gradient (Smooth Vivid Crimson to Deep Oxblood Tips) -->
     <radialGradient id="smallScleraGrad" cx="50%" cy="52%" r="54%">
       <stop offset="0%" stop-color="#ff3d5a" />
@@ -603,27 +612,22 @@
       <!-- Vivid Glowing Crimson Almond Sclera -->
       <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z" fill="url(#smallScleraGrad)" />
       <!-- Soft Airbrushed Extreme Corner Tip Shading -->
-      <g filter="url(#wingFoldBlur)" opacity="0.62">
+      <g opacity="0.62">
         <path d="M -30,0 C -25,-4.5 -20,-5.5 -16,-3.5 C -21,-1 -25,1 -30,0 Z" fill="#360006" />
         <path d="M 30,0 C 25,-4.5 20,-5.5 16,-3.5 C 21,-1 25,1 30,0 Z" fill="#360006" />
       </g>
       <!-- Subtle Warm-Rose Lower Meniscus Highlight -->
       <path d="M -18,5.5 C -8,11.2 8,11.2 18,5.5" fill="none" stroke="#ff9eb0" stroke-width="0.9" stroke-linecap="round" opacity="0.58" />
-      <!-- Warm Ivory-Pink Iris Oval & Vivid Crimson Bullseye Pupil with Bright Pinpoint -->
+      <!-- Warm Ivory-Pink Iris Oval & Vivid Crimson Bullseye Pupil with Bright Pinpoint (GPU Crisp Vectors) -->
       <g>
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; -1.0,-0.32; 0.9,0.28; -0.35,0.4; 0,0"
-          dur="6.5s" repeatCount="indefinite" />
-        <ellipse cx="0" cy="-0.5" rx="9.5" ry="8.5" fill="#ff294b" opacity="0.48" filter="url(#smallEyeGlow)" />
-        <ellipse cx="0" cy="-0.5" rx="8.1" ry="7.3" fill="#ffecef" stroke="#ffd1d9" stroke-width="0.5" filter="url(#smallEyeGlow)" />
+        <ellipse cx="0" cy="-0.5" rx="9.5" ry="8.5" fill="#ff294b" opacity="0.55" />
+        <ellipse cx="0" cy="-0.5" rx="8.1" ry="7.3" fill="#ffecef" stroke="#ffd1d9" stroke-width="0.6" />
         <circle cx="0" cy="-0.5" r="3.2" fill="#db0f27" />
         <circle cx="0" cy="-0.5" r="2.3" fill="#b3061b" />
-        <circle cx="0" cy="-0.5" r="1.3" fill="#fff0f3">
-          <animate attributeName="r" values="1.15;1.45;1.15" dur="2.4s" repeatCount="indefinite" />
-        </circle>
+        <circle cx="0" cy="-0.5" r="1.3" fill="#ffffff" />
       </g>
       <!-- Soft Upper Eyelid Rim Shade Over Top of Iris -->
-      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-10.5 -16,-10.5 -30,0 Z" fill="#470009" filter="url(#wingFoldBlur)" opacity="0.55" />
+      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-10.5 -16,-10.5 -30,0 Z" fill="#470009" opacity="0.55" />
     </g>
 
     <!-- GPU-Accelerated Soft Radial Pillar Gradients (Replaces Expensive 1230px feGaussianBlur!) -->
@@ -749,69 +753,33 @@
     </path>
   </g>
 
-  <!-- Continuous Falling Crimson Rain & Abyssal Orbs (Emanating Below Ronova's Eye at y=220 — Zero Streaks Across Eye!) -->
+  <!-- Continuous Falling Crimson Rain & Abyssal Orbs (GPU-Accelerated, Zero Overlap With Eye!) -->
   <g>
-    <use href="#fastRainDrop" x="48" y="220">
-      <animate attributeName="y" values="220;1420" dur="4.6s" begin="0.8s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4.6s" begin="0.8s" repeatCount="indefinite" />
+    <use href="#fastRainDrop" x="110" y="220">
+      <animate attributeName="y" values="220;1420" dur="4.6s" repeatCount="indefinite" />
     </use>
-    <use href="#fastRainDrop" x="172" y="220">
-      <animate attributeName="y" values="220;1420" dur="5.8s" begin="1.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="5.8s" begin="1.2s" repeatCount="indefinite" />
+    <use href="#fastRainDrop" x="290" y="220">
+      <animate attributeName="y" values="220;1420" dur="4.0s" begin="1.5s" repeatCount="indefinite" />
     </use>
-    <use href="#fastRainDrop" x="248" y="220">
-      <animate attributeName="y" values="220;1420" dur="4.1s" begin="2.7s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4.1s" begin="2.7s" repeatCount="indefinite" />
+    <use href="#fastRainDrop" x="450" y="220">
+      <animate attributeName="y" values="220;1420" dur="3.8s" begin="0.7s" repeatCount="indefinite" />
     </use>
-    <use href="#fastRainDrop" x="335" y="220">
-      <animate attributeName="y" values="220;1420" dur="5.2s" begin="0.6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="5.2s" begin="0.6s" repeatCount="indefinite" />
+    <use href="#fastRainDrop" x="610" y="220">
+      <animate attributeName="y" values="220;1420" dur="4.4s" begin="2.2s" repeatCount="indefinite" />
     </use>
-    <use href="#fastRainDrop" x="418" y="220">
-      <animate attributeName="y" values="220;1420" dur="3.9s" begin="1.9s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.9s" begin="1.9s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="482" y="220">
-      <animate attributeName="y" values="220;1420" dur="4.4s" begin="3.1s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4.4s" begin="3.1s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="565" y="220">
-      <animate attributeName="y" values="220;1420" dur="5.0s" begin="0.3s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="5.0s" begin="0.3s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="652" y="220">
-      <animate attributeName="y" values="220;1420" dur="4.3s" begin="2.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4.3s" begin="2.2s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="728" y="220">
-      <animate attributeName="y" values="220;1420" dur="5.5s" begin="1.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="5.5s" begin="1.5s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="812" y="220">
-      <animate attributeName="y" values="220;1420" dur="4.8s" begin="3.6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4.8s" begin="3.6s" repeatCount="indefinite" />
+    <use href="#fastRainDrop" x="790" y="220">
+      <animate attributeName="y" values="220;1420" dur="5.0s" begin="1.0s" repeatCount="indefinite" />
     </use>
 
-    <!-- Drifting Glowing Crimson Orbs Descending From Below Rift -->
-    <circle cx="135" cy="220" r="5.5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="220;1400" dur="9.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="9.5s" repeatCount="indefinite" />
+    <!-- Drifting Glowing Crimson Orbs (Calm Smooth Descent, Zero CPU Opacity Spam) -->
+    <circle cx="210" cy="220" r="5.2" fill="url(#orbGlowGrad)">
+      <animate attributeName="cy" values="220;1400" dur="9.0s" repeatCount="indefinite" />
     </circle>
-    <circle cx="310" cy="220" r="5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="220;1400" dur="8.2s" begin="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="8.2s" begin="2s" repeatCount="indefinite" />
+    <circle cx="450" cy="220" r="5.8" fill="url(#orbGlowGrad)">
+      <animate attributeName="cy" values="220;1400" dur="7.8s" begin="2.5s" repeatCount="indefinite" />
     </circle>
-    <circle cx="450" cy="220" r="6" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="220;1400" dur="7.6s" begin="1s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" dur="7.6s" begin="1s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="590" cy="220" r="5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="220;1400" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="765" cy="0" r="5.5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="100;1400" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
+    <circle cx="690" cy="220" r="5.2" fill="url(#orbGlowGrad)">
+      <animate attributeName="cy" values="220;1400" dur="8.5s" begin="4.2s" repeatCount="indefinite" />
     </circle>
   </g>
 
@@ -829,17 +797,17 @@
     <animate attributeName="ry" values="130;142;130" dur="4.5s" repeatCount="indefinite" />
   </ellipse>
 
-  <!-- Expanding Crimson Abyssal Shockwave Ripples From Ronova's Eye -->
-  <g fill="none" stroke="#ff1e42" opacity="0.35" filter="url(#softBlur)">
-    <ellipse cx="450" cy="122" rx="90" ry="38" stroke-width="2">
+  <!-- Expanding Crimson Abyssal Shockwave Ripples From Ronova's Eye (GPU Vector Strokes, Zero Blur Re-Rasterization!) -->
+  <g fill="none" stroke="#ff1e42" opacity="0.32">
+    <ellipse cx="450" cy="122" rx="90" ry="38" stroke-width="2.6">
       <animate attributeName="rx" values="85;390" dur="6s" repeatCount="indefinite" />
       <animate attributeName="ry" values="35;125" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.55;0" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.45;0" dur="6s" repeatCount="indefinite" />
     </ellipse>
-    <ellipse cx="450" cy="122" rx="90" ry="38" stroke-width="1.5">
+    <ellipse cx="450" cy="122" rx="90" ry="38" stroke-width="2.2">
       <animate attributeName="rx" values="85;390" dur="6s" begin="3s" repeatCount="indefinite" />
       <animate attributeName="ry" values="35;125" dur="6s" begin="3s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.55;0" dur="6s" begin="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.45;0" dur="6s" begin="3s" repeatCount="indefinite" />
     </ellipse>
   </g>
 
@@ -900,8 +868,7 @@
         C 444,36 448,54 456,48
         C 464,58 472,68 482,74
         C 450,72 414,68 378,66 Z"
-        fill="url(#topSpikeGrad)">
-        <animate attributeName="opacity" values="0.92;1;0.92" dur="3.2s" repeatCount="indefinite" />
+        fill="url(#topSpikeGrad)" opacity="0.96">
       </path>
       <path d="
         M 390,66
@@ -1062,10 +1029,10 @@
           fill="#c9102c" opacity="0.82" />
       </g>
 
-      <!-- Softly Shaded Upper & Lower Crimson Eyelid Creases (Synchronized With Blink — Zero Hard Wire Lines!) -->
-      <g filter="url(#wingFoldBlur)">
+      <!-- Softly Shaded Upper & Lower Crimson Eyelid Creases (GPU Accelerated Path Morphs Outside Filter!) -->
+      <g>
         <path d="M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121"
-          fill="none" stroke="#d60d2b" stroke-width="2.4" stroke-linecap="round" opacity="0.88">
+          fill="none" stroke="#d60d2b" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
           <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
             keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
             keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
@@ -1138,10 +1105,8 @@
 
             <!-- Airbrushed Painterly Crimson-Magenta Flame Nebula Inside Iris (Matching Reference Brushstrokes!) -->
             <g transform="translate(-1, -1.5)">
-              <!-- Soft Warm Oxblood Inner Sub-Glow -->
+              <!-- Soft Warm Oxblood Inner Sub-Glow (Static Blurred Texture Caches Cleanly in GPU!) -->
               <g filter="url(#softBlur)">
-                <animateTransform attributeName="transform" type="scale"
-                  values="1; 1.04; 1" dur="3.4s" repeatCount="indefinite" />
                 <ellipse cx="0" cy="1" rx="22" ry="20" fill="#6b0010" opacity="0.85" />
                 <ellipse cx="9" cy="14" rx="7" ry="18" transform="rotate(-32 9 14)" fill="#bd0020" opacity="0.85" />
               </g>
@@ -1187,9 +1152,9 @@
 
             <!-- ASYMMETRIC SILK-TAPERED STARBURST PUPIL (Compact White-Hot Core So Flame Brushstrokes Shine!) -->
             <g transform="translate(-1, -1.5)">
-              <!-- Compact Central Pupil Diffuse Rose-Crimson Bloom (r=16 Instead of 25 So It Doesn't Wash Out Flames!) -->
-              <circle cx="0" cy="0" r="16.5" fill="url(#pupilCoreGlow)" filter="url(#pupilBloom)">
-                <animate attributeName="r" values="15.5;18;15.5" dur="2.6s" repeatCount="indefinite" />
+              <!-- Compact Central Pupil Diffuse Rose-Crimson Bloom (GPU Radial Gradient, Zero CPU Blur Filter!) -->
+              <circle cx="0" cy="0" r="17.5" fill="url(#pupilBloomRadial)">
+                <animate attributeName="r" values="16;19;16" dur="2.6s" repeatCount="indefinite" />
               </circle>
 
               <!-- Layer A: Soft Magenta-Rose Silk-Tapered Starburst Halo & Signature 5-o'clock Slash -->
@@ -1218,8 +1183,8 @@
                   fill="#ff9eb0" />
               </g>
 
-              <!-- Layer B: Blinding Pure-White Core & Silk-Tapered Concave Bezier Needles -->
-              <g filter="url(#pupilBloom)">
+              <!-- Layer B: Blinding Pure-White Core & Silk-Tapered Concave Bezier Needles (Crisp Razor Vector Core) -->
+              <g>
                 <path d="M 0,-15
                   C 0.4,-4.8 1.1,-2.6 10,-9.2
                   C 3.0,-1.9 2.8,-0.8 14.5,-0.4
@@ -1376,8 +1341,8 @@
     </g>
   </g>
 
-  <!-- Floating Abyssal Rocks & Organic Kidney-Shaped Crimson-Rimmed Debris (Matching Cutscene Positions) -->
-  <g stroke="#ff294b" stroke-width="1.4" stroke-linejoin="round" fill="#0d0002" filter="url(#smallEyeGlow)">
+  <!-- Floating Abyssal Rocks & Organic Kidney-Shaped Crimson-Rimmed Debris (Crisp Vectors, Zero Filter Re-Rasterization!) -->
+  <g stroke="#ff294b" stroke-width="1.4" stroke-linejoin="round" fill="#0d0002">
     <!-- Upper-Left Organic Kidney Pebble (At (266, 44) Above Left Rift Rim) -->
     <path d="M 258,48 C 256,40 266,30 274,33 C 280,36 276,46 270,52 C 264,58 259,54 258,48 Z">
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3.5; 0,0" dur="3.8s" repeatCount="indefinite" />
@@ -1452,7 +1417,7 @@
     <!-- Role Ticker HUD Bar (Frosted Crimson Glass) -->
     <g transform="translate(30, 12)">
       <rect width="840" height="38" rx="6" fill="url(#glassCard)" stroke="#ff1e42" stroke-width="1.3" stroke-opacity="0.8" />
-      <rect x="0" y="0" width="140" height="2" fill="#ffffff" filter="url(#smallEyeGlow)" opacity="0.85">
+      <rect x="0" y="0" width="140" height="2" fill="#ffffff" opacity="0.85">
         <animate attributeName="x" values="0;700;0" dur="7s" repeatCount="indefinite" />
       </rect>
       <polygon points="0,0 12,0 0,12" fill="#ff1e42" />
@@ -1658,9 +1623,7 @@
       <!-- Placed behind the horizontal accretion disk so its legs tuck naturally behind the wings while its upper/lower domes tower above & below! -->
       <g id="einsteinLensingHalo">
         <!-- Upper Relativistic Lensing Arch (y = -50 to -96, Bent Light of Rear Disk Over Top of Event Horizon) -->
-        <path d="M -108,2 A 108,96 0 0,1 108,2 L 52,2 A 52,51 0 0,0 -52,2 Z" fill="url(#bhUpperLensOuter)">
-          <animate attributeName="opacity" values="0.92;1;0.92" dur="3.4s" repeatCount="indefinite" />
-        </path>
+        <path d="M -108,2 A 108,96 0 0,1 108,2 L 52,2 A 52,51 0 0,0 -52,2 Z" fill="url(#bhUpperLensOuter)" opacity="0.96" />
         <!-- Blazing Inner Lensing Corona with Rift Crimson Bloom -->
         <path d="M -88,2 A 88,78 0 0,1 88,2" fill="none" stroke="#ff2e52" stroke-width="5.5" stroke-linecap="round" opacity="0.82" filter="url(#riftEdgeGlow)" />
         <path d="M -78,2 A 78,69 0 0,1 78,2" fill="none" stroke="#140003" stroke-width="2.8" stroke-linecap="round" opacity="0.92" />
@@ -1677,9 +1640,7 @@
         </path>
 
         <!-- Lower Relativistic Lensing Arch (y = +50 to +92, Underside of Rear Disk Warped Below Shadow!) -->
-        <path d="M -102,-2 A 102,90 0 0,0 102,-2 L 52,-2 A 52,51 0 0,1 -52,-2 Z" fill="url(#bhLowerLensOuter)">
-          <animate attributeName="opacity" values="0.88;0.98;0.88" dur="3.8s" repeatCount="indefinite" />
-        </path>
+        <path d="M -102,-2 A 102,90 0 0,0 102,-2 L 52,-2 A 52,51 0 0,1 -52,-2 Z" fill="url(#bhLowerLensOuter)" opacity="0.92" />
         <!-- Blazing Lower Lensing Corona with Rift Crimson Bloom -->
         <path d="M -84,-2 A 84,74 0 0,0 84,-2" fill="none" stroke="#ff1e42" stroke-width="5" stroke-linecap="round" opacity="0.78" filter="url(#riftEdgeGlow)" />
         <path d="M -75,-2 A 75,66 0 0,0 75,-2" fill="none" stroke="#140003" stroke-width="2.6" stroke-linecap="round" opacity="0.92" />
@@ -1711,8 +1672,8 @@
 
       <!-- 5. THE EVENT HORIZON SHADOW & 360-DEGREE RELATIVISTIC PHOTON SPHERE (z = 0: r=52, Occludes Rear Disk!) -->
       <g id="eventHorizonCore">
-        <!-- Intense Crimson-White Photon Sphere Bloom -->
-        <circle cx="0" cy="0" r="53" fill="none" stroke="#ff1a3c" stroke-width="4.5" opacity="0.85" filter="url(#riftEdgeGlow)">
+        <!-- Intense Crimson-White Photon Sphere Bloom (GPU Accelerated Dual Stroke) -->
+        <circle cx="0" cy="0" r="53" fill="none" stroke="#ff1a3c" stroke-width="5" opacity="0.75">
           <animate attributeName="r" values="52.2;54.2;52.2" dur="2.8s" repeatCount="indefinite" />
         </circle>
 
@@ -1774,8 +1735,8 @@
         </path>
       </g>
 
-      <!-- 8. INFALLING HAWKING RADIATION SPARKS & SPIRALING SINGULARITY DEBRIS -->
-      <g fill="#ffffff" filter="url(#smallEyeGlow)">
+      <!-- 8. INFALLING HAWKING RADIATION SPARKS & SPIRALING SINGULARITY DEBRIS (Crisp Sparkles, Zero Blur Lag!) -->
+      <g fill="#ffffff">
         <!-- Left Approaching Doppler Hotspot Starburst -->
         <g transform="translate(-68, 6)">
           <animateTransform attributeName="transform" type="scale" values="0.85;1.25;0.85" additive="sum" dur="2.1s" repeatCount="indefinite" />
