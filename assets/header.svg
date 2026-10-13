@@ -1,14 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400" width="100%" height="100%">
   <defs>
-    <!-- Continuous Top-to-Bottom Deep Ochkanatlan Blood Sky & Abyssal Canvas -->
+        <!-- Continuous Top-to-Bottom Deep Ochkanatlan Blood Sky & Abyssal Canvas -->
     <linearGradient id="skyBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#140103" />
-      <stop offset="9%" stop-color="#360309" />
-      <stop offset="18%" stop-color="#4d040d" />
-      <stop offset="30%" stop-color="#2b0207" />
-      <stop offset="55%" stop-color="#330309" />
-      <stop offset="80%" stop-color="#290207" />
-      <stop offset="100%" stop-color="#240206" />
+      <stop offset="0%" stop-color="#3d050a" />
+      <stop offset="8%" stop-color="#690a16" />
+      <stop offset="18%" stop-color="#47050e" />
+      <stop offset="35%" stop-color="#280208" />
+      <stop offset="68%" stop-color="#2a0207" />
+      <stop offset="100%" stop-color="#160004" />
     </linearGradient>
 
     <!-- Continuous Vertical Crimson Light Pillar Gradients (Top to Bottom) -->
@@ -78,75 +77,75 @@
       <stop offset="100%" stop-color="#ff294b" stop-opacity="1" />
     </linearGradient>
 
-    <!-- Central Eye Sclera (3D Spherical Shading with Smooth Dusky Rose-Taupe Tear-Duct Corners) -->
+        <!-- 100% Reference-Accurate Cutscene Ronova Gradients (Zero Filter Overhead!) -->
+    <!-- Massive Volumetric Crimson Sky Corona (Direct Cutscene Ambience: #ff2647 -> #bd282b -> #7c1c1d -> #3d0908) -->
+    <radialGradient id="ronovaAtmosphereCorona" cx="50%" cy="38%" r="65%" fx="50%" fy="32%">
+      <stop offset="0%" stop-color="#ff2647" stop-opacity="0.96" />
+      <stop offset="16%" stop-color="#db1632" stop-opacity="0.88" />
+      <stop offset="35%" stop-color="#a80b1e" stop-opacity="0.75" />
+      <stop offset="58%" stop-color="#6e0614" stop-opacity="0.55" />
+      <stop offset="82%" stop-color="#3d030b" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#1c0105" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Saturated Glowing Peach/Salmon-Rose Central Sclera (Directly Sampled: #a43224 -> #f98f78 -> #febba7) -->
     <linearGradient id="mainScleraHoriz" x1="0%" y1="50%" x2="100%" y2="50%">
-      <stop offset="0%" stop-color="#7a3e48" />
-      <stop offset="8%" stop-color="#a86d76" />
-      <stop offset="18%" stop-color="#d6b2b8" />
-      <stop offset="30%" stop-color="#f5e6e8" />
-      <stop offset="40%" stop-color="#fffafa" />
-      <stop offset="50%" stop-color="#ffffff" />
-      <stop offset="60%" stop-color="#fffafa" />
-      <stop offset="70%" stop-color="#f5e6e8" />
-      <stop offset="82%" stop-color="#d6b2b8" />
-      <stop offset="92%" stop-color="#a86d76" />
-      <stop offset="100%" stop-color="#7a3e48" />
+      <stop offset="0%" stop-color="#8a0c1a" />
+      <stop offset="8%" stop-color="#ba1a2c" />
+      <stop offset="18%" stop-color="#ea4c5a" />
+      <stop offset="34%" stop-color="#f98f78" />
+      <stop offset="50%" stop-color="#febba7" />
+      <stop offset="66%" stop-color="#f98f78" />
+      <stop offset="82%" stop-color="#ea4c5a" />
+      <stop offset="92%" stop-color="#ba1a2c" />
+      <stop offset="100%" stop-color="#8a0c1a" />
     </linearGradient>
 
-    <!-- Soft Vertical Sclera Shading (Subtle Top Shadow & Warm Rose Rim Glow) -->
+    <!-- Warm Luminous Sclera Edge Vignette (Zero Muddying, Preserves Brilliant Peach) -->
     <linearGradient id="scleraTopShadow" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#3d0812" stop-opacity="0.52" />
-      <stop offset="18%" stop-color="#7a3340" stop-opacity="0.22" />
-      <stop offset="45%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="82%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="94%" stop-color="#ffd9e0" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#ff9eb0" stop-opacity="0.42" />
+      <stop offset="0%" stop-color="#8a0c1a" stop-opacity="0.22" />
+      <stop offset="20%" stop-color="#c41a2e" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="80%" stop-color="#ff8599" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#d91830" stop-opacity="0.20" />
     </linearGradient>
 
-    <!-- Central Eye Iris Base (Deep Blood-Obsidian Bowl with Velvety Rim) -->
-    <radialGradient id="mainIrisGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="46%">
-      <stop offset="0%" stop-color="#ff294d" />
-      <stop offset="16%" stop-color="#c20020" />
-      <stop offset="38%" stop-color="#59000d" />
-      <stop offset="62%" stop-color="#240005" />
-      <stop offset="84%" stop-color="#110002" />
-      <stop offset="95%" stop-color="#210004" />
-      <stop offset="100%" stop-color="#520e1b" />
+    <!-- Fiery Incandescent Iris Base (Sampled: #cf2825 scarlet body, #e55749 flame edge) -->
+    <radialGradient id="fieryIrisBase" cx="50%" cy="48%" r="50%" fx="50%" fy="45%">
+      <stop offset="0%" stop-color="#ff4760" />
+      <stop offset="22%" stop-color="#e55749" />
+      <stop offset="50%" stop-color="#cf2825" />
+      <stop offset="78%" stop-color="#8f0516" />
+      <stop offset="94%" stop-color="#59000d" />
+      <stop offset="100%" stop-color="#380008" />
     </radialGradient>
 
-    <!-- Iris Upper Shadow Vignette -->
-    <linearGradient id="irisTopShadow" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0a0002" stop-opacity="0.62" />
-      <stop offset="30%" stop-color="#1a0004" stop-opacity="0.28" />
-      <stop offset="72%" stop-color="#2b0006" stop-opacity="0" />
-      <stop offset="100%" stop-color="#ff9eb0" stop-opacity="0.24" />
-    </linearGradient>
-
-    <!-- Central Pupil Blinding White-Hot Starburst Core -->
-    <radialGradient id="pupilCoreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="25%" stop-color="#fff0f3" stop-opacity="0.98" />
-      <stop offset="52%" stop-color="#ff1e46" stop-opacity="0.88" />
-      <stop offset="78%" stop-color="#a6001b" stop-opacity="0.48" />
-      <stop offset="100%" stop-color="#3d0008" stop-opacity="0" />
-    </radialGradient>
-
-    
-    <!-- GPU-Accelerated Outer Pupil Bloom Radial (Replaces CPU feGaussianBlur on Animating Pupil!) -->
+    <!-- Central Pupil Incandescent Starburst Corona (White Core to Rich Radiant Crimson) -->
     <radialGradient id="pupilBloomRadial" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
-      <stop offset="30%" stop-color="#ff3356" stop-opacity="0.8" />
-      <stop offset="65%" stop-color="#cc0022" stop-opacity="0.32" />
-      <stop offset="100%" stop-color="#660010" stop-opacity="0" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="18%" stop-color="#fff0f3" stop-opacity="0.98" />
+      <stop offset="38%" stop-color="#f8a39d" stop-opacity="0.92" />
+      <stop offset="62%" stop-color="#ff2647" stop-opacity="0.75" />
+      <stop offset="84%" stop-color="#b30219" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3d0007" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Small Satellite Eye Sclera Gradient (Smooth Vivid Crimson to Deep Oxblood Tips) -->
-    <radialGradient id="smallScleraGrad" cx="50%" cy="52%" r="54%">
-      <stop offset="0%" stop-color="#ff3d5a" />
-      <stop offset="28%" stop-color="#e6102c" />
-      <stop offset="60%" stop-color="#b3041b" />
-      <stop offset="86%" stop-color="#6b000e" />
-      <stop offset="100%" stop-color="#2e0005" />
+    <!-- Satellite Eye Sclera Gradient (Glowing Peach to Deep Ruby Corners) -->
+    <radialGradient id="satScleraGrad" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#fff0f3" />
+      <stop offset="32%" stop-color="#f89a87" />
+      <stop offset="65%" stop-color="#d61e38" />
+      <stop offset="88%" stop-color="#8a0515" />
+      <stop offset="100%" stop-color="#3d0008" />
+    </radialGradient>
+
+    <!-- Satellite Eye Iris Gradient (Fiery Scarlet with Radiant Hot Core) -->
+    <radialGradient id="satIrisGrad" cx="50%" cy="48%" r="50%">
+      <stop offset="0%" stop-color="#ff8da1" />
+      <stop offset="28%" stop-color="#ff3356" />
+      <stop offset="55%" stop-color="#c42824" />
+      <stop offset="80%" stop-color="#7a0312" />
+      <stop offset="100%" stop-color="#2b0005" />
     </radialGradient>
 
     <!-- Peeling Ribbon Gradients (Rich Blood-Crimson Body with Feathered Outer Tail) -->
@@ -524,26 +523,28 @@
       </path>
     </clipPath>
 
-    <g id="satEyeInterior">
-      <!-- Vivid Glowing Crimson Almond Sclera -->
-      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z" fill="url(#smallScleraGrad)" />
-      <!-- Soft Airbrushed Extreme Corner Tip Shading -->
-      <g opacity="0.62">
-        <path d="M -30,0 C -25,-4.5 -20,-5.5 -16,-3.5 C -21,-1 -25,1 -30,0 Z" fill="#360006" />
-        <path d="M 30,0 C 25,-4.5 20,-5.5 16,-3.5 C 21,-1 25,1 30,0 Z" fill="#360006" />
-      </g>
-      <!-- Subtle Warm-Rose Lower Meniscus Highlight -->
-      <path d="M -18,5.5 C -8,11.2 8,11.2 18,5.5" fill="none" stroke="#ff9eb0" stroke-width="0.9" stroke-linecap="round" opacity="0.58" />
-      <!-- Warm Ivory-Pink Iris Oval & Vivid Crimson Bullseye Pupil with Bright Pinpoint (GPU Crisp Vectors) -->
-      <g>
-        <ellipse cx="0" cy="-0.5" rx="9.5" ry="8.5" fill="#ff294b" opacity="0.55" />
-        <ellipse cx="0" cy="-0.5" rx="8.1" ry="7.3" fill="#ffecef" stroke="#ffd1d9" stroke-width="0.6" />
-        <circle cx="0" cy="-0.5" r="3.2" fill="#db0f27" />
-        <circle cx="0" cy="-0.5" r="2.3" fill="#b3061b" />
-        <circle cx="0" cy="-0.5" r="1.3" fill="#ffffff" />
-      </g>
-      <!-- Soft Upper Eyelid Rim Shade Over Top of Iris -->
-      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-10.5 -16,-10.5 -30,0 Z" fill="#470009" opacity="0.55" />
+        <g id="satEyeInterior">
+      <!-- Vivid Glowing Peach/Salmon Sclera -->
+      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z" fill="url(#satScleraGrad)" />
+      <!-- Soft Airbrushed Corner Shading -->
+      <path d="M -30,0 C -25,-4.5 -20,-5.5 -16,-3.5 C -21,-1 -25,1 -30,0 Z" fill="#4d000a" opacity="0.75" />
+      <path d="M 30,0 C 25,-4.5 20,-5.5 16,-3.5 C 21,-1 25,1 30,0 Z" fill="#4d000a" opacity="0.75" />
+      <!-- Luminous Warm Salmon Meniscus Highlight -->
+      <path d="M -18,6 C -8,11.5 8,11.5 18,6" fill="none" stroke="#ffa3b5" stroke-width="1.2" stroke-linecap="round" opacity="0.75" />
+
+      <!-- Fiery Saturated Scarlet-Ruby Iris Orb (Direct Reference Match: #cf2825) -->
+      <ellipse cx="0" cy="-0.5" rx="10.2" ry="9.2" fill="url(#satIrisGrad)" />
+      <!-- Dark Velvet Pupil Core -->
+      <circle cx="0" cy="-0.5" r="4.2" fill="#1f0004" />
+      <!-- Incandescent Center Pinpoint Gleam -->
+      <circle cx="0" cy="-0.5" r="2.2" fill="#ff6b82" />
+      <circle cx="0" cy="-0.5" r="1.3" fill="#ffffff" />
+
+      <!-- Blinding White-Hot Eyelid Rims (Signature Cutscene Feature: Crisp Glowing Slashes in the Sky!) -->
+      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0" fill="none" stroke="#ff2647" stroke-width="3.2" stroke-linecap="round" opacity="0.45" />
+      <path d="M -28,-0.5 C -15,-12.8 15,-12.8 28,-0.5" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" opacity="0.95" />
+      <path d="M -30,0 C -16,13.5 16,13.5 30,0" fill="none" stroke="#ff2647" stroke-width="3.2" stroke-linecap="round" opacity="0.45" />
+      <path d="M -28,0.5 C -15,12.8 15,12.8 28,0.5" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" opacity="0.95" />
     </g>
 
     <!-- GPU-Accelerated Soft Radial Pillar Gradients (Replaces Expensive 1230px feGaussianBlur!) -->
@@ -569,17 +570,14 @@
       <stop offset="100%" stop-color="#ff1a3c" stop-opacity="0" />
     </radialGradient>
 
-    <g id="satEyeSocket">
-      <!-- Softly Airbrushed Outer Fleshy Crimson Socket Cushion & Eyelid Creases (Zero Hard Black Border!) -->
+        <g id="satEyeSocket">
+      <!-- Deep Abyssal Crimson Socket Bed with Sculpted Eyelid Folds -->
       <g>
-        <path d="M -52,-0.5 C -28,-24 28,-24 52,-0.5 C 28,22 -28,22 -52,-0.5 Z" fill="#6b0210" opacity="0.72" />
-        <!-- Tapered Upper & Lower Painterly Crimson Eyelid Folds -->
-        <path d="M -48,-1 C -25,-22 25,-22 48,-1 C 24,-13 -24,-13 -48,-1 Z" fill="#bf0620" opacity="0.90" />
-        <path d="M -40,-2 C -20,-18.5 20,-18.5 40,-2 C 20,-12.5 -20,-12.5 -40,-2 Z" fill="#eb1432" opacity="0.85" />
-        <path d="M -45,1.5 C -23,20 23,20 45,1.5 C 22,12 -22,12 -45,1.5 Z" fill="#a30319" opacity="0.88" />
-        <path d="M -36,2 C -18,16 18,16 36,2 C 18,11.5 -18,11.5 -36,2 Z" fill="#d90f2b" opacity="0.78" />
-        <!-- Soft Oxblood Eyelid Crease Immediately Framing Sclera -->
-        <path d="M -33,0 C -17.5,-14.8 17.5,-14.8 33,0 C 17.5,14.8 -17.5,14.8 -33,0 Z" fill="#330006" opacity="0.85" />
+        <path d="M -54,0 C -29,-25 29,-25 54,0 C 29,23 -29,23 -54,0 Z" fill="#470009" opacity="0.82" />
+        <path d="M -50,-1 C -26,-23 26,-23 50,-1 C 25,-14 -25,-14 -50,-1 Z" fill="#8f0616" opacity="0.92" />
+        <path d="M -42,-2 C -21,-19 21,-19 42,-2 C 21,-13 -21,-13 -42,-2 Z" fill="#d6112d" opacity="0.88" />
+        <path d="M -46,1.5 C -24,21 24,21 46,1.5 C 23,13 -23,13 -46,1.5 Z" fill="#780211" opacity="0.9" />
+        <path d="M -38,2 C -19,17 19,17 38,2 C 19,12 -19,12 -38,2 Z" fill="#b80922" opacity="0.85" />
       </g>
     </g>
 
@@ -650,599 +648,354 @@
     </circle>
   </g>
 
+    <!-- ====================================================================== -->
+  <!-- 1. RONOVA'S CELESTIAL EYE SKY RIFT (100% REFERENCE ACCURATE CUTSCENE)    -->
   <!-- ====================================================================== -->
-  <!-- 1. RONOVA'S EYE SKY RIFT (TOP HERO: y=0 to 310)                        -->
-  <!-- ====================================================================== -->
-  <!-- Dark Blood-Red Cloud Layers in Sky -->
-  <g opacity="0.55">
-    <path d="M -40,42 Q 140,12 310,56 T 650,36 T 940,66 L 940,0 L -40,0 Z" fill="#0d0002" />
+
+  <!-- A. Volumetric Crimson Sky Atmosphere & Celestial God-Aura -->
+  <g>
+    <!-- Volumetric Radiant Crimson Celestial Sky Canopy (Immersing Entire Natlan Sky in Blood Crimson!) -->
+    <rect x="0" y="0" width="900" height="320" fill="url(#ronovaAtmosphereCorona)" />
+    <ellipse cx="450" cy="118" rx="440" ry="180" fill="url(#ronovaAtmosphereCorona)" opacity="0.92" />
+    <ellipse cx="450" cy="118" rx="360" ry="135" fill="url(#ronovaAtmosphereCorona)" opacity="0.85" />
+    <ellipse cx="450" cy="120" rx="240" ry="88" fill="#ff2647" opacity="0.45" />
+
+    <!-- Ambient Drifting Volcanic Clouds/Smoke Streaks Across Upper Heavens -->
+    <path d="M 0,40 C 200,20 350,60 550,30 C 720,10 820,45 900,25 L 900,80 C 780,100 620,70 420,95 C 220,115 100,75 0,90 Z" fill="#4d050e" opacity="0.4" />
+    <path d="M 0,90 C 240,65 400,110 640,80 C 780,60 850,90 900,70 L 900,130 C 760,150 580,120 380,140 C 180,155 80,125 0,140 Z" fill="#7a0a18" opacity="0.25" />
   </g>
 
-  <!-- Massive Pulsing Crimson Aura Behind the Sky Rift -->
-  <ellipse cx="450" cy="122" rx="435" ry="135" fill="url(#riftAtmosphere)" opacity="0.92" />
+  <!-- B. The Sweeping Eldritch Crown Plumes / Wing Sinews Above the Central Eye -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Deep Oxblood Base Muscular Canopy -->
+    <path d="M 450,12 C 430,35 410,65 370,72 C 340,68 310,55 280,38 C 320,62 355,80 395,84 C 420,86 440,78 450,60 C 460,78 480,86 505,84 C 545,80 580,62 620,38 C 590,55 560,68 530,72 C 490,65 470,35 450,12 Z"
+      fill="#47030a" />
 
-  <!-- The Jagged Sky Rift of Ronova -->
-  <g id="ronovaSkyRift">
-    <!-- 1. Wide Outer Crimson Atmospheric Bloom of the Tear -->
-    <path d="
-      M 12,56
-      C 56,74 108,82 162,77
-      C 218,72 284,65 348,62
-      C 382,61 408,42 424,18
-      C 442,45 468,68 508,77
-      C 554,87 596,95 636,101
-      C 712,98 792,94 876,98
-      C 812,124 748,154 682,178
-      C 642,190 604,178 564,182
-      C 542,198 528,228 516,250
-      C 506,216 498,186 482,185
-      C 472,188 468,224 464,244
-      C 460,218 456,188 446,192
-      C 438,218 430,244 422,250
-      C 414,220 408,186 392,180
-      C 346,168 296,154 246,144
-      C 182,128 132,100 88,82
-      C 56,74 32,66 12,56 Z"
-      fill="#ff0026" opacity="0.72" />
+    <!-- Center Tall Spire Plume (Peaking at x=450, y=10) -->
+    <path d="M 436,68 C 442,42 446,24 450,10 C 454,24 458,42 464,68 C 458,62 442,62 436,68 Z" fill="#b80820" />
+    <path d="M 444,66 C 447,40 448,22 450,12 C 452,22 453,40 456,66 Z" fill="#ffffff" opacity="0.9" />
 
-    <!-- 2. Smooth Painterly White-Hot Rift Rim Along Wings -->
-    <path d="
-      M 12,56
-      C 54,73 104,80 156,77
-      C 208,73 258,71 312,65
-      C 348,61 386,63 424,66
-      C 464,70 506,78 548,86
-      C 578,91 604,97 632,102
-      C 706,98 788,95 876,98
-      C 812,121 748,150 684,175
-      C 652,186 626,186 598,176
-      C 578,170 562,178 544,184
-      C 530,189 520,191 510,188
-      C 498,183 484,181 472,185
-      C 466,188 460,188 454,184
-      C 440,186 426,190 414,190
-      C 402,184 388,178 368,173
-      C 326,162 284,152 246,143
-      C 188,127 140,101 94,82
-      C 58,74 34,66 12,56 Z"
-      fill="#ffffff" />
+    <!-- Left Crown Wing Plumes (Curving Sweeping Feathers Arching Backward to Left) -->
+    <path d="M 432,68 C 418,44 398,28 368,18 C 392,34 410,54 424,72 Z" fill="#9e0416" />
+    <path d="M 422,70 C 405,48 384,32 352,24 C 378,40 398,58 412,74 Z" fill="#d9112d" />
+    <path d="M 408,74 C 388,52 360,38 325,32 C 352,48 376,64 396,78 Z" fill="#ff2647" opacity="0.85" />
+    <path d="M 402,74 C 382,54 356,42 328,36" fill="none" stroke="#ffd1d9" stroke-width="1.8" opacity="0.92" />
 
-    <!-- 2.5. Fused Smooth Vertical Aurora Plumes & Bottom Stalactite Curtains (Painterly Bezier Light Curtains — Zero Blocky Corners!) -->
+    <path d="M 390,78 C 362,58 328,48 288,44 C 320,60 348,74 374,84 Z" fill="#9e0416" />
+    <path d="M 378,80 C 348,62 312,52 270,50 C 304,64 334,78 360,86 Z" fill="#d9112d" />
+    <path d="M 368,82 C 336,66 298,58 258,58" fill="none" stroke="#ff8da1" stroke-width="1.8" opacity="0.88" />
+
+    <path d="M 352,86 C 316,72 272,66 224,68 C 262,80 298,92 332,96 Z" fill="#b80820" />
+    <path d="M 338,88 C 298,78 254,74 208,78" fill="none" stroke="#ffa3b5" stroke-width="1.6" opacity="0.82" />
+
+    <!-- Right Crown Wing Plumes (Symmetrical Arching Sweeping Feathers to Right) -->
+    <path d="M 468,68 C 482,44 502,28 532,18 C 508,34 490,54 476,72 Z" fill="#9e0416" />
+    <path d="M 478,70 C 495,48 516,32 548,24 C 522,40 502,58 488,74 Z" fill="#d9112d" />
+    <path d="M 492,74 C 512,52 540,38 575,32 C 548,48 524,64 504,78 Z" fill="#ff2647" opacity="0.85" />
+    <path d="M 498,74 C 518,54 544,42 572,36" fill="none" stroke="#ffd1d9" stroke-width="1.8" opacity="0.92" />
+
+    <path d="M 510,78 C 538,58 572,48 612,44 C 580,60 552,74 526,84 Z" fill="#9e0416" />
+    <path d="M 522,80 C 552,62 588,52 630,50 C 596,64 566,78 540,86 Z" fill="#d9112d" />
+    <path d="M 532,82 C 564,66 602,58 642,58" fill="none" stroke="#ff8da1" stroke-width="1.8" opacity="0.88" />
+
+    <path d="M 548,86 C 584,72 628,66 676,68 C 638,80 602,92 568,96 Z" fill="#b80820" />
+    <path d="M 562,88 C 602,78 646,74 692,78" fill="none" stroke="#ffa3b5" stroke-width="1.6" opacity="0.82" />
+  </g>
+
+  <!-- C. The Fleshy Eye Socket Cradle & Lower Weeping Roots -->
+  <g>
+    <!-- Deep Fleshy Eyeball Basin Cradle -->
+    <path d="M 270,118 C 310,88 380,68 450,68 C 520,68 590,88 630,118 C 590,165 520,182 450,182 C 380,182 310,165 270,118 Z"
+      fill="#54000b" opacity="0.95" />
+    <path d="M 292,118 C 330,94 390,74 450,74 C 510,74 570,94 608,118 C 570,160 510,175 450,175 C 390,175 330,160 292,118 Z"
+      fill="#8f071a" opacity="0.9" />
+
+    <!-- Weeping Blood Roots Flowing Downward from Center Eye Basin into Red Mist -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 436,178 C 430,210 422,246 418,272" stroke="#6e0210" stroke-width="3.5" />
+      <path d="M 436,178 C 430,210 422,246 418,272" stroke="#c9102c" stroke-width="1.6" opacity="0.8" />
+
+      <path d="M 450,180 C 450,218 448,258 446,285" stroke="#850314" stroke-width="4.2" />
+      <path d="M 450,180 C 450,218 448,258 446,285" stroke="#ff2647" stroke-width="1.8" opacity="0.85" />
+      <path d="M 450,180 C 450,218 448,258 446,285" stroke="#ffffff" stroke-width="0.8" opacity="0.9" />
+
+      <path d="M 464,178 C 470,210 478,246 482,272" stroke="#6e0210" stroke-width="3.5" />
+      <path d="M 464,178 C 470,210 478,246 482,272" stroke="#c9102c" stroke-width="1.6" opacity="0.8" />
+
+      <path d="M 415,172 C 395,205 375,238 355,260" stroke="#54000c" stroke-width="2.8" />
+      <path d="M 485,172 C 505,205 525,238 545,260" stroke="#54000c" stroke-width="2.8" />
+    </g>
+
+    <!-- Warm Atmospheric Crimson Fog Horizon (Matching Lower Mist in Cutscene: #802524) -->
+    <ellipse cx="450" cy="270" rx="420" ry="65" fill="#5c0a17" opacity="0.45" />
+    <ellipse cx="450" cy="285" rx="360" ry="45" fill="#802524" opacity="0.32" />
+  </g>
+
+  <!-- D. THE COLOSSAL CENTRAL EYE OF RONOVA -->
+  <g id="centralRonovaEye">
+    <!-- Synchronized Eyelid Creases Outside Clip Path -->
     <g>
-      <!-- Top-Center Tall Vertical Aurora Plume (Smooth Bezier Spire Peaking at x=424, y=6) -->
-      <path d="
-        M 378,66
-        C 390,62 396,46 404,52
-        C 412,38 418,18 424,6
-        C 430,22 434,38 438,24
-        C 444,36 448,54 456,48
-        C 464,58 472,68 482,74
-        C 450,72 414,68 378,66 Z"
-        fill="url(#topSpikeGrad)" opacity="0.96">
+      <!-- Upper Eyelid Crease with Blink Morph -->
+      <path d="M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121"
+        fill="none" stroke="#ff2647" stroke-width="3.8" stroke-linecap="round" opacity="0.5">
+        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
+          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
+          values="
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,119 C 358,106 398,70 450,70 C 502,70 542,106 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,119 C 358,110 398,77 450,77 C 502,77 542,110 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,119 C 358,107 398,71 450,71 C 502,71 542,107 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121" />
       </path>
-      <path d="
-        M 390,66
-        C 402,54 414,32 424,12
-        C 432,34 442,46 456,68
-        Z"
-        fill="url(#topSpikeGrad)" />
+      <path d="M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121"
+        fill="none" stroke="#ffd1d9" stroke-width="1.8" stroke-linecap="round" opacity="0.92">
+        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
+          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
+          values="
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,119 C 358,106 398,70 450,70 C 502,70 542,106 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,119 C 358,110 398,77 450,77 C 502,77 542,110 572,121;
+            M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
+            M 326,119 C 358,107 398,71 450,71 C 502,71 542,107 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
+            M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121" />
+      </path>
 
-      <!-- Top-Left & Top-Right Soft Stepped Aurora Wisps (Smooth Curves Instead of Sawteeth!) -->
-      <path d="M 326,64 C 338,54 348,52 358,60 C 368,54 378,56 390,66 Z" fill="url(#topSpikeGrad)" opacity="0.82" />
-      <path d="M 476,73 C 492,64 506,68 520,76 C 534,68 548,72 562,82 C 578,72 594,76 618,94 Z" fill="url(#topSpikeGrad)" opacity="0.85" />
-
-      <!-- Bottom-Center Left Stalactite Curtain (Smooth Curved Outer Drop + Soft Vertical Light Plumes) -->
-      <path d="
-        M 408,176
-        C 413,204 418,242 425,258
-        C 431,244 434,234 439,244
-        C 445,236 450,222 455,212
-        L 456,175 Z"
-        fill="url(#botSpikeGrad)" />
-      <path d="
-        M 413,178
-        C 417,202 421,234 426,246
-        C 432,232 438,228 444,234
-        C 449,220 452,204 454,178 Z"
-        fill="url(#botSpikeGrad)" />
-
-      <!-- Bottom-Center Middle Vertical Needle (Separated by Narrow Cleft at x=456..462) -->
-      <path d="M 461,178 C 463,212 464,244 465.5,260 C 467,244 468,212 470,178 Z" fill="url(#botSpikeGrad)" />
-
-      <!-- Bottom-Center Right Stalactite Fan (Crisp Diagonal Left Spine at x=502..516 + Wide Sweeping Fan to x=572) -->
-      <path d="
-        M 501,177
-        C 507,206 512,240 516,262
-        C 523,238 528,222 536,226
-        C 548,206 560,188 576,174
-        L 546,178 Z"
-        fill="url(#botSpikeGrad)" />
-      <path d="
-        M 504,179
-        C 509,204 513,232 516,248
-        C 523,226 530,214 538,216
-        C 548,200 558,186 568,176 Z"
-        fill="url(#botSpikeGrad)" />
+      <!-- Lower Eyelid Crease with Blink Morph -->
+      <path d="M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124"
+        fill="none" stroke="#ff2647" stroke-width="3.8" stroke-linecap="round" opacity="0.5">
+        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
+          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
+          values="
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,123 C 364,138 402,172 450,172 C 498,172 536,138 568,124;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,123 C 364,133 402,166 450,166 C 498,166 536,133 568,124;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,123 C 364,137 402,171 450,171 C 498,171 536,137 568,124;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124" />
+      </path>
+      <path d="M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124"
+        fill="none" stroke="#ffffff" stroke-width="2.0" stroke-linecap="round" opacity="0.96">
+        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
+          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
+          values="
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,123 C 364,138 402,172 450,172 C 498,172 536,138 568,124;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,123 C 364,133 402,166 450,166 C 498,166 536,133 568,124;
+            M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
+            M 332,123 C 364,137 402,171 450,171 C 498,171 536,137 568,124;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
+            M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124" />
+      </path>
     </g>
 
-    <!-- 3. Soft Inner Crimson-Rose Bleeding Rim Between White Border and Dark Void -->
-    <path d="
-      M 86,80
-      C 150,87 214,81 282,73
-      C 344,65 398,66 450,73
-      C 506,80 566,93 628,106
-      C 698,102 772,98 852,99
-      C 792,122 732,149 678,172
-      C 644,183 614,182 582,174
-      C 564,170 552,178 538,183
-      C 526,187 516,188 506,185
-      C 494,180 482,179 472,183
-      C 466,186 460,186 454,181
-      C 440,183 426,187 414,187
-      C 402,181 388,175 368,170
-      C 326,159 286,149 246,140
-      C 188,123 136,100 86,80 Z"
-      fill="#b8001f" stroke="#ff294b" stroke-width="2.4" opacity="0.94" />
+    <!-- Clipped Eyeball Interior: Sclera, Fiery Solar Iris, Prominence Flares & Starburst Pupil -->
+    <g clip-path="url(#mainEyeBlinkClip)">
+      <!-- Saturated Glowing Peach/Salmon-Rose Sclera (Direct Reference Match: #f89a87, #fff2f4) -->
+      <rect x="318" y="70" width="264" height="105" fill="url(#mainScleraHoriz)" />
+      <rect x="318" y="70" width="264" height="105" fill="url(#scleraTopShadow)" />
 
-    <!-- 4. Pitch-Black Abyssal Void Interior (Smooth Cubic-Bezier Silhouette) -->
-    <path id="riftInteriorPath" d="
-      M 96,82
-      C 156,88 218,82 284,75
-      C 346,67 400,68 450,75
-      C 506,82 566,95 626,108
-      C 694,104 766,100 842,100
-      C 784,122 726,148 674,170
-      C 642,181 612,180 582,172
-      C 564,168 550,176 536,180
-      C 524,184 514,185 504,182
-      C 492,178 480,177 470,180
-      C 464,182 458,182 452,178
-      C 438,180 426,184 414,184
-      C 402,178 388,173 368,168
-      C 326,157 286,148 248,139
-      C 192,122 140,100 96,82 Z"
-      fill="url(#voidInterior)" />
+      <!-- Warm Crimson Tear Duct Accents -->
+      <path d="M 324,120 C 342,116 358,112 374,116" fill="none" stroke="#d61e38" stroke-width="2.2" opacity="0.65" />
+      <path d="M 576,120 C 558,116 542,112 526,116" fill="none" stroke="#d61e38" stroke-width="2.2" opacity="0.65" />
 
-    <!-- 4.5. Soft Upper-Brow Crimson Atmospheric Cushion (Matching Cutscene Red Glow Above Central & Left Eyes) -->
-    <path d="
-      M 280,76
-      C 345,68 400,69 450,76
-      C 505,83 560,94 615,106
-      C 565,112 510,98 450,94
-      C 390,90 335,96 280,76 Z"
-      fill="#9e081c" opacity="0.72" />
+      <!-- THE FIERY SOLAR IRIS & SINGULARITY STARBURST (Centered at (450, 122)) -->
+      <g transform="translate(450, 122)">
+        <!-- Outer Fiery Solar Corona Halo (Radiating into Sclera) -->
+        <circle cx="0" cy="0" r="52" fill="#ff2647" opacity="0.45" />
 
-    <!-- 5. Deep Blood-Lit Lower Basin Cavity (Soft-Blurred Painterly Floor Matching Reference!) -->
-    <path d="
-      M 258,136
-      C 320,130 385,134 450,136
-      C 515,134 575,134 646,152
-      C 624,176 598,178 576,172
-      C 560,168 548,177 536,181
-      C 524,185 514,186 504,183
-      C 492,179 480,178 470,181
-      C 464,184 458,184 452,179
-      C 438,181 426,185 414,185
-      C 402,179 388,174 368,169
-      C 326,158 290,148 258,136 Z"
-      fill="url(#lowerBasinGlow)" />
+        <!-- 24 Feathered Solar Prominence Flames Flaring Around Iris Perimeter (Matching Cutscene Prominences!) -->
+        <g fill="#e55749">
+          <!-- 12:00 Top Flame Group -->
+          <path d="M -4,-46 C -2,-56 2,-56 4,-46 Z" fill="#ffffff" opacity="0.9" />
+          <path d="M -10,-44 C -6,-54 0,-54 2,-44 Z" fill="#ff4d6d" />
+          <path d="M 2,-44 C 6,-54 12,-52 8,-44 Z" fill="#ff3356" />
 
-    <!-- Soft Painterly Crimson Rim-Lit Crease Ripples Along the Lower Basin Floor -->
-    <g>
-      <path d="M 408,175 Q 434,170 456,176" fill="none" stroke="#ff3856" stroke-width="1.6" stroke-linecap="round" opacity="0.78" />
-      <path d="M 498,174 Q 522,168 544,176" fill="none" stroke="#ff3856" stroke-width="1.7" stroke-linecap="round" opacity="0.82" />
-    </g>
-    <circle cx="468" cy="176" r="1.3" fill="#ff6680" opacity="0.85" />
-    <circle cx="516" cy="166" r="1.2" fill="#ff3352" opacity="0.8" />
+          <!-- 1:30 Upper-Right Flames -->
+          <path d="M 28,-36 C 36,-44 42,-40 36,-32 Z" fill="#ffffff" opacity="0.85" />
+          <path d="M 20,-40 C 30,-48 36,-46 28,-36 Z" fill="#ff4d6d" />
+          <path d="M 34,-26 C 44,-34 46,-28 38,-20 Z" fill="#ff3356" />
 
-    <!-- 6. Airbrushed Organic Abyssal Sinews & Muscle Folds Inside the Wings (Zero Hard Wireframe Lines!) -->
-    <g opacity="0.88" stroke-linecap="round">
-      <!-- Left Wing Soft Sculpted Muscle Folds -->
-      <path d="M 118,88 C 176,102 232,92 284,88 C 314,86 344,86 372,98" fill="none" stroke="#4f000b" stroke-width="4.2" />
-      <path d="M 142,95 C 194,108 242,100 286,93 C 314,89 342,90 368,102" fill="none" stroke="#8f0618" stroke-width="2.0" opacity="0.85" />
-      <path d="M 168,108 C 218,125 262,124 304,119 C 334,115 362,117 390,123" fill="none" stroke="#5e000e" stroke-width="3.4" />
-      <path d="M 188,115 C 232,128 272,126 310,122 C 336,119 360,121 386,125" fill="none" stroke="#ad091f" stroke-width="1.6" opacity="0.75" />
-      <path d="M 216,131 C 266,144 312,152 358,160 C 388,165 416,166 446,164" fill="none" stroke="#54000c" stroke-width="3.2" />
+          <!-- 3:00 Right Flames -->
+          <path d="M 44,-6 C 54,-4 54,4 44,6 Z" fill="#ffffff" opacity="0.85" />
+          <path d="M 42,-14 C 52,-10 52,-2 44,-4 Z" fill="#ff4d6d" />
+          <path d="M 42,4 C 52,2 52,10 44,14 Z" fill="#ff3356" />
 
-      <!-- Right Wing Soft Sculpted Muscle Folds -->
-      <path d="M 806,103 C 746,108 690,115 638,115 C 605,115 576,103 546,106" fill="none" stroke="#4f000b" stroke-width="4.2" />
-      <path d="M 778,110 C 722,119 674,126 624,122 C 596,120 572,108 544,110" fill="none" stroke="#99081b" stroke-width="2.0" opacity="0.85" />
-      <path d="M 748,125 C 698,144 652,150 608,141 C 584,136 562,131 536,131" fill="none" stroke="#5e000e" stroke-width="3.4" />
-      <path d="M 732,129 C 684,146 644,150 604,141" fill="none" stroke="#ba0b22" stroke-width="1.6" opacity="0.75" />
-      <path d="M 698,154 C 652,169 610,169 568,166 C 536,163 505,166 468,164" fill="none" stroke="#54000c" stroke-width="3.2" />
-    </g>
+          <!-- 4:30 Lower-Right Signature Slash -->
+          <path d="M 32,30 C 44,42 42,46 28,38 Z" fill="#ffffff" opacity="0.92" />
+          <path d="M 24,36 C 36,48 32,52 20,42 Z" fill="#ff2647" />
+          <path d="M 36,20 C 48,28 46,36 32,30 Z" fill="#ff5c77" />
 
-    <!-- Tiny Glowing Crimson Tear-Sparks Inside Cavity (Matching Cutscene Details) -->
-    <g>
-      <path d="M 329,147 C 331,144 334,145 335,149 C 335,153 332,155 330,152 Z" fill="#ff2442" />
-      <circle cx="587" cy="98" r="1.7" fill="#ff2947" />
-      <circle cx="456" cy="90" r="1.1" fill="#ff2442" opacity="0.85" />
-    </g>
+          <!-- 6:00 Bottom Flames -->
+          <path d="M -4,44 C -2,54 2,54 4,44 Z" fill="#ffffff" opacity="0.85" />
+          <path d="M -12,42 C -8,52 -2,52 0,42 Z" fill="#ff4d6d" />
+          <path d="M 0,42 C 6,52 12,50 8,42 Z" fill="#ff3356" />
 
-    <!-- ================================================================== -->
-    <!-- 7. CENTRAL GIANT EYE OF RONOVA (3D Sclera, Fleshy Lids, Cloudy Blood-Obsidian Iris & Diamond-Slash Starburst) -->
-    <!-- ================================================================== -->
-    <g id="centralRonovaEye">
-      <!-- Warm Crimson-Flesh Eye-Cluster Bed (Bridges Central Eye Corners to Satellite Eyes — Zero Black Gap!) -->
-      <g opacity="0.88">
-        <path d="M 285,95 C 340,78 395,68 450,68 C 505,68 560,82 615,108 C 595,152 535,176 450,176 C 365,176 315,148 285,95 Z"
-          fill="#800414" />
-        <ellipse cx="348" cy="122" rx="46" ry="26" fill="#b30820" />
-        <ellipse cx="552" cy="126" rx="46" ry="26" fill="#b30820" />
-      </g>
+          <!-- 7:30 Lower-Left Flames -->
+          <path d="M -30,32 C -42,42 -40,46 -26,38 Z" fill="#ffffff" opacity="0.85" />
+          <path d="M -22,36 C -34,48 -30,52 -18,42 Z" fill="#ff2647" />
+          <path d="M -34,22 C -46,30 -44,38 -30,32 Z" fill="#ff5c77" />
 
-      <!-- Warm Crimson Corner Cushions Outside Blink Clip -->
-      <g>
-        <path d="M 314,120 C 330,114 344,106 360,98 C 350,114 350,126 360,138 C 344,130 330,124 314,120 Z"
-          fill="#c9102c" opacity="0.82" />
-        <path d="M 584,122 C 568,116 554,108 540,98 C 550,114 550,126 540,138 C 554,130 568,125 584,122 Z"
-          fill="#c9102c" opacity="0.82" />
-      </g>
+          <!-- 9:00 Left Flames -->
+          <path d="M -44,-6 C -54,-4 -54,4 -44,6 Z" fill="#ffffff" opacity="0.85" />
+          <path d="M -42,-14 C -52,-10 -52,-2 -44,-4 Z" fill="#ff4d6d" />
+          <path d="M -42,4 C -52,2 -52,10 -44,14 Z" fill="#ff3356" />
 
-      <!-- Softly Shaded Upper & Lower Crimson Eyelid Creases (GPU Accelerated Path Morphs Outside Filter!) -->
-      <g>
-        <path d="M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121"
-          fill="none" stroke="#d60d2b" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
-          <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
-            keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-            keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
-            values="
-              M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
-              M 326,119 C 358,106 398,70 450,70 C 502,70 542,106 572,121;
-              M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
-              M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
-              M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
-              M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
-              M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
-              M 326,119 C 358,110 398,77 450,77 C 502,77 542,110 572,121;
-              M 326,120 C 362,118 405,116 450,116 C 495,116 536,118 572,121;
-              M 326,119 C 358,107 398,71 450,71 C 502,71 542,107 572,121;
-              M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121;
-              M 326,119 C 358,108 398,72 450,72 C 502,72 542,108 572,121" />
-        </path>
-        <path d="M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124"
-          fill="none" stroke="#c40824" stroke-width="2.2" stroke-linecap="round" opacity="0.86">
-          <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
-            keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-            keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
-            values="
-              M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
-              M 332,123 C 364,138 402,172 450,172 C 498,172 536,138 568,124;
-              M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
-              M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
-              M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
-              M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
-              M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
-              M 332,123 C 364,133 402,166 450,166 C 498,166 536,133 568,124;
-              M 332,122 C 368,126 408,128 450,128 C 492,128 532,126 568,123;
-              M 332,123 C 364,137 402,171 450,171 C 498,171 536,137 568,124;
-              M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124;
-              M 332,123 C 364,136 402,170 450,170 C 498,170 536,136 568,124" />
-        </path>
-      </g>
-
-      <!-- Clipped Eyeball Interior (Sclera, Airbrushed Tear Ducts, Iris, Painterly Flame Nebula & Starburst Pupil) -->
-      <g clip-path="url(#mainEyeBlinkClip)">
-        <!-- 3D Shaded Seamless Almond Sclera -->
-        <rect x="318" y="70" width="264" height="105" fill="url(#mainScleraHoriz)" />
-
-        <!-- Delicate Painterly Rose-Mauve Mucosal Folds in Left & Right Sclera Corners -->
-        <g opacity="0.62">
-          <path d="M 326,120 C 350,115 374,109 398,112 C 378,117 354,120 326,120 Z" fill="#c47886" />
-          <path d="M 332,121 C 352,125 372,129 394,128 C 374,124 354,121 332,121 Z" fill="#d48a98" />
-          <path d="M 572,122 C 548,116 524,109 502,112 C 522,117 546,121 572,122 Z" fill="#c47886" />
-          <path d="M 566,123 C 546,126 526,130 506,129 C 526,125 546,122 566,123 Z" fill="#d48a98" />
+          <!-- 10:30 Upper-Left Flames -->
+          <path d="M -28,-36 C -38,-46 -42,-40 -34,-30 Z" fill="#ffffff" opacity="0.92" />
+          <path d="M -20,-40 C -32,-50 -36,-46 -26,-34 Z" fill="#ff2647" />
+          <path d="M -34,-24 C -46,-32 -44,-24 -36,-18 Z" fill="#ff5c77" />
         </g>
 
-        <!-- Subtle Vertical Sclera Spherical Shading -->
-        <rect x="318" y="70" width="264" height="105" fill="url(#scleraTopShadow)" />
+        <!-- Incandescent Fiery Scarlet Solar Orb (Direct Reference Match: #cf2825) -->
+        <circle cx="0" cy="0" r="47" fill="url(#fieryIrisBase)" />
+        <circle cx="0" cy="0" r="47" fill="none" stroke="#ffa3b5" stroke-width="1.2" opacity="0.65" />
 
-        <!-- THE CENTRAL IRIS & ASYMMETRIC STARBURST PUPIL -->
-        <g transform="translate(450, 122)">
-          <g>
-            <!-- Living Eye Vector Iris Base -->
+        <!-- Deep Dark Obsidian-Velvet Pupil Bowl (High Contrast Core) -->
+        <circle cx="0" cy="0" r="23" fill="#140103" />
+        <circle cx="0" cy="0" r="19" fill="#0d0002" />
 
-            <!-- Soft Luminous Rose-White Outer Limbal Cushion -->
-            <circle cx="0" cy="0" r="49.2" fill="#ffe0e6" opacity="0.58" />
-            <!-- Deep Velvety Oxblood-Obsidian Iris Bowl (High Contrast Base So Flame Brushstrokes Pop!) -->
-            <circle cx="0" cy="0" r="47.8" fill="#1c0003" stroke="#2e0006" stroke-width="1.2" />
-            <circle cx="0" cy="0" r="44.5" fill="#140002" />
-            <circle cx="0" cy="0" r="35.0" fill="#210004" />
+        <!-- Pulsing Radiant Singularity Bloom Corona -->
+        <circle cx="0" cy="0" r="18" fill="url(#pupilBloomRadial)">
+          <animate attributeName="r" values="16.5;20;16.5" dur="2.6s" repeatCount="indefinite" />
+        </circle>
 
-            <!-- Airbrushed Painterly Crimson-Magenta Flame Nebula Inside Iris (Matching Reference Brushstrokes!) -->
-            <g transform="translate(-1, -1.5)">
-              <!-- Soft Warm Oxblood Inner Sub-Glow (Static Blurred Texture Caches Cleanly in GPU!) -->
-              <g>
-                <ellipse cx="0" cy="1" rx="22" ry="20" fill="#6b0010" opacity="0.85" />
-                <ellipse cx="9" cy="14" rx="7" ry="18" transform="rotate(-32 9 14)" fill="#bd0020" opacity="0.85" />
-              </g>
-
-              <!-- Distinct Sculpted Crimson-Magenta Flame Brushstrokes Reaching Across the Dark Iris (r = 32..42) -->
-              <g opacity="0.96">
-                <!-- 10:30 Upper-Left Multi-Pronged Crimson Flame (Signature Reference Detail!) -->
-                <path d="M -2,-2 C -12,-12 -22,-22 -33,-28 C -23,-17 -14,-8 -5,-1 Z" fill="#e61235" />
-                <path d="M -1,-3 C -8,-14 -16,-25 -23,-35 C -14,-22 -7,-12 -2,-2 Z" fill="#ff294d" />
-                <path d="M -4,-1 C -15,-7 -26,-13 -36,-16 C -25,-9 -14,-4 -4,1 Z" fill="#c90a29" />
-                <path d="M -2,-2 C -10,-11 -18,-20 -26,-25 C -17,-15 -9,-7 -3,-1 Z" fill="#ff5c77" opacity="0.85" />
-
-                <!-- 12:00 Upper Flame Tongue -->
-                <path d="M -2,-4 C -3,-16 -3,-26 -2,-35 C 1,-24 2,-14 2,-4 Z" fill="#d90f31" />
-                <path d="M 1,-4 C 3,-14 5,-23 7,-31 C 6,-21 4,-12 2,-3 Z" fill="#ff2e52" opacity="0.85" />
-
-                <!-- 1:30 Upper-Right Sweeping Curved Flame -->
-                <path d="M 2,-3 C 11,-12 21,-20 31,-26 C 22,-16 13,-8 4,-1 Z" fill="#e61235" />
-                <path d="M 4,-1 C 14,-7 25,-12 35,-14 C 24,-8 14,-3 4,1 Z" fill="#ff294d" />
-                <path d="M 2,-2 C 9,-10 17,-16 25,-21 C 17,-13 10,-6 3,-1 Z" fill="#ff6680" opacity="0.8" />
-
-                <!-- 3:00 Right Flame Wisps -->
-                <path d="M 4,-1 C 15,-2 25,-2 34,-1 C 24,2 14,2 4,2 Z" fill="#d90f31" />
-                <path d="M 4,1 C 13,4 22,7 29,11 C 20,8 12,5 3,3 Z" fill="#bd0826" />
-
-                <!-- 4:45 Signature Long Lower-Right Magenta-Crimson Slash & Hooked Tip (Reaching r=43!) -->
-                <path d="M 1,1 C 10,14 19,29 26,43 C 22,43 18,41 15,37 C 19,38 21,37 20,33 C 13,22 6,12 -1,3 Z" fill="#ff1740" />
-                <path d="M 2,1 C 9,12 16,24 22,36 C 14,25 7,14 0,3 Z" fill="#ff6682" opacity="0.92" />
-                <path d="M 0,4 C 4,15 8,26 11,36 C 6,26 1,15 -2,5 Z" fill="#d90f31" opacity="0.9" />
-
-                <!-- 6:00 & 7:30 Lower & Lower-Left Flame Wisps -->
-                <path d="M -2,4 C -3,15 -4,26 -4,36 C 0,25 1,14 2,4 Z" fill="#d90f31" />
-                <path d="M -3,3 C -8,13 -13,23 -18,31 C -11,22 -6,12 -1,4 Z" fill="#e61235" />
-                <path d="M -4,2 C -12,9 -21,16 -30,21 C -20,14 -11,7 -2,3 Z" fill="#c90a29" />
-
-                <!-- 9:00 Left Horizontal Flame Wisp -->
-                <path d="M -4,-1 C -15,-2 -25,-2 -34,-1 C -24,2 -14,2 -4,2 Z" fill="#d90f31" />
-              </g>
-            </g>
-
-            <!-- Iris Upper Shadow Vignette (Subtle Top Depth) -->
-            <circle cx="0" cy="0" r="47.8" fill="url(#irisTopShadow)" opacity="0.75" />
-
-            <!-- ASYMMETRIC SILK-TAPERED STARBURST PUPIL (Compact White-Hot Core So Flame Brushstrokes Shine!) -->
-            <g transform="translate(-1, -1.5)">
-              <!-- Compact Central Pupil Diffuse Rose-Crimson Bloom (GPU Radial Gradient, Zero CPU Blur Filter!) -->
-              <circle cx="0" cy="0" r="17.5" fill="url(#pupilBloomRadial)">
-                <animate attributeName="r" values="16;19;16" dur="2.6s" repeatCount="indefinite" />
-              </circle>
-
-              <!-- Layer A: Soft Magenta-Rose Silk-Tapered Starburst Halo & Signature 5-o'clock Slash -->
-              <g opacity="0.95">
-                <path d="M 0,-21
-                  C 0.6,-7.5 1.8,-4 15,-14.5
-                  C 4.8,-3.2 4.5,-1.4 20,-0.6
-                  C 4.8,0.4 5.2,2.8 22,35
-                  C 4.2,9 2.8,6.8 8.5,24
-                  C 1.5,7.2 0.4,5.8 -1.2,18
-                  C -1.4,5.8 -3.0,4.2 -14,13
-                  C -4.5,2.4 -4.8,-0.4 -20,-0.6
-                  C -4.8,-1.4 -4.5,-3.2 -13.5,-14.5
-                  C -1.8,-4 -0.6,-7.5 0,-21 Z"
-                  fill="#ff2952" />
-                <path d="M 0,-17
-                  C 0.5,-5.8 1.4,-3.2 12,-11.5
-                  C 3.8,-2.4 3.5,-1.0 16.5,-0.5
-                  C 3.8,0.3 4.2,2.2 18.5,29
-                  C 3.2,7.2 2.2,5.4 6.8,19
-                  C 1.1,5.6 0.2,4.6 -1.0,14.5
-                  C -1.1,4.6 -2.4,3.4 -11.5,10.5
-                  C -3.5,1.8 -3.8,-0.3 -16.5,-0.5
-                  C -3.8,-1.0 -3.5,-2.4 -11,-11.5
-                  C -1.4,-3.2 -0.5,-5.8 0,-17 Z"
-                  fill="#ff9eb0" />
-              </g>
-
-              <!-- Layer B: Blinding Pure-White Core & Silk-Tapered Concave Bezier Needles (Crisp Razor Vector Core) -->
-              <g>
-                <path d="M 0,-15
-                  C 0.4,-4.8 1.1,-2.6 10,-9.2
-                  C 3.0,-1.9 2.8,-0.8 14.5,-0.4
-                  C 3.0,0.2 3.4,1.8 16,25
-                  C 2.5,6.0 1.6,4.2 5.2,15
-                  C 0.8,4.4 0.1,3.5 -0.8,12
-                  C -0.9,3.5 -1.9,2.5 -9.5,8.5
-                  C -2.8,1.3 -3.0,-0.2 -14.5,-0.4
-                  C -3.0,-0.8 -2.8,-1.9 -9.2,-9.2
-                  C -1.1,-2.6 -0.4,-4.8 0,-15 Z"
-                  fill="#ffffff" />
-                <!-- Pulsing White-Hot Singularity Core of the Pupil -->
-                <ellipse cx="0" cy="0" rx="5.4" ry="5.0" fill="#ffffff">
-                  <animate attributeName="rx" values="5.0;6.2;5.0" dur="2.2s" repeatCount="indefinite" />
-                  <animate attributeName="ry" values="4.6;5.7;4.6" dur="2.2s" repeatCount="indefinite" />
-                </ellipse>
-              </g>
-
-              <!-- Crisp Innermost Silk-Tapered White Needle Overlay -->
-              <path d="M 0,-12.5
-                C 0.3,-3.8 0.9,-2.0 8,-7.5
-                C 2.3,-1.5 2.1,-0.6 12,-0.3
-                C 2.3,0.2 2.6,1.4 13,20.5
-                C 1.9,4.8 1.2,3.3 4.2,12
-                C 0.6,3.5 0.1,2.8 -0.6,9.8
-                C -0.7,2.8 -1.5,2.0 -7.8,6.8
-                C -2.1,1.0 -2.3,-0.2 -12,-0.3
-                C -2.3,-0.6 -2.1,-1.5 -7.5,-7.5
-                C -0.9,-2.0 -0.3,-3.8 0,-12.5 Z"
-                fill="#ffffff" opacity="0.98" />
-            </g>
-          </g>
+        <!-- The Iconic Blinding 4-Point Diamond Singularity Starburst (Direct Reference Match: #ffffff / #f8a39d) -->
+        <g>
+          <!-- Rose-Coral Diffuse Star Rays -->
+          <path d="M 0,-18 C 0.8,-6 2,-2 18,-0.5 C 2,1 0.8,5 0,18 C -0.8,5 -2,1 -18,-0.5 C -2,-2 -0.8,-6 0,-18 Z"
+            fill="#ff6b82" opacity="0.9" />
+          <!-- Blinding Pure-White Starburst Needles -->
+          <path d="M 0,-15 C 0.5,-4 1.5,-1 15,-0.3 C 1.5,0.8 0.5,3.5 0,15 C -0.5,3.5 -1.5,0.8 -15,-0.3 C -1.5,-1 -0.5,-4 0,-15 Z"
+            fill="#ffffff" />
+          <!-- Central Singularity Core -->
+          <ellipse cx="0" cy="0" rx="4.8" ry="4.5" fill="#ffffff">
+            <animate attributeName="rx" values="4.5;5.8;4.5" dur="2.2s" repeatCount="indefinite" />
+            <animate attributeName="ry" values="4.2;5.4;4.2" dur="2.2s" repeatCount="indefinite" />
+          </ellipse>
         </g>
-
-        <!-- Airbrushed Upper-Corner Eyelid Shadows (Preserving Luminous Iris Top & Corner Bridges) -->
-        <g opacity="0.68">
-          <path d="M 342,118 C 362,100 388,83 418,76 C 394,87 368,103 342,118 Z" fill="#4a000b" />
-          <path d="M 558,118 C 538,100 512,83 482,76 C 506,87 532,103 558,118 Z" fill="#4a000b" />
-        </g>
-
-        <!-- Luminous Warm-Rose Upper & Lower Eyelid Meniscus Rims -->
-        <path d="M 382,91 C 404,79 426,74 450,74 C 474,74 496,79 518,91"
-          fill="none" stroke="#ffccd5" stroke-width="2.2" stroke-linecap="round" opacity="0.78" />
-        <path d="M 396,84 C 414,76.5 432,74 450,74 C 468,74 486,76.5 504,84"
-          fill="none" stroke="#fff5f7" stroke-width="1.1" stroke-linecap="round" opacity="0.85" />
-        <path d="M 358,133 C 388,155 418,166.5 450,166.5 C 482,166.5 512,155 542,133"
-          fill="none" stroke="#ffccd5" stroke-width="2.0" stroke-linecap="round" opacity="0.82" />
-        <path d="M 384,148 C 406,160 428,166.2 450,166.2 C 472,166.2 494,160 516,148"
-          fill="none" stroke="#fff5f7" stroke-width="1.1" stroke-linecap="round" opacity="0.88" />
       </g>
     </g>
 
-    <!-- ================================================================== -->
-    <!-- 9. THE EXACT 5 SATELLITE EYES OF RONOVA (2 Left, 3 Right)          -->
-    <!-- ================================================================== -->
-    <!-- 1. Upper-Left Satellite Eye (Largest, tilted +16 deg) -->
-    <g transform="translate(328, 98) rotate(16) scale(0.96)">
+    <!-- Blinding White-Hot Eyelid Meniscus Rims (Dual-Stroke Laser Bloom) -->
+    <g fill="none" stroke-linecap="round">
+      <!-- Upper Eyelid Blinding White-Hot Edge -->
+      <path d="M 324,120 C 354,112 396,76 450,76 C 504,76 546,112 574,122"
+        stroke="#ff2647" stroke-width="4.8" opacity="0.5" />
+      <path d="M 324,120 C 354,112 396,76 450,76 C 504,76 546,112 574,122"
+        stroke="#ffffff" stroke-width="1.8" opacity="0.98" />
+
+      <!-- Lower Eyelid Blinding White-Hot Edge (Signature Sharp Crescent from Screenshot) -->
+      <path d="M 324,120 C 354,134 402,168 450,168 C 498,168 546,134 574,122"
+        stroke="#ff2647" stroke-width="5.2" opacity="0.5" />
+      <path d="M 324,120 C 354,134 402,168 450,168 C 498,168 546,134 574,122"
+        stroke="#ffffff" stroke-width="2.2" opacity="1.0" />
+    </g>
+  </g>
+
+  <!-- E. THE CONSTELLATION OF SATELLITE EYES (MATCHING CUTSCENE POSITIONS!) -->
+  <!-- Left Wing Eyes (4 Staring Down-Left) -->
+  <g id="satelliteEyesCluster">
+    <!-- 1. Far-Upper-Left High Sky Eye (x=210, y=55, tilted +22 deg) -->
+    <g transform="translate(210, 55) rotate(22) scale(0.92)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
-    <!-- 2. Lower-Left Satellite Eye (Below & slightly right of Upper-Left, tilted +8 deg) -->
-    <g transform="translate(366, 145) rotate(8) scale(0.84)">
+
+    <!-- 2. Crown-Left Tucked Eye (x=335, y=105, tilted +14 deg) -->
+    <g transform="translate(335, 105) rotate(14) scale(0.85)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
     </g>
-    <!-- 3. Upper-Right Satellite Eye (Tilted -8 deg) -->
-    <g transform="translate(568, 114) rotate(-8) scale(0.84)">
-      <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
-    </g>
-    <!-- 4. Lower-Outer-Right Satellite Eye (Below Upper-Right, tilted -12 deg) -->
-    <g transform="translate(580, 139) rotate(-12) scale(0.82)">
+
+    <!-- 3. Mid-Left Prime Large Eye (x=115, y=142, tilted +6 deg, Wide Cutscene Gaze!) -->
+    <g transform="translate(115, 142) rotate(6) scale(1.02)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
     </g>
-    <!-- 5. Lower-Inner-Right Satellite Eye (Smaller eye tucked beside right tear duct, tilted -4 deg) -->
-    <g transform="translate(536, 154) rotate(-4) scale(0.68)">
+
+    <!-- 4. Lower-Left Horizon Eye (x=245, y=208, tilted -6 deg) -->
+    <g transform="translate(245, 208) rotate(-6) scale(0.88)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
 
-    <!-- ================================================================== -->
-    <!-- 10. THE 5 WHITE-RIMMED PEELING CRIMSON ENERGY RIBBONS              -->
-    <!--     (Solid Blood-Crimson Blades With 1.6px Tapered White Rims!)    -->
-    <!-- ================================================================== -->
-    <!-- Ribbon 1: Upper-Left Wide Curved Blade (Tapers to Single Point (282, 86) Left of Upper-Left Eye) -->
-    <g>
-      <!-- Solid Dark Blood-Crimson Blade Core -->
-      <path d="M 116,6 C 165,22 205,40 282,86 C 248,75 214,64 178,52 C 152,38 132,22 116,6 Z"
-        fill="url(#ribbonCrimsonL)" />
-      <!-- Secondary Left Crimson Splinter Wisp -->
-      <path d="M 146,44 C 188,58 232,72 276,84.5 C 234,67 192,52 146,44 Z"
-        fill="#6e030f" opacity="0.88" />
-      <!-- 1.6px Tapered White-Rose Upper-Right & Lower-Left Rims Converging at (282, 86) -->
-      <path d="M 205,40 C 232,55 258,70 282,86 C 256.5,71.5 230.5,57 205,40 Z"
-        fill="#fff0f3" opacity="0.95" />
-      <path d="M 178,52 C 214,64 248,75 282,86 C 248.5,73.5 214.5,62 178,52 Z"
-        fill="#fff0f3" opacity="0.92" />
+    <!-- 5. Tucked-Left Duct Eye (x=365, y=152, tilted +8 deg) -->
+    <g transform="translate(365, 152) rotate(8) scale(0.74)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
     </g>
 
-    <!-- Ribbon 2: Upper-Center-Left Peeling Dagger (Tapers to Single Point (362, 88) Between Left Eye & Central Brow) -->
-    <g>
-      <!-- Solid Dark Blood-Crimson Dagger Body -->
-      <path d="M 296,16 C 324,38 346,62 362,88 C 340,66 318,43 296,16 Z"
-        fill="url(#ribbonCrimsonL)" />
-      <!-- 1.5px Tapered White-Rose Lower-Left Rim Converging at (362, 88) -->
-      <path d="M 322,48 C 336,62 349,75 362,88 C 350,74 337.5,60.5 322,48 Z"
-        fill="#fff0f3" opacity="0.94" />
+    <!-- Right Wing Eyes (5 Symmetrical Eyes Staring Down-Right) -->
+    <!-- 6. Far-Upper-Right High Sky Eye (x=690, y=55, tilted -22 deg) -->
+    <g transform="translate(690, 55) rotate(-22) scale(0.92)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
 
-    <!-- Ribbon 3: Lower-Left Wide Arching Ribbon (Tapers to Single Point (314, 134) Clear of Lower-Left Eye) -->
-    <g>
-      <!-- Solid Dark Blood-Crimson Arching Ribbon Body -->
-      <path d="M 124,184 C 176,144 214,126 248,121 C 272,118 294,123 314,134 C 290,130 264,132 232,141 C 194,152 158,172 124,184 Z"
-        fill="url(#ribbonCrimsonL)" />
-      <!-- Trailing Lower-Left Crimson Tendril -->
-      <path d="M 102,190 C 145,184 182,164 218,144 C 182,160 144,178 102,190 Z"
-        fill="#7a0513" opacity="0.82" />
-      <!-- 1.6px Tapered White-Rose Upper & Lower Arch Rims Converging at (314, 134) -->
-      <path d="M 212,127 C 246,117 282,119 314,134 C 281,121.5 246,119.5 212,127 Z"
-        fill="#fff0f3" opacity="0.95" />
-      <path d="M 232,141 C 262,132 288,130 314,134 C 288,132 262,134.2 232,141 Z"
-        fill="#fff0f3" opacity="0.92" />
+    <!-- 7. Crown-Right Tucked Eye (x=565, y=105, tilted -14 deg) -->
+    <g transform="translate(565, 105) rotate(-14) scale(0.85)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
     </g>
 
-    <!-- Ribbon 4: Upper-Right Sweeping Tendril (Starts at Single Point (594, 108) Right of Upper-Right Eye) -->
-    <g>
-      <!-- Solid Dark Blood-Crimson Tendril Body -->
-      <path d="M 594,108 C 618,95 636,80 652,64 C 676,48 702,38 728,34 C 692,58 662,82 642,93 C 626,102 610,106 594,108 Z"
-        fill="url(#ribbonCrimsonR)" />
-      <!-- Secondary Upper-Right Wispy Crimson Tendril -->
-      <path d="M 632,94 C 668,78 704,64 748,54 C 708,70 672,84 638,96 Z"
-        fill="#7a0513" opacity="0.82" />
-      <!-- 1.5px Tapered White-Rose Upper-Left & Lower-Right Rims Converging at (594, 108) -->
-      <path d="M 594,108 C 614,97 632,83 648,68 C 633,84.5 615,98.5 594,108 Z"
-        fill="#fff0f3" opacity="0.94" />
-      <path d="M 594,108 C 612,105 628,100 644,91 C 628,98 612,103.5 594,108 Z"
-        fill="#ffe0e6" opacity="0.86" />
+    <!-- 8. Mid-Right Prime Large Eye (x=785, y=142, tilted -6 deg, Wide Cutscene Gaze!) -->
+    <g transform="translate(785, 142) rotate(-6) scale(1.02)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
     </g>
 
-    <!-- Ribbon 5: Lower-Right Wide Peeling Ribbon (Starts at Single Point (562, 154) Clear of Lower-Inner-Right Eye) -->
-    <g>
-      <!-- Solid Dark Blood-Crimson Peeling Ribbon Body -->
-      <path d="M 562,154 C 590,156 616,161 642,171 C 676,184 708,194 742,202 C 698,198 660,192 626,184 C 604,174 584,164 562,154 Z"
-        fill="url(#ribbonCrimsonR)" />
-      <!-- Secondary Lower-Right Wispy Crimson Tail -->
-      <path d="M 612,178 C 648,196 688,210 738,216 C 692,206 652,192 618,180 Z"
-        fill="#7a0513" opacity="0.84" />
-      <!-- 1.6px Tapered White-Rose Upper & Lower Rims Converging at (562, 154) -->
-      <path d="M 562,154 C 590,156 616,161 642,171 C 615,163 589,158 562,154 Z"
-        fill="#fff0f3" opacity="0.95" />
-      <path d="M 562,154 C 584,164 604,174 626,184 C 603,175.8 583,165.8 562,154 Z"
-        fill="#fff0f3" opacity="0.92" />
+    <!-- 9. Lower-Right Horizon Eye (x=655, y=208, tilted +6 deg) -->
+    <g transform="translate(655, 208) rotate(6) scale(0.88)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
+    </g>
+
+    <!-- 10. Tucked-Right Duct Eye (x=535, y=152, tilted -8 deg) -->
+    <g transform="translate(535, 152) rotate(-8) scale(0.74)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
     </g>
   </g>
 
-  <!-- Floating Abyssal Rocks & Organic Kidney-Shaped Crimson-Rimmed Debris (Crisp Vectors, Zero Filter Re-Rasterization!) -->
-  <g stroke="#ff294b" stroke-width="1.4" stroke-linejoin="round" fill="#0d0002">
-    <!-- Upper-Left Organic Kidney Pebble (At (266, 44) Above Left Rift Rim) -->
-    <path d="M 258,48 C 256,40 266,30 274,33 C 280,36 276,46 270,52 C 264,58 259,54 258,48 Z">
-      </path>
-    <!-- Lower-Left Organic Rounded Pebble (At (228, 148) Tucked Under Left Ribbon Arch) -->
-    <path d="M 220,146 C 219,140 227,138 233,143 C 237,147 234,155 228,156 C 222,156 220,151 220,146 Z">
-      </path>
-    <!-- Far-Right Organic Curved Pebble (At (768, 155) Below Right Wing Tip) -->
-    <path d="M 758,158 C 757,153 764,150 772,147 C 778,145 781,150 776,156 C 770,162 760,163 758,158 Z">
-      </path>
+  <!-- F. Ambient Floating Crimson Embers & Sparkles Drifting Through the Abyss -->
+  <g fill="#ffffff">
+    <circle cx="180" cy="115" r="1.4" opacity="0.8" />
+    <circle cx="280" cy="165" r="1.8" fill="#ff8da1" opacity="0.9" />
+    <circle cx="390" cy="45" r="1.5" opacity="0.85" />
+    <circle cx="425" cy="225" r="2.0" fill="#ff4d6d" opacity="0.9" />
+    <circle cx="475" cy="235" r="1.8" fill="#ffa3b5" opacity="0.85" />
+    <circle cx="515" cy="45" r="1.5" opacity="0.85" />
+    <circle cx="620" cy="165" r="1.8" fill="#ff8da1" opacity="0.9" />
+    <circle cx="720" cy="115" r="1.4" opacity="0.8" />
   </g>
-
-  <g opacity="0.88">
-    <g>
-      <polygon points="18,168 48,154 82,162 94,186 76,210 35,214 12,194" fill="url(#rockGrad)" stroke="#4a0712" stroke-width="1.2" />
-      <polygon points="84,152 102,146 108,162 94,168 82,160" fill="url(#rockGrad)" stroke="#5c0a17" stroke-width="1" />
-    </g>
-    <g>
-      <polygon points="362,208 378,200 400,222 384,248 364,240" fill="url(#rockGrad)" stroke="#660918" stroke-width="1.2" />
-      <polygon points="434,220 452,214 458,228 442,236 430,228" fill="url(#rockGrad)" stroke="#700b1b" stroke-width="1.1" />
-    </g>
-    <g>
-      <polygon points="622,190 658,172 696,186 708,216 682,238 636,234 616,212" fill="url(#rockGrad)" stroke="#610917" stroke-width="1.3" />
-      <polygon points="545,202 568,193 582,210 568,226 548,220" fill="url(#rockGrad)" stroke="#6e0a1a" stroke-width="1.1" />
-    </g>
-  </g>
-
-  <!-- Translucent Flowing Crimson Silk Ribbon Waves (Allowing Vertical Effects to Flow Downward!) -->
-  <path d="M 0,248 Q 225,222 450,248 T 900,248 Q 675,274 450,290 T 0,290 Z" fill="url(#waveBack)" stroke="#ff2e52" stroke-width="1" stroke-opacity="0.65" />
-
-  <path d="M 0,262 Q 225,286 450,262 T 900,262 Q 675,295 450,308 T 0,308 Z" fill="url(#waveMid)" stroke="#ff1a3c" stroke-width="1.2" stroke-opacity="0.75" />
-
-  <!-- LUNIZURA Main Title & Subtitle -->
-  <g opacity="0.9">
-    <line x1="120" y1="264" x2="295" y2="264" stroke="#ff1e42" stroke-width="1.2" opacity="0.65" />
-    <polygon points="295,264 303,260 311,264 303,268" fill="#ff2e52" />
-    <line x1="589" y1="264" x2="780" y2="264" stroke="#ff1e42" stroke-width="1.2" opacity="0.65" />
-    <polygon points="589,264 597,260 605,264 597,268" fill="#ff2e52" />
-  </g>
-
-  <g>
-    <text x="450" y="274" text-anchor="middle"
-      font-family="'Cinzel', 'Trajan Pro', 'Palatino Linotype', 'Georgia', serif"
-      font-size="38" font-weight="900" letter-spacing="14"
-      fill="url(#textMetallic)" stroke="#4a000b" stroke-width="0.8">
-      LUNIZURA
-    </text>
-  </g>
-
-  <text x="450" y="302" text-anchor="middle"
-    font-family="'Segoe UI', 'Inter', 'Helvetica Neue', sans-serif"
-    font-size="10.5" font-weight="700" letter-spacing="5.5"
-    fill="#ffccd5" opacity="0.95">
-    INFORMATICS &#9670; CYBERSECURITY &#9670; GAME MODDING &#9670; 3D BLENDER
-  </text>
 
   <!-- ====================================================================== -->
   <!-- 2. SEMI-TRANSPARENT GLASS DOSSIER & ABOUT ME (y=325 to 780)            -->
