@@ -37,72 +37,128 @@
     </linearGradient>
 
     <!-- Intense Crimson Atmospheric Bloom Around Rift -->
-    <radialGradient id="riftAtmosphere" cx="50%" cy="38%" r="48%" fx="50%" fy="38%">
-      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0.85" />
-      <stop offset="26%" stop-color="#d60020" stop-opacity="0.6" />
-      <stop offset="55%" stop-color="#750012" stop-opacity="0.34" />
-      <stop offset="82%" stop-color="#2e0006" stop-opacity="0.12" />
+    <radialGradient id="riftAtmosphere" cx="50%" cy="32%" r="55%" fx="50%" fy="26%">
+      <stop offset="0%" stop-color="#ff1a3c" stop-opacity="0.90" />
+      <stop offset="22%" stop-color="#d60020" stop-opacity="0.68" />
+      <stop offset="50%" stop-color="#750012" stop-opacity="0.40" />
+      <stop offset="78%" stop-color="#2e0006" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#140103" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Vertical Aurora / Light Curtain Gradient (Top & Bottom Rift Spikes) -->
+    <!-- Coronal Optical Bloom Gradient Behind Rift -->
+    <radialGradient id="riftCoronalBloom" cx="50%" cy="35%" r="48%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96" />
+      <stop offset="14%" stop-color="#ffb8c7" stop-opacity="0.88" />
+      <stop offset="32%" stop-color="#ff1e42" stop-opacity="0.76" />
+      <stop offset="58%" stop-color="#990016" stop-opacity="0.42" />
+      <stop offset="82%" stop-color="#3d0008" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#140103" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Hanging Aurora Curtain Volumetric Glow -->
+    <linearGradient id="botCurtainGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="22%" stop-color="#ff8da1" stop-opacity="0.65" />
+      <stop offset="55%" stop-color="#ff1a3c" stop-opacity="0.36" />
+      <stop offset="100%" stop-color="#4a000b" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Vertical Aurora / Light Curtain Gradient (Top Rift Crown Spikes) -->
     <linearGradient id="topSpikeGrad" x1="0%" y1="100%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="35%" stop-color="#ffd1d9" stop-opacity="0.94" />
-      <stop offset="68%" stop-color="#ff1a3c" stop-opacity="0.78" />
+      <stop offset="25%" stop-color="#ffeef2" stop-opacity="0.96" />
+      <stop offset="52%" stop-color="#ff1e42" stop-opacity="0.88" />
+      <stop offset="80%" stop-color="#800014" stop-opacity="0.36" />
       <stop offset="100%" stop-color="#800014" stop-opacity="0" />
     </linearGradient>
 
+    <!-- Vertical Aurora / Light Curtain Gradient (Bottom Rift Hanging Fangs) -->
     <linearGradient id="botSpikeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="30%" stop-color="#ffd1d9" stop-opacity="0.92" />
-      <stop offset="65%" stop-color="#ff1a3c" stop-opacity="0.72" />
-      <stop offset="100%" stop-color="#660010" stop-opacity="0" />
+      <stop offset="22%" stop-color="#ffd5de" stop-opacity="0.98" />
+      <stop offset="50%" stop-color="#ff1a3c" stop-opacity="0.90" />
+      <stop offset="76%" stop-color="#850016" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#40000a" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Anamorphic Starburst Horizontal Flare Beam Gradient -->
+    <linearGradient id="anamorphicBeamGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ff1e42" stop-opacity="0" />
+      <stop offset="25%" stop-color="#ff8da1" stop-opacity="0.65" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="75%" stop-color="#ff8da1" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#ff1e42" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Obsidian Rock Facet Gradients (3D Lighting) -->
+    <linearGradient id="rockFacetLit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#540c18" />
+      <stop offset="50%" stop-color="#28050b" />
+      <stop offset="100%" stop-color="#130104" />
+    </linearGradient>
+
+    <linearGradient id="rockFacetShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0205" />
+      <stop offset="55%" stop-color="#0c0102" />
+      <stop offset="100%" stop-color="#030001" />
+    </linearGradient>
+
+    <linearGradient id="rockFacetRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="35%" stop-color="#ff2e52" stop-opacity="0.80" />
+      <stop offset="100%" stop-color="#660010" stop-opacity="0.20" />
+    </linearGradient>
+
+    <!-- Crepuscular God-Rays Radiating from Rift -->
+    <linearGradient id="godRayGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ff2e52" stop-opacity="0.42" />
+      <stop offset="45%" stop-color="#ff1a3c" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#800014" stop-opacity="0" />
     </linearGradient>
 
     <!-- Pitch-Black Abyssal Void Inside the Tear -->
     <radialGradient id="voidInterior" cx="50%" cy="48%" r="55%">
-      <stop offset="0%" stop-color="#1f0005" />
-      <stop offset="42%" stop-color="#0a0002" />
-      <stop offset="100%" stop-color="#020001" />
+      <stop offset="0%" stop-color="#1c0004" />
+      <stop offset="42%" stop-color="#080001" />
+      <stop offset="100%" stop-color="#010000" />
     </radialGradient>
 
-    <!-- Central Eye Sclera -->
+    <!-- Central Eye Luminous Sclera (Cutscene-Accurate Incandescent White Almond) -->
     <linearGradient id="mainScleraHoriz" x1="0%" y1="50%" x2="100%" y2="50%">
-      <stop offset="0%" stop-color="#9e3e4f" />
-      <stop offset="11%" stop-color="#dfa6b0" />
-      <stop offset="25%" stop-color="#fff5f7" />
+      <stop offset="0%" stop-color="#a3384a" />
+      <stop offset="8%" stop-color="#e699a8" />
+      <stop offset="20%" stop-color="#fff0f3" />
       <stop offset="50%" stop-color="#ffffff" />
-      <stop offset="75%" stop-color="#fff5f7" />
-      <stop offset="89%" stop-color="#dfa6b0" />
-      <stop offset="100%" stop-color="#9e3e4f" />
+      <stop offset="80%" stop-color="#fff0f3" />
+      <stop offset="92%" stop-color="#e699a8" />
+      <stop offset="100%" stop-color="#a3384a" />
     </linearGradient>
 
-    <!-- Central Eye Iris Base -->
+    <!-- Central Eye Iris Base (Ruby-Crimson Center with Deep Limbal Ring) -->
     <radialGradient id="mainIrisGrad" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ff2448" />
-      <stop offset="22%" stop-color="#bd0020" />
-      <stop offset="48%" stop-color="#59000d" />
-      <stop offset="78%" stop-color="#2b0006" />
-      <stop offset="93%" stop-color="#1c0003" />
-      <stop offset="97%" stop-color="#7a1b2b" />
-      <stop offset="100%" stop-color="#ffe0e6" />
+      <stop offset="28%" stop-color="#b8001d" />
+      <stop offset="55%" stop-color="#5c000e" />
+      <stop offset="82%" stop-color="#240005" />
+      <stop offset="96%" stop-color="#120002" />
+      <stop offset="100%" stop-color="#ffeef2" />
     </radialGradient>
 
     <!-- Central Pupil Blinding White-Hot Starburst Core -->
     <radialGradient id="pupilCoreGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="25%" stop-color="#ffeef2" stop-opacity="0.96" />
-      <stop offset="52%" stop-color="#ff1e46" stop-opacity="0.86" />
-      <stop offset="80%" stop-color="#9e001a" stop-opacity="0.42" />
+      <stop offset="22%" stop-color="#ffeef2" stop-opacity="0.96" />
+      <stop offset="50%" stop-color="#ff1e46" stop-opacity="0.88" />
+      <stop offset="78%" stop-color="#9e001a" stop-opacity="0.45" />
       <stop offset="100%" stop-color="#3d0008" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Small Eye Sclera Gradient -->
+    <!-- Small Eye Sclera Gradient (Fiery Luminous Scarlet Field) -->
     <radialGradient id="smallScleraGrad" cx="50%" cy="50%" r="55%">
-      <stop offset="0%" stop-color="#ff1e3c" />
-      <stop offset="55%" stop-color="#b00019" />
-      <stop offset="100%" stop-color="#420008" />
+      <stop offset="0%" stop-color="#ff5c77" />
+      <stop offset="35%" stop-color="#ff1a3c" />
+      <stop offset="70%" stop-color="#a30018" />
+      <stop offset="100%" stop-color="#380007" />
     </radialGradient>
 
     <!-- Peeling Ribbon Gradients -->
@@ -459,7 +515,7 @@
     <!-- CLIP PATHS FOR SMOOTH CURVED EYELID BLINKING                 -->
     <!-- ============================================================ -->
     <clipPath id="mainEyeBlinkClip">
-      <path d="M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z">
+      <path d="M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z">
         <animate attributeName="d"
           dur="7.5s"
           repeatCount="indefinite"
@@ -472,24 +528,25 @@
             0.16 1 0.3 1;
             0.4 0 0.2 1;
             0.45 0 0.85 0.35;
-            0.16 1 0.3 1;
-            0.45 0 0.85 0.35;
             0.2 0 0.2 1;
             0.16 1 0.3 1;
-            0.4 0 0.2 1"
+            0.4 0 0.2 1;
+            0.45 0 0.85 0.35;
+            0.2 0 0.2 1;
+            0.16 1 0.3 1"
           values="
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 372,100 408,75 450,75 C 492,75 528,100 560,122 C 528,144 492,169 450,169 C 408,169 372,144 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 372,105 408,82 450,82 C 492,82 528,105 560,122 C 528,139 492,162 450,162 C 408,162 372,139 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 372,101 408,76 450,76 C 492,76 528,101 560,122 C 528,143 492,168 450,168 C 408,168 372,143 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z" />
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,-38 -35,-40 0,-40 C 35,-40 75,-38 110,0 C 75,38 35,40 0,40 C -35,40 -75,38 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z" />
       </path>
     </clipPath>
 
@@ -549,18 +606,43 @@
       </path>
     </clipPath>
 
+    <clipPath id="satClipD">
+      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z">
+        <animate attributeName="d" dur="5.6s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0; 0.50; 0.535; 0.55; 0.59; 0.92; 0.955; 0.97; 1"
+          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1"
+          values="
+            M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z;
+            M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z;
+            M -30,0 C -16,0 16,0 30,0 C 16,0.4 -16,0.4 -30,0 Z;
+            M -30,0 C -16,0 16,0 30,0 C 16,0.4 -16,0.4 -30,0 Z;
+            M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z;
+            M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z;
+            M -30,0 C -16,0 16,0 30,0 C 16,0.4 -16,0.4 -30,0 Z;
+            M -30,0 C -16,0 16,0 30,0 C 16,0.4 -16,0.4 -30,0 Z;
+            M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z" />
+      </path>
+    </clipPath>
+
     <g id="satEyeInterior">
       <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,13.5 -16,13.5 -30,0 Z" fill="url(#smallScleraGrad)" />
-      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-9 -16,-9 -30,0 Z" fill="#290005" opacity="0.5" />
+      <path d="M -30,0 C -16,-13.5 16,-13.5 30,0 C 16,-8 -16,-8 -30,0 Z" fill="#200004" opacity="0.60" />
       <g>
         <animateTransform attributeName="transform" type="translate"
           values="0,0; -1.2,-0.4; 1.1,0.3; -0.5,0.5; 0,0"
           dur="6.5s" repeatCount="indefinite" />
-        <circle cx="0" cy="0" r="9.6" fill="#ffffff" filter="url(#smallEyeGlow)" />
-        <circle cx="0" cy="0" r="4.5" fill="#b8001c" />
-        <circle cx="0" cy="0" r="2.8" fill="#ff1e40">
-          <animate attributeName="r" values="2.5;3.3;2.5" dur="2.4s" repeatCount="indefinite" />
+        <!-- Scarlet Iris Glow -->
+        <circle cx="0" cy="0" r="11" fill="#ff1a3c" opacity="0.95" />
+        <circle cx="0" cy="0" r="8.2" fill="#d60024" />
+        <circle cx="0" cy="0" r="4.8" fill="#750010" />
+        <!-- Incandescent White Pupil Starburst Dot with Laser Bloom -->
+        <circle cx="0" cy="0" r="3.2" fill="#ffffff" filter="url(#smallEyeGlow)">
+          <animate attributeName="r" values="2.8;3.8;2.8" dur="2.4s" repeatCount="indefinite" />
         </circle>
+        <!-- Horizontal Micro Lens Flare -->
+        <line x1="-15" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="0.8" opacity="0.9" />
+        <!-- Razor 4-point Diamond Pupil Spark -->
+        <polygon points="0,-5.2 1.2,-1 5.2,0 1.2,1 0,5.2 -1.2,1 -5.2,0 -1.2,-1" fill="#ffffff" opacity="0.95" />
       </g>
     </g>
 
@@ -569,14 +651,14 @@
       <stop offset="0%" stop-color="#ff2e52" stop-opacity="0.48" />
       <stop offset="35%" stop-color="#d60024" stop-opacity="0.30" />
       <stop offset="70%" stop-color="#800016" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#240206" stop-opacity="0" />
+      <stop offset="100%" stop-color="#240206" stop-opacity="0.0" />
     </radialGradient>
 
     <radialGradient id="sidePillarRadial" cx="50%" cy="48%" r="50%">
       <stop offset="0%" stop-color="#ff1e42" stop-opacity="0.30" />
       <stop offset="45%" stop-color="#9e001a" stop-opacity="0.16" />
       <stop offset="80%" stop-color="#59000e" stop-opacity="0.06" />
-      <stop offset="100%" stop-color="#240206" stop-opacity="0" />
+      <stop offset="100%" stop-color="#240206" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- GPU-Accelerated Glowing Orb Gradient -->
@@ -584,13 +666,14 @@
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
       <stop offset="32%" stop-color="#ff4d6d" stop-opacity="0.85" />
       <stop offset="68%" stop-color="#ff1a3c" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#ff1a3c" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ff1a3c" stop-opacity="0.0" />
     </radialGradient>
 
     <g id="satEyeSocket">
-      <path d="M -38,0 C -22,-18 22,-18 38,0 C 22,18 -22,18 -38,0 Z" fill="#160003" stroke="#750012" stroke-width="1.6" />
-      <path d="M -42,-1 C -22,-22 22,-22 42,-1" fill="none" stroke="#b3001e" stroke-width="1.4" opacity="0.85" />
-      <path d="M -39,2 C -19,20 19,20 39,2" fill="none" stroke="#850016" stroke-width="1.2" opacity="0.75" />
+      <path d="M -38,0 C -22,-18 22,-18 38,0 C 22,18 -22,18 -38,0 Z" fill="#0b0002" stroke="#54000b" stroke-width="1.8" />
+      <path d="M -40,-1 C -22,-20 22,-20 40,-1" fill="none" stroke="#ff2e52" stroke-width="1.8" opacity="0.92" />
+      <path d="M -36,-1 C -20,-18 20,-18 36,-1" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.9" filter="url(#smallEyeGlow)" />
+      <path d="M -39,2 C -19,19 19,19 39,2" fill="none" stroke="#ff1a3c" stroke-width="1.4" opacity="0.85" />
     </g>
 
     <!-- Reusable GPU-Accelerated Glowing Rain Streak (Outer Halo + Crisp Core, Zero Filter Overhead!) -->
@@ -662,18 +745,18 @@
       <animate attributeName="stroke-dashoffset" from="1650" to="0" dur="5.2s" repeatCount="indefinite" />
     </path>
 
-    <!-- Outer Left Wing Tendril (Starts at Left Rift Tip, weaves to y=1400 at x=115) -->
-    <path d="M 160,115 C 95,340 165,580 105,860 C 65,1050 145,1220 115,1400"
+    <!-- Outer Left Wing Tendril (Starts at Left Rift Wing, weaves to y=1400 at x=115) -->
+    <path d="M 140,185 C 95,340 165,580 105,860 C 65,1050 145,1220 115,1400"
       stroke="#660010" stroke-width="2" opacity="0.5" />
-    <path d="M 160,115 C 95,340 165,580 105,860 C 65,1050 145,1220 115,1400"
+    <path d="M 140,185 C 95,340 165,580 105,860 C 65,1050 145,1220 115,1400"
       stroke="#ff1e42" stroke-width="1.2" stroke-dasharray="60 240" opacity="0.75">
       <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="7.4s" repeatCount="indefinite" />
     </path>
 
-    <!-- Outer Right Wing Tendril (Starts at Right Rift Tip, weaves to y=1400 at x=785) -->
-    <path d="M 740,125 C 805,340 735,580 795,860 C 835,1050 755,1220 785,1400"
+    <!-- Outer Right Wing Tendril (Starts at Right Rift Wing, weaves to y=1400 at x=785) -->
+    <path d="M 740,75 C 805,340 735,580 795,860 C 835,1050 755,1220 785,1400"
       stroke="#660010" stroke-width="2" opacity="0.5" />
-    <path d="M 740,125 C 805,340 735,580 795,860 C 835,1050 755,1220 785,1400"
+    <path d="M 740,75 C 805,340 735,580 795,860 C 835,1050 755,1220 785,1400"
       stroke="#ff1e42" stroke-width="1.2" stroke-dasharray="60 240" opacity="0.75">
       <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="7.4s" begin="2.5s" repeatCount="indefinite" />
     </path>
@@ -736,318 +819,562 @@
   </g>
 
   <!-- ====================================================================== -->
-  <!-- 1. RONOVA'S EYE SKY RIFT (TOP HERO: y=0 to 310)                        -->
+  <!-- 1. RONOVA'S EYE SKY RIFT (TOP HERO: y=0 to 255)                        -->
   <!-- ====================================================================== -->
-  <!-- Dark Blood-Red Cloud Layers in Sky -->
-  <g opacity="0.55" filter="url(#softBlur)">
-    <path d="M -40,42 Q 140,12 310,56 T 650,36 T 940,66 L 940,0 L -40,0 Z" fill="#0d0002" />
+  <!-- Dark Blood-Red Volumetric Sky Canopy & Atmospheric Haze -->
+  <g opacity="0.72" filter="url(#softBlur)">
+    <path d="M -40,42 Q 140,10 310,52 T 650,32 T 940,62 L 940,0 L -40,0 Z" fill="#090001" />
+    <path d="M -20,180 Q 180,116 450,136 T 920,74 L 920,0 L -20,0 Z" fill="#1e0104" opacity="0.45" />
   </g>
 
-  <!-- Massive Pulsing Crimson Aura Behind the Sky Rift -->
-  <ellipse cx="450" cy="122" rx="435" ry="135" fill="url(#riftAtmosphere)">
-    <animate attributeName="opacity" values="0.84;1;0.84" dur="4.5s" repeatCount="indefinite" />
-    <animate attributeName="ry" values="130;142;130" dur="4.5s" repeatCount="indefinite" />
+  <!-- Crepuscular Volumetric God-Rays Radiating Across the Blood Sky -->
+  <g opacity="0.82">
+    <polygon points="450,118 0,135 0,215 450,118" fill="url(#godRayGrad)" opacity="0.35" />
+    <polygon points="450,118 75,255 165,280 450,118" fill="url(#godRayGrad)" opacity="0.45" />
+    <polygon points="450,118 250,305 330,314 450,118" fill="url(#godRayGrad)" opacity="0.55" />
+    <polygon points="450,118 570,314 650,305 450,118" fill="url(#godRayGrad)" opacity="0.55" />
+    <polygon points="450,118 735,280 825,255 450,118" fill="url(#godRayGrad)" opacity="0.45" />
+    <polygon points="450,118 900,215 900,135 450,118" fill="url(#godRayGrad)" opacity="0.35" />
+  </g>
+
+  <!-- Massive Pulsing Volumetric Crimson Atmosphere Behind the Sky Rift -->
+  <ellipse cx="450" cy="118" rx="440" ry="145" fill="url(#riftAtmosphere)">
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="4.5s" repeatCount="indefinite" />
+    <animate attributeName="ry" values="140;150;140" dur="4.5s" repeatCount="indefinite" />
   </ellipse>
 
-  <!-- Expanding Crimson Abyssal Shockwave Ripples From Ronova's Eye -->
-  <g fill="none" stroke="#ff1e42" opacity="0.35" filter="url(#softBlur)">
-    <ellipse cx="450" cy="122" rx="90" ry="38" stroke-width="2">
-      <animate attributeName="rx" values="85;390" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="ry" values="35;125" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.55;0" dur="6s" repeatCount="indefinite" />
+  <!-- High-Luminance Coronal Optical Bloom Halo Behind Ronova's Eye -->
+  <ellipse cx="450" cy="118" rx="340" ry="110" fill="url(#riftCoronalBloom)" opacity="0.95">
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="3.6s" repeatCount="indefinite" />
+    <animate attributeName="rx" values="330;355;330" dur="3.6s" repeatCount="indefinite" />
+  </ellipse>
+
+  <!-- Expanding Crimson Abyssal Shockwave Ripples From Ronova's Gaze -->
+  <g fill="none" stroke="#ff1e42" opacity="0.42" filter="url(#softBlur)">
+    <ellipse cx="450" cy="118" rx="90" ry="36" stroke-width="2.2">
+      <animate attributeName="rx" values="85;420" dur="5.5s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="32;140" dur="5.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.65;0" dur="5.5s" repeatCount="indefinite" />
     </ellipse>
-    <ellipse cx="450" cy="122" rx="90" ry="38" stroke-width="1.5">
-      <animate attributeName="rx" values="85;390" dur="6s" begin="3s" repeatCount="indefinite" />
-      <animate attributeName="ry" values="35;125" dur="6s" begin="3s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.55;0" dur="6s" begin="3s" repeatCount="indefinite" />
+    <ellipse cx="450" cy="118" rx="90" ry="36" stroke-width="1.6">
+      <animate attributeName="rx" values="85;420" dur="5.5s" begin="2.75s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="32;140" dur="5.5s" begin="2.75s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.65;0" dur="5.5s" begin="2.75s" repeatCount="indefinite" />
     </ellipse>
   </g>
 
-  <!-- Feathered Vertical Light Spikes Above & Below the Rift -->
+  <!-- ====================================================================== -->
+  <!-- VERTICAL AURORA CURTAINS & CELESTIAL CROWN SPIRES                      -->
+  <!-- ====================================================================== -->
+  <!-- Top Ascending Light Spikes (Crown of Heaven - Erupting Celestial Flames) -->
   <g filter="url(#verticalSpikeBlur)">
-    <polygon points="408,82 418,48 427,72 436,36 446,14 455,54 463,30 472,78" fill="url(#topSpikeGrad)">
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="3.2s" repeatCount="indefinite" />
+    <!-- Central Towering Incandescent Light Spire -->
+    <polygon points="443,62 450,6 457,62" fill="url(#topSpikeGrad)">
+      <animate attributeName="opacity" values="0.90;1;0.90" dur="3.2s" repeatCount="indefinite" />
     </polygon>
-    <polygon points="348,76 355,62 364,74 388,66 396,78" fill="url(#topSpikeGrad)" opacity="0.8" />
-    <polygon points="552,96 566,76 576,94 596,80 612,102" fill="url(#topSpikeGrad)" opacity="0.85" />
-    <polygon points="412,188 418,248 428,240 436,254 446,196 456,246 464,196 482,198 492,256 510,202 522,190" fill="url(#botSpikeGrad)">
-      <animate attributeName="opacity" values="0.82;1;0.82" dur="3.6s" repeatCount="indefinite" />
+    <!-- Flanking Crown Blades Left (Organically Fanned) -->
+    <polygon points="426,68 430,16 437,68" fill="url(#topSpikeGrad)" opacity="0.94" />
+    <polygon points="405,78 409,28 417,78" fill="url(#topSpikeGrad)" opacity="0.88" />
+    <polygon points="382,90 384,46 394,90" fill="url(#topSpikeGrad)" opacity="0.82" />
+    <polygon points="358,106 358,68 370,106" fill="url(#topSpikeGrad)" opacity="0.75" />
+    <polygon points="334,120 332,86 344,120" fill="url(#topSpikeGrad)" opacity="0.68" />
+    <!-- Flanking Crown Blades Right (Organically Fanned) -->
+    <polygon points="463,68 468,14 474,68" fill="url(#topSpikeGrad)" opacity="0.96">
+      <animate attributeName="opacity" values="0.88;1;0.88" dur="3.6s" repeatCount="indefinite" />
     </polygon>
+    <polygon points="483,74 490,26 497,74" fill="url(#topSpikeGrad)" opacity="0.90" />
+    <polygon points="505,80 514,40 521,80" fill="url(#topSpikeGrad)" opacity="0.85" />
+    <polygon points="530,86 540,56 547,86" fill="url(#topSpikeGrad)" opacity="0.78" />
+    <polygon points="556,94 568,72 574,94" fill="url(#topSpikeGrad)" opacity="0.72" />
+    <!-- Pure White-Hot Center Spine Lines for Crown Blades -->
+    <g stroke="#ffffff" stroke-linecap="round" opacity="0.92">
+      <line x1="450" y1="62" x2="450" y2="10" stroke-width="1.6" filter="url(#smallEyeGlow)" />
+      <line x1="432" y1="68" x2="430" y2="20" stroke-width="1.2" />
+      <line x1="469" y1="68" x2="468" y2="18" stroke-width="1.3" />
+      <line x1="411" y1="78" x2="409" y2="32" stroke-width="1.0" />
+      <line x1="490" y1="74" x2="490" y2="30" stroke-width="1.1" />
+    </g>
   </g>
 
-  <!-- The Jagged Sky Rift of Ronova -->
-  <g id="ronovaSkyRift">
-    <path d="
-      M 38,78
-      C 95,92 152,90 212,82
-      L 278,73 L 348,68 L 412,75 L 450,72 L 492,78 L 548,90 L 622,104
-      C 695,101 772,96 856,100
-      C 798,125 740,154 684,180
-      L 620,194 L 572,186 L 528,202 L 478,204 L 418,198 L 372,188 L 292,162 L 242,152
-      C 175,133 108,103 38,78 Z"
-      fill="#ff0026" opacity="0.6" filter="url(#heavyCrimsonBloom)" />
-
-    <path d="
-      M 38,78
-      C 95,92 152,90 212,82
-      L 278,73 L 315,69 L 348,66 L 372,71 L 412,75 L 450,71 L 492,77 L 548,90 L 570,84 L 592,94 L 622,104
-      C 695,101 772,96 856,100
-      C 798,125 740,154 684,180
-      L 620,194 L 572,186 L 528,202 L 482,204 L 450,200 L 416,198 L 372,188 L 332,176 L 288,160 L 242,152
-      C 175,133 108,103 38,78 Z"
-      fill="#ffffff" stroke="#ff1a3c" stroke-width="3.2" filter="url(#riftEdgeGlow)" />
-
-    <path id="riftInteriorPath" d="
-      M 98,91
-      C 155,95 215,87 278,79
-      L 348,72 L 402,79 L 450,78 L 505,86 L 568,98 L 625,110
-      C 692,106 760,102 828,103
-      C 775,126 724,152 674,174
-      L 618,186 L 568,180 L 525,194 L 478,197 L 420,192 L 370,182 L 312,160 L 248,146
-      C 192,130 142,109 98,91 Z"
-      fill="url(#voidInterior)" />
-
-    <path d="
-      M 285,148 C 362,174 422,190 485,192 C 535,188 585,174 628,162
-      C 565,150 515,146 450,146 C 385,146 335,144 285,148 Z"
-      fill="#800014" opacity="0.62" filter="url(#softBlur)" />
-
-    <!-- Crimson Void Veins & Muscle Folds -->
-    <g opacity="0.92">
-      <path d="M 118,95 C 188,103 258,90 328,93 C 358,95 385,104 410,114" fill="none" stroke="#6e0010" stroke-width="2.8" />
-      <path d="M 148,104 C 212,116 268,110 318,106 C 348,104 375,112 400,120" fill="none" stroke="#9e001a" stroke-width="1.6" />
-      <path d="M 178,120 C 238,132 292,126 342,130 C 372,133 395,140 418,142" fill="none" stroke="#780012" stroke-width="2.2" />
-      <path d="M 218,136 C 278,146 335,156 385,164 C 412,168 435,170 465,168" fill="none" stroke="#59000d" stroke-width="3" />
-      <path d="M 205,94 Q 268,106 315,92" fill="none" stroke="#cc0022" stroke-width="1" opacity="0.65" />
-      <path d="M 242,124 Q 295,116 338,126" fill="none" stroke="#cc0022" stroke-width="1.1" opacity="0.65" />
-
-      <path d="M 810,105 C 745,112 688,116 628,120 C 595,122 570,114 540,116" fill="none" stroke="#6e0010" stroke-width="2.8" />
-      <path d="M 780,116 C 722,126 668,136 615,133 C 588,131 565,124 535,126" fill="none" stroke="#a8001c" stroke-width="1.6" />
-      <path d="M 745,134 C 695,150 648,154 598,150 C 575,148 555,144 528,140" fill="none" stroke="#780012" stroke-width="2.2" />
-      <path d="M 700,160 C 652,174 605,172 560,170 C 530,168 500,170 465,168" fill="none" stroke="#59000d" stroke-width="2.8" />
-      <path d="M 740,122 Q 672,144 612,130" fill="none" stroke="#d40024" stroke-width="1.1" opacity="0.7" />
-      <path d="M 690,150 Q 638,164 592,152" fill="none" stroke="#d40024" stroke-width="1" opacity="0.65" />
-
-      <path d="M 355,108 C 385,84 416,71 450,71 C 484,71 515,84 545,108"
-        fill="none" stroke="#b3001e" stroke-width="2.2" opacity="0.88">
-        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
-          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
-          values="
-            M 355,108 C 385,84 416,71 450,71 C 484,71 515,84 545,108;
-            M 355,108 C 385,82 416,69 450,69 C 484,69 515,82 545,108;
-            M 355,119 C 385,116 416,115 450,115 C 484,115 515,116 545,119;
-            M 355,119 C 385,116 416,115 450,115 C 484,115 515,116 545,119;
-            M 355,108 C 385,84 416,71 450,71 C 484,71 515,84 545,108;
-            M 355,108 C 385,84 416,71 450,71 C 484,71 515,84 545,108;
-            M 355,119 C 385,116 416,115 450,115 C 484,115 515,116 545,119;
-            M 355,110 C 385,89 416,76 450,76 C 484,76 515,89 545,110;
-            M 355,119 C 385,116 416,115 450,115 C 484,115 515,116 545,119;
-            M 355,108 C 385,83 416,70 450,70 C 484,70 515,83 545,108;
-            M 355,108 C 385,84 416,71 450,71 C 484,71 515,84 545,108;
-            M 355,108 C 385,84 416,71 450,71 C 484,71 515,84 545,108" />
-      </path>
-      <path d="M 362,138 C 390,160 418,173 450,173 C 482,173 510,160 538,138"
-        fill="none" stroke="#850016" stroke-width="1.8" opacity="0.82">
-        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
-          keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
-          values="
-            M 362,138 C 390,160 418,173 450,173 C 482,173 510,160 538,138;
-            M 362,138 C 390,162 418,175 450,175 C 482,175 510,162 538,138;
-            M 362,126 C 390,129 418,130 450,130 C 482,130 510,129 538,126;
-            M 362,126 C 390,129 418,130 450,130 C 482,130 510,129 538,126;
-            M 362,138 C 390,160 418,173 450,173 C 482,173 510,160 538,138;
-            M 362,138 C 390,160 418,173 450,173 C 482,173 510,160 538,138;
-            M 362,126 C 390,129 418,130 450,130 C 482,130 510,129 538,126;
-            M 362,136 C 390,155 418,168 450,168 C 482,168 510,155 538,136;
-            M 362,126 C 390,129 418,130 450,130 C 482,130 510,129 538,126;
-            M 362,138 C 390,161 418,174 450,174 C 482,174 510,161 538,138;
-            M 362,138 C 390,160 418,173 450,173 C 482,173 510,160 538,138;
-            M 362,138 C 390,160 418,173 450,173 C 482,173 510,160 538,138" />
-      </path>
+  <!-- Bottom Hanging Aurora Curtains & Celestial Fangs (The Iconic Ochkanatlan Comb) -->
+  <g>
+    <!-- Layer 1: Translucent Volumetric Light Drapes & Aurora Waterfall -->
+    <g opacity="0.88">
+      <polygon points="384,164 394,212 406,164" fill="url(#botCurtainGlow)" />
+      <polygon points="402,166 412,226 424,166" fill="url(#botCurtainGlow)" />
+      <polygon points="418,168 430,238 442,169" fill="url(#botCurtainGlow)" />
+      <!-- Master Hanging Curtain Drape under Central Eye -->
+      <polygon points="436,170 450,252 464,170" fill="url(#botCurtainGlow)">
+        <animate attributeName="opacity" values="0.85;1;0.85" dur="3.4s" repeatCount="indefinite" />
+      </polygon>
+      <polygon points="458,169 470,238 482,168" fill="url(#botCurtainGlow)" />
+      <polygon points="476,166 488,224 498,166" fill="url(#botCurtainGlow)" />
+      <polygon points="492,164 504,212 514,164" fill="url(#botCurtainGlow)" />
+      <polygon points="510,158 522,198 532,158" fill="url(#botCurtainGlow)" />
     </g>
 
-    <!-- Central Giant Eye of Ronova -->
-    <g id="centralRonovaEye">
+    <!-- Layer 2: Core Laser Fangs (Organically Angled & Stepped Lengths) -->
+    <g filter="url(#verticalSpikeBlur)">
+      <polygon points="388,164 394,208 400,164" fill="url(#botSpikeGrad)" opacity="0.90" />
+      <polygon points="406,166 412,222 418,166" fill="url(#botSpikeGrad)" opacity="0.94" />
+      <polygon points="424,168 430,234 436,169" fill="url(#botSpikeGrad)" opacity="0.96" />
+      <!-- Dominant Master Celestial Fang (Reaches to y=250, clean 14px breathing room above y=264) -->
+      <polygon points="443,170 450,250 457,170" fill="url(#botSpikeGrad)">
+        <animate attributeName="opacity" values="0.92;1;0.92" dur="3.8s" repeatCount="indefinite" />
+      </polygon>
+      <polygon points="464,169 470,234 476,168" fill="url(#botSpikeGrad)" opacity="0.96" />
+      <polygon points="482,166 488,220 494,166" fill="url(#botSpikeGrad)" opacity="0.94" />
+      <polygon points="498,164 504,208 510,164" fill="url(#botSpikeGrad)" opacity="0.90" />
+      <polygon points="516,158 522,194 528,158" fill="url(#botSpikeGrad)" opacity="0.82" />
+    </g>
+
+    <!-- Layer 3: Razor-Sharp Incandescent Pure White-Hot Laser Spine Lines -->
+    <g stroke="#ffffff" stroke-linecap="round" opacity="0.96">
+      <line x1="394" y1="164" x2="394" y2="204" stroke-width="1.2" />
+      <line x1="412" y1="166" x2="412" y2="218" stroke-width="1.4" />
+      <line x1="430" y1="168" x2="430" y2="230" stroke-width="1.6" />
+      <line x1="450" y1="170" x2="450" y2="246" stroke-width="2.2" filter="url(#smallEyeGlow)" />
+      <line x1="470" y1="168" x2="470" y2="230" stroke-width="1.6" />
+      <line x1="488" y1="166" x2="488" y2="216" stroke-width="1.4" />
+      <line x1="504" y1="164" x2="504" y2="204" stroke-width="1.2" />
+      <line x1="522" y1="158" x2="522" y2="190" stroke-width="1.0" />
+    </g>
+
+    <!-- Layer 4: Incandescent Falling Drop Sparks from Comb Tips -->
+    <g filter="url(#smallEyeGlow)">
+      <circle cx="450" cy="250" r="1.8" fill="#ffffff">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="430" cy="234" r="1.4" fill="#ffffff" opacity="0.85" />
+      <circle cx="470" cy="234" r="1.4" fill="#ffffff" opacity="0.85" />
+    </g>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- THE SHARP DIAGONAL SKY RIFT OF RONOVA (#ronovaSkyRift)                 -->
+  <!-- ====================================================================== -->
+  <g id="ronovaSkyRift">
+    <!-- 1. Outer Volumetric Fiery Crimson Laceration Bloom -->
+    <path d="
+      M 68,198
+      C 125,180 180,160 236,142
+      L 272,130 L 302,124 L 318,114 L 344,112 L 368,98 L 398,84 L 420,74 L 436,66
+      L 448,62 L 460,66 L 478,74
+      L 496,92 L 508,76 L 534,68 L 570,58 L 620,48 L 678,40 L 742,34 L 802,32 L 842,32
+      C 800,48 748,68 692,88
+      L 645,106 L 606,120 L 572,130 L 542,140
+      L 516,148 L 498,156 L 480,162 L 462,166 L 448,168 L 432,166 L 414,162 L 394,158 L 376,162
+      L 350,168 L 320,174 L 282,182
+      C 228,192 165,198 115,199
+      C 92,199 78,198 68,198 Z"
+      fill="none" stroke="#ff002c" stroke-width="14" opacity="0.55" filter="url(#heavyCrimsonBloom)" />
+
+    <!-- 2. Saturated Electric Crimson Neon Laser Outer Stroke -->
+    <path d="
+      M 68,198
+      C 125,180 180,160 236,142
+      L 272,130 L 302,124 L 318,114 L 344,112 L 368,98 L 398,84 L 420,74 L 436,66
+      L 448,62 L 460,66 L 478,74
+      L 496,92 L 508,76 L 534,68 L 570,58 L 620,48 L 678,40 L 742,34 L 802,32 L 842,32
+      C 800,48 748,68 692,88
+      L 645,106 L 606,120 L 572,130 L 542,140
+      L 516,148 L 498,156 L 480,162 L 462,166 L 448,168 L 432,166 L 414,162 L 394,158 L 376,162
+      L 350,168 L 320,174 L 282,182
+      C 228,192 165,198 115,199
+      C 92,199 78,198 68,198 Z"
+      fill="none" stroke="#ff1e42" stroke-width="4.8" opacity="0.88" filter="url(#riftEdgeGlow)" />
+
+    <!-- 3. Razor-Sharp Incandescent Pure White-Hot Jagged Laser Border -->
+    <path d="
+      M 68,198
+      C 125,180 180,160 236,142
+      L 272,130 L 302,124 L 318,114 L 344,112 L 368,98 L 398,84 L 420,74 L 436,66
+      L 448,62 L 460,66 L 478,74
+      L 496,92 L 508,76 L 534,68 L 570,58 L 620,48 L 678,40 L 742,34 L 802,32 L 842,32
+      C 800,48 748,68 692,88
+      L 645,106 L 606,120 L 572,130 L 542,140
+      L 516,148 L 498,156 L 480,162 L 462,166 L 448,168 L 432,166 L 414,162 L 394,158 L 376,162
+      L 350,168 L 320,174 L 282,182
+      C 228,192 165,198 115,199
+      C 92,199 78,198 68,198 Z"
+      fill="none" stroke="#ffffff" stroke-width="1.8" filter="url(#riftEdgeGlow)" />
+
+    <!-- 4. Ultra-Fine Pure White Incandescent Laser Spine Core -->
+    <path d="
+      M 68,198
+      C 125,180 180,160 236,142
+      L 272,130 L 302,124 L 318,114 L 344,112 L 368,98 L 398,84 L 420,74 L 436,66
+      L 448,62 L 460,66 L 478,74
+      L 496,92 L 508,76 L 534,68 L 570,58 L 620,48 L 678,40 L 742,34 L 802,32 L 842,32
+      C 800,48 748,68 692,88
+      L 645,106 L 606,120 L 572,130 L 542,140
+      L 516,148 L 498,156 L 480,162 L 462,166 L 448,168 L 432,166 L 414,162 L 394,158 L 376,162
+      L 350,168 L 320,174 L 282,182
+      C 228,192 165,198 115,199
+      C 92,199 78,198 68,198 Z"
+      fill="none" stroke="#ffffff" stroke-width="0.75" opacity="0.95" />
+
+    <!-- 5. Pitch-Black Abyssal Void Interior (#riftInteriorPath) -->
+    <path id="riftInteriorPath" d="
+      M 68,198
+      C 125,180 180,160 236,142
+      L 272,130 L 302,124 L 318,114 L 344,112 L 368,98 L 398,84 L 420,74 L 436,66
+      L 448,62 L 460,66 L 478,74
+      L 496,92 L 508,76 L 534,68 L 570,58 L 620,48 L 678,40 L 742,34 L 802,32 L 842,32
+      C 800,48 748,68 692,88
+      L 645,106 L 606,120 L 572,130 L 542,140
+      L 516,148 L 498,156 L 480,162 L 462,166 L 448,168 L 432,166 L 414,162 L 394,158 L 376,162
+      L 350,168 L 320,174 L 282,182
+      C 228,192 165,198 115,199
+      C 92,199 78,198 68,198 Z"
+      fill="url(#voidInterior)" />
+
+    <!-- Branching Reality Fracture Lightning Cracks (Shattering Cosmic Seams) -->
+    <g stroke="#ffffff" stroke-linecap="round" opacity="0.90" filter="url(#smallEyeGlow)">
+      <!-- Upper Notch Fracture Crack -->
+      <polyline points="496,92 506,68 514,52 524,44" fill="none" stroke-width="1.2" />
+      <polyline points="506,68 516,62 522,58" fill="none" stroke-width="0.8" opacity="0.75" />
+      <!-- Left Crown Fracture Crack -->
+      <polyline points="318,114 312,96 304,82 296,74" fill="none" stroke-width="1.1" />
+      <!-- Wing Tip Micro-Fracture Rays -->
+      <line x1="842" y1="32" x2="868" y2="24" stroke-width="1.2" />
+      <line x1="842" y1="32" x2="856" y2="18" stroke-width="0.8" opacity="0.7" />
+      <line x1="68" y1="198" x2="42" y2="210" stroke-width="1.2" />
+      <line x1="68" y1="198" x2="52" y2="218" stroke-width="0.8" opacity="0.7" />
+    </g>
+
+    <!-- Volumetric Scleral Shadow & Void Basin -->
+    <path d="
+      M 310,152 C 375,174 430,186 490,184 C 545,180 595,166 638,150
+      C 575,140 525,136 450,136 C 375,136 330,144 310,152 Z"
+      fill="#800014" opacity="0.65" filter="url(#softBlur)" />
+
+    <!-- Crimson Void Muscle Bands, Sinuous Creases & Abyssal Fibers -->
+    <g opacity="0.92">
+      <!-- Left Wing Organic Sinews -->
+      <path d="M 105,190 C 168,175 232,156 295,142 C 328,135 360,126 392,120" fill="none" stroke="#6e0010" stroke-width="2.6" />
+      <path d="M 135,188 C 195,172 250,155 304,142 C 336,134 365,128 395,126" fill="none" stroke="#9e001a" stroke-width="1.6" />
+      <path d="M 170,192 C 228,180 282,166 332,156 C 362,150 390,148 420,150" fill="none" stroke="#780012" stroke-width="2.2" />
+      <path d="M 210,194 C 265,186 318,176 368,168 C 398,164 425,162 455,160" fill="none" stroke="#59000d" stroke-width="2.8" />
+      <path d="M 195,178 Q 255,162 305,150" fill="none" stroke="#cc0022" stroke-width="1" opacity="0.65" />
+      <path d="M 240,184 Q 292,168 335,160" fill="none" stroke="#cc0022" stroke-width="1.1" opacity="0.65" />
+
+      <!-- Right Wing Organic Sinews (Following Soaring Upward Trajectory) -->
+      <path d="M 810,38 C 752,48 692,66 635,88 C 598,100 566,112 534,122" fill="none" stroke="#6e0010" stroke-width="2.6" />
+      <path d="M 770,44 C 714,60 658,78 604,96 C 574,106 546,116 520,124" fill="none" stroke="#a8001c" stroke-width="1.6" />
+      <path d="M 730,56 C 678,76 630,96 582,114 C 556,124 532,132 504,138" fill="none" stroke="#780012" stroke-width="2.2" />
+      <path d="M 685,76 C 638,98 590,118 544,134 C 516,142 488,150 458,156" fill="none" stroke="#59000d" stroke-width="2.6" />
+      <path d="M 720,50 Q 655,72 598,90" fill="none" stroke="#d40024" stroke-width="1.1" opacity="0.70" />
+      <path d="M 670,70 Q 615,94 564,112" fill="none" stroke="#d40024" stroke-width="1" opacity="0.65" />
+    </g>
+
+    <!-- ==================================================================== -->
+    <!-- THE COLOSSAL CENTRAL EYE OF RONOVA (#centralRonovaEye)                -->
+    <!-- ==================================================================== -->
+    <!-- Positioned at (450, 118) and tilted -11.5 deg along the rift axis -->
+    <g id="centralRonovaEye" transform="translate(450, 118) rotate(-11.5)">
+      <!-- Smooth Organic Eyelid Blink Container -->
       <g clip-path="url(#mainEyeBlinkClip)">
-        <path d="M 340,122 C 372,98 408,75 450,75 C 492,75 528,98 560,122 C 528,146 492,169 450,169 C 408,169 372,146 340,122 Z"
+        <!-- Giant Luminous Almond Sclera (Brilliant Incandescent White Field) -->
+        <path d="M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z"
           fill="url(#mainScleraHoriz)" />
-        <path d="M 340,122 C 362,113 382,109 398,112 C 382,118 365,122 340,122 Z" fill="#b85668" opacity="0.45" />
-        <path d="M 560,122 C 538,113 518,109 502,112 C 518,118 535,122 560,122 Z" fill="#b85668" opacity="0.45" />
+        <!-- Corner Tear Ducts & Inner Vascular Depth -->
+        <path d="M -110,0 C -92,-10 -74,-12 -58,-8 C -74,-2 -92,0 -110,0 Z" fill="#b85668" opacity="0.55" />
+        <path d="M 110,0 C 92,-10 74,-12 58,-8 C 74,-2 92,0 110,0 Z" fill="#b85668" opacity="0.55" />
 
-        <g transform="translate(450, 122)">
-          <g>
-            <animateTransform attributeName="transform" type="translate"
-              values="0,0; -1.6,-0.6; 1.4,0.5; -0.6,0.9; 0,0"
-              keyTimes="0; 0.28; 0.58; 0.82; 1"
-              dur="9s" repeatCount="indefinite" />
+        <!-- Upper Eyelid Delicate Cast Shadow -->
+        <path d="M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,-28 35,-18 0,-18 C -35,-18 -75,-28 -110,0 Z"
+          fill="#1c0004" opacity="0.45" />
 
-            <circle cx="0" cy="0" r="44.5" fill="#ffe3e8" opacity="0.92" />
-            <circle cx="0" cy="0" r="43.2" fill="url(#mainIrisGrad)" stroke="#290005" stroke-width="1.2" />
-            <circle cx="0" cy="0" r="39" fill="none" stroke="#210004" stroke-width="5" opacity="0.88" />
-            <circle cx="0" cy="0" r="34.5" fill="none" stroke="#59000e" stroke-width="2" stroke-dasharray="3.5 2.5" opacity="0.7" />
+        <!-- Master Central Iris & Blinding Solar Starburst (With Micro-Tracking Gaze) -->
+        <g>
+          <animateTransform attributeName="transform" type="translate"
+            values="0,0; -1.6,-0.6; 1.4,0.5; -0.6,0.9; 0,0"
+            keyTimes="0; 0.28; 0.58; 0.82; 1"
+            dur="9s" repeatCount="indefinite" />
 
-            <g filter="url(#irisFlowerBlur)">
-              <animateTransform attributeName="transform" type="scale"
-                values="1; 1.05; 1" dur="3.4s" repeatCount="indefinite" />
-              <polygon points="
-                0,-36 5,-18 18,-31 13,-14 31,-21 18,-6 36,0 18,6
-                31,21 13,14 18,31 5,18 0,36 -5,18 -18,31 -13,14
-                -31,21 -18,6 -36,0 -18,-6 -31,-21 -13,-14 -18,-31 -5,-18"
-                fill="#b8001f" opacity="0.88" />
-              <polygon points="
-                0,-31 4,-15 15,-26 10,-11 26,-16 14,-4 31,0 14,4
-                26,16 10,11 15,26 4,15 0,31 -4,15 -15,26 -10,11
-                -26,16 -14,4 -31,0 -14,-4 -26,-16 -10,-11 -15,-26 -4,-15"
-                fill="#ff1a42" opacity="0.92" />
-              <polygon points="
-                0,-24 3,-11 12,-19 8,-8 20,-12 11,-3 24,0 11,3
-                20,12 8,8 12,19 3,11 0,24 -3,11 -12,19 -8,8
-                -20,12 -11,3 -24,0 -11,-3 -20,-12 -8,-8 -12,-19 -3,-11"
-                fill="#ff6682" opacity="0.95" />
-            </g>
+          <!-- Limbal Ring & Base Iris Nebula (Scaled to r=35 so white sclera radiates generously) -->
+          <circle cx="0" cy="0" r="35" fill="#ffeef2" opacity="0.95" />
+          <circle cx="0" cy="0" r="33.8" fill="url(#mainIrisGrad)" stroke="#240004" stroke-width="1.2" />
+          <circle cx="0" cy="0" r="29.5" fill="none" stroke="#180003" stroke-width="3.8" opacity="0.88" />
+          <circle cx="0" cy="0" r="25.5" fill="none" stroke="#54000c" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.75" />
 
-            <circle cx="0" cy="0" r="26" fill="url(#pupilCoreGlow)" filter="url(#pupilBloom)">
-              <animate attributeName="r" values="24;28;24" dur="2.6s" repeatCount="indefinite" />
+          <!-- Concentric Fiery Iris Flame Striae / Petals -->
+          <g filter="url(#irisFlowerBlur)">
+            <animateTransform attributeName="transform" type="scale"
+              values="1; 1.05; 1" dur="3.4s" repeatCount="indefinite" />
+            <polygon points="
+              0,-27 4,-14 14,-23 10,-10 23,-16 14,-4 27,0 14,4
+              23,16 10,10 14,23 4,14 0,27 -4,14 -14,23 -10,10
+              -23,16 -14,4 -27,0 -14,-4 -23,-16 -10,-10 -14,-23 -4,-14"
+              fill="#b8001f" opacity="0.90" />
+            <polygon points="
+              0,-23 3,-11 11,-19 7,-8 19,-12 10,-3 23,0 10,3
+              19,12 7,8 11,19 3,11 0,23 -3,11 -11,19 -7,8
+              -19,12 -10,3 -23,0 -10,-3 -19,-12 -7,-8 -11,-19 -3,-11"
+              fill="#ff1a42" opacity="0.94" />
+            <polygon points="
+              0,-18 2,-8 9,-14 6,-6 15,-9 8,-2 18,0 8,2
+              15,9 6,6 9,14 2,8 0,18 -2,8 -9,14 -6,6
+              -15,9 -8,2 -18,0 -8,-2 -15,-9 -6,-6 -9,-14 -2,-8"
+              fill="#ff6682" opacity="0.96" />
+          </g>
+
+          <!-- Inner Pupil Solar Furnace Corona -->
+          <circle cx="0" cy="0" r="19" fill="url(#pupilCoreGlow)" filter="url(#pupilBloom)">
+            <animate attributeName="r" values="18;21;18" dur="2.6s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Cardinal Laser Flares & Flare Needles -->
+          <g stroke-linecap="round">
+            <line x1="-20" y1="-20" x2="20" y2="20" stroke="#ff99ad" stroke-width="1.3" opacity="0.82" />
+            <line x1="20" y1="-20" x2="-20" y2="20" stroke="#ff99ad" stroke-width="1.3" opacity="0.82" />
+            <line x1="-26" y1="0" x2="26" y2="0" stroke="#ffccd5" stroke-width="1.6" opacity="0.90" />
+            <line x1="0" y1="-25" x2="0" y2="25" stroke="#ffccd5" stroke-width="1.6" opacity="0.90" />
+            <!-- Slanted High-Intensity Solar Flare Beam (Signature Cutscene Element) -->
+            <polygon points="-10,-22 -5,-25 18,34 13,37" fill="#ff1a40" opacity="0.88" />
+            <polygon points="-6,-14 -3,-16 12,24 9,26" fill="#ffffff" opacity="0.96" />
+          </g>
+
+          <!-- Anamorphic Starburst Horizontal Flare Beam (Signature Cutscene Lens Flare) -->
+          <polygon points="-88,0 -20,-2.2 0,-4 20,-2.2 88,0 20,2.2 0,4 -20,2.2"
+            fill="url(#anamorphicBeamGrad)" opacity="0.94" filter="url(#pupilBloom)">
+            <animate attributeName="opacity" values="0.86;1;0.86" dur="2.8s" repeatCount="indefinite" />
+          </polygon>
+          <polygon points="0,-44 -2,-12 -3.5,0 -2,12 0,44 2,12 3.5,0 2,-12"
+            fill="url(#anamorphicBeamGrad)" opacity="0.85" filter="url(#pupilBloom)" />
+
+          <!-- Blinding 4-Point Primary Diamond Starburst -->
+          <g filter="url(#pupilBloom)">
+            <polygon points="0,-32 3.2,-4.8 38,0 3.2,4.8 0,32 -3.2,4.8 -38,0 -3.2,-4.8" fill="#ffffff" />
+            <!-- Secondary 4-Point Diagonal Starburst -->
+            <polygon points="-20,-20 -2.6,-4.2 20,-20 4.2,-2.6 20,20 2.6,4.2 -20,20 -4.2,2.6" fill="#ffffff" opacity="0.95" />
+            <!-- Incandescent White Center Sphere -->
+            <circle cx="0" cy="0" r="7.2" fill="#ffffff">
+              <animate attributeName="r" values="6.6;8.2;6.6" dur="2.2s" repeatCount="indefinite" />
             </circle>
-
-            <g stroke-linecap="round">
-              <line x1="-24" y1="-24" x2="24" y2="24" stroke="#ff99ad" stroke-width="1.4" opacity="0.8" />
-              <line x1="24" y1="-24" x2="-24" y2="24" stroke="#ff99ad" stroke-width="1.4" opacity="0.8" />
-              <line x1="-30" y1="0" x2="30" y2="0" stroke="#ffb3c1" stroke-width="1.6" opacity="0.85" />
-              <line x1="0" y1="-30" x2="0" y2="30" stroke="#ffb3c1" stroke-width="1.6" opacity="0.85" />
-              <line x1="0" y1="0" x2="17" y2="34" stroke="#ff1a40" stroke-width="3" opacity="0.95" />
-              <line x1="0" y1="0" x2="15" y2="31" stroke="#ffffff" stroke-width="1.3" opacity="0.95" />
-            </g>
-
-            <g filter="url(#pupilBloom)">
-              <polygon points="0,-30 3.2,-4.2 30,0 3.2,4.2 0,30 -3.2,4.2 -30,0 -3.2,-4.2" fill="#ffffff" />
-              <polygon points="-19,-19 -2.2,-4.5 19,-19 4.5,-2.2 19,19 2.2,4.5 -19,19 -4.5,2.2" fill="#ffffff" opacity="0.92" />
-              <circle cx="0" cy="0" r="8" fill="#ffffff">
-                <animate attributeName="r" values="7.2;9;7.2" dur="2.2s" repeatCount="indefinite" />
-              </circle>
-            </g>
           </g>
         </g>
 
-        <path d="M 338,122 C 372,96 408,74 450,74 C 492,74 528,96 562,122 C 528,103 492,85 450,85 C 408,85 372,103 338,122 Z"
-          fill="#240005" opacity="0.55" />
+        <!-- Lower Eyelid Razor-Sharp Incandescent Crescent Waterline -->
+        <path d="M -110,0 C -75,44 -35,46 0,46 C 35,46 75,44 110,0"
+          fill="none" stroke="#ffffff" stroke-width="2.2" opacity="1.0" filter="url(#smallEyeGlow)" />
+        <path d="M -110,0 C -75,44 -35,46 0,46 C 35,46 75,44 110,0"
+          fill="none" stroke="#ff2e52" stroke-width="4.8" opacity="0.85" />
       </g>
 
-      <path d="M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z"
-        fill="none" stroke="#ff1e42" stroke-width="2.4" filter="url(#smallEyeGlow)">
-        <animate attributeName="d" dur="7.5s" repeatCount="indefinite" calcMode="spline"
+      <!-- Outer Eyelid Saturated Neon Laser Rim (SMIL-Morph Synchronized with Blinking) -->
+      <path d="M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z"
+        fill="none" stroke="#ff1e42" stroke-width="2.6" filter="url(#smallEyeGlow)">
+        <animate attributeName="d"
+          dur="7.5s"
+          repeatCount="indefinite"
+          calcMode="spline"
           keyTimes="0; 0.42; 0.455; 0.47; 0.515; 0.86; 0.89; 0.905; 0.935; 0.965; 0.98; 1"
-          keySplines="0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1; 0.45 0 0.85 0.35; 0.16 1 0.3 1; 0.45 0 0.85 0.35; 0.2 0 0.2 1; 0.16 1 0.3 1; 0.4 0 0.2 1"
+          keySplines="
+            0.4 0 0.2 1;
+            0.45 0 0.85 0.35;
+            0.2 0 0.2 1;
+            0.16 1 0.3 1;
+            0.4 0 0.2 1;
+            0.45 0 0.85 0.35;
+            0.2 0 0.2 1;
+            0.16 1 0.3 1;
+            0.4 0 0.2 1;
+            0.45 0 0.85 0.35;
+            0.2 0 0.2 1;
+            0.16 1 0.3 1"
           values="
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 372,100 408,75 450,75 C 492,75 528,100 560,122 C 528,144 492,169 450,169 C 408,169 372,144 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 372,105 408,82 450,82 C 492,82 528,105 560,122 C 528,139 492,162 450,162 C 408,162 372,139 340,122 Z;
-            M 340,122 C 375,122 412,123 450,123 C 488,123 525,122 560,122 C 525,123 488,124 450,124 C 412,124 375,123 340,122 Z;
-            M 340,122 C 372,101 408,76 450,76 C 492,76 528,101 560,122 C 528,143 492,168 450,168 C 408,168 372,143 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z;
-            M 340,122 C 372,102 408,77 450,77 C 492,77 528,102 560,122 C 528,142 492,167 450,167 C 408,167 372,142 340,122 Z" />
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,-38 -35,-40 0,-40 C 35,-40 75,-38 110,0 C 75,38 35,40 0,40 C -35,40 -75,38 -110,0 Z;
+            M -110,0 C -75,0 -35,0 0,0 C 35,0 75,0 110,0 C 75,1 35,1 0,1 C -35,1 -75,1 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z;
+            M -110,0 C -75,-44 -35,-46 0,-46 C 35,-46 75,-44 110,0 C 75,44 35,46 0,46 C -35,46 -75,44 -110,0 Z" />
       </path>
     </g>
 
-    <!-- 6 Smaller Satellite Eyes -->
-    <g transform="translate(334, 103) rotate(15) scale(0.95)">
-      <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
-    </g>
-    <g transform="translate(372, 148) rotate(8) scale(0.84)">
-      <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
-    </g>
-    <g transform="translate(262, 114) rotate(11) scale(0.65)" opacity="0.9">
-      <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
-    </g>
-    <g transform="translate(566, 116) rotate(-7) scale(0.82)">
-      <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
-    </g>
-    <g transform="translate(578, 142) rotate(-11) scale(0.80)">
-      <use href="#satEyeSocket" />
-      <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
-    </g>
-    <g transform="translate(534, 158) rotate(-4) scale(0.70)">
+    <!-- ==================================================================== -->
+    <!-- CONSTELLATION OF SATELLITE EYES (PRECISE CUTSCENE ARRANGEMENT)       -->
+    <!-- ==================================================================== -->
+    <!-- 1. Major Lower-Left Satellite Eye (Dominant Secondary Eye) -->
+    <g transform="translate(362, 146) rotate(-18) scale(1.15)">
       <use href="#satEyeSocket" />
       <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
     </g>
 
-    <!-- Peeling Crimson-White Energy Ribbons -->
-    <path d="M 135,14 C 195,44 258,72 325,96 C 288,78 242,58 135,14 Z" fill="url(#ribbonCrimsonL)" opacity="0.88">
+    <!-- 2. Upper-Left Tucked Eye (Nestled Near Upper Tear Ridge) -->
+    <g transform="translate(394, 94) rotate(-22) scale(0.82)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
+    </g>
+
+    <!-- 3. Iconic Upper-Right Ridge Eye #1 (Triad Upper) -->
+    <g transform="translate(538, 82) rotate(-15) scale(0.95)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipC)"><use href="#satEyeInterior" /></g>
+    </g>
+
+    <!-- 4. Iconic Upper-Right Ridge Eye #2 (Triad Mid) -->
+    <g transform="translate(564, 104) rotate(-10) scale(0.90)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipD)"><use href="#satEyeInterior" /></g>
+    </g>
+
+    <!-- 5. Mid-Right Lower Ridge Eye #3 (Triad Lower) -->
+    <g transform="translate(538, 134) rotate(-5) scale(0.82)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
+    </g>
+
+    <!-- 6. Far-Right Wing-Tip Slit Eye #4 (Tucked Deep into Soaring Taper) -->
+    <g transform="translate(720, 54) rotate(-13) scale(0.68)">
+      <use href="#satEyeSocket" />
+      <g clip-path="url(#satClipB)"><use href="#satEyeInterior" /></g>
+    </g>
+
+    <!-- ==================================================================== -->
+    <!-- PEELING REALITY RIBBONS & TENDRILS                                   -->
+    <!-- ==================================================================== -->
+    <!-- Left Wing Peeling Ribbon -->
+    <path d="M 68,198 C 115,184 162,170 215,148 C 172,166 124,182 68,198 Z" fill="url(#ribbonCrimsonL)" opacity="0.90">
       <animate attributeName="d" dur="5.2s" repeatCount="indefinite"
         values="
-          M 135,14 C 195,44 258,72 325,96 C 288,78 242,58 135,14 Z;
-          M 132,10 C 198,48 256,70 325,96 C 286,75 244,54 132,10 Z;
-          M 135,14 C 195,44 258,72 325,96 C 288,78 242,58 135,14 Z" />
+          M 68,198 C 115,184 162,170 215,148 C 172,166 124,182 68,198 Z;
+          M 66,194 C 118,186 160,168 215,148 C 170,164 126,180 66,194 Z;
+          M 68,198 C 115,184 162,170 215,148 C 172,166 124,182 68,198 Z" />
     </path>
-    <path d="M 272,62 C 296,76 314,88 332,98 C 308,88 288,76 266,64 Z" fill="#ffffff" filter="url(#smallEyeGlow)" />
-    <path d="M 382,46 C 396,64 408,78 420,90 C 404,78 390,64 376,50 Z" fill="#ffffff" stroke="#ff1a3c" stroke-width="0.8" filter="url(#smallEyeGlow)" />
+    <!-- Left Tip Whispy Tendril -->
+    <path d="M 50,212 C 82,214 114,200 144,184 C 108,196 78,206 50,212 Z" fill="#ffffff" filter="url(#smallEyeGlow)" />
 
-    <path d="M 175,182 C 232,175 268,142 352,144 C 305,130 258,158 175,182 Z" fill="url(#ribbonCrimsonL)" filter="url(#smallEyeGlow)">
-      <animate attributeName="d" dur="4.8s" repeatCount="indefinite"
-        values="
-          M 175,182 C 232,175 268,142 352,144 C 305,130 258,158 175,182 Z;
-          M 170,186 C 230,170 270,145 352,144 C 305,128 256,162 170,186 Z;
-          M 175,182 C 232,175 268,142 352,144 C 305,130 258,158 175,182 Z" />
-    </path>
-    <path d="M 275,148 C 302,138 328,139 354,144 C 328,142 302,144 275,148 Z" fill="#ffffff" />
-
-    <path d="M 582,110 C 618,96 655,68 702,42 C 662,74 628,100 594,114 Z" fill="url(#ribbonCrimsonR)" filter="url(#smallEyeGlow)">
+    <!-- Right Wing Peeling Ribbon (Ascending dynamically along soaring wing) -->
+    <path d="M 842,32 C 794,46 744,64 694,80 C 742,66 792,48 842,32 Z" fill="url(#ribbonCrimsonR)" opacity="0.92">
       <animate attributeName="d" dur="5.5s" repeatCount="indefinite"
         values="
-          M 582,110 C 618,96 655,68 702,42 C 662,74 628,100 594,114 Z;
-          M 582,110 C 620,92 658,64 706,38 C 664,72 626,102 594,114 Z;
-          M 582,110 C 618,96 655,68 702,42 C 662,74 628,100 594,114 Z" />
+          M 842,32 C 794,46 744,64 694,80 C 742,66 792,48 842,32 Z;
+          M 844,28 C 796,42 747,60 694,80 C 744,62 794,44 844,28 Z;
+          M 842,32 C 794,46 744,64 694,80 C 742,66 792,48 842,32 Z" />
     </path>
+    <!-- Right Tip Whispy Tendril -->
+    <path d="M 858,22 C 824,28 786,42 748,58 C 788,44 826,30 858,22 Z" fill="#ffffff" filter="url(#smallEyeGlow)" />
 
-    <path d="M 552,162 C 602,168 645,190 708,198 C 655,194 608,178 564,168 Z" fill="url(#ribbonCrimsonR)" filter="url(#smallEyeGlow)">
+    <!-- Upper Notch Peeling Crimson Tendril -->
+    <path d="M 496,92 C 520,82 546,86 570,96 C 544,90 518,88 496,92 Z" fill="url(#ribbonCrimsonR)" filter="url(#smallEyeGlow)">
       <animate attributeName="d" dur="4.6s" repeatCount="indefinite"
         values="
-          M 552,162 C 602,168 645,190 708,198 C 655,194 608,178 564,168 Z;
-          M 552,162 C 604,172 648,194 712,202 C 654,196 606,176 564,168 Z;
-          M 552,162 C 602,168 645,190 708,198 C 655,194 608,178 564,168 Z" />
+          M 496,92 C 520,82 546,86 570,96 C 544,90 518,88 496,92 Z;
+          M 496,92 C 522,80 548,84 574,94 C 546,88 520,86 496,92 Z;
+          M 496,92 C 520,82 546,86 570,96 C 544,90 518,88 496,92 Z" />
     </path>
   </g>
 
-  <!-- Floating Abyssal Rocks & Crimson-Rimmed Debris -->
-  <g stroke="#ff1e40" stroke-width="1.5" fill="#0d0002" filter="url(#smallEyeGlow)">
-    <polygon points="315,62 326,53 330,61 320,69">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.8s" repeatCount="indefinite" />
-    </polygon>
-    <polygon points="278,154 285,150 288,158 280,162">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,3.5; 0,0" dur="4.2s" repeatCount="indefinite" />
-    </polygon>
-    <polygon points="712,158 724,153 726,160 715,164">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="3.5s" repeatCount="indefinite" />
-    </polygon>
+  <!-- ====================================================================== -->
+  <!-- FLOATING OBSIDIAN BOULDERS & 3D CRAGGY DEBRIS                          -->
+  <!-- ====================================================================== -->
+  <!-- Top-Left Framing Basalt Silhouette -->
+  <g transform="translate(0, 0)">
+    <polygon points="0,0 88,0 72,48 54,92 24,124 0,118" fill="url(#rockFacetShadow)" />
+    <polygon points="72,48 88,0 102,32 82,74 54,92" fill="url(#rockFacetLit)" />
+    <polygon points="54,92 82,74 68,110 38,126 24,124" fill="url(#rockFacetShadow)" />
+    <path d="M 0,118 L 24,124 L 38,126 L 68,110 L 82,74 L 102,32" fill="none" stroke="url(#rockFacetRim)" stroke-width="1.4" opacity="0.85" />
   </g>
 
-  <g opacity="0.88">
+  <!-- Top-Right Framing Basalt Silhouette -->
+  <g transform="translate(805, 0)">
+    <polygon points="95,0 0,0 18,36 38,68 76,82 95,74" fill="url(#rockFacetShadow)" />
+    <polygon points="18,36 0,0 0,28 14,54 38,68" fill="url(#rockFacetLit)" />
+    <path d="M 0,28 L 14,54 L 38,68 L 76,82 L 95,74" fill="none" stroke="url(#rockFacetRim)" stroke-width="1.4" opacity="0.85" />
+  </g>
+
+  <!-- Floating Multi-Faceted Obsidian Monoliths With SMIL Parallax Drift -->
+  <g opacity="0.94">
+    <!-- Boulder 1: Major Bottom-Right Monolith (x=715-790, y=148-228) -->
     <g>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="6.5s" repeatCount="indefinite" />
-      <polygon points="18,168 48,154 82,162 94,186 76,210 35,214 12,194" fill="url(#rockGrad)" stroke="#4a0712" stroke-width="1.2" />
-      <polygon points="84,152 102,146 108,162 94,168 82,160" fill="url(#rockGrad)" stroke="#5c0a17" stroke-width="1" />
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="6.8s" repeatCount="indefinite" />
+      <polygon points="718,172 752,148 784,166 792,204 764,228 726,218 712,192" fill="url(#rockFacetShadow)" />
+      <polygon points="752,148 784,166 774,196 746,182" fill="url(#rockFacetLit)" />
+      <polygon points="718,172 752,148 746,182 712,192" fill="#2d050c" />
+      <polygon points="746,182 774,196 764,228 726,218" fill="#150205" />
+      <polyline points="718,172 752,148 784,166 792,204 764,228" fill="none" stroke="url(#rockFacetRim)" stroke-width="1.3" opacity="0.9" />
     </g>
+
+    <!-- Boulder 2: Mid Bottom-Right Crag (x=780-832, y=204-252) -->
     <g>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,5; 0,0" dur="5.8s" repeatCount="indefinite" />
-      <polygon points="362,208 378,200 400,222 384,248 364,240" fill="url(#rockGrad)" stroke="#660918" stroke-width="1.2" />
-      <polygon points="434,220 452,214 458,228 442,236 430,228" fill="url(#rockGrad)" stroke="#700b1b" stroke-width="1.1" />
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,5; 0,0" dur="5.5s" repeatCount="indefinite" />
+      <polygon points="786,214 812,204 832,222 824,248 800,252 782,234" fill="url(#rockFacetShadow)" />
+      <polygon points="812,204 832,222 818,238 802,224" fill="url(#rockFacetLit)" />
+      <polyline points="786,214 812,204 832,222 824,248" fill="none" stroke="url(#rockFacetRim)" stroke-width="1.1" opacity="0.85" />
     </g>
+
+    <!-- Boulder 3: Distant Bottom-Right Shard -->
     <g>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="7.2s" repeatCount="indefinite" />
-      <polygon points="622,190 658,172 696,186 708,216 682,238 636,234 616,212" fill="url(#rockGrad)" stroke="#610917" stroke-width="1.3" />
-      <polygon points="545,202 568,193 582,210 568,226 548,220" fill="url(#rockGrad)" stroke="#6e0a1a" stroke-width="1.1" />
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="7.4s" repeatCount="indefinite" />
+      <polygon points="665,198 685,188 702,202 696,220 674,222 662,210" fill="url(#rockFacetShadow)" />
+      <polygon points="685,188 702,202 688,214 676,204" fill="url(#rockFacetLit)" />
+      <polyline points="665,198 685,188 702,202" fill="none" stroke="url(#rockFacetRim)" stroke-width="0.9" opacity="0.8" />
     </g>
+
+    <!-- Boulder 4: Major Bottom-Left Monolith (Holding Embedded Satellite Eye #7!) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,4.5; 0,0" dur="6.2s" repeatCount="indefinite" />
+      <polygon points="308,188 338,178 368,194 362,224 330,230 304,212" fill="url(#rockFacetShadow)" />
+      <polygon points="338,178 368,194 354,212 328,200" fill="url(#rockFacetLit)" />
+      <polyline points="308,188 338,178 368,194 362,224" fill="none" stroke="url(#rockFacetRim)" stroke-width="1.2" opacity="0.9" />
+      <!-- Embedded Glowing Satellite Eye #7 in the Floating Obsidian Boulder -->
+      <g transform="translate(334, 198) rotate(12) scale(0.58)">
+        <use href="#satEyeSocket" />
+        <g clip-path="url(#satClipA)"><use href="#satEyeInterior" /></g>
+      </g>
+    </g>
+
+    <!-- Boulder 5: Mid Bottom-Left Crag -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5.5; 0,0" dur="5.8s" repeatCount="indefinite" />
+      <polygon points="214,212 242,198 266,218 258,246 230,252 210,234" fill="url(#rockFacetShadow)" />
+      <polygon points="242,198 266,218 250,236 232,220" fill="url(#rockFacetLit)" />
+      <polyline points="214,212 242,198 266,218 258,246" fill="none" stroke="url(#rockFacetRim)" stroke-width="1.1" opacity="0.85" />
+    </g>
+
+    <!-- Boulder 6: Distant Bottom-Left Shard -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,3.5; 0,0" dur="7.0s" repeatCount="indefinite" />
+      <polygon points="120,206 142,196 160,210 152,230 132,234 116,220" fill="url(#rockFacetShadow)" />
+      <polygon points="142,196 160,210 148,224 134,214" fill="url(#rockFacetLit)" />
+      <polyline points="120,206 142,196 160,210" fill="none" stroke="url(#rockFacetRim)" stroke-width="0.9" opacity="0.8" />
+    </g>
+
+    <!-- Small Drifting Basalt Micro-Shards Suspended in Void -->
+    <polygon points="280,140 286,136 290,142 284,145" fill="#1c0205" stroke="#ff2e52" stroke-width="0.6" opacity="0.8" />
+    <polygon points="635,160 642,156 645,162 638,165" fill="#1c0205" stroke="#ff2e52" stroke-width="0.6" opacity="0.8" />
+    <polygon points="760,118 765,114 768,120 762,122" fill="#1c0205" stroke="#ff2e52" stroke-width="0.6" opacity="0.75" />
+  </g>
+
+  <!-- Orbiting Abyssal Stardust Sparks & Smoldering Crimson Embers -->
+  <g>
+    <circle cx="285" cy="135" r="2.2" fill="#ffffff" filter="url(#smallEyeGlow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="342" cy="85" r="1.8" fill="#ff6682">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="488" cy="58" r="2.0" fill="#ffffff">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="585" cy="74" r="1.6" fill="#ff8da1">
+      <animate attributeName="opacity" values="0.2;0.85;0.2" dur="3.6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="95" r="2.4" fill="#ffffff" filter="url(#smallEyeGlow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="765" cy="112" r="1.8" fill="#ff2e52">
+      <animate attributeName="opacity" values="0.3;0.95;0.3" dur="3.1s" repeatCount="indefinite" />
+    </circle>
   </g>
 
   <!-- Translucent Flowing Crimson Silk Ribbon Waves (Allowing Vertical Effects to Flow Downward!) -->
