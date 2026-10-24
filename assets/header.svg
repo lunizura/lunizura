@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1230" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 565" width="100%" height="100%">
   <defs>
     <!-- Continuous Top-to-Bottom Deep Ochkanatlan Blood Sky & Abyssal Canvas -->
     <linearGradient id="skyBg" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -603,139 +603,29 @@
   <!-- ====================================================================== -->
   <!-- 0. CONTINUOUS TOP-TO-BOTTOM BACKGROUND & VERTICAL ENERGY ARCHITECTURE  -->
   <!-- ====================================================================== -->
-  <rect width="900" height="1230" fill="url(#skyBg)" />
-  <rect width="900" height="1230" fill="url(#crimsonGrid)" />
+  <!-- 0. CONTINUOUS TOP-TO-BOTTOM BACKGROUND & VERTICAL ENERGY ARCHITECTURE  -->
+  <!-- ====================================================================== -->
+  <rect width="900" height="565" fill="url(#skyBg)" />
+  <rect width="900" height="565" fill="url(#crimsonGrid)" />
 
-  <!-- Continuous Vertical Crimson Light Pillars (GPU-Accelerated Radial Gradients — Zero Blur Lag!) -->
+  <!-- Continuous Vertical Crimson Light Pillars (Static Ambient Glow) -->
   <g>
     <!-- Central Main Blood-Light Pillar (x=450) -->
-    <ellipse cx="450" cy="750" rx="68" ry="670" fill="url(#centerPillarRadial)">
-      <animate attributeName="opacity" values="0.78;1;0.78" dur="4.2s" repeatCount="indefinite" />
-    </ellipse>
+    <ellipse cx="450" cy="282" rx="68" ry="300" fill="url(#centerPillarRadial)" opacity="0.88" />
     <!-- Inner Left & Right Rift Pillars (x=279, x=621) -->
-    <ellipse cx="279" cy="765" rx="48" ry="650" fill="url(#sidePillarRadial)">
-      <animate attributeName="opacity" values="0.65;0.95;0.65" dur="5.1s" repeatCount="indefinite" />
-    </ellipse>
-    <ellipse cx="621" cy="765" rx="48" ry="650" fill="url(#sidePillarRadial)">
-      <animate attributeName="opacity" values="0.68;0.95;0.68" dur="4.7s" repeatCount="indefinite" />
-    </ellipse>
+    <ellipse cx="279" cy="282" rx="48" ry="290" fill="url(#sidePillarRadial)" opacity="0.75" />
+    <ellipse cx="621" cy="282" rx="48" ry="290" fill="url(#sidePillarRadial)" opacity="0.75" />
     <!-- Outer Left & Right Wing Pillars (x=119, x=781) -->
-    <ellipse cx="119" cy="760" rx="36" ry="650" fill="url(#sidePillarRadial)" opacity="0.8" />
-    <ellipse cx="781" cy="760" rx="36" ry="650" fill="url(#sidePillarRadial)" opacity="0.8" />
+    <ellipse cx="119" cy="282" rx="36" ry="290" fill="url(#sidePillarRadial)" opacity="0.6" />
+    <ellipse cx="781" cy="282" rx="36" ry="290" fill="url(#sidePillarRadial)" opacity="0.6" />
   </g>
 
-  <!-- Continuous Sinuous Abyssal Veins & Flowing Energy Tendrils (Dual-Stroke Neon Halo — Zero Filter Lag!) -->
+  <!-- Central Energy Conduit (Ronova Eye y=170 to Black Hole y=330) -->
   <g fill="none" stroke-linecap="round">
-    <!-- Center-Left Sinuous Vein (Starts at Rift y=155, weaves down to y=1400 at x=260) -->
-    <path d="M 370,155 C 310,320 220,460 275,650 C 330,850 210,1080 260,1230"
-      stroke="#800016" stroke-width="3" opacity="0.55" />
-    <path d="M 370,155 C 310,320 220,460 275,650 C 330,850 210,1080 260,1230"
-      stroke="#ff1a3c" stroke-width="6" stroke-dasharray="90 220" opacity="0.28">
-      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" repeatCount="indefinite" />
-    </path>
-    <path d="M 370,155 C 310,320 220,460 275,650 C 330,850 210,1080 260,1230"
-      stroke="#ff4d6d" stroke-width="1.6" stroke-dasharray="90 220" opacity="0.9">
-      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" repeatCount="indefinite" />
-    </path>
-
-    <!-- Center-Right Sinuous Vein (Starts at Rift y=155, weaves down to y=1400 at x=640) -->
-    <path d="M 530,155 C 590,320 680,460 625,650 C 570,850 690,1080 640,1230"
-      stroke="#800016" stroke-width="3" opacity="0.55" />
-    <path d="M 530,155 C 590,320 680,460 625,650 C 570,850 690,1080 640,1230"
-      stroke="#ff1a3c" stroke-width="6" stroke-dasharray="90 220" opacity="0.28">
-      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" begin="1.8s" repeatCount="indefinite" />
-    </path>
-    <path d="M 530,155 C 590,320 680,460 625,650 C 570,850 690,1080 640,1230"
-      stroke="#ff4d6d" stroke-width="1.6" stroke-dasharray="90 220" opacity="0.9">
-      <animate attributeName="stroke-dashoffset" from="1550" to="0" dur="6.5s" begin="1.8s" repeatCount="indefinite" />
-    </path>
-
-    <!-- Central Spine Energy Conduit (From Ronova's Eye y=170 through Black Hole Singularity at y=886 to y=1400 at x=450) -->
-    <path d="M 450,170 C 435,380 465,620 450,886 C 438,1070 462,1230 450,1230"
-      stroke="#9e001a" stroke-width="2.2" opacity="0.5" />
-    <path d="M 450,170 C 435,380 465,620 450,886 C 438,1070 462,1230 450,1230"
-      stroke="#ff2e52" stroke-width="5.5" stroke-dasharray="70 260" opacity="0.32">
-      <animate attributeName="stroke-dashoffset" from="1650" to="0" dur="5.2s" repeatCount="indefinite" />
-    </path>
-    <path d="M 450,170 C 435,380 465,620 450,886 C 438,1070 462,1230 450,1230"
-      stroke="#ffffff" stroke-width="1.4" stroke-dasharray="70 260" opacity="0.88">
-      <animate attributeName="stroke-dashoffset" from="1650" to="0" dur="5.2s" repeatCount="indefinite" />
-    </path>
-
-    <!-- Outer Left Wing Tendril (Starts at Left Rift Tip, weaves to y=1400 at x=115) -->
-    <path d="M 160,115 C 95,340 165,580 105,800 C 65,950 145,1100 115,1230"
-      stroke="#660010" stroke-width="2" opacity="0.5" />
-    <path d="M 160,115 C 95,340 165,580 105,800 C 65,950 145,1100 115,1230"
-      stroke="#ff1e42" stroke-width="1.2" stroke-dasharray="60 240" opacity="0.75">
-      <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="7.4s" repeatCount="indefinite" />
-    </path>
-
-    <!-- Outer Right Wing Tendril (Starts at Right Rift Tip, weaves to y=1400 at x=785) -->
-    <path d="M 740,125 C 805,340 735,580 795,800 C 835,950 755,1100 785,1230"
-      stroke="#660010" stroke-width="2" opacity="0.5" />
-    <path d="M 740,125 C 805,340 735,580 795,800 C 835,950 755,1100 785,1230"
-      stroke="#ff1e42" stroke-width="1.2" stroke-dasharray="60 240" opacity="0.75">
-      <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="7.4s" begin="2.5s" repeatCount="indefinite" />
-    </path>
+    <path d="M 450,170 L 450,335" stroke="#9e001a" stroke-width="2.2" opacity="0.5" />
+    <path d="M 450,170 L 450,335" stroke="#ff2e52" stroke-width="4.5" stroke-dasharray="12 12" opacity="0.3" />
+    <path d="M 450,170 L 450,335" stroke="#ffffff" stroke-width="1.2" opacity="0.8" />
   </g>
-
-  <!-- Continuous Top-to-Bottom Falling Crimson Rain & Abyssal Orbs (GPU-Accelerated — Zero Filter Lag!) -->
-  <g>
-    <use href="#fastRainDrop" x="88" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="4.6s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="172" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="5.8s" begin="1.2s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="248" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="4.1s" begin="2.7s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="335" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="5.2s" begin="0.6s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="418" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="3.9s" begin="1.9s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="482" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="4.4s" begin="3.1s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="565" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="5.0s" begin="0.3s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="652" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="4.3s" begin="2.2s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="728" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="5.5s" begin="1.5s" repeatCount="indefinite" />
-    </use>
-    <use href="#fastRainDrop" x="812" y="-120">
-      <animate attributeName="y" values="-120;1420" dur="4.8s" begin="3.6s" repeatCount="indefinite" />
-    </use>
-
-    <!-- Drifting Glowing Crimson Orbs Descending Top-to-Bottom -->
-    <circle cx="135" cy="0" r="5.5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="100;1400" dur="9.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="9.5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="310" cy="0" r="5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="140;1400" dur="8.2s" begin="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="8.2s" begin="2s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="450" cy="0" r="6" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="160;1400" dur="7.6s" begin="1s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" dur="7.6s" begin="1s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="590" cy="0" r="5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="140;1400" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="8.8s" begin="3.5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="765" cy="0" r="5.5" fill="url(#orbGlowGrad)">
-      <animate attributeName="cy" values="100;1400" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.95;0.95;0" dur="9.1s" begin="4.2s" repeatCount="indefinite" />
-    </circle>
-  </g>
-
-  <!-- ====================================================================== -->
   <!-- 1. RONOVA'S EYE SKY RIFT (TOP HERO: y=0 to 310)                        -->
   <!-- ====================================================================== -->
   <!-- Dark Blood-Red Cloud Layers in Sky -->
@@ -1086,84 +976,18 @@
   </text>
 
   <!-- ====================================================================== -->
-  <!-- 2. SEMI-TRANSPARENT GLASS DOSSIER & ABOUT ME (MODEST & FOCUSED)         -->
-  <!-- ====================================================================== -->
-  <g transform="translate(0, 315)">
-    <!-- Active Learner Callout Banner (Humble & Authentic Student Voice) -->
-    <g transform="translate(30, 14)">
-      <rect width="840" height="66" rx="6" fill="url(#glassCallout)" stroke="#ff1e42" stroke-width="1.3" stroke-opacity="0.8" />
-      <rect x="0" y="0" width="6" height="66" rx="3" fill="#ff1e42" filter="url(#smallEyeGlow)" />
-      <circle cx="26" cy="20" r="7" fill="#ff1e42" opacity="0.25" />
-      <polygon points="26,14 31,20 26,26 21,20" fill="#ff2e52" filter="url(#smallEyeGlow)" />
-      <text x="42" y="24" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12.5" font-weight="800" letter-spacing="1.5" fill="#ffffff">
-        ACTIVE LEARNER &amp; OPEN TO GUIDANCE
-      </text>
-      <text x="22" y="44" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#ffe0e6">
-        Currently an undergraduate student actively learning and expanding core skills across computing systems. Always eager to
-      </text>
-      <text x="22" y="58" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#ffe0e6">
-        improve, humble, and open to constructive feedback, code reviews, and mentorship. Feel free to reach out or open an issue!
-      </text>
-    </g>
 
-    <!-- ABOUT ME Header -->
-    <g transform="translate(30, 96)">
-      <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#smallEyeGlow)" />
-      <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="16" font-weight="900" letter-spacing="4" fill="#ffffff">
-        ABOUT ME <tspan fill="#ff4d6d" font-family="'Segoe UI', sans-serif" font-size="11.5" letter-spacing="2">// DOSSIER</tspan>
-      </text>
-      <line x1="240" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
-      <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
-    </g>
-
-    <!-- 4 Clean, Modest Bento Cards (Balanced 2x2 Grid) -->
-    <g transform="translate(30, 122)">
-      <!-- Card 01: Education -->
-      <g transform="translate(0, 0)">
-        <rect width="412" height="66" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
-        <rect x="0" y="0" width="4" height="66" rx="2" fill="#ff1e42" />
-        <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
-        <text x="32" y="25" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" font-weight="800" letter-spacing="1.2" fill="#ff8da1">01 // EDUCATION &amp; CS FOUNDATIONS</text>
-        <text x="16" y="44" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#fff0f3">Computer Science / Informatics undergraduate at</text>
-        <text x="16" y="58" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#ffffff">Universitas Sebelas Maret (UNS).</text>
-      </g>
-
-      <!-- Card 02: Systems & Security -->
-      <g transform="translate(428, 0)">
-        <rect width="412" height="66" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
-        <rect x="0" y="0" width="4" height="66" rx="2" fill="#ff1e42" />
-        <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
-        <text x="32" y="25" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" font-weight="800" letter-spacing="1.2" fill="#ff8da1">02 // LOW-LEVEL &amp; SECURITY STUDY</text>
-        <text x="16" y="44" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#fff0f3">Exploring binary analysis, executable mechanics,</text>
-        <text x="16" y="58" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#ffd6de">and memory architectures with keen curiosity.</text>
-      </g>
-
-      <!-- Card 03: 3D Art -->
-      <g transform="translate(0, 76)">
-        <rect width="412" height="66" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
-        <rect x="0" y="0" width="4" height="66" rx="2" fill="#ff1e42" />
-        <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
-        <text x="32" y="25" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" font-weight="800" letter-spacing="1.2" fill="#ff8da1">03 // 3D MODELING &amp; CREATIVE</text>
-        <text x="16" y="44" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#fff0f3">Practicing stylized 3D asset modeling and topology</text>
-        <text x="16" y="58" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#ffd6de">using Blender Studio for games and personal art.</text>
-      </g>
-
-      <!-- Card 04: Interests & Exploration -->
-      <g transform="translate(428, 76)">
-        <rect width="412" height="66" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.7" />
-        <rect x="0" y="0" width="4" height="66" rx="2" fill="#ff1e42" />
-        <polygon points="18,16 24,22 18,28 12,22" fill="#ff2e52" />
-        <text x="32" y="25" font-family="'Segoe UI', 'Inter', sans-serif" font-size="12" font-weight="800" letter-spacing="1.2" fill="#ff8da1">04 // INTERESTS &amp; EXPLORATION</text>
-        <text x="16" y="44" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#fff0f3">Interested in discrete mathematics, RPG systems,</text>
-        <text x="16" y="58" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" fill="#ffd6de">simulation mechanics, and continuous learning.</text>
-      </g>
-    </g>
+  <!-- Crimson Filigree Transition into Singularity Chamber -->
+  <g opacity="0.85">
+    <line x1="160" y1="316" x2="415" y2="316" stroke="#ff1e42" stroke-width="1" opacity="0.55" />
+    <polygon points="450,309 457,316 450,323 443,316" fill="#ff2e52" />
+    <circle cx="430" cy="316" r="1.8" fill="#ffffff" />
+    <circle cx="470" cy="316" r="1.8" fill="#ffffff" />
+    <line x1="485" y1="316" x2="740" y2="316" stroke="#ff1e42" stroke-width="1" opacity="0.55" />
   </g>
-
-  <!-- ====================================================================== -->
   <!-- 3. RELATIVISTIC CRIMSON BLACK HOLE SINGULARITY (y=780 to 992)          -->
   <!-- ====================================================================== -->
-  <g transform="translate(25, 600)">
+  <g transform="translate(25, 330)">
     <!-- Semi-Transparent Glass Singularity Chamber Frame (Height=212 for Full Lensing Arches) -->
     <rect x="5" y="4" width="840" height="208" rx="8" fill="url(#glassCard)" stroke="#ff1e42" stroke-width="1.2" stroke-opacity="0.68" />
 
@@ -1372,168 +1196,10 @@
     </g>
   </g>
 
-  <!-- ====================================================================== -->
-  <!-- 4. SEMI-TRANSPARENT TECH STACK & TOOLCHAIN ARSENAL (y=1008 to 1340)    -->
-  <!-- ====================================================================== -->
-  <g transform="translate(0, 835)">
-    <!-- Section Header -->
-    <g transform="translate(30, 14)">
-      <polygon points="0,10 8,4 16,10 8,16" fill="#ff1e42" filter="url(#smallEyeGlow)" />
-      <text x="26" y="15" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="17" font-weight="900" letter-spacing="4" fill="#ffffff">
-        TECH STACK &amp; TOOLCHAIN <tspan fill="#ff4d6d" font-family="'Segoe UI', sans-serif" font-size="12" letter-spacing="2">// ARSENAL</tspan>
-      </text>
-      <line x1="425" y1="10" x2="840" y2="10" stroke="#ff1e42" stroke-width="1.2" opacity="0.55" />
-      <polygon points="840,10 832,6 824,10 832,14" fill="#ff2e52" />
-    </g>
 
-    <!-- Module 1: Languages (Semi-Transparent Frosted Glass) -->
-    <g transform="translate(30, 42)">
-      <rect width="840" height="76" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
-      <rect x="0" y="0" width="5" height="76" rx="2.5" fill="#ff1e42" />
-      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
-        &#9670; LANGUAGES &amp; CORE SYNTAX
-      </text>
-      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800">
-        <g transform="translate(0, 0)">
-          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="19" y="19" text-anchor="middle" fill="#ffffff">PY</text>
-          <text x="92" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">PYTHON</text>
-        </g>
-        <g transform="translate(160, 0)">
-          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="42" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="21" y="19" text-anchor="middle" fill="#ffffff">CPP</text>
-          <text x="94" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">C++ 20</text>
-        </g>
-        <g transform="translate(320, 0)">
-          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="36" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="18" y="19" text-anchor="middle" fill="#ffffff">C</text>
-          <text x="91" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">SYSTEMS C</text>
-        </g>
-        <g transform="translate(480, 0)">
-          <rect width="164" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="19" y="19" text-anchor="middle" fill="#ffffff">JS</text>
-          <text x="101" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">JAVASCRIPT</text>
-        </g>
-        <g transform="translate(658, 0)">
-          <rect width="142" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="42" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="21" y="19" text-anchor="middle" fill="#ffffff">DB</text>
-          <text x="92" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">SQL</text>
-        </g>
-      </g>
-    </g>
-
-    <!-- Module 2: Systems, Security & Reverse Engineering -->
-    <g transform="translate(30, 130)">
-      <rect width="840" height="76" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
-      <rect x="0" y="0" width="5" height="76" rx="2.5" fill="#ff1e42" />
-      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
-        &#9670; SYSTEMS, SECURITY &amp; REVERSE ENGINEERING
-      </text>
-      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11" font-weight="800">
-        <g transform="translate(0, 0)">
-          <rect width="136" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="19" y="19" text-anchor="middle" fill="#ffffff">OS</text>
-          <text x="87" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">WINDOWS</text>
-        </g>
-        <g transform="translate(148, 0)">
-          <rect width="154" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="19" y="19" text-anchor="middle" fill="#ffffff">PS</text>
-          <text x="96" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">POWERSHELL</text>
-        </g>
-        <g transform="translate(314, 0)">
-          <rect width="166" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="46" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="23" y="19" text-anchor="middle" fill="#ffffff">ASM</text>
-          <text x="106" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">GHIDRA SRE</text>
-        </g>
-        <g transform="translate(492, 0)">
-          <rect width="146" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="44" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="22" y="19" text-anchor="middle" fill="#ffffff">DBG</text>
-          <text x="95" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1">X64DBG</text>
-        </g>
-        <g transform="translate(650, 0)">
-          <rect width="150" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="38" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="19" y="19" text-anchor="middle" fill="#ffffff">CE</text>
-          <text x="94" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="0.8">CHEAT ENGINE</text>
-        </g>
-      </g>
-    </g>
-
-    <!-- Module 3 (3D) & Module 4 (Dev Infrastructure) -->
-    <g transform="translate(30, 218)">
-      <rect width="265" height="92" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
-      <rect x="0" y="0" width="5" height="92" rx="2.5" fill="#ff1e42" />
-      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
-        &#9670; 3D &amp; CREATIVE
-      </text>
-      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="11" font-weight="800">
-        <rect width="225" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-        <rect width="54" height="30" rx="4" fill="url(#pillAccent)" />
-        <text x="27" y="19" text-anchor="middle" fill="#ffffff">3D</text>
-        <text x="140" y="19" text-anchor="middle" fill="#ffffff" letter-spacing="1.2">BLENDER STUDIO</text>
-        <text x="112" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#ffccd5">
-          Low-Poly Assets &#9670; Topology &#9670; Shaders
-        </text>
-      </g>
-    </g>
-
-    <g transform="translate(310, 218)">
-      <rect width="560" height="92" rx="6" fill="url(#glassCard)" stroke="#ff2e52" stroke-width="1.2" stroke-opacity="0.72" />
-      <rect x="0" y="0" width="5" height="92" rx="2.5" fill="#ff1e42" />
-      <text x="20" y="22" font-family="'Segoe UI', 'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="2" fill="#ff8da1">
-        &#9670; DEVELOPMENT &amp; INFRASTRUCTURE
-      </text>
-      <g transform="translate(20, 34)" font-family="'JetBrains Mono', 'Consolas', 'Segoe UI', sans-serif" font-size="10.5" font-weight="800">
-        <g transform="translate(0, 0)">
-          <rect width="92" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="34" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="17" y="19" text-anchor="middle" fill="#ffffff">VCS</text>
-          <text x="63" y="19" text-anchor="middle" fill="#ffffff">GIT</text>
-        </g>
-        <g transform="translate(102, 0)">
-          <rect width="124" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="34" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="17" y="19" text-anchor="middle" fill="#ffffff">CI</text>
-          <text x="79" y="19" text-anchor="middle" fill="#ffffff">ACTIONS</text>
-        </g>
-        <g transform="translate(236, 0)">
-          <rect width="92" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="32" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="16" y="19" text-anchor="middle" fill="#ffffff">W3</text>
-          <text x="62" y="19" text-anchor="middle" fill="#ffffff">HTML5</text>
-        </g>
-        <g transform="translate(338, 0)">
-          <rect width="84" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="30" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="15" y="19" text-anchor="middle" fill="#ffffff">UI</text>
-          <text x="57" y="19" text-anchor="middle" fill="#ffffff">CSS3</text>
-        </g>
-        <g transform="translate(432, 0)">
-          <rect width="92" height="30" rx="4" fill="url(#pillGrad)" stroke="#ff2e52" stroke-width="1.2" />
-          <rect width="30" height="30" rx="4" fill="url(#pillAccent)" />
-          <text x="15" y="19" text-anchor="middle" fill="#ffffff">RT</text>
-          <text x="61" y="19" text-anchor="middle" fill="#ffffff">NODE.JS</text>
-        </g>
-        <text x="260" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#ffccd5">
-          Automated Workflows &#9670; Modern Web Architecture &#9670; Full-Stack Tooling
-        </text>
-      </g>
-    </g>
-
-
-  </g>
-
-  <!-- Continuous Left & Right Vertical Frame Borders Only (Open Bottom Seam into Project Cards!) -->
-  <line x1="1" y1="0" x2="1" y2="1230" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
-  <line x1="899" y1="0" x2="899" y2="1230" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <!-- Continuous Left, Right, Top and Bottom Frame Borders -->
+  <line x1="1" y1="0" x2="1" y2="565" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <line x1="899" y1="0" x2="899" y2="565" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
   <line x1="0" y1="1" x2="900" y2="1" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
+  <line x1="0" y1="564" x2="900" y2="564" stroke="#ff1a3c" stroke-width="2" opacity="0.4" />
 </svg>
