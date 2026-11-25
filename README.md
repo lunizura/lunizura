@@ -12,6 +12,16 @@ Driven by understanding software below the abstraction layer—from reversing un
 
 ## Featured Engineering Projects
 
+### [glbdiff: Zero-Dependency glTF 2.0 Semantic Diff, CI Budget Gate & 3D Inspector](https://github.com/lunizura/glbdiff)
+> **Stack:** Python 3.10+ (Zero Dependencies) • Khronos glTF 2.0 Binary Parser • HTML5 Canvas 3D • Pytest (28 Tests)
+
+A semantic diff tool, breaking-change detector, Git `textconv` driver, CI budget gate, and offline dual-canvas 3D inspector for `.glb`/`.gltf` assets (`v0.1.0`):
+- **Pure-Stdlib Binary glTF 2.0 Engine:** Parses GLB chunks, strided/interleaved vertex accessors, 4x4 column-major TRS world AABBs, skin hierarchies, animation clips, and embedded PNG/JPEG/WebP/KTX2 headers with zero runtime dependencies.
+- **Breaking-Change & CI Policy Gate:** Automatically catches 100x meter/centimeter scale shifts, removed/reparented skeleton joints, dropped UVs/morph targets/clips, alpha-mode regressions, and triangle/VRAM budget spikes (`exit 0/1/2`).
+- **Offline Dual-Canvas 3D Diff Inspector:** Generates zero-CDN dark-mode HTML5 reports with lockstep orbit/zoom, auto-fit scale toggles, rig bone overlays, and optional BYOK PR summaries (heuristic, Gemini Interactions `2026-05-20`, OpenAI, Ollama).
+
+---
+
 ### [codecforge: Autonomous Binary Format RE Synthesizer & Multi-Target Codec Compiler](https://github.com/lunizura/codecforge)
 > **Stack:** Python 3.10+ • C++20 / Python / Kaitai Struct (`.ksy`) Codegen • Pytest (51 Tests)
 
