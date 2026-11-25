@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/header.svg?v=6" width="100%" alt="lunizura: Ronova Sky Rift and Crimson Black Hole" />
+  <img src="assets/header.svg?v=8" width="100%" alt="lunizura: Relativistic Crimson Singularity" />
 </div>
 
 ## About
@@ -11,6 +11,16 @@ Driven by understanding software below the abstraction layer—from reversing un
 ---
 
 ## Featured Engineering Projects
+
+### [codecforge: Autonomous Binary Format RE Synthesizer & Multi-Target Codec Compiler](https://github.com/lunizura/codecforge)
+> **Stack:** Python 3.10+ • C++20 / Python / Kaitai Struct (`.ksy`) Codegen • Pytest (51 Tests)
+
+An autonomous, round-trip-verified binary format reverse-engineering synthesizer, code generator, and visual byte-map inspector (`v0.1.0`):
+- **Differential Byte-Stream Probing:** Aligns invariant vs. shifted byte regions across 2+ unknown binary samples via Shannon entropy profiling, monotonic `SequenceMatcher` anchors, length-prefix probing, and trailer CRC32 detection.
+- **3-Gate Anti-Cheat Verification Oracle:** Enforces bit-exact `encode(decode(x)) == x` round-trips, anti-passthrough entropy/magic coverage guards, and semantic mutation fuzzing across `length_of`, `count_of`, and `crc32_of` relations (offline heuristic or BYOK LLM self-healing loop).
+- **Multi-Target Code Generation:** Compiles verified `CodecSpec` schemas into zero-dependency Python 3.10+ modules, single-header `#pragma once` C++20 codecs, Kaitai Struct (`.ksy`) specs, and standalone dark-mode HTML5 hex-map reports.
+
+---
 
 ### [digital-works-compiler: Digital Works (`.dwm`) Binary Spec & Circuit Compiler](https://github.com/lunizura/digital-works-compiler)
 > **Stack:** Python 3.10+ (Zero Dependencies) • Delphi VCL Binary RE • Pytest (226 Tests)
@@ -68,7 +78,7 @@ A live Windows process memory editor and `.fm` save-stream parser for Football M
 | Domain | Technologies & Tools |
 | :--- | :--- |
 | **Languages** | Python, C++20, C (C99), JavaScript, SQL, PowerShell |
-| **Systems & Reverse Engineering** | Win32 API, Windows Internals, Process Memory Analysis, Binary Format RE, Ghidra SRE, x64dbg, Cheat Engine |
+| **Systems & Reverse Engineering** | Win32 API, Windows Internals, Process Memory Analysis, Binary Format RE, Kaitai Struct, Ghidra SRE, x64dbg, Cheat Engine |
 | **3D Graphics & Rendering** | glTF 2.0 Binary Compilation, Software Rasterization, Raylib, Unity Asset Extraction, Blender |
 | **Engineering & Tooling** | CMake, GitHub Actions CI, Clang ASan/UBSan, Pytest/Unittest, Ruff, Flask, PostgreSQL, Git |
 
